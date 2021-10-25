@@ -1,0 +1,28 @@
+{
+    "name": "Hexandcube.tk",
+    "short_name": "Hexandcube.tk",
+    "start_url": "./",
+    "icons": [
+        {
+            "src": "/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/icons/any-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "theme_color": "#fca67e",
+    "background_color": "#fca67e",
+    "display": "minimal-ui"
+}

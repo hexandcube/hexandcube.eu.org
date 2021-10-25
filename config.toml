@@ -1,0 +1,55 @@
+baseURL = "https://hexandcube.tk"
+languageCode = "en-us"
+title = "Hexandcube"
+enableEmoji = true
+# enableGitInfo = true
+paginate = 9
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+  [markup.highlight]
+    codeFences = true
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = false
+    tabWidth = 4
+
+
+[params]
+  version = "10.0"
+  description = "Nice to meet you, I'm hexandcube. I'm a hobby web developer from Poland."
+  keywords = "Hexandcube, Wallpapers, Files"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = -110
+    pre="fa-house"
+
+  [[menu.main]]
+    identifier = "files"
+    name = "Files"
+    url = "/files/"
+    weight = -100
+    pre="fa-file"
+    
+  [[menu.main]]
+    identifier = "wallpapers"
+    name = "Wallpapers"
+    url = "/wallpapers/"
+    weight = -90
+    pre="fa-images"
+    
+    [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = -80
+    pre="fa-paper-plane"

@@ -1,0 +1,13 @@
+/public
+/resources
+node_modules
+
+## OS Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Local Netlify folder
+.netlify

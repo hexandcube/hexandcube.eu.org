@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'syntax.scss';
+
+* {
+    transition: 0.5s;
+    scroll-behavior: smooth;
+    text-rendering: geometricPrecision;
+    animation: fade-from-top 1s ease-in-out;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+p:not(.leading-default),
+div.text-block {
+    @apply md:leading-7 leading-5;
+}
+
+.title-leading {
+    @apply md:leading-10 leading-7;
+}
+
+.responsive {
+    @apply 3xl:px-96 2xl:px-72 xl:px-48 lg:px-16 sm:px-4 px-3;
+}
+
+section {
+    @apply lg:py-16 sm:py-12 py-8 responsive;
+}
+
+.btn {
+    @apply border-2 border-transparent inline-block px-3 py-1 text-accent-500 hover:text-accent-700 hover:bg-accent-100 cursor-pointer rounded-md mr-1 my-1;
+}
+
+.btn-primary {
+     @apply border-2 border-transparent bg-accent-100 text-accent-800 hover:bg-accent-200 hover:text-accent-900;
+}
+
+.btn-secondary {
+    @apply border-2 border-accent-500 hover:border-accent-900 hover:bg-accent-200 hover:text-accent-900;
+}
+
+code {
+    @apply bg-light-50 dark:bg-dark-200 font-mono px-2 rounded-md;
+}
+
+pre {
+    @apply bg-light-50 dark:bg-dark-200 font-mono p-3 rounded-lg overflow-x-scroll;
+}
+
+pre > code {
+    @apply p-0;
+}
+
+.chroma .ln {
+    @apply mr-2;
+}
+
+p,
+div {
+    @apply text-light-800 dark:text-gray-300 sm:text-lg text-base;
+}
+
+h1,
+.title-1 {
+    @apply xl:text-6xl sm:text-5xl text-4xl font-brand font-bold leading-9 text-black dark:text-white;
+}
+
+h2,
+.title-2 {
+    @apply xl:text-5xl sm:text-4xl text-3xl font-brand font-bold leading-8 text-black dark:text-white;
+}
+
+h3,
+.title-3 {
+    @apply xl:text-4xl sm:text-3xl text-2xl font-brand font-bold leading-8 text-black dark:text-white;
+}
+
+h4,
+.title-4 {
+    @apply xl:text-4xl sm:text-3xl text-2xl -ml-1px font-bold leading-7 text-black dark:text-white;
+}
+
+h5,
+.title-5 {
+    @apply xl:text-3xl sm:text-2xl text-xl -ml-1px font-bold leading-7 text-black dark:text-white;
+}
+
+h6,
+.title-6 {
+    @apply xl:text-2xl sm:text-xl text-lg -ml-1px font-bold leading-6 text-black dark:text-white;
+}
+
+.content {
+    h1,h2,h3,h4,h5,h6 {
+        @apply md:mt-10 md:mb-5 mt-7 mb-3;
+    }
+
+    p{
+        @apply mb-3;
+    }
+
+    h1 {
+        @apply highlighted;
+    }
+
+    a:not(.clean, .btn) {
+        @apply text-accent-400 dark:text-accent-300 hover:text-accent-700 dark:hover:text-accent-700 hover:bg-accent-100 px-0.5;
+    }
+
+    ul li {
+        list-style-type: disc;
+    }
+
+    ol li {
+        list-style-type: decimal;
+    }
+
+    li li {
+        @apply ml-6;
+    }
+
+    li {
+        @apply ml-1;
+        list-style-position: inside;
+    }
+
+    hr {
+        @apply my-5;
+    }
+}
+
+.highlighted {
+    display: inline-block;
+    text-decoration: underline solid 6px #fb8a56;
+}
+
+@keyframes fade-from-top {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -2%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.page-item::before {
+    display: none;
+}
+
+.pagination {
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+    margin-top: 1rem;
+}

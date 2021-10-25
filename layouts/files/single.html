@@ -1,0 +1,68 @@
+{{ define "main" }}
+<main>
+    <section class="bg-light-100 dark:bg-dark-500 responsive py-16">
+        <h1 class="highlighted">{{ .Title }}</h1>
+        {{ with .Description}}
+        <p class="mt-5">{{ . }}</p>
+        {{ end }}
+    </section>
+    <section
+        class="bg-light-50 dark:bg-dark-400 responsive py-4 md:grid md:grid-cols-5 gap-x-2 gap-y-1">
+        <div class="leading-default">
+            File Type: <br class="hidden md:block"><b class="text-black dark:text-white">{{ .Params.FileType }} ({{ .Params.fileExtension }})</b>
+        </div>
+        <div class="leading-default">
+            File Version: <br class="hidden md:block"><b class="text-black dark:text-white">{{ .Params.FileVersion }}
+                ({{ .Params.FileDate}})</b>
+        </div>
+        <div class="leading-default">
+            File Size: <br class="hidden md:block"><b class="text-black dark:text-white capitalize">{{ .Params.FileSize }}</b>
+        </div>
+        <div class="leading-default md:text-right md:mt-1 col-span-2">
+            <a href="{{ .Params.Download }}"
+                class="btn btn-primary"><i class="fa-solid fa-download"></i> Download from {{ .Params.DownloadServer }}</a>
+        </div>
+    </section>
+    <section class="responsive content py-8">
+        <h2>Description</h2>
+        {{ .Content }}
+        {{ if .Params.versions }}
+            <h2>Latest Version Metadata</h2>
+        {{ else }}
+            <h2>File Metadata</h2>
+        {{ end }}
+        <i class="fas fa-font fa-fw"></i> <b>File name: </b>{{ .Params.FileName }}
+        <br>
+        <i class="fas fa-file fa-fw"></i> <b>File type: </b>{{ .Params.FileType }} ({{ .Params.FileExtension }})
+        <br>
+        <i class="fas fa-weight fa-fw"></i> <b>File size: </b>{{ .Params.FileSize }}
+        {{ if .Params.FileVersion }}
+        <br>
+        <i class="fas fa-code-branch fa-fw"></i> <b>File version: </b>{{ .Params.FileVersion }}
+        {{ with .Params.FileDate }}({{ . }}){{ end }}
+        {{ end }}
+        {{ if .Params.versions }}
+            <h3 class="mt-6">Download the latest version from</h3>
+        {{ else }}
+            <h3 class="mt-6">Download from</h3>
+        {{ end }}
+        <b><a href="{{ .Params.Download }}"><i class="fas fa-download"></i> {{ .Params.DownloadServer }}</a></b>
+        {{ range .Params.Servers }}
+        <br>
+        <a href="{{ .download }}"><i class="fas fa-download"></i> {{ .name }}</a>
+        {{ end }}
+
+        {{ if .Params.Versions }}
+        <h3 class="mt-6 ">All versions</h3>
+
+        <b><a href="{{ .Params.Download }}"><i class="fas fa-download"></i> {{ .Params.FileVersion }}
+                (latest{{ with .Params.FileDate }} - {{ . }}{{ end }})</a></b>
+        {{ range .Params.Versions }}
+        <br>
+        <a href="{{ .download }}"><i class="fas fa-download"></i> {{ .name }} {{ with .date }}({{ . }}){{ end }}</a>
+        {{ end }}
+
+        {{ end }}
+    </section>
+</main>
+{{ end }}

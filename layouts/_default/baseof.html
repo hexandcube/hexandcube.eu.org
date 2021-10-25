@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body class="dark:bg-dark-300 {{ if .Site.IsServer }}debug-screens{{ end }}">
+    <div class="wrapper">
+        {{ partial "header.html" . }}
+        {{ block "main" . }}{{ end }}
+    </div>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+</body>
+</html>

@@ -1,0 +1,31 @@
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="{{ .Site.Params.Description }}">
+<title>{{ with .Page.Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
+
+{{ $styles := resources.Get "scss/main.scss" | toCSS | postCSS }}
+
+{{ if .Site.IsServer }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
+{{ else }}
+{{ $styles := $styles | minify | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
+{{ end }}
+<link rel="stylesheet" href="/fonts/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/fonts/mont/mont.css">
+<link rel="stylesheet" href="/fonts/hexandcube-icon/hexandcube-icon.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Mono&display=swap"
+    rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+<link rel="manifest" href="/icons/site.webmanifest">
+<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#fb8b55">
+<link rel="shortcut icon" href="/icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#fb8b55">
+<meta name="msapplication-config" content="/icons/browserconfig.xml">
+<meta name="theme-color" content="#fb8b55">

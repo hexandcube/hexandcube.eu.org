@@ -1,0 +1,28 @@
+{
+  "name": "hexandcube.tk",
+  "version": "10.0.0",
+  "description": "Hexandcube's personal website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexandcube/hexandcube.tk.git"
+  },
+  "author": "Hexandcube",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hexandcube/hexandcube.tk/issues"
+  },
+  "homepage": "https://hexandcube.tk",
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.3.0",
+    "@tailwindcss/forms": "^0.3.4",
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
+    "sass": "^1.43.2",
+    "tailwindcss": "^2.2.17"
+  },
+  "devDependencies": {
+    "tailwindcss-debug-screens": "^2.1.0"
+  }
+}

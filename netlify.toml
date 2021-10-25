@@ -1,0 +1,15 @@
+[build]
+    command = "hugo"
+    publish = "public"
+
+[dev]
+    command = "hugo server"
+
+[[plugins]]
+    package = "netlify-plugin-image-optim"
+
+[[plugins]]
+    package = "netlify-plugin-submit-sitemap"
+    [plugins.inputs]
+        baseUrl = "https://hexandcube.tk"
+        sitemapPath = "/sitemap.xml"

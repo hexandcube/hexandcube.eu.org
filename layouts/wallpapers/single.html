@@ -1,0 +1,37 @@
+{{ define "main" }}
+<main>
+    <section class="bg-light-100 dark:bg-dark-500 responsive py-16">
+        <h1 class="highlighted">{{ .Title }}</h1>
+        {{ with .Description}}
+        <p class="mt-5">{{ . }}</p>
+        {{ end }}
+    </section>
+        <section class="bg-light-50 dark:bg-dark-400 responsive py-4 grid {{ if .Params.Variant }}md:grid-cols-5{{ else }}md:grid-cols-4{{ end }} gap-x-2 gap-y-1">
+            {{ with .Params.resolution }}
+                <div class="leading-default">
+                    Resolution: <br class="hidden md:block"><b class="text-black dark:text-white">{{ . }}</b>
+                </div>
+            {{ end }}
+            {{ with .Params.Variant }}
+                <div class="leading-default">
+                    Variant: <br class="hidden md:block"><b class="text-black dark:text-white capitalize">{{ . }}</b>
+                </div>
+            {{ end }}
+                <div class="leading-default">
+                    License: <br class="hidden md:block"><a href="https://creativecommons.org/licenses/by-sa/4.0/"
+                        class="text-black dark:text-white"><b>CC BY-SA 4.0</b></a>
+                </div>
+                <div class="leading-default">
+                    Author: <br class="hidden md:block"><b class="text-black dark:text-white">Hexandcube</b>
+                </div>
+                <div class="leading-default md:text-right md:mt-1">
+                    <a href="https://files.hexandcube.tk/wallpapers/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
+                        class="btn btn-primary"><i class="fa-solid fa-download"></i> Download</a>
+                </div>
+        </section>
+    <section class="responsive content py-8">
+        <img src="https://files.hexandcube.tk/wallpapers/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
+            alt="{{ .Title }}" class="rounded-xl">
+    </section>
+</main>
+{{ end }}
