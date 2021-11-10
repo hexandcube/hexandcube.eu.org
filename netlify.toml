@@ -13,3 +13,9 @@
     [plugins.inputs]
         baseUrl = "https://hexandcube.tk"
         sitemapPath = "/sitemap.xml"
+
+[[redirects]]
+  from = "https://hexandcube.tk/*"
+  to = "https://hexandcube.eu.org/:splat"
+  status = 301
+  force = true
