@@ -19,3 +19,9 @@
   to = "https://hexandcube.eu.org/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "http://hexandcube.tk/*"
+  to = "http://hexandcube.eu.org/:splat"
+  status = 301
+  force = true
