@@ -8,14 +8,14 @@ fileVersion: "1.2"
 fileDate: 2021-08-24
 image: /img/files/desktopicontoggle.png
 imageBg: true
-download: https://files.hexandcube.tk/download/DesktopIconToggle/DesktopIconToggle-1.2.0.zip
+download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.2.0.zip
 downloadServer: Hexandcube Files
 versions:
   - name: "1.1"
-    download: https://files.hexandcube.tk/download/DesktopIconToggle/DesktopIconToggle-1.1.zip
+    download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.1.zip
     date: 2021-06-22
   - name: "1.0"
-    download: https://files.hexandcube.tk/download/DesktopIconToggle/DesktopIconToggle-1.0.zip
+    download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.0.zip
     date: 2021-06-19
 ---
 

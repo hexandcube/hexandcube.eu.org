@@ -10,7 +10,7 @@
             {{ range $paginator.Pages }}
                 <div class="p-2 transform hover:translate-y-1 hover:translate-x-1 cursor-pointer">
                     <a href="{{ .RelPermalink }}">
-                        <img src="https://files.hexandcube.tk/wallpapers/thumbnails/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
+                        <img src="https://files.hexandcube.eu.org/wallpapers/thumbnails/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
                             class="rounded-xl shadow-lg hover:shadow-sm" alt="{{ .Title }}">
                     </a>
                     <div class="grid grid-cols-5">
@@ -21,7 +21,7 @@
                             <small class="inline-block -mt-5 capitalize">{{ .Params.Resolution }} {{ with .Params.Variant }} | {{ . }} {{ end }}</small>
                         </div>
                         <div class="mt-2 text-right">
-                            <a href="https://files.hexandcube.tk/wallpapers/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
+                            <a href="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
                                 class="btn btn-primary" aria-label="Download"><i class="fas fa-download"></i></a>
                         </div>
                     </div>

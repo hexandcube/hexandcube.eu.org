@@ -7,7 +7,7 @@ fileSize: 26KB
 fileVersion: "1.0 [1.16.5]"
 fileDate: 2021-05-06
 image: /img/files/ClientTweaks.png
-download: https://files.hexandcube.tk/download/HexandcubesClientTweaks/Hexandcubes_Client_Tweaks-1.0.zip
+download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcubes_Client_Tweaks-1.0.zip
 downloadServer: Hexandcube Files
 servers: 
   - name: CurseForge
@@ -15,10 +15,10 @@ servers:
 
 versions:
   - name: "2.0 Beta [1.17.1]"
-    download: https://files.hexandcube.tk/download/HexandcubesClientTweaks/Hexandcubes_Client_Tweaks-2.0_Beta.zip
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcubes_Client_Tweaks-2.0_Beta.zip
     date: 2021-08-17
 #  - name: "1.0 [1.16.5]"
-#    download: https://files.hexandcube.tk/download/HexandcubesClientTweaks/Hexandcubes_Client_Tweaks-1.0.zip
+#    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcubes_Client_Tweaks-1.0.zip
 #    date: 2021-05-06
 ---
 
