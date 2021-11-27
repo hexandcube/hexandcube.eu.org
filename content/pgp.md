@@ -2,7 +2,7 @@
 title: Open PGP
 description: Details about my Open PGP key
 hideReadingTime: true
-lastmod: 2020-11-10
+lastmod: 2021-11-10
 ---
 
 ## Key Details
