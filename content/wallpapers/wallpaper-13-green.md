@@ -1,6 +1,6 @@
 ---
-title: Wallpaper 13 Red
+title: Wallpaper 13 Green
 id: 13
-variant: red
+variant: green
 resolution: 5120x2880
 ---
