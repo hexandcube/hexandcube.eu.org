@@ -15,13 +15,19 @@
         sitemapPath = "/sitemap.xml"
 
 [[redirects]]
-  from = "https://hexandcube.tk/*"
-  to = "https://hexandcube.eu.org/:splat"
-  status = 301
-  force = true
+    from = "https://hexandcube.tk/*"
+    to = "https://hexandcube.eu.org/:splat"
+    status = 301
+    force = true
 
 [[redirects]]
-  from = "http://hexandcube.tk/*"
-  to = "http://hexandcube.eu.org/:splat"
-  status = 301
-  force = true
+    from = "http://hexandcube.tk/*"
+    to = "http://hexandcube.eu.org/:splat"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/*"
+    to = "/404"
+    status = 404
+    force = false

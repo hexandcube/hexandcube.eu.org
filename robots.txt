@@ -6,6 +6,3 @@ Disallow: /offline
 Disallow: /terms
 Disallow: /acknowledgements
 Disallow: /404
-
-User-agent: ia_archiver
-Disallow: /
