@@ -23,6 +23,31 @@ paginate = 9
   version = "10.0"
   description = "Nice to meet you, I'm hexandcube. I'm a hobby web developer from Poland."
   keywords = "Hexandcube, Wallpapers, Files, Windows, Desktop, Tools, Software, Webdev, translation"
+  JsonLd = '''
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hexandcube",
+    "email": "hexandcube@hexandcube.eu.org",
+    "gender": "Male",
+    "nationality": "Polish",
+    "knowsLanguage": "Polish, English",
+    "url": "https://hexandcube.eu.org",
+    "image": "https://files.hexandcube.eu.org/images/avatar.png",
+    "sameAs": [
+      "https://github.com/hexandcube",
+      "https://www.instagram.com/hexandcube/",
+      "https://twitter.com/hexandcube",
+      "https://mstdn.social/@hexandcube",
+      "https://gitlab.com/hexandcube",
+      "https://keybase.io/hexandcube",
+      "https://www.youtube.com/c/hexandcube",
+      "https://www.reddit.com/user/hexandcube",
+      "https://unsplash.com/@hexandcube",
+      "https://addons.mozilla.org/en-US/firefox/user/14625252/"
+    ]
+  }
+  '''
 
 [menu]
 

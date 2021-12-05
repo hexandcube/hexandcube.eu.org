@@ -5,6 +5,12 @@
 <meta name="keywords" content="{{ .Site.Params.Keywords }}">
 <link rel="canonical" href="{{ .Permalink }}">
 
+{{ with .Site.Params.JsonLd }}
+<script type="application/ld+json" >
+    {{ . | safeJS }}
+</script>
+{{ end }}
+
 <title>{{ with .Page.Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
 
 {{ $styles := resources.Get "scss/main.scss" | toCSS | postCSS }}
