@@ -18,7 +18,7 @@
                 </div>
             {{ end }}
                 <div class="leading-default">
-                    License: <br class="hidden md:block"><a href="https://creativecommons.org/licenses/by-sa/4.0/"
+                    License: <br class="hidden md:block"><a itemprop="license" href="https://creativecommons.org/licenses/by-sa/4.0/"
                         class="text-black dark:text-white"><b>CC BY-SA 4.0</b></a>
                 </div>
                 <div class="leading-default">
@@ -30,8 +30,10 @@
                 </div>
         </section>
     <section class="responsive content py-8">
+        <div itemscope itemtype="https://schema.org/ImageObject">
+
         <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
-            alt="{{ .Title }}" class="rounded-xl">
+            itemprop="contentUrl" alt="{{ .Title }}" class="rounded-xl">
     </section>
 </main>
 {{ end }}

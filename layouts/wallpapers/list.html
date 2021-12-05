@@ -3,14 +3,14 @@
     <section class="bg-light-100 dark:bg-dark-500 responsive py-16">
         <h1 class="highlighted">Wallpapers</h1>
         <p class="mt-5">Here you can find some wallpapers that I've made for myself. All of them are available under the
-            <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.</p>
+            <a itemprop="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.</p>
     </section>
     <section class="responsive py-8 grid gird-cols-1 sm:grid-cols-2 xl:grid-cols-3">
         {{ $paginator := .Paginate (sort .Pages "Params.id" "desc" ) }}
             {{ range $paginator.Pages }}
                 <div class="p-2 transform hover:translate-y-1 hover:translate-x-1 cursor-pointer">
                     <a href="{{ .RelPermalink }}">
-                        <img src="https://files.hexandcube.eu.org/wallpapers/thumbnails/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
+                        <img itemprop="contentUrl" src="https://files.hexandcube.eu.org/wallpapers/thumbnails/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
                             class="rounded-xl shadow-lg hover:shadow-sm" alt="{{ .Title }}">
                     </a>
                     <div class="grid grid-cols-5">
