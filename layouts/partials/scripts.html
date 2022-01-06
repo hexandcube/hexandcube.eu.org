@@ -51,20 +51,24 @@
         .then(data => {
             const statusCircle = document.getElementById('status-widget-circle');
             const statusText = document.getElementById('status-widget-text');
+            const statusWidget = document.getElementById('status-widget');
             switch (data.page.status) {
                 case 'UP':
                     statusCircle.classList.add('bg-green-500');
                     statusText.innerText = 'All systems operational';
                     break;
                 case 'HASISSUES':
-                    statusCircle.classList.add('bg-red-500');
-                    statusText.innerText = 'Partial outage';
+                    statusCircle.classList.add('bg-yellow-500');
+                    statusText.innerText = 'Experiencing issues';
                     break;
                 case 'UNDERMAINTENANCE':
                     statusCircle.classList.add('bg-blue-500');
                     statusText.innerText = 'Under Maintenance';
                     break;
                 default:
+                    statusCircle.classList.add('bg-gray-500');
+    
+                    statusCircle.classList.remove('animate-pulse');
                     statusText.innerText = 'Status check failed!';
                     console.error('Status Widget: Status check failed!');
                     break;
