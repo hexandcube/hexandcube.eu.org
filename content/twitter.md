@@ -1,17 +1,15 @@
 ---
 title: Hexandcube's Twitter Policy
-lastmod: 2022-01-06
+lastmod: 2022-01-07
 --- 
 
 # Public Tweets
 
-- Quote retweets ≠ endorsements, I may use QRTs to comment on something I don't agree with.
-- Liking means I like or agree with the content that tweet, but doesn't mean I endorse the author of that tweet.
 - If you want to share my Tweet on Twitter, please retweet it, don't screenshot it.
 - If you're sharing it on a platform other than Twitter, you're free to post a screenshot, just
 please make sure to link to the original Tweet.
 - If you want to share any original content from my account (such as a photo or video), please make sure to link to the original Tweet.
-- You're not allowed to use any of my content for commercial purposes without my explicit permission.
+- You're not allowed to use any of my content for commercial purposes without my permission.
 
 # Direct Messages
 
@@ -44,17 +42,18 @@ If you think I've blocked you by accident, please [let me know](/contact).
 - Spread theories (theses) as facts without providing scientific proofs
 - Are a part that of known dangerous organizations and hate groups
 - Religiously support NFTs (Non-Fungible Tokens), [**proof of work**](https://en.wikipedia.org/wiki/Proof_of_work) cryptocurrencies (e.g. Bitcoin, Ethereum, etc.) and cryptocurrency mining
+- Have ".eth" in their Twitter display name or bio
 - Promote or endorse, products or services for profit without clearly declaring the advertisement
 - Send unsolicited DM's (Direct Messages)
 - Impersonate another individual or oraganization
 - Posts Tweets with hashtags that are not related to the content of the Tweet
 
-# Muting
+# Unfollowing
 
-This list, contains the types of accounts, I will mute on Twitter.
-If your account doesn't meet the requirements for blocking, but meets any requirements listed here, you will be muted if you interact with me on Twitter.
+This list, contains the types of accounts, I will unfollow on Twitter.
 
-**I'm muting accounts that:**
+**I'm unfollowing accounts that:**
 
-- Constantly promote on my Twitter feed using Twitter Ads
-
+- Use Twitter Spaces - 
+  When you're using Twitter Spaces, the space you're hosting/listening to, appears on the top of my Twitter feed.
+  There is no way to disable this stupid feature. The only way to hide spaces, is to unfollow people who them.
