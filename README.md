@@ -1,8 +1,8 @@
-# Hexandcube.tk
+# Hexandcube.eu.org
 
 Hexandcube's Personal Website - Version 10.0
 
-## Install Prequisites
+## Install Prerequisites
 
 1. Install [Hugo Extended](https://gohugo.io/getting-started/installing/) (Make sure to install the **Extended** version of hugo!)
 2. Install Dependencies using NPM
