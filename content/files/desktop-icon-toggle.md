@@ -1,5 +1,6 @@
 ---
 title: Desktop Icon Toggle for Windows
+description: Quickly toggle the visibility of desktop icons by double-clicking the blank space on the desktop.
 fileName: DesktopIconToggle-1.2.0.zip
 fileType: ZIP File Archive
 fileExtension: .zip

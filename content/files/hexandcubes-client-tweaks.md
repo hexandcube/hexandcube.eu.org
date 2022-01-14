@@ -1,5 +1,6 @@
 ---
 title: Hexandcube's Client Tweaks
+description: Improved Vanilla Minecraft Experience
 fileName: Hexandcube_Client_Tweaks_1.17.1-2.2.zip
 fileType: Minecraft Modpack [CurseForge]
 fileExtension: zip

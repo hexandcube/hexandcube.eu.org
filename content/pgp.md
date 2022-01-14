@@ -1,6 +1,6 @@
 ---
 title: Open PGP
-description: Details about my Open PGP key
+description: Details about Hexandcube's Open PGP key
 hideReadingTime: true
 lastmod: 2021-11-10
 ---

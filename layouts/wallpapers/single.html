@@ -35,5 +35,8 @@
         <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
             itemprop="contentUrl" alt="{{ .Title }}" class="rounded-xl">
     </section>
+    <section class="responsive content py-8">
+        {{ .Content }}
+    </section> 
 </main>
 {{ end }}

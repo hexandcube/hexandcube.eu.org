@@ -41,6 +41,10 @@ div.text-block {
     @apply 3xl:px-96 2xl:px-72 xl:px-48 lg:px-16 sm:px-4 px-3;
 }
 
+.footnotes {
+    @apply px-0 py-4; 
+}
+
 section {
     @apply lg:py-16 sm:py-12 py-8 responsive;
 }
@@ -139,7 +143,6 @@ h6,
 
     li {
         @apply ml-1;
-        list-style-position: inside;
     }
 
     hr {

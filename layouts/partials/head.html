@@ -1,13 +1,12 @@
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="{{ .Site.Params.Description }}">
-<meta name="keywords" content="{{ .Site.Params.Keywords }}">
+<meta name="description" content="{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Title }} on Hexandcube.eu.org{{ end }}">
+<meta name="keywords" content="{{ if .Params.Keywords }}{{ delimit .Keywords " " }}{{ else }}{{ .Site.Params.Keywords }}{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
-
 {{ with .Site.Params.JsonLd }}
 <script type="application/ld+json" >
-    {{ . | safeJS }}
+{{ . | safeJS }}
 </script>
 {{ end }}
 

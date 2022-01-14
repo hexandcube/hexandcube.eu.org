@@ -1,6 +1,7 @@
 ---
 title: Hexandcube's Twitter Policy
 lastmod: 2022-01-13
+description: Hexandcube's Policy for interacting with Twitter users
 --- 
 
 # Public Tweets
