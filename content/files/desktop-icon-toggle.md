@@ -1,22 +1,28 @@
 ---
 title: Desktop Icon Toggle for Windows
 description: Quickly toggle the visibility of desktop icons by double-clicking the blank space on the desktop.
-fileName: DesktopIconToggle-1.2.0.zip
+fileName: DesktopIconToggle-1.3.0.zip
 fileType: ZIP File Archive
 fileExtension: .zip
-fileSize: 2.1MB
-fileVersion: "1.2"
-fileDate: 2021-08-24
+fileSize: 2.25MB
+fileVersion: "1.3"
+fileDate: 2022-01-26
 image: /img/files/desktopicontoggle.png
 imageBg: true
-download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.2.0.zip
+download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.3.0.zip
 downloadServer: Hexandcube Files
+servers:
+  - name: "GitHub"
+    download: https://github.com/hexandcube/desktop-icon-toggle/releases/download/v.1.3.0/DesktopIconToggle-1.3.0.zip
 versions:
+  - name: "1.2"
+    download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.2.0.zip
+    date: 2021-08-24
   - name: "1.1"
-    download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.1.zip
+    download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.1.0.zip
     date: 2021-06-22
   - name: "1.0"
-    download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.0.zip
+    download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.0.0.zip
     date: 2021-06-19
 ---
 
