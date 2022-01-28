@@ -60,22 +60,29 @@ paginate = 9
     pre="fa-house"
 
   [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = -100
+    pre="fa-file-alt"
+
+  [[menu.main]]
     identifier = "files"
     name = "Files"
     url = "/files/"
-    weight = -100
-    pre="fa-file"
+    weight = -90
+    pre="fa-file-download"
     
   [[menu.main]]
     identifier = "wallpapers"
     name = "Wallpapers"
     url = "/wallpapers/"
-    weight = -90
+    weight = -80
     pre="fa-images"
     
     [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
-    weight = -80
+    weight = -70
     pre="fa-paper-plane"
