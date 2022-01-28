@@ -1,0 +1,53 @@
+{{ define "main" }}
+<main>
+    {{ if not ( .Params.HideTitlebar )}}
+    <section class="bg-light-100 dark:bg-dark-500 responsive py-16">
+        <h1 class="highlighted">{{ .Title }}</h1>
+        {{ with .Description}}
+        <p class="mt-5">{{ . }}</p>
+        {{ end }}
+        {{ end }}
+    </section>
+    {{ if not ( .Params.HideMetabar)}}
+    {{ if or ( .PublishDate ) ( .Lastmod ) ( .Params.Author ) }}
+    <section class="bg-light-50 dark:bg-dark-400 responsive py-4 grid md:grid-cols-4 xl:grid-cols-5 gap-x-3 gap-y-1">
+        {{ with .Params.Author }}
+        <div class="leading-default">
+            Author: <br class="hidden md:block"><b class="text-black dark:text-white">{{ . }}</b>
+        </div>
+        {{ end }}
+        {{ with .PublishDate }}
+        <div class="leading-default">
+            Published: <br class="hidden md:block"><b
+                class="text-black dark:text-white">{{ .Format "January 2, 2006" }}</b>
+        </div>
+        {{ end }}
+        {{ if .Params.RenderLastmod }}
+            {{ with .Lastmod }}
+            <div class="leading-default">
+                Last Updated: <br class="hidden md:block"><b
+                    class="text-black dark:text-white">{{ .Format "January 2, 2006" }}</b>
+            </div>
+            {{ end }}
+        {{ end }} 
+        {{ if ( not .Params.HideReadingTime ) }}
+        {{ with .ReadingTime }}
+        <div class="leading-default">
+            Reading Time: <br class="hidden md:block"><b class="text-black dark:text-white">{{ . }} min</b>
+        </div>
+        {{ end }}
+        {{ end }}
+    </section>
+    {{ end }}
+    {{ end }}
+
+    <section class="responsive content py-8">
+    {{ if .Params.Thumbnail }}
+    <div class="mb-8">
+        <img class="rounded-2xl" src="{{ .Params.Thumbnail }}" alt="{{ .Title }}">
+    </div>
+    {{ end }}
+        {{ .Content }}
+    </section>
+</main>
+{{ end }}
