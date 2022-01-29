@@ -84,7 +84,7 @@ div {
 
 h1,
 .title-1 {
-    @apply xl:text-6xl sm:text-5xl text-4xl font-brand font-bold leading-9 text-black dark:text-white;
+    @apply xl:text-6xl sm:text-5xl text-5xl font-brand font-bold leading-9 text-black dark:text-white;
 }
 
 h2,
@@ -176,4 +176,8 @@ h6,
     width: 50%;
     justify-content: center;
     margin-top: 1rem;
+}
+
+.utterances {
+    max-width: 100%;
 }

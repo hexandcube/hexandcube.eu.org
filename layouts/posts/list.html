@@ -1,0 +1,38 @@
+{{ define "main" }}
+<main>
+    <section class="bg-light-100 dark:bg-dark-500 responsive py-16">
+        <h1 class="highlighted">Posts</h1>
+    </section>
+    <section class="responsive py-8">
+        {{ range (.Paginator 10).Pages }}
+        <div class="p-2 my-5 transform hover:translate-y-1 hover:translate-x-1 md:grid md:grid-cols-2">
+            <a href="{{ .RelPermalink }}">
+                {{ if .Params.Thumbnail }}
+                    <img class="rounded-2xl" src="{{ .Params.Thumbnail }}" alt="{{ .Title }}">
+                {{ else }}
+                    <img class="rounded-2xl" src="/img/opengraph.png" alt="{{ .Title }}">
+                {{ end }}
+            </a>
+            <div class="mx-1 md:ml-10 mt-3 md:mt-0 my-2 items-center flex">
+                <a href="{{ .RelPermalink }}">
+                    <h2>{{ .Title }}</h2>
+                    <p>{{ .Description }}</p>
+                    <div class="flex mt-3 md:mt-7">
+                        <div class="items-center flex">
+                            <img class="rounded-full mr-4" src="/img/authors/{{ .Params.Author }}.png" alt="{{ .Params.Author }}" width="50px">
+                        </div>
+                        <div class="items-center flex">
+                            <div>
+                                <b> {{.Params.Author}} </b>
+                                <div> {{ .PublishDate.Format "January 2, 2006" }} </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        {{ end }}
+    </section>
+    {{ partial "pagination.html" . }}
+</main>
+{{ end }}
