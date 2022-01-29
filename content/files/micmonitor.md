@@ -1,45 +1,70 @@
 ---
 title: MicMonitor
-description: Simple Autohotkey program that allows you to quickly toggle Microphone monitoring in Windows 
-fileName: MicMonitor-1.0.zip
+description: Simple Autohotkey program that allows you to quickly toggle Microphone from the taskbar
+fileName: MicMonitor-1.1.zip
 fileType: ZIP File Archive
 fileExtension: .zip
 fileSize: 2.24MB
-fileVersion: "1.0"
-fileDate: 2022-01-28
+fileVersion: "1.1"
+fileDate: 2022-01-29
 image: /img/files/MicMonitor.png
 imageBg: true
-download: https://files.hexandcube.eu.org/download/MicMonitor/MicMonitor-1.0.zip
+download: https://files.hexandcube.eu.org/download/MicMonitor/MicMonitor-1.1.zip
 downloadServer: Hexandcube Files
 servers:
   - name: "GitHub"
-    download: https://github.com/hexandcube/MicMonitor/releases/download/v.1.0.0/MicMonitor-1.0.zip
+    download: https://github.com/hexandcube/MicMonitor/releases/download/v.1.1.0/MicMonitor-1.1.zip
+versions:
+  - name: "1.0"
+    download: https://files.hexandcube.eu.org/download/MicMonitor/MicMonitor-1.0.zip
+    date: 2022-01-28
 ---
 
 MicMonitor is a simple program written in Autohotkey that allows you to quickly toggle microphone monitoring in Windows ("Listen to this device" option in Control panel).
 
 Tested on Windows 11 21H2 Build 22000, but should work also work on older versions of Windows.
 
+The zip file contains the app installer that will automatically add the app to startup, and a standalone binary of the app.'
+
 ### How to use
 
-By default MicMonitor toggles monitoring for the Microphone with a name "Microphone".
-If you want to change this, you can set the name of your Microphone device in the toggle.ini file.
+If you used the installer, MicMonitor will start automatically when you start your computer.
 
-![Example](https://i.imgur.com/CwkZeHx.png)
+When you start MicMonitor for the first time, you will be asked to select a microphone you want to monitor.
+The name of the device has to be the same as the one you see in the Settings app or in Control Panel. 
 
-If there is no toggle.ini file in the MicMonitor directory, the program will toggle the first device on the list of the recording devices.
+![Screenshot](https://i.imgur.com/tvQljCS.png)
 
-To toggle microphone monitoring (when the program is running), you can either double click the icon in the taskbar, or click the "Toggle Microphone Monitoring" option in the MicMonitor right-click menu.
+The device name will be saved in the MicMonitor.ini file, in the same folder as the executable.
 
-The zip file contains the app installer that will automatically add the app to startup, and a standalone binary of the app.
+When MicMonitor is running, you will see a tray icon on the taskbar.
 
-### License
+![Screenshot](https://i.imgur.com/QxYtgDa.png)
+
+Double-click the tray icon to toggle microphone monitoring on the selected device.
+
+To change the selected device, right-click the tray icon and click `Change device`.
+
+![Screenshot](https://i.imgur.com/6ug5khU.png)
+
+### Licenses
+
+MicMonitor by Hexandcube is licensed under the [MIT license](https://github.com/hexandcube/MicMonitor/blob/master/LICENSE)
 
 Microphone icon by [Icons8](https://icons8.com/).
 
 ### Install using Chocolatey
 
-`choco install micmonitor`
+<div class="p-5 mb-4 bg-blue-500 text-yellow-900 rounded-xl">
+<b><i class="fas fa-info-circle"></i> Note</b>
+<div>
+As of 2022-01-29 the package is still awaiting approval from the moderators on Chocolatey and is not available for installation.
+</div>
+</div>
+
+```powershell
+choco install micmonitor
+```
 
 <a class="btn btn-primary" href="https://chocolatey.org/install" target="_blank"><i class="fas fa-download"></i> Install Chocolatey</a>
 <a class="btn" href="https://community.chocolatey.org/packages/micmonitor" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Package Page</a>
