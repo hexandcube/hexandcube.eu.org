@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /404
+Disallow: /offline.html
+Sitemap: https://hexandcube.eu.org/sitemap.xml

@@ -7,7 +7,6 @@
     transition: 0.5s;
     scroll-behavior: smooth;
     text-rendering: geometricPrecision;
-    animation: fade-from-top 1s ease-in-out;
 }
 
 html,
@@ -54,7 +53,7 @@ section {
 }
 
 .btn-primary {
-     @apply border-2 border-transparent bg-accent-100 text-accent-800 hover:bg-accent-200 hover:text-accent-900;
+    @apply border-2 border-transparent bg-accent-100 text-accent-800 hover:bg-accent-200 hover:text-accent-900;
 }
 
 .btn-secondary {
@@ -79,12 +78,12 @@ pre > code {
 
 p,
 div {
-    @apply text-light-800 dark:text-gray-300 sm:text-lg text-base;
+    @apply text-light-800 dark:text-gray-300 sm:text-lg text-base leading-tight;
 }
 
 h1,
 .title-1 {
-    @apply xl:text-6xl sm:text-5xl text-5xl font-brand font-bold leading-9 text-black dark:text-white;
+    @apply xl:text-6xl sm:text-5xl text-5xl font-brand font-bold leading-tight text-black dark:text-white;
 }
 
 h2,
@@ -126,7 +125,7 @@ h6,
     }
 
     a:not(.clean, .btn) {
-        @apply text-accent-400 dark:text-accent-300 hover:text-accent-700 dark:hover:text-accent-700 hover:bg-accent-100 px-0.5;
+        @apply text-accent-500 dark:text-accent-300 hover:text-accent-700 dark:hover:text-accent-700 hover:bg-accent-100 px-0.5;
     }
 
     ul li {
@@ -153,18 +152,6 @@ h6,
 .highlighted {
     display: inline-block;
     text-decoration: underline solid 6px #fb8a56;
-}
-
-@keyframes fade-from-top {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -2%, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
 }
 
 .page-item::before {

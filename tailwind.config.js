@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
-    // enabled: true,
+    enabled: true,
     content: [
       'layouts/**/*.html',
       'content/**/*.html',
@@ -41,16 +41,16 @@ module.exports = {
         },
         'accent': {
           DEFAULT: '#F95306',
-          '50': '#FDCFB9',
-          '100': '#FDC1A6',
-          '200': '#FCA67E',
-          '300': '#FB8A56',
-          '400': '#FA6F2E',
-          '500': '#F95306',
-          '600': '#DB4906',
-          '700': '#BD3F05',
-          '800': '#9F3504',
-          '900': '#812B03'
+          '50':    '#FDCFB9',
+          '100':   '#FDC1A6',
+          '200':   '#FCA67E',
+          '300':   '#FB8A56',
+          '400':   '#FA6F2E',
+          '500':   '#F95306',
+          '600':   '#DB4906',
+          '700':   '#BD3F05',
+          '800':   '#9F3504',
+          '900':   '#812B03'
         },
       },
       screens: {

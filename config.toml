@@ -80,7 +80,7 @@ paginate = 9
     weight = -80
     pre="fa-images"
     
-    [[menu.main]]
+  [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
