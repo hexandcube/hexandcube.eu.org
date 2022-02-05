@@ -97,11 +97,9 @@
             <div>
                 <div class="title-2 highlighted mb-3 mt-5">Contact</div>
                 <ul class="ml-3">
-                    <li><b>Telegram:</b> <a href="https://t.me/hexandcube">@hexandcube</a></li>
+                    <li><b>Telegram:</b> <a href="https://t.me/hexandcube" rel="me">@hexandcube</a></li>
                     <li><b>Email:</b> <a href="mailto:hexandcube@hexandcube.eu.org">hexandcube@hexandcube.eu.org</a></li>
-                    <li><b>Discord:</b> <a
-                            href="https://support.discord.com/hc/en-us/articles/218344397-How-do-I-add-my-friend-to-my-friends-list"
-                            target="_blank">Hexandcube#1296</a></li>
+                    <li><b>Discord:</b> <a id="discordId" class="cursor-pointer" onClick="copyToClipboard('discordId')">Hexandcube#1296</a></li>
                     <li><b>Matrix:</b> <a href="https://matrix.to/#/@hexandcube:matrix.org">@hexandcube:matrix.org</a></li>
                 </ul>
             </div>
@@ -123,16 +121,16 @@
                 <div class="mb-5">
                     <div class="title-2 highlighted mb-3 mt-5">Profiles</div>
                     <ul class="ml-3">
-                        <li><b>Twitter:</b> <a href="https://twitter.com/hexandcube">@hexandcube</a></li>
-                        <li><b>Fediverse:</b> <a href="https://mstdn.social/@hexandcube">@hexandcube@mstdn.social</a></li>
-                        <li><b>Reddit:</b> <a href="https://www.reddit.com/user/hexandcube">u/hexandcube</a></li>
-                        <li><b>GitHub:</b> <a href="https://github.com/hexandcube">@hexandcube</a></li>
-                        <li><b>GitLab:</b> <a href="https://gitlab.com/hexandcube">@hexandcube</a></li>
-                        <li><b>500px:</b> <a href="https://500px.com/p/hexandcube">@hexandcube</a>
-                        <li><b>YouTube:</b> <a href="https://www.youtube.com/hexandcube">Hexandcube</a>
-                        <li><b>Unsplash:</b> <a href="https://unsplash.com/@hexandcube">@hexandcube</a>
-                        <li><b>Instagram:</b> <a href="https://www.instagram.com/hexandcube/">@hexandcube</a>
-                        <li><b>Mozilla AMO:</b> <a href="https://addons.mozilla.org/en-US/firefox/user/14625252/">Hexandcube</a>
+                        <li><b>Twitter:</b> <a href="https://twitter.com/hexandcube" rel="me">@hexandcube</a></li>
+                        <li><b>Fediverse:</b> <a href="https://mstdn.social/@hexandcube" rel="me">@hexandcube@mstdn.social</a></li>
+                        <li><b>Reddit:</b> <a href="https://www.reddit.com/user/hexandcube" rel="me">u/hexandcube</a></li>
+                        <li><b>GitHub:</b> <a href="https://github.com/hexandcube" rel="me">@hexandcube</a></li>
+                        <li><b>GitLab:</b> <a href="https://gitlab.com/hexandcube" rel="me">@hexandcube</a></li>
+                        <li><b>500px:</b> <a href="https://500px.com/p/hexandcube" rel="me">@hexandcube</a>
+                        <li><b>YouTube:</b> <a href="https://www.youtube.com/hexandcube" rel="me">Hexandcube</a>
+                        <li><b>Unsplash:</b> <a href="https://unsplash.com/@hexandcube" rel="me">@hexandcube</a>
+                        <li><b>Instagram:</b> <a href="https://www.instagram.com/hexandcube/" rel="me">@hexandcube</a>
+                        <li><b>Mozilla AMO:</b> <a href="https://addons.mozilla.org/en-US/firefox/user/14625252/" rel="me">Hexandcube</a>
                     </ul>
                     </li>
                 </div>
@@ -140,4 +138,15 @@
         </div>
     </section>
 </main>
+<script>
+    function copyToClipboard(element) {
+        let el = document.getElementById(element);
+        let orgText = el.innerText;
+        navigator.clipboard.writeText(orgText);
+        el.innerText = "Copied to Clipboard!";
+        setTimeout(function() {
+            el.innerText = orgText;
+        }, 2000);
+    }
+</script>
 {{ end }}
