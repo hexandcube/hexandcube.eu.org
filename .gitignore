@@ -2,6 +2,7 @@
 /resources
 node_modules
 .hugo_build.lock
+debug.log
 
 ## OS Files
 Thumbs.db
