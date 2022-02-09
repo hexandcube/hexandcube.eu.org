@@ -58,17 +58,19 @@
     }
 
     // Automaticly apply theme on load
-
-    if (localStorage.getItem('theme') === 'dark') {
-        setTheme('dark');
-    } else if (localStorage.getItem('theme') === 'light') {
-        setTheme('light');
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        setTheme('dark');
-    } else {
-        setTheme('light');
+    function checkTheme(){
+        if (localStorage.getItem('theme') === 'dark') {
+            setTheme('dark');
+        } else if (localStorage.getItem('theme') === 'light') {
+            setTheme('light');
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
     }
 
+    checkTheme();
 
     // Set the theme of the Utterances comment widget
     addEventListener('message', event => {
