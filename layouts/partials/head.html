@@ -37,3 +37,49 @@
 <meta name="msapplication-config" content="/icons/browserconfig.xml">
 <meta name="theme-color" content="#fb8b55">
 <link href="https://hexandcube.eu.org/.well-known/hexandcube.asc" rel="pgpkey authn">
+
+<!-- Theme switcher -->
+<script>
+    function setTheme(themeName) {
+        localStorage.setItem('theme', themeName);
+        document.documentElement.className = themeName;
+        themeToggle = document.getElementById("theme-toggle-label");
+        if (themeName === 'dark') {
+            themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>'
+        } else themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>'
+    }
+
+    function toggleTheme() {
+        if (localStorage.getItem('theme') === 'light') {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
+    }
+
+    // Automaticly apply theme on load
+
+    if (localStorage.getItem('theme') === 'dark') {
+        setTheme('dark');
+    } else if (localStorage.getItem('theme') === 'light') {
+        setTheme('light');
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark');
+    } else {
+        setTheme('light');
+    }
+
+
+    // Set the theme of the Utterances comment widget
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+        if (localStorage.getItem('theme') === 'dark') {
+            const message = {
+                type: 'set-theme',
+                theme: 'photon-dark'
+            };
+            const utterances = document.querySelector('iframe').contentWindow;
+            utterances.postMessage(message, 'https://utteranc.es');
+        }
+    });
+</script>
