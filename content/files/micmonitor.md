@@ -55,13 +55,6 @@ Microphone icon by [Icons8](https://icons8.com/).
 
 ### Install using Chocolatey
 
-<div class="p-5 mb-4 bg-blue-500 text-yellow-900 rounded-xl">
-<b><i class="fas fa-info-circle"></i> Note</b>
-<div>
-As of 2022-01-29 the package is still awaiting approval from the moderators on Chocolatey and is not available for installation.
-</div>
-</div>
-
 ```powershell
 choco install micmonitor
 ```
