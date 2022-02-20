@@ -4,9 +4,9 @@ lastmod: 2022-01-13
 description: Hexandcube's Policy for interacting with Twitter users
 --- 
 
-# Public Tweets
+# Tweets
 
-- If you want to share any original content from my account (such as a photo or video), please make sure to link to the original Tweet.
+- If I ever say something stupid or incorrect, please politly correct me.
 - You're not allowed to use any of my content for commercial purposes without my permission.
 
 # Direct Messages
@@ -40,8 +40,9 @@ If you think I've blocked you by accident, please [let me know](/contact).
 - Spread disinformation- Information confirmed to be not true by scientific consensus
 - Spread theories (theses) as facts without providing scientific proofs
 - Are a part of known dangerous organizations and hate groups
-- Religiously support NFTs (Non-Fungible Tokens), [**proof of work**](https://en.wikipedia.org/wiki/Proof_of_work) cryptocurrencies (e.g. Bitcoin, Ethereum, etc.) and cryptocurrency mining
 - Promote or endorse, products or services for profit without clearly declaring the advertisement
 - Send unsolicited DM's (Direct Messages)
 - Impersonate another individual or oraganization
-- Posts Tweets with hashtags that are not related to the content of the Tweet
+- Post Tweets with hashtags that are not related to the content of the Tweet
+- Have an NFT profile picture or .eth in display name
+- Promote scams
