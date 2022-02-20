@@ -18,7 +18,7 @@ If you want to send me a DM on Twitter, please:
 
 &nbsp;
 
-If your behavior is suspicious, I may want to verify your identity using [cryptographic  proofs](http://localhost:1313/.well-known/profile.txt), DNS proofs, Web server access proofs, email proofs, etc. to make sure I'm talking
+If your behavior is suspicious, I may want to verify your identity using [cryptographic  proofs](/.well-known/profile.txt), DNS proofs, Web server access proofs, email proofs, etc. to make sure I'm talking
 to the person you're claiming to be.
 
 # Blocking
