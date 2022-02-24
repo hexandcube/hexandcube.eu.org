@@ -46,3 +46,8 @@ If you think I've blocked you by accident, please [let me know](/contact).
 - Post Tweets with hashtags that are not related to the content of the Tweet
 - Have an NFT profile picture or .eth in display name
 - Promote scams
+- **Support Russia's current actions against Ukraine**
+
+&nbsp;
+
+**People who support Russia's actions and/or post Russian propaganda will get reported!**
