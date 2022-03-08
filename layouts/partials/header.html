@@ -9,10 +9,6 @@
                 <input type="checkbox" class="hidden" id="theme-toggle" />
             </label>
         </div>
-        <div id="olvy-target"
-            class="px-2 ml-2 py-1 md:mt-3 font-bold align-middle rounded-md hover:bg-light-200 dark:hover:bg-dark-200 text-black dark:text-white inline-block">
-            <i class="fa-solid fa-bell"></i>
-        </div>
         <div
             class="px-2 py-1 font-bold align-middle rounded-md hover:bg-light-200 dark:hover:bg-dark-200 text-black dark:text-white md:hidden inline-block"
             onclick="toggleNavbar()">
@@ -26,7 +22,7 @@
         {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
         {{ $active = or $active (eq .Name $current.Title) }}
         <a href="{{ .URL }}" class="md:inline-block uppercase block px-3 -ml-3 md:ml-0 py-1 mt-1 md:mt-0 align-middle rounded-md mx-1
-            {{ if $active }}bg-accent-100 hover:bg-accent-200 text-accent-600 font-bold
+            {{ if $active }}bg-accent-400-t text-accent-600 dark:text-accent-400 hover:text-white dark:hover:text-white hover:bg-accent-500 font-bold
             {{ else }}hover:bg-light-200 dark:hover:bg-dark-200 text-black dark:text-white{{end}}">
             <i class="fa-solid {{ .Pre }} mr-1"></i> {{ .Name }}</a>
         {{ end }}
