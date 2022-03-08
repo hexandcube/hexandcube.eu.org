@@ -121,7 +121,7 @@ h6,
     }
 
     a:not(.clean, .btn) {
-        @apply text-accent-600 dark:text-accent-400 hover:text-white dark:hover:text-white hover:bg-accent-500 px-0.5 rounded-sm;
+        @apply  border-b-2 border-accent-500 hover:text-white dark:hover:text-white hover:bg-accent-500 px-0.5 rounded-sm;
     }
 
     ul li {
