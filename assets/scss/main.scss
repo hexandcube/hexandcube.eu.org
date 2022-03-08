@@ -3,8 +3,16 @@
 @tailwind utilities;
 @import 'syntax.scss';
 
+.dark .footerlogo-dark {
+    display: none;
+}
+
+.light .footerlogo-light {
+    display: none;
+}
+
 * {
-    transition: 0.5s;
+    transition: 0.3s;
     scroll-behavior: smooth;
     text-rendering: geometricPrecision;
 }
@@ -46,18 +54,6 @@ div.text-block {
 
 section {
     @apply lg:py-16 sm:py-12 py-8 responsive;
-}
-
-.btn {
-    @apply border-2 border-transparent inline-block px-3 py-1 text-accent-500 hover:text-accent-700 hover:bg-accent-100 cursor-pointer rounded-md mr-1 my-1;
-}
-
-.btn-primary {
-    @apply border-2 border-transparent bg-accent-100 text-accent-800 hover:bg-accent-200 hover:text-accent-900;
-}
-
-.btn-secondary {
-    @apply border-2 border-accent-500 hover:border-accent-900 hover:bg-accent-200 hover:text-accent-900;
 }
 
 code {
@@ -125,7 +121,7 @@ h6,
     }
 
     a:not(.clean, .btn) {
-        @apply text-accent-500 dark:text-accent-300 hover:text-accent-700 dark:hover:text-accent-700 hover:bg-accent-100 px-0.5;
+        @apply text-accent-600 dark:text-accent-400 hover:text-white dark:hover:text-white hover:bg-accent-500 px-0.5 rounded-sm;
     }
 
     ul li {
@@ -149,9 +145,21 @@ h6,
     }
 }
 
+.btn {
+    @apply border-2 border-transparent inline-block px-3 py-1 text-accent-600 dark:text-accent-400 hover:text-white dark:hover:text-white hover:bg-accent-500 cursor-pointer rounded-md mr-1 my-1 font-bold;
+}
+
+.btn-primary {
+    @apply border-2 border-transparent bg-accent-400-t text-accent-600 dark:text-accent-400 hover:text-white dark:hover:text-white hover:bg-accent-500;
+}
+
+.btn-secondary {
+    @apply border-2 dark:border-accent-400 border-accent-600 text-accent-600 dark:text-accent-400 hover:text-white dark:hover:text-white hover:bg-accent-500;
+}
+
 .highlighted {
     display: inline-block;
-    text-decoration: underline solid 6px #fb8a56;
+    text-decoration: underline solid 6px #f15a25;
 }
 
 .page-item::before {
