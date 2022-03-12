@@ -58,6 +58,7 @@
         if (themeName === 'dark') {
             themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>'
         } else themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>'
+        changeGiscusTheme();
     }
 
     function toggleTheme() {
@@ -79,20 +80,28 @@
         } else {
             setTheme('light');
         }
+        changeGiscusTheme();
+    }
+
+    function changeGiscusTheme () {
+        if (localStorage.getItem('theme') === 'dark') {
+            theme = "dark_dimmed";
+        } else {
+            theme = "light";
+        }
+
+        function sendMessage(message) {
+            const iframe = document.querySelector('iframe.giscus-frame');
+            if (!iframe) return;
+            iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+
+        sendMessage({
+            setConfig: {
+                theme: theme
+            }
+        });
     }
 
     checkTheme();
-
-    // Set the theme of the Utterances comment widget
-    addEventListener('message', event => {
-        if (event.origin !== 'https://utteranc.es') return;
-        if (localStorage.getItem('theme') === 'dark') {
-            const message = {
-                type: 'set-theme',
-                theme: 'photon-dark'
-            };
-            const utterances = document.querySelector('iframe').contentWindow;
-            utterances.postMessage(message, 'https://utteranc.es');
-        }
-    });
 </script>
