@@ -1,30 +1,25 @@
-const colors = require('tailwindcss/colors')
-
 module.exports = {
-  purge: {
-    enabled: true,
-    content: [
-      'layouts/**/*.html',
-      'content/**/*.html',
-      'content/**/*.md'
-    ],
-  },
+  content: [
+    'layouts/**/*.html',
+    'content/**/*.html',
+    'content/**/*.md'
+  ],
   darkMode: 'class',
   theme: {
     extend: {
       colors: {
         'light': {
-            DEFAULT: '#6C88AD',
-            '50': '#f0f6fc',
-            '100': '#e6edf5',
-            '200': '#CED8E4',
-            '300': '#ADBDD2',
-            '400': '#8DA3BF',
-            '500': '#6C88AD',
-            '600': '#526E94',
-            '700': '#405673',
-            '800': '#2E3D52',
-            '900': '#1C2531'
+          DEFAULT: '#6C88AD',
+          '50': '#f0f6fc',
+          '100': '#e6edf5',
+          '200': '#CED8E4',
+          '300': '#ADBDD2',
+          '400': '#8DA3BF',
+          '500': '#6C88AD',
+          '600': '#526E94',
+          '700': '#405673',
+          '800': '#2E3D52',
+          '900': '#1C2531'
         },
         'dark': {
           DEFAULT: '#14171A',
@@ -42,7 +37,7 @@ module.exports = {
         'accent': {
           DEFAULT: '#F15A25',
           '400-t': '#F3704222',
-          '50':  '#F9BCA6',
+          '50': '#F9BCA6',
           '100': '#F8B198',
           '200': '#F79B7B',
           '300': '#F5865F',
@@ -53,6 +48,7 @@ module.exports = {
           '800': '#922D09',
           '900': '#6C2107'
         },
+        current: 'currentColor',
       },
       screens: {
         '3xl': '1750px'
