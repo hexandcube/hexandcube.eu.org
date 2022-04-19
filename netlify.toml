@@ -3,28 +3,14 @@
     publish = "public"
 
 [dev]
+    framework = "hugo"
     command = "hugo server"
-
-[[plugins]]
-    package = "netlify-plugin-image-optim"
 
 [[plugins]]
     package = "netlify-plugin-submit-sitemap"
     [plugins.inputs]
-        baseUrl = "https://hexandcube.tk"
+        baseUrl = "https://hexandcube.eu.org"
         sitemapPath = "/sitemap.xml"
-
-[[redirects]]
-    from = "https://hexandcube.tk/*"
-    to = "https://hexandcube.eu.org/:splat"
-    status = 301
-    force = true
-
-[[redirects]]
-    from = "http://hexandcube.tk/*"
-    to = "http://hexandcube.eu.org/:splat"
-    status = 301
-    force = true
 
 [[redirects]]
     from = "/*"
