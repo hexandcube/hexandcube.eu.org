@@ -121,7 +121,7 @@ h6,
     }
 
     a:not(.clean, .btn) {
-        @apply  border-b-2 border-accent-500 hover:text-white dark:hover:text-white hover:bg-accent-500 px-0.5 rounded-sm;
+        @apply decoration-accent-500 decoration-2 underline underline-offset-2 hover:text-white dark:hover:text-white hover:bg-accent-500 px-0.5 rounded-sm;
     }
 
     ul li {
@@ -146,15 +146,26 @@ h6,
 }
 
 .btn {
-    @apply border-2 border-transparent inline-block px-3 py-1 text-accent-600 dark:text-accent-400 hover:text-white dark:hover:text-white hover:bg-accent-500 cursor-pointer rounded-md mr-1 my-1 font-bold;
+    @apply border-2 border-transparent inline-block px-4 py-2 text-accent-500 hover:bg-accent-600 hover:text-white hover:shadow-lg hover:shadow-accent-600/20 cursor-pointer rounded-3xl mr-1 my-1 font-bold;
 }
 
 .btn-primary {
-    @apply border-2 border-transparent bg-accent-400-t text-accent-600 dark:text-accent-400 hover:text-white dark:hover:text-white hover:bg-accent-500;
+    @apply border-2 border-transparent bg-accent-500 hover:bg-accent-600 shadow-lg shadow-accent-500/30 hover:shadow-accent-600/30 text-white;
 }
 
 .btn-secondary {
-    @apply border-2 dark:border-accent-400 border-accent-600 text-accent-600 dark:text-accent-400 hover:text-white dark:hover:text-white hover:bg-accent-500;
+    @apply border-2 border-accent-500 text-accent-500 hover:text-white hover:bg-accent-500 shadow-sm shadow-accent-500/30;
+}
+
+.btn-circle {
+    line-height: 18px !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    @apply rounded-full;
+}
+
+.underlined-children {
+    @apply decoration-accent-500 decoration-2 underline underline-offset-2;
 }
 
 .highlighted {
