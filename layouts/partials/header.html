@@ -9,8 +9,7 @@
                 <input type="checkbox" class="hidden" id="theme-toggle" />
             </label>
         </div>
-        <div
-            class="px-2 py-1 font-bold align-middle rounded-md hover:bg-light-200 dark:hover:bg-dark-200 text-black dark:text-white md:hidden inline-block"
+        <div class="px-2 py-1 font-bold align-middle rounded-md hover:bg-light-200 dark:hover:bg-dark-200 text-black dark:text-white md:hidden inline-block"
             onclick="toggleNavbar()">
             <i class="fa-solid fa-bars"></i>
         </div>
@@ -31,6 +30,7 @@
 
 <script>
     var nav = document.getElementById('navbar');
+
     function toggleNavbar() {
         if (navbar.classList.contains('hidden')) {
             navbar.classList.remove('hidden');

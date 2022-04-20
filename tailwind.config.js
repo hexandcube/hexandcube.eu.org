@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         'light': {
           DEFAULT: '#6C88AD',
-          '50': '#f0f6fc',
+          '50': '#f6f8fa',
           '100': '#e6edf5',
           '200': '#CED8E4',
           '300': '#ADBDD2',
