@@ -150,7 +150,7 @@ h6,
 }
 
 .btn-primary {
-    @apply border-2 border-transparent bg-accent-500 hover:bg-accent-600 shadow-lg shadow-accent-500/30 hover:shadow-accent-600/30 text-white;
+    @apply border-2 border-transparent bg-accent-500 hover:bg-accent-600 shadow-sm shadow-accent-500/30 hover:shadow-accent-600/30 text-white;
 }
 
 .btn-secondary {
@@ -186,4 +186,12 @@ h6,
 
 .utterances {
     max-width: 100%;
+}
+
+.image-card {
+    border-radius: 1.75rem !important;
+}
+
+.image-card:hover {
+    border-radius: 0.75rem !important;
 }

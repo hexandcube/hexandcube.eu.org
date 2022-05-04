@@ -8,10 +8,10 @@
     <section class="responsive py-8 grid gird-cols-1 sm:grid-cols-2 xl:grid-cols-3">
         {{ $paginator := .Paginate (sort .Pages "Params.id" "desc" ) }}
             {{ range $paginator.Pages }}
-                <div class="p-2 transform hover:translate-y-1 cursor-pointer">
+                <div class="p-2 cursor-pointer">
                     <a href="{{ .RelPermalink }}">
                         <img itemprop="contentUrl" src="https://files.hexandcube.eu.org/wallpapers/thumbnails/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
-                            class="rounded-xl shadow-xl hover:shadow-none" alt="{{ .Title }}">
+                            class="image-card shadow-xl hover:shadow-none" alt="{{ .Title }}">
                     </a>
                     <div class="grid grid-cols-5">
                         <div class="col-span-4 leading-default">

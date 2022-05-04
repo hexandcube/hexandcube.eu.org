@@ -7,7 +7,7 @@
         {{ end }}
     </section>
     <section
-        class="bg-light-50 dark:bg-dark-400 responsive py-4 grid {{ if .Params.Variant }}md:grid-cols-5{{ else }}md:grid-cols-4{{ end }} gap-x-2 gap-y-1">
+        class="bg-light-50 dark:bg-dark-400 responsive py-4 grid {{ if .Params.Variant }}md:grid-cols-5{{ else }}md:columns-4{{ end }} gap-x-2 gap-y-1">
         {{ with .Params.resolution }}
         <div class="leading-default">
             Resolution: <br class="hidden md:block"><b class="text-black dark:text-white">{{ . }}</b>
