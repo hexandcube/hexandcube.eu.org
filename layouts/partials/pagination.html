@@ -5,9 +5,9 @@
 <div role="navigation" class="text-center mt-12">
     <div>
         <div
-            class="inline-block px-2 py-1 leading-default rounded m-1 hover:shadow-none hover:bg-accent-50
+            class="inline-block px-2 py-1 leading-default rounded m-1 hover:shadow-none hover:bg-light
             {{ if $paginator.HasPrev }}bg-gray-200 dark:bg-gray-700 shadow transform hover:translate-y-1
-            hover:bg-accent-50 cursor-pointer{{ else }}pointer-events-none bg-transparent{{ end }}">
+            hover:bg-light cursor-pointer{{ else }}pointer-events-none bg-transparent{{ end }}">
             <a href="{{ if $paginator.HasPrev }}{{ $paginator.Prev.URL }}{{ end }}">
                 Prev
             </a>
@@ -16,8 +16,8 @@
         {{ range $paginator.Pagers }}
         <div
             class="inline-block bg-gray-200 px-2 py-1 leading-default rounded shadow hover:shadow-none m-1
-            hover:bg-accent-50 dark:hover:bg-accent-500 transform hover:translate-y-1 cursor-pointer dark:bg-gray-700{{ if eq . $paginator }}font-bold
-            bg-accent-100 dark:bg-accent-700{{ end }}">
+            hover:bg-light dark:hover:bg-primary transform hover:translate-y-1 cursor-pointer dark:bg-gray-700{{ if eq . $paginator }}font-bold
+            bg-primary-100 dark:bg-primary-700{{ end }}">
             <a href="{{ .URL }}">
                 {{ .PageNumber }}
             </a>
@@ -27,7 +27,7 @@
 
         <div
             class="inline-block px-2 py-1 leading-default rounded m-1
-            hover:shadow-none hover:bg-accent-50 transform hover:translate-y-1 {{ if $paginator.HasNext }}bg-gray-200
+            hover:shadow-none hover:bg-light transform hover:translate-y-1 {{ if $paginator.HasNext }}bg-gray-200
             dark:bg-gray-700 shadow cursor-pointer{{ else }}pointer-events-none bg-transparent{{ end }}">
             <a href="{{ if $paginator.HasNext }}{{ $paginator.Next.URL }}{{ end }}">
                 Next

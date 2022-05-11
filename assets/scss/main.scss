@@ -7,7 +7,7 @@
     display: none;
 }
 
-.light .footerlogo-light {
+.light .footerlogo-primary {
     display: none;
 }
 
@@ -57,11 +57,11 @@ section {
 }
 
 code {
-    @apply bg-light-50 dark:bg-dark-200 font-mono px-2 rounded-md;
+    @apply bg-light dark:bg-dark font-mono px-2 rounded-md;
 }
 
 pre {
-    @apply bg-light-50 dark:bg-dark-200 font-mono p-3 rounded-lg overflow-x-scroll;
+    @apply bg-light dark:bg-dark font-mono p-3 rounded-lg overflow-x-scroll;
 }
 
 pre > code {
@@ -74,37 +74,37 @@ pre > code {
 
 p,
 div {
-    @apply text-light-800 dark:text-gray-300 sm:text-lg text-base leading-tight;
+    @apply text-dark-400 dark:text-gray-300 sm:text-lg text-base leading-tight;
 }
 
 h1,
 .title-1 {
-    @apply xl:text-6xl sm:text-5xl text-5xl font-brand font-bold leading-tight text-black dark:text-white;
+    @apply xl:text-6xl sm:text-5xl text-5xl font-brand font-bold leading-tight text-dark-500 dark:text-white;
 }
 
 h2,
 .title-2 {
-    @apply xl:text-5xl sm:text-4xl text-3xl font-brand font-bold leading-8 text-black dark:text-white;
+    @apply xl:text-5xl sm:text-4xl text-3xl font-brand font-bold leading-8 text-dark-500 dark:text-white;
 }
 
 h3,
 .title-3 {
-    @apply xl:text-4xl sm:text-3xl text-2xl font-brand font-bold leading-8 text-black dark:text-white;
+    @apply xl:text-4xl sm:text-3xl text-2xl font-brand font-bold leading-8 text-dark-500 dark:text-white;
 }
 
 h4,
 .title-4 {
-    @apply xl:text-4xl sm:text-3xl text-2xl -ml-1px font-bold leading-7 text-black dark:text-white;
+    @apply xl:text-4xl sm:text-3xl text-2xl -ml-1px font-bold leading-7 text-dark-500 dark:text-white;
 }
 
 h5,
 .title-5 {
-    @apply xl:text-3xl sm:text-2xl text-xl -ml-1px font-bold leading-7 text-black dark:text-white;
+    @apply xl:text-3xl sm:text-2xl text-xl -ml-1px font-bold leading-7 text-dark-500 dark:text-white;
 }
 
 h6,
 .title-6 {
-    @apply xl:text-2xl sm:text-xl text-lg -ml-1px font-bold leading-6 text-black dark:text-white;
+    @apply xl:text-2xl sm:text-xl text-lg -ml-1px font-bold leading-6 text-dark-500 dark:text-white;
 }
 
 .content {
@@ -121,7 +121,7 @@ h6,
     }
 
     a:not(.clean, .btn) {
-        @apply decoration-accent-500 decoration-2 underline underline-offset-2 hover:text-white dark:hover:text-white hover:bg-accent-500 px-0.5 rounded-sm;
+        @apply decoration-primary decoration-2 underline underline-offset-2 hover:text-white dark:hover:text-white hover:bg-primary px-0.5 rounded-sm;
     }
 
     ul li {
@@ -146,15 +146,15 @@ h6,
 }
 
 .btn {
-    @apply border-2 border-transparent inline-block px-4 py-2 text-accent-500 hover:bg-accent-600 hover:text-white hover:shadow-lg hover:shadow-accent-600/20 cursor-pointer rounded-3xl mr-1 my-1 font-bold;
+    @apply border-2 border-transparent inline-block px-4 py-2 text-primary hover:bg-primary-600 hover:text-white hover:shadow-lg hover:shadow-primary-600/20 cursor-pointer rounded-3xl mr-1 my-1 font-bold;
 }
 
 .btn-primary {
-    @apply border-2 border-transparent bg-accent-500 hover:bg-accent-600 shadow-sm shadow-accent-500/30 hover:shadow-accent-600/30 text-white;
+    @apply border-2 border-transparent bg-primary hover:bg-primary-600 shadow-sm shadow-primary/30 hover:shadow-primary-600/30 text-white;
 }
 
 .btn-secondary {
-    @apply border-2 border-accent-500 text-accent-500 hover:text-white hover:bg-accent-500 shadow-sm shadow-accent-500/30;
+    @apply border-2 border-primary text-primary hover:text-white hover:bg-primary shadow-sm shadow-primary/30;
 }
 
 .btn-circle {
@@ -165,7 +165,7 @@ h6,
 }
 
 .underlined-children {
-    @apply decoration-accent-500 decoration-2 underline underline-offset-2;
+    @apply decoration-primary decoration-2 underline underline-offset-2;
 }
 
 .highlighted {
@@ -194,4 +194,10 @@ h6,
 
 .image-card:hover {
     border-radius: 0.75rem !important;
+}
+
+.svg-fox-path {
+    fill: none;
+    @apply stroke-primary-600 dark:stroke-primary;
+    stroke-width: 5px;
 }

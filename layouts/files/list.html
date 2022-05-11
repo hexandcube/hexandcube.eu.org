@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-    <section class="bg-light-100 dark:bg-dark-500 responsive py-16">
+    <section class="bg-primary-100 dark:bg-dark-500 responsive py-16">
         <h1 class="highlighted">Files</h1>
         <p class="mt-5">Here you can find all files published by Hexandcube.</p>
     </section>
@@ -9,12 +9,12 @@
         <div class="p-2 transform hover:translate-y-1 hover:translate-x-1 cursor-pointer">
             <a href="{{ .RelPermalink }}">
                 <div
-                    class="rounded-xl shadow-lg hover:shadow-sm aspect-w-1 aspect-h-1 {{ if not (.Params.Image) }}bg-accent-100{{ else if .Params.ImageBg }}bg-accent-100{{ end }}">
+                    class="rounded-xl shadow-lg hover:shadow-sm aspect-w-1 aspect-h-1 {{ if not (.Params.Image) }}bg-primary-100{{ else if .Params.ImageBg }}bg-primary-100{{ end }}">
                     {{ if .Params.Image }}
                         <img src="{{ .Params.Image }}" class="rounded-xl" alt="{{ .Title }}">
                     {{ else }}
                         <div class="flex items-center justify-center w-full h-full">
-                            <i class="{{ .Params.Icon }} text-6xl md:text-8xl text-accent-600"></i>
+                            <i class="{{ .Params.Icon }} text-6xl md:text-8xl text-primary-600"></i>
                         </div>
                     {{end}}
                 </div>

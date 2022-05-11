@@ -1,13 +1,13 @@
 {{ define "main" }}
 <main>
-    <section class="bg-light-100 dark:bg-dark-500 responsive py-8 md:py-14">
+    <section class="bg-primary-100 dark:bg-dark-500 responsive py-8 md:py-14">
         <h1 class="highlighted">{{ .Title }}</h1>
         {{ with .Description}}
         <p class="mt-5">{{ . }}</p>
         {{ end }}
     </section>
     <section
-        class="bg-light-50 dark:bg-dark-400 responsive py-4 grid {{ if .Params.Variant }}md:grid-cols-5{{ else }}md:columns-4{{ end }} gap-x-2 gap-y-1">
+        class="bg-light dark:bg-dark-400 responsive py-4 grid {{ if .Params.Variant }}md:grid-cols-5{{ else }}md:columns-4{{ end }} gap-x-2 gap-y-1">
         {{ with .Params.resolution }}
         <div class="leading-default">
             Resolution: <br class="hidden md:block"><b class="text-black dark:text-white">{{ . }}</b>
