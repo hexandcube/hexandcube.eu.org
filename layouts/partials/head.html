@@ -21,23 +21,15 @@
 
 <title>{{ with .Page.Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
 
-<!-- {{ $styles := resources.Get "scss/main.scss" | toCSS | postCSS }}
+{{ $styles := resources.Get "scss/main.scss" | toCSS | postCSS }}
 
 {{ if .Site.IsServer }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
-{{ else }}
-{{ $styles := $styles | minify | resources.PostProcess }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" async/>
-{{ end }} -->
-
-{{ $styles := resources.Get "scss/main.scss" }}
-{{ $styles = $styles | resources.PostCSS }}
-{{ if hugo.IsProduction }}
-    {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
-{{ else }}
     {{ $styles = $styles | resources.ExecuteAsTemplate (printf "scss/main.dev.%v.css" now.UnixMilli) .}}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
+{{ else }}
+    {{ $styles := $styles | minify | resources.PostProcess }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" async/>
 {{ end }}
-<link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
 
 <link rel="stylesheet" href="/fonts/font-awesome/css/all.min.css" defer>
 <link rel="stylesheet" href="/fonts/mont/mont.css" async>
