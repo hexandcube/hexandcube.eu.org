@@ -1,32 +1,33 @@
 {{ define "main" }}
 <main>
-    <section class="bg-light-100 dark:bg-dark-500 responsive py-8 md:py-14">
-        <h1 class="highlighted">{{ .Title }}</h1>
+    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-8 md:py-14">
+        <h1 class="accentline">{{ .Title }}</h1>
         {{ with .Description}}
         <p class="mt-5">{{ . }}</p>
         {{ end }}
     </section>
     <section
-        class="bg-light-50 dark:bg-dark-400 responsive py-4 grid {{ if .Params.Variant }}md:grid-cols-5{{ else }}md:columns-4{{ end }} gap-x-2 gap-y-1">
+        class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-4 grid sticky top-0
+        {{ if .Params.Variant }}md:grid-cols-5{{ else }}md:columns-4{{ end }} gap-x-2 gap-y-1">
         {{ with .Params.resolution }}
-        <div class="leading-default">
-            Resolution: <br class="hidden md:block"><b class="text-black dark:text-white">{{ . }}</b>
+        <div class="leading-default text-light-grey dark:text-dark-grey">
+            Resolution: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text">{{ . }}</b>
         </div>
         {{ end }}
         {{ with .Params.Variant }}
-        <div class="leading-default">
-            Variant: <br class="hidden md:block"><b class="text-black dark:text-white capitalize">{{ . }}</b>
+        <div class="leading-default text-light-grey dark:text-dark-grey">
+            Variant: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text capitalize">{{ . }}</b>
         </div>
         {{ end }}
-        <div class="leading-default">
+        <div class="leading-default text-light-grey dark:text-dark-grey">
             License: <br class="hidden md:block"><a itemprop="license"
-                href="https://creativecommons.org/licenses/by-sa/4.0/" class="text-black dark:text-white"><b>CC BY-SA
+                href="https://creativecommons.org/licenses/by-sa/4.0/" class="text-light-text dark:text-dark-text"><b>CC BY-SA
                     4.0</b></a>
         </div>
-        <div class="leading-default">
-            Author: <br class="hidden md:block"><b class="text-black dark:text-white">Hexandcube</b>
+        <div class="leading-default text-light-grey dark:text-dark-grey">
+            Author: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text">Hexandcube</b>
         </div>
-        <div class="leading-default md:text-right md:mt-1">
+        <div class="leading-default text-light-grey dark:text-dark-grey md:text-right md:mt-1">
             <a href="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
                 class="btn btn-primary"><i class="fa-solid fa-download"></i> Download</a>
         </div>

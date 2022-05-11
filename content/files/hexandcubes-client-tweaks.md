@@ -43,14 +43,14 @@ versions:
 - Minimap with waypoints
 - Crafting and inventory tweaks
 - Sound Muffler
-- Light Overlay (F7)
+- tempcolor Overlay (F7)
 - and more
 
 This pack works on the client side so should work with Vanilla Multiplayer servers
 
 #### Mod list
 
--  Light Overlay (Rift/Forge/Fabric) (by shedaniel)
+-  tempcolor Overlay (Rift/Forge/Fabric) (by shedaniel)
 -  FancyMenu [Forge] (by Keksuccino)
 -  Architectury API (Forge) (by shedaniel)
 -  AppleSkin (by squeek502)

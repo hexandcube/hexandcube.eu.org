@@ -1,11 +1,37 @@
 @font-face {
-    font-family: 'Hexandcube Icon';
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    src: url('hexandcube-icon.woff') format("woff");
+  font-family: 'Hexandcube Icon';
+  src:  url('/fonts/hexandcube-icon/hexandcube-icon.eot?v1');
+  src:  url('/fonts/hexandcube-icon/hexandcube-icon.eot?v1#iefix') format('embedded-opentype'),
+    url('/fonts/hexandcube-icon/hexandcube-icon.ttf?v1') format('truetype'),
+    url('/fonts/hexandcube-icon/hexandcube-icon.woff?v1') format('woff'),
+    url('/fonts/hexandcube-icon/hexandcube-icon.svg?v1#hexandcube-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
-.hexandcube-icon {
-    font-family: 'Hexandcube Icon' !important;
+[class^="hexandcube"], [class*=" hexandcube"] {
+  font-family: 'Hexandcube Icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hexandcubeicon:before {
+  content: "\e900";
 }

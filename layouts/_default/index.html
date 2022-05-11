@@ -1,11 +1,11 @@
 {{ define "main" }}
 <main>
-    <section class="bg-light-100 dark:bg-dark-500 lg:pt-16 md:py-4 py-12 md:pb-0">
+    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg lg:pt-16 md:py-4 py-12 md:pb-0">
         <div class="md:grid md:grid-cols-2 dark:text-white">
             <div class="text-left md:pt-16">
                 <h1 class="title-2 font-brand leading-10">
                     Nice to meet you,<br class="mb-1">
-                    I'm <span class="inline-block p-1 bg-accent-500 text-white rounded">hexandcube</span>.
+                    I'm <span class="inline-block p-1 bg-accent-500 text-white rounded-xl">hexandcube</span>.
                 </h1>
                 <div class="title-6">I'm a hobby web developer from Poland.</div>
             </div>
@@ -16,7 +16,7 @@
                         <style>
                             .svg-fox-path {
                                 fill: none;
-                                stroke: #F5865F;
+                                stroke: #F15A25;
                                 stroke-width: 5px;
                             }
                         </style>
@@ -60,33 +60,49 @@
     <section class="content">
         {{ .Content }}
         <div class="mb-10">
-            <div class="title-2 highlighted mb-5">Projects</div>
+            <div class="title-2 accentline mb-5">Projects</div>
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 gap-y-5">
-                <a href="https://inkonfig.hexandcube.eu.org" class="clean block p-5 rounded-xl shadow-md hover:shadow-sm cursor-pointer bg-light-100 dark:bg-dark-200 transform hover:translate-y-1">
+                <a href="https://inkonfig.hexandcube.eu.org" class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2 border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg">
                     <div class="grid grid-cols-10">
                         <div class="title-3 inline-block my-2 col-span-9">Inkonfig</div>
-                        <div class="col-span-1">
-                            <i class="fa-solid fa-arrow-right float-right text-2xl mt-2"></i>
+                        <div class="col-span-1 w-full">
+                            <div class="relative w-12 h-12 float-right">
+                                <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="clover">
+                                    <path d="M.887 14.467C-2.845 5.875 5.875-2.845 14.467.887l1.42.617a10.323 10.323 0 0 0 8.225 0l1.42-.617c8.593-3.732 17.313 4.988 13.581 13.58l-.617 1.42a10.323 10.323 0 0 0 0 8.225l.617 1.42c3.732 8.593-4.989 17.313-13.58 13.581l-1.42-.617a10.323 10.323 0 0 0-8.225 0l-1.42.617C5.874 42.845-2.846 34.125.886 25.533l.617-1.42a10.323 10.323 0 0 0 0-8.225l-.617-1.42Z"></path>
+                                    <i class="fa-solid fa-arrow-right text-2xl absolute top-[0.8rem] right-[0.8rem] text-light-secondary-text dark:text-dark-secondary-text"></i>
+                                </svg>
+                            </div>
                         </div>
                     </div>
-                    <p>Windows configuration script generator - a web app that allows you generate a script that
+                    <p class="">Windows configuration script generator - a web app that allows you generate a script that
                             you can use on multiple Windows devices to configure them automatically.</p>
                 </a>
-                <a href="/files/desktop-icon-toggle" class="clean block p-5 rounded-xl shadow-lg hover:shadow-sm cursor-pointer bg-light-100 dark:bg-dark-200 transform hover:translate-y-1">
+                <a href="/files/desktop-icon-toggle"
+                    class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2 border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg">
                     <div class="grid grid-cols-10">
                         <div class="title-3 inline-block my-2 col-span-9">Desktop Icon Toggle</div>
-                        <div class="col-span-1">
-                            <i class="fa-solid fa-arrow-right float-right text-2xl mt-2"></i>
+                        <div class="col-span-1 w-full">
+                            <div class="relative w-12 h-12 float-right">
+                                <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="clover">
+                                    <path
+                                        d="M.887 14.467C-2.845 5.875 5.875-2.845 14.467.887l1.42.617a10.323 10.323 0 0 0 8.225 0l1.42-.617c8.593-3.732 17.313 4.988 13.581 13.58l-.617 1.42a10.323 10.323 0 0 0 0 8.225l.617 1.42c3.732 8.593-4.989 17.313-13.58 13.581l-1.42-.617a10.323 10.323 0 0 0-8.225 0l-1.42.617C5.874 42.845-2.846 34.125.886 25.533l.617-1.42a10.323 10.323 0 0 0 0-8.225l-.617-1.42Z">
+                                    </path>
+                                    <i
+                                        class="fa-solid fa-arrow-right text-2xl absolute top-[0.8rem] right-[0.8rem] text-light-secondary-text dark:text-dark-secondary-text"></i>
+                                </svg>
+                            </div>
                         </div>
                     </div>
-                    <p>A small Windows tool, that allows you to quickly toggle the visibility of desktop icons by double-clicking
-                        the blank space on the desktop.</p>
+                    <p class="">A small Windows tool, that allows you to quickly toggle the visibility of desktop icons
+                        by double-clicking the blank space on the desktop.</p>
                 </a>
             </div>
         </div>
         <div class="md:grid md:grid-cols-2">
             <div>
-                <div class="title-2 highlighted mb-3 mt-5">About me</div>
+                <div class="title-2 accentline mb-3 mt-5">About me</div>
                 <ul class="ml-3">
                     <li><b>Pronouns:</b> He/Him</li>
                     <li><b>Languages:</b> Polish, English</li>
@@ -95,7 +111,7 @@
                 </ul>
             </div>
             <div>
-                <div class="title-2 highlighted mb-3 mt-5">Contact</div>
+                <div class="title-2 accentline mb-3 mt-5">Contact</div>
                 <ul class="ml-3">
                     <li><b>Telegram:</b> <a href="https://t.me/hexandcube" rel="me">@hexandcube</a></li>
                     <li><b>Email:</b> <a href="mailto:hexandcube@hexandcube.eu.org">hexandcube@hexandcube.eu.org</a></li>
@@ -107,7 +123,7 @@
         <div class="md:mt-10">
             <div class="md:grid md:grid-cols-2">
                 <div>
-                    <div class="title-2 highlighted mb-3 mt-5">Contributions</div>
+                    <div class="title-2 accentline mb-3 mt-5">Contributions</div>
                     <ul class="ml-5">
                         <li><a href="https://discord.com">Discord</a> - Translation (2017 - 2018)</li>
                         <li><a href="https://novalauncher.com">Nova Launcher</a> - Translation (2017 - 2018)</li>
@@ -119,7 +135,7 @@
                     </ul>
                 </div>
                 <div class="mb-5">
-                    <div class="title-2 highlighted mb-3 mt-5">Profiles</div>
+                    <div class="title-2 accentline mb-3 mt-5">Profiles</div>
                     <ul class="ml-3">
                         <li><b>Twitter:</b> <a href="https://twitter.com/hexandcube" rel="me">@hexandcube</a></li>
                         <li><b>Fediverse:</b> <a href="https://mstdn.social/@hexandcube" rel="me">@hexandcube@mstdn.social</a></li>

@@ -1,8 +1,8 @@
 {{ define "main" }}
 <main>
     {{ if not ( .Params.HideTitlebar )}}
-    <section class="bg-light-100 dark:bg-dark-500 responsive py-8 md:py-14">
-        <h1 class="highlighted">{{ .Title }}</h1>
+    <section class="bg-tempcolor-100 dark:bg-tempcolor-500 responsive py-8 md:py-14">
+        <h1 class="accentline">{{ .Title }}</h1>
         {{ with .Description}}
         <p class="mt-5">{{ . }}</p>
         {{ end }}
@@ -10,7 +10,7 @@
     </section>
     {{ if not ( .Params.HideMetabar)}}
     {{ if or ( .PublishDate ) ( .Lastmod ) ( .Params.Author ) }}
-    <section class="bg-light-50 dark:bg-dark-400 responsive py-4 grid md:grid-cols-4 xl:grid-cols-5 gap-x-3 gap-y-1">
+    <section class="bg-tempcolor-50 dark:bg-tempcolor-400 responsive py-4 grid md:grid-cols-4 xl:grid-cols-5 gap-x-3 gap-y-1">
         {{ with .Params.Author }}
         <div class="leading-default">
             Author: <br class="hidden md:block"><b class="text-black dark:text-white">{{ . }}</b>

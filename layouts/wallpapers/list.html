@@ -1,17 +1,20 @@
 {{ define "main" }}
 <main>
-    <section class="bg-light-100 dark:bg-dark-500 responsive py-16">
-        <h1 class="highlighted">Wallpapers</h1>
-        <p class="mt-5">Here you can find some wallpapers that I've made for myself. All of them are available under the
+    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-16">
+        <h1 class="accentline">Wallpapers</h1>
+        <p class="mt-5">Here you can find some wallpapers that I've designed. All of them are available under the
             <a itemprop="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.</p>
     </section>
     <section class="responsive py-8 grid gird-cols-1 sm:grid-cols-2 xl:grid-cols-3">
         {{ $paginator := .Paginate (sort .Pages "Params.id" "desc" ) }}
             {{ range $paginator.Pages }}
-                <div class="p-2 cursor-pointer">
-                    <a href="{{ .RelPermalink }}">
+                <div class="p-2 cursor-pointer relative">
+                    <a href="{{ .RelPermalink }}" class="image-card-container">
                         <img itemprop="contentUrl" src="https://files.hexandcube.eu.org/wallpapers/thumbnails/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
                             class="image-card shadow-xl hover:shadow-none" alt="{{ .Title }}">
+                        <div class="absolute top-6 right-6 bg-light-secondary dark:bg-dark-secondary text-light-primary-text dark:text-dark-primary-text w-12 h-12 rounded-xl image-card-marker opacity-0">
+                            <i class="fa-solid fa-fw fa-magnifying-glass text-2xl absolute top-[0.65rem] right-[0.65rem] text-light-secondary-text dark:text-dark-secondary-text"></i>
+                        </div>
                     </a>
                     <div class="grid grid-cols-5">
                         <div class="col-span-4 leading-default">

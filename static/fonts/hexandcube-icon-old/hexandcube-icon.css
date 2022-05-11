@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Hexandcube Icon';
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    src: url('hexandcube-icon.woff') format("woff");
+}
+
+.hexandcube-icon {
+    font-family: 'Hexandcube Icon' !important;
+}
