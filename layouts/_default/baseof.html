@@ -3,7 +3,7 @@
 <head>
     {{ partial "head.html" . }}
 </head>
-<body class="bg-light dark:bg-dark-600 {{ if .Site.IsServer }}debug-screens{{ end }}">
+<body class="dark:bg-dark-300 {{ if .Site.IsServer }}debug-screens{{ end }}">
     <div class="wrapper">
         {{ partial "header.html" . }}
         {{ block "main" . }}{{ end }}
