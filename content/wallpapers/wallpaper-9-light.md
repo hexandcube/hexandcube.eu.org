@@ -1,8 +1,8 @@
 ---
-title: Wallpaper 9 tempcolor
+title: Wallpaper 9 Light
 description: Minimalistic blobs
 keyword: blobs, minimalistic, desktop, wallpaper, colorful
 id: 9
-variant: tempcolor
+variant: light
 resolution: 5120x2880
 ---

@@ -1,8 +1,8 @@
 ---
-title: Wallpaper 12 tempcolor
+title: Wallpaper 12 Dark
 description: Minimalistic mountains wallpaper
 keyword: mountains, landscape, desktop, wallpaper, minimalistic, mountain
 id: 12
-variant: tempcolor
+variant: dark
 resolution: 5120x2880
 ---
