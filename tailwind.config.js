@@ -49,7 +49,6 @@ module.exports = {
         },
         'accent': {
           DEFAULT:  '#F15A25',
-          '400-t':  '#F3704222',
           '50':     '#F9BCA6',
           '100':    '#F8B198',
           '200':    '#F79B7B',
@@ -81,7 +80,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      sans: "Roboto",
+      sans: "Open Sans",
       mono: "Space Mono",
       brand: "Mont",
       logo: "Hexandcube Icon"

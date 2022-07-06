@@ -1,17 +1,18 @@
 {{ define "main" }}
 <main>
-    <section class="bg-tempcolor-100 dark:bg-tempcolor-500 responsive py-16">
+    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-16">
         <h1 class="accentline">Posts</h1>
     </section>
     <section class="responsive py-8">
         {{ range (.Paginator 10).Pages }}
-        <div class="p-2 my-5 transform hover:translate-y-1 hover:translate-x-1 md:grid md:grid-cols-2">
+        <div class="cursor-pointer p-2 my-5 bg-light-secondary-bg dark:bg-dark-secondary-bg hover:bg-light-selection 
+        dark:hover:bg-dark-selection rounded-5xl md:grid md:grid-cols-2 hover:rounded-2xl post-card"
+        onClick="location.href = '{{ .Permalink }}'">
             <a href="{{ .RelPermalink }}">
-                {{ if .Params.Thumbnail }}
-                    <img class="rounded-2xl" src="{{ .Params.Thumbnail }}" alt="{{ .Title }}">
-                {{ else }}
-                    <img class="rounded-2xl" src="/img/opengraph.png" alt="{{ .Title }}">
-                {{ end }}
+
+                <img class="rounded-5xl post-card-image" src="{{ if .Params.Thumbnail }}{{ .Params.Thumbnail }}
+                {{ else }}/img/opengraph.png{{ end }}" alt="{{ .Title }}">
+                
             </a>
             <div class="mx-1 md:ml-10 mt-3 md:mt-0 my-2 items-center flex">
                 <a href="{{ .RelPermalink }}">

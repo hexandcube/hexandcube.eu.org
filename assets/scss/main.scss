@@ -121,11 +121,12 @@ h6,
     }
 
     a:not(.clean, .btn) {
-        @apply decoration-accent-500 decoration-2 underline underline-offset-2 hover:text-white dark:hover:text-white hover:bg-accent-500 px-0.5 rounded-sm;
+        @apply text-accent-600 dark:text-accent-500 hover:text-accent-900 dark:hover:text-accent-100 hover:underline hover:underline-offset-4 font-medium;
+        transition: all none;
     }
 
     ul li {
-        list-style-type: disc;
+        @apply list-disc;
     }
 
     ol li {
@@ -226,4 +227,8 @@ header {
 
 .image-card-container:hover .image-card-marker {
     opacity: 1 !important;
+}
+
+.post-card:hover .post-card-image {
+    @apply rounded-2xl;
 }

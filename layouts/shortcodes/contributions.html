@@ -1,0 +1,22 @@
+{{ range .Site.Data.contributions }}
+    <div class="grid grid-cols-2 py-2 border-b-2 border-solid border-light-border dark:border-dark-border">
+        <div>
+            <b><a href="{{ .link }}">{{ .name }}</a></b>
+        </div>
+        <div>
+            {{ .type }} ({{ .years }})
+        </div>
+    </div>
+{{ end }}
+
+<script>
+    function copyToClipboard(element) {
+        let el = document.getElementById(element);
+        let orgText = el.innerText;
+        navigator.clipboard.writeText(orgText);
+        el.innerText = "Copied to Clipboard!";
+        setTimeout(function() {
+            el.innerText = orgText;
+        }, 2000);
+    }
+</script>

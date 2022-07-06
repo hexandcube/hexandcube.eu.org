@@ -1,0 +1,52 @@
+{
+    "01": {
+        "name": "Twitter",
+        "username": "@hexandcube",
+        "link": "https://twitter.com/hexandcube"
+    },
+    "02": {
+        "name": "Telegram",
+        "username": "@hexandcube", 
+        "link": "https://t.me/hexandcube"
+    },
+    "03": {
+        "name": "Discord",
+        "username": "Hexandcube#1296",
+        "clipboard": true
+    },
+    "04": {
+        "name": "Matrix",
+        "username": "@hexandcube:matrix.org",
+        "link": "https://matrix.to/#/@hexandcube:matrix.org"
+    },
+    "05": {
+        "name": "Fediverse",
+        "username": "@hexandcube@mstdn.social",
+        "link": "https://mstdn.social/@hexandcube"
+    },
+    "06": {
+        "name": "Reddit",
+        "username": "u/hexandcube",
+        "link": "https://www.reddit.com/user/hexandcube"
+    },
+    "07": {
+        "name": "GitHub",
+        "username": "@hexandcube",
+        "link": "https://github.com/hexandcube"
+    },
+    "08": {
+        "name": "500px",
+        "username": "@hexandcube",
+        "link": "https://500px.com/p/hexandcube?view=photos"
+    },
+    "09": {
+        "name": "Unsplash",
+        "username": "@hexandcube",
+        "link": "https://unsplash.com/@hexandcube"
+    },
+    "10": {
+        "name": "Mozilla AMO",
+        "username": "Hexandcube",
+        "link": "https://addons.mozilla.org/en-US/firefox/user/14625252/"
+    }
+}

@@ -20,7 +20,7 @@ paginate = 18
 
 
 [params]
-  version = "10.0"
+  version = "10.1-dev"
   description = "Nice to meet you, I'm hexandcube. I'm a hobby web developer from Poland."
   keywords = "Hexandcube, Wallpapers, Files, Windows, Desktop, Tools, Software, Webdev, translation"
   JsonLd = '''
@@ -53,36 +53,31 @@ paginate = 18
 [menu]
 
   [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = -110
-    pre="fa-house"
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = -100
+    pre="fa-user"
 
   [[menu.main]]
     identifier = "posts"
     name = "Posts"
     url = "/posts/"
-    weight = -100
-    pre="fa-file-alt"
+    weight = -90
+    pre="fa-newspaper"
 
   [[menu.main]]
     identifier = "files"
     name = "Files"
     url = "/files/"
-    weight = -90
-    pre="fa-file-download"
+    weight = -80
+    pre="fa-cloud-arrow-down"
     
   [[menu.main]]
     identifier = "wallpapers"
     name = "Wallpapers"
     url = "/wallpapers/"
-    weight = -80
-    pre="fa-images"
-    
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
     weight = -70
-    pre="fa-paper-plane"
+    pre="fa-image"
+    
+
