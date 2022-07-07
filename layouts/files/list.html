@@ -7,7 +7,7 @@
     <section class="responsive py-8 md:mb-5">
         <div class="title-3 mb-3">All Files</div>
         {{ range (.Paginator 10).Pages }}
-            <div onClick="location.href = '{{ .Permalink }}'" class="grid grid-cols-1 md:grid-cols-3 py-4 rounded-4xl hover:rounded-2xl cursor-pointer border-2 border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg p-5 my-3">
+            <div onClick="location.href = '{{ .RelPermalink }}'" class="grid grid-cols-1 md:grid-cols-3 py-4 rounded-4xl hover:rounded-2xl cursor-pointer border-2 border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg p-5 my-3">
                 <div class="col-span-2">
                     <b class="text-2xl"> {{ .Params.Title }}</b>
                     <div class="mt-1">
