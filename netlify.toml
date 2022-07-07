@@ -6,12 +6,6 @@
     framework = "hugo"
     command = "hugo server"
 
-[[plugins]]
-    package = "netlify-plugin-submit-sitemap"
-    [plugins.inputs]
-        baseUrl = "https://hexandcube.eu.org"
-        sitemapPath = "/sitemap.xml"
-
 [[redirects]]
     from = "/*"
     to = "/404"
