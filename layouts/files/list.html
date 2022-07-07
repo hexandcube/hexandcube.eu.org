@@ -1,34 +1,38 @@
 {{ define "main" }}
 <main>
-    <section class="bg-tempcolor-100 dark:bg-tempcolor-500 responsive py-16">
+    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-16">
         <h1 class="accentline">Files</h1>
         <p class="mt-5">Here you can find all files published by Hexandcube.</p>
     </section>
-    <section class="responsive py-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5">
+    <section class="responsive py-8 md:mb-5">
+        <div class="title-3 mb-3">All Files</div>
         {{ range (.Paginator 10).Pages }}
-        <div class="p-2 transform hover:translate-y-1 hover:translate-x-1 cursor-pointer">
-            <a href="{{ .RelPermalink }}">
-                <div
-                    class="rounded-xl shadow-lg hover:shadow-sm aspect-w-1 aspect-h-1 {{ if not (.Params.Image) }}bg-accent-100{{ else if .Params.ImageBg }}bg-accent-100{{ end }}">
-                    {{ if .Params.Image }}
-                        <img src="{{ .Params.Image }}" class="rounded-xl" alt="{{ .Title }}">
-                    {{ else }}
-                        <div class="flex items-center justify-center w-full h-full">
-                            <i class="{{ .Params.Icon }} text-6xl md:text-8xl text-accent-600"></i>
+            <div onClick="location.href = '{{ .Permalink }}'" class="grid grid-cols-1 md:grid-cols-3 py-4 rounded-4xl hover:rounded-2xl cursor-pointer border-2 border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg p-5 my-3">
+                <div class="col-span-2">
+                    <b class="text-2xl"> {{ .Params.Title }}</b>
+                    <div class="mt-1">
+                        <div class="inline-block bg-light-secondary dark:bg-dark-secondary rounded-5xl py-1 px-2 m-[0.15rem] text-sm whitespace-nowrap">
+                            <i class="{{ .Params.Icon }} fa-fw"></i> {{ .Params.fileType }}
                         </div>
-                    {{end}}
-                </div>
-            </a>
-                <div class="col-span-4 leading-default">
-                    <div class="title-6 text-center clear font-brand mt-3">
-                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        <div class="inline-block bg-light-secondary dark:bg-dark-secondary rounded-5xl py-1 px-2 m-[0.15rem] text-sm whitespace-nowrap">
+                            {{ .Params.fileSize }}
+                        </div>
+                        {{ with .Params.fileVersion }}
+                        <div class="inline-block bg-light-secondary dark:bg-dark-secondary rounded-5xl py-1 px-2 m-[0.15rem] text-sm whitespace-nowrap">
+                            v.{{ . }}
+                        </div>
+                        {{ end }}
                     </div>
-                    <small class="inline-block -mt-5 capitalize">{{ .Params.Resolution }} {{ with .Params.Variant }} |
-                        {{ . }} {{ end }}</small>
                 </div>
-        </div>
+                <div class="mt-3 md:mt-0">
+                    <a class="btn btn-primary btn-circle float-right mx-2" href="{{ .RelPermalink }}" aria-label="Go to file page"><i class="fas fa-arrow-right"></i></a>
+                    <a class="btn btn-secondary btn-circle float-right mx-2" href="{{ .Params.Download }}" aria-label="Download file"><i class="fas fa-download"></i> <span class="md:hidden">Download</span></a>
+                </div>
+            </div>
+        
         {{ end }}
     </section>
     {{ partial "pagination.html" . }}
 </main>
 {{ end }}
+

@@ -7,8 +7,7 @@ fileExtension: .zip
 fileSize: 2.25MB
 fileVersion: "1.3"
 fileDate: 2022-01-26
-image: /img/files/desktopicontoggle.png
-imageBg: true
+icon: fa-solid fa-file-zipper
 download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.3.0.zip
 downloadServer: Hexandcube Files
 servers:
@@ -45,5 +44,5 @@ Desktop icon by Icons8
 `choco install desktopicontoggle`
 
 <a class="btn btn-primary" href="https://chocolatey.org/install" target="_blank"><i class="fas fa-download"></i> Install Chocolatey</a>
-<a class="btn" href="https://community.chocolatey.org/packages/desktopicontoggle" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Package Page</a>
+<a class="btn btn-secondary" href="https://community.chocolatey.org/packages/desktopicontoggle" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Package Page</a>
 

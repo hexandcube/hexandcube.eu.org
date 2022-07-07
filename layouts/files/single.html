@@ -1,13 +1,13 @@
 {{ define "main" }}
 <main>
-    <section class="bg-tempcolor-100 dark:bg-tempcolor-500 responsive py-8 md:py-14">
+    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-8 md:py-14">
         <h1 class="accentline">{{ .Title }}</h1>
         {{ with .Description}}
         <p class="mt-5">{{ . }}</p>
         {{ end }}
     </section>
     <section
-        class="bg-tempcolor-50 dark:bg-tempcolor-400 responsive py-4 md:grid md:grid-cols-5 gap-x-2 gap-y-1">
+        class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-4 md:grid md:grid-cols-5 gap-x-2 gap-y-1">
         <div class="leading-default">
             File Type: <br class="hidden md:block"><b class="text-black dark:text-white">{{ .Params.FileType }} ({{ .Params.fileExtension }})</b>
         </div>
@@ -24,13 +24,10 @@
         </div>
     </section>
     <section class="responsive content py-8">
-        <h2>Description</h2>
+        <div class="title-3 mb-3">Description</div>
         {{ .Content }}
-        {{ if .Params.versions }}
-            <h2>Latest Version Metadata</h2>
-        {{ else }}
-            <h2>File Metadata</h2>
-        {{ end }}
+
+        <div class="title-3 mb-3 mt-8">File Metadata</div>
         <i class="fas fa-font fa-fw"></i> <b>File name: </b>{{ .Params.FileName }}
         <br>
         <i class="fas fa-file fa-fw"></i> <b>File type: </b>{{ .Params.FileType }} ({{ .Params.FileExtension }})
@@ -42,9 +39,9 @@
         {{ with .Params.FileDate }}({{ . }}){{ end }}
         {{ end }}
         {{ if .Params.versions }}
-            <h3 class="mt-6">Download the latest version from</h3>
+            <div class="title-3 mb-3 mt-8">Download the latest version</div>
         {{ else }}
-            <h3 class="mt-6">Download from</h3>
+            <div class="title-3 mb-3 mt-8">Download</div>
         {{ end }}
         <b><a href="{{ .Params.Download }}"><i class="fas fa-download"></i> {{ .Params.DownloadServer }}</a></b>
         {{ range .Params.Servers }}
@@ -53,7 +50,7 @@
         {{ end }}
 
         {{ if .Params.Versions }}
-        <h3 class="mt-6 ">All versions</h3>
+        <div class="title-3 mb-3 mt-8">All Versions</div>
 
         <b><a href="{{ .Params.Download }}"><i class="fas fa-download"></i> {{ .Params.FileVersion }}
                 (latest{{ with .Params.FileDate }} - {{ . }}{{ end }})</a></b>

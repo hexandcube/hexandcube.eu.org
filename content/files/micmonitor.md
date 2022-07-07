@@ -7,8 +7,7 @@ fileExtension: .zip
 fileSize: 2.24MB
 fileVersion: "1.1"
 fileDate: 2022-01-29
-image: /img/files/MicMonitor.png
-imageBg: true
+icon: fa-solid fa-file-zipper
 download: https://files.hexandcube.eu.org/download/MicMonitor/MicMonitor-1.1.zip
 downloadServer: Hexandcube Files
 servers:
@@ -60,5 +59,5 @@ choco install micmonitor
 ```
 
 <a class="btn btn-primary" href="https://chocolatey.org/install" target="_blank"><i class="fas fa-download"></i> Install Chocolatey</a>
-<a class="btn" href="https://community.chocolatey.org/packages/micmonitor" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Package Page</a>
+<a class="btn btn-secondary" href="https://community.chocolatey.org/packages/micmonitor" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Package Page</a>
 
