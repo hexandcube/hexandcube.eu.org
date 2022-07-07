@@ -9,36 +9,6 @@
     "display": "minimal-ui",
     "lang": "en-US",
     "orientation": "any",
-    "shortcuts": [
-        {
-            "name": "Posts",
-            "url": "/posts",
-            "icons":[
-                {
-                    "src": "/icons/android-chrome-96x96.png",
-                    "sizes": "96x96",
-                    "type": "image/png"
-                }]
-        },
-        {
-            "name": "Wallpapers",
-            "url": "/wallpapers",
-            "icons": [{
-                "src": "/icons/android-chrome-96x96.png",
-                "sizes": "96x96",
-                "type": "image/png"
-            }]
-        },
-        {
-            "name": "Files",
-            "url": "/files",
-            "icons": [{
-                "src": "/icons/android-chrome-96x96.png",
-                "sizes": "96x96",
-                "type": "image/png"
-            }]
-        }
-    ],
     "icons": [
         {
             "src": "/icons/android-chrome-36x36.png",

@@ -20,7 +20,7 @@ paginate = 18
 
 
 [params]
-  version = "10.1-dev"
+  version = "10.2"
   description = "Nice to meet you, I'm hexandcube. I'm a hobby web developer from Poland."
   keywords = "Hexandcube, Wallpapers, Files, Windows, Desktop, Tools, Software, Webdev, translation"
   JsonLd = '''
