@@ -3,7 +3,16 @@
 <head>
     {{ partial "head.html" . }}
 </head>
-<body class="dark:bg-dark-300 {{ if .Site.IsServer }}debug-screens{{ end }}">
+    
+<body class="dark:bg-dark-primary-bg bg-light-primary-bg {{ if .Site.IsServer }}debug-screens{{ end }}">
+    <noscript class="p-10 bg-red-500 text-white">
+        <i class="fas fa-exclamation-circle"></i>
+        <b>Your browser doesn't support JavaScript or scripts are being blocked</b><br>
+        Some of the features on this website may not work properly or at all.
+        There are no ads or 3rd party tracking scripts here.
+        Consider switching to a modern browser that supports JavaScript, or whitelisting
+        hexandcube.eu.org in your script blocking software. 
+    </noscript>
     <div class="wrapper">
         {{ partial "header.html" . }}
         {{ block "main" . }}{{ end }}

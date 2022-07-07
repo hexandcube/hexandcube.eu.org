@@ -24,17 +24,19 @@
 {{ $styles := resources.Get "scss/main.scss" | toCSS | postCSS }}
 
 {{ if .Site.IsServer }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
+    {{ $styles = $styles | resources.ExecuteAsTemplate (printf "scss/main.dev.%v.css" now.UnixMilli) .}}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
 {{ else }}
-{{ $styles := $styles | minify | resources.PostProcess }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" async/>
+    {{ $styles := $styles | minify | resources.PostProcess }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" async/>
 {{ end }}
+
 <link rel="stylesheet" href="/fonts/font-awesome/css/all.min.css" defer>
 <link rel="stylesheet" href="/fonts/mont/mont.css" async>
 <link rel="stylesheet" href="/fonts/hexandcube-icon/hexandcube-icon.css" defer>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Mono&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Space+Mono&display=swap"
     rel="stylesheet" async>
 <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-touch-icon-60x60.png">
@@ -79,7 +81,7 @@
     }
 
     // Automaticly apply theme on load
-    function checkTheme(){
+    function checkTheme() {
         if (localStorage.getItem('theme') === 'dark') {
             setTheme('dark');
         } else if (localStorage.getItem('theme') === 'light') {
@@ -92,7 +94,7 @@
         changeGiscusTheme();
     }
 
-    function changeGiscusTheme () {
+    function changeGiscusTheme() {
         if (localStorage.getItem('theme') === 'dark') {
             theme = "dark_dimmed";
         } else {
@@ -102,7 +104,9 @@
         function sendMessage(message) {
             const iframe = document.querySelector('iframe.giscus-frame');
             if (!iframe) return;
-            iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            iframe.contentWindow.postMessage({
+                giscus: message
+            }, 'https://giscus.app');
         }
 
         sendMessage({

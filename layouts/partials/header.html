@@ -1,41 +1,48 @@
-<header class="responsive py-2 bg-light-100 dark:bg-dark-500">
-    <a href="/"
-        class="font-brand md:font-logo font-bold align-middle text-3xl hover:bg-light-200 dark:hover:bg-dark-200 text-black dark:text-white rounded-md px-2 -ml-2 py-2">hexandcube</a>
-    <div class="inline-block float-right">
-        <div
-            class="px-2 -ml-2 py-1 md:mt-3 font-bold align-middle rounded-md hover:bg-light-200 dark:hover:bg-dark-200 text-black dark:text-white inline-block">
-            <label for="theme-toggle" id="theme-toggle-label" class="text-xl" onclick="toggleTheme()">
-                <i class="fa-solid fa-circle-notch animate-spin"></i>
-                <input type="checkbox" class="hidden" id="theme-toggle" />
-            </label>
+<div class="bg-light-secondary-bg dark:bg-dark-secondary-bg">
+    <header id="header" class="responsive py-3">
+        <a href="/"
+            class="font-brand md:font-logo font-bold md:font-normal align-middle text-4xl hover:bg-light-secondary
+            dark:hover:bg-dark-secondary text-light-secondary-text dark:text-dark-text md:rounded-xl rounded-full px-2 -ml-2
+            md:py-2 py-1">hexandcube</a>
+        <div class="inline-block float-right">
+            <div
+                class="px-2 -ml-2 py-1 md:mt-3 font-bold align-middle rounded-full hover:bg-light-secondary dark:hover:bg-dark-secondary text-light-secondary-text dark:text-dark-secondary-text inline-block">
+                <label for="theme-toggle" id="theme-toggle-label" class="text-xl" onclick="toggleTheme()">
+                    <i class="fa-solid fa-circle-notch animate-spin"></i>
+                    <input type="checkbox" class="hidden" id="theme-toggle" />
+                </label>
+            </div>
+            <div class="px-2 py-1 font-bold align-middle text-xl rounded-full hover:bg-light-secondary dark:hover:bg-dark-secondary text-light-secondary-text dark:text-dark-secondary-text md:hidden inline-block"
+                onclick="toggleNavbar()">
+                <i class="fa-solid fa-bars fa-fw"></i>
+            </div>
         </div>
-        <div
-            class="px-2 py-1 font-bold align-middle rounded-md hover:bg-light-200 dark:hover:bg-dark-200 text-black dark:text-white md:hidden inline-block"
-            onclick="toggleNavbar()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </div>
-    <nav class="md:inline-block hidden md:border-l border-l-0 border-b md:border-b-0 pb-3 md:pb-0 mb-3 pl-3 mx-1 mt-3 md:md-0 border-light-200 dark:border-dark-400"
-        id="navbar">
-        {{ $current := . }}
-        {{ range .Site.Menus.main }}
-        {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-        {{ $active = or $active (eq .Name $current.Title) }}
-        <a href="{{ .URL }}" class="md:inline-block uppercase block px-3 -ml-3 md:ml-0 py-1 mt-1 md:mt-0 align-middle rounded-md mx-1
-            {{ if $active }}bg-accent-400-t text-accent-600 dark:text-accent-400 hover:text-white dark:hover:text-white hover:bg-accent-500 font-bold
-            {{ else }}hover:bg-light-200 dark:hover:bg-dark-200 text-black dark:text-white{{end}}">
-            <i class="fa-solid {{ .Pre }} mr-1"></i> {{ .Name }}</a>
-        {{ end }}
-    </nav>
-</header>
+        <nav class="md:inline-block hidden pb-5 md:pb-0 pl-3 mx-1 mt-3 md:md-0 border-light-border dark:border-dark-border"
+            id="navbar">
+            {{ $current := . }}
+            {{ range .Site.Menus.main }}
+            {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+            {{ $active = or $active (eq .Name $current.Title) }}
+            <a href="{{ .URL }}" class="md:inline-block block px-4 -ml-3 md:ml-0 py-2 mt-1 md:mt-0 align-middle rounded-full 
+                {{ if $active }}bg-light-selection dark:bg-dark-selection text-light-secondary-text dark:text-dark-secondary-text hover:bg-light-secondary font-bold
+                {{ else }}hover:bg-light-secondary dark:hover:bg-dark-secondary text-light-secondary-text dark:text-dark-secondary-text{{end}}">
+                <i class="fa-solid {{ .Pre }} mr-1"></i> {{ .Name }}</a>
+            {{ end }}
+        </nav>
+    </header>
+</div>
 
 <script>
     var nav = document.getElementById('navbar');
+    var header = document.getElementById('header');
+
     function toggleNavbar() {
         if (navbar.classList.contains('hidden')) {
             navbar.classList.remove('hidden');
+            header.classList.add('extended');
         } else {
             navbar.classList.add('hidden');
+            header.classList.remove('extended');
         }
     }
 </script>

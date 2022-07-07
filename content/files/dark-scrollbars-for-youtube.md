@@ -1,6 +1,6 @@
 ---
 title: Dark Scrollbars for YouTube [Deprecated]
-description: Firefox add-on changes the theme of the scrollbar on YouTube from light to dark.
+description: Firefox add-on changes the theme of the scrollbar on YouTube from Light to Dark.
 fileName: dark_scrollbar_for_youtube.xpi
 fileType: Firefox Addon 
 fileExtension: xpi
@@ -19,9 +19,9 @@ versions:
     date: 2020-06-21
 ---
 
-This simple add-on changes the theme of the scrollbar on YouTube from light to dark.
-It uses a dynamic scrollbar feature in Firefox that automatically makes the scrollbar dark, when website's body background property is set to a dark color.
+This simple add-on changes the theme of the scrollbar on YouTube from Dark to Dark.
+It uses a dynamic scrollbar feature in Firefox that automatically makes the scrollbar Dark, when website's body background property is set to a Dark color.
 
-This addon has been deprecated, and is no longer needed, since YouTube added official support for Firefox's automatic dark scrollbars.
+This addon has been deprecated, and is no longer needed, since YouTube added official support for Firefox's automatic Dark scrollbars.
 
 Works on Firefox 72 or newer.

@@ -1,11 +1,11 @@
 {{ define "main" }}
 <main>
-    <section class="bg-light-100 dark:bg-dark-500 lg:pt-16 md:py-4 py-12 md:pb-0">
+    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg lg:pt-16 md:py-4 py-12 md:pb-0">
         <div class="md:grid md:grid-cols-2 dark:text-white">
             <div class="text-left md:pt-16">
                 <h1 class="title-2 font-brand leading-10">
                     Nice to meet you,<br class="mb-1">
-                    I'm <span class="inline-block p-1 bg-accent-500 text-white rounded">hexandcube</span>.
+                    I'm <span class="inline-block p-1 bg-accent-500 text-white rounded-xl">hexandcube</span>.
                 </h1>
                 <div class="title-6">I'm a hobby web developer from Poland.</div>
             </div>
@@ -16,7 +16,7 @@
                         <style>
                             .svg-fox-path {
                                 fill: none;
-                                stroke: #F5865F;
+                                stroke: #F15A25;
                                 stroke-width: 5px;
                             }
                         </style>
@@ -26,22 +26,26 @@
                         transform="translate(-562.57 -333.35)" />
                     <path class="svg-fox-path" d="M638,622.72s25.83-18.79,53.61-16.24c5.28,0,52-.38,41.67,71.42"
                         transform="translate(-562.57 -333.35)" />
-                    <path class="svg-fox-path" d="M785.34,693s8.77,4.69,10.37,5.62c11.45,6.62,23.47,9.65,29.34,12.39s5.87,8,10,8"
+                    <path class="svg-fox-path"
+                        d="M785.34,693s8.77,4.69,10.37,5.62c11.45,6.62,23.47,9.65,29.34,12.39s5.87,8,10,8"
                         transform="translate(-562.57 -333.35)" />
                     <path class="svg-fox-path"
                         d="M787.36,746.76s-2.84-.46-2.48-8.15S791,727.46,790,723.22s-11.22-7.05-11.22-11.22,3.78-8.32,12.26-15.51"
                         transform="translate(-562.57 -333.35)" />
                     <path class="svg-fox-path" d="M807.71,704.36s-.16,1.08,0-15.06c.16-16.4-11-19.74-11.4-47.66"
                         transform="translate(-562.57 -333.35)" />
-                    <path class="svg-fox-path" d="M824.66,571.65s-7.23,19.05-16.95,21.92-20.35,2.07-22.83,12.67-1.11,37,0,49.54"
+                    <path class="svg-fox-path"
+                        d="M824.66,571.65s-7.23,19.05-16.95,21.92-20.35,2.07-22.83,12.67-1.11,37,0,49.54"
                         transform="translate(-562.57 -333.35)" />
-                    <path class="svg-fox-path" d="M703.78,677c7.48.23,14.31.26,28.53.85" transform="translate(-562.57 -333.35)" />
+                    <path class="svg-fox-path" d="M703.78,677c7.48.23,14.31.26,28.53.85"
+                        transform="translate(-562.57 -333.35)" />
                     <path class="svg-fox-path" d="M730.85,677.9c19.56.48,18.29,5.47,28.86,10"
                         transform="translate(-562.57 -333.35)" />
                     <path class="svg-fox-path"
                         d="M768,438s5.67,2.85,4.79,6.25-4.48,6-3.78,7.95,4.43,4.7,4.43,6.79-2.48,8.34.52,10.56,14.19,2.28,24.79,2.61,12.13,17.35,28.95,18.26,16.93-15.39,31.18-17.48,27.26,11.58,36.65,6.26c6.36-2.38-2-9.81,1.17-12.39s5.35-1.33,5.61-6,5.5-6.52,5.5-6.52"
                         transform="translate(-562.57 -333.35)" />
-                    <path class="svg-fox-path" d="M834.58,468.74c-3.36-11.54-15.53-11.09-18.79-.52S837.93,480.28,834.58,468.74Z"
+                    <path class="svg-fox-path"
+                        d="M834.58,468.74c-3.36-11.54-15.53-11.09-18.79-.52S837.93,480.28,834.58,468.74Z"
                         transform="translate(-562.57 -333.35)" />
                     <path class="svg-fox-path"
                         d="M772.75,444.22s6.91.26,9.91,0S789.71,438,797.4,438c22.47-.83,5.15,28.42,18.39,30.25"
@@ -60,93 +64,118 @@
     <section class="content">
         {{ .Content }}
         <div class="mb-10">
-            <div class="title-2 highlighted mb-5">Projects</div>
-            <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 gap-y-5">
-                <a href="https://inkonfig.hexandcube.eu.org" class="clean block p-5 rounded-xl shadow-md hover:shadow-sm cursor-pointer bg-light-100 dark:bg-dark-200 transform hover:translate-y-1">
+            <div class="title-2 accentline mb-5">Projects</div>
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 gap-y-5 mb-5">
+                <a href="https://inkonfig.hexandcube.eu.org"
+                    class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2 border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg">
                     <div class="grid grid-cols-10">
                         <div class="title-3 inline-block my-2 col-span-9">Inkonfig</div>
-                        <div class="col-span-1">
-                            <i class="fa-solid fa-arrow-right float-right text-2xl mt-2"></i>
+                        <div class="col-span-1 w-full">
+                            <div class="relative w-12 h-12 float-right">
+                                <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="clover">
+                                    <path
+                                        d="M.887 14.467C-2.845 5.875 5.875-2.845 14.467.887l1.42.617a10.323 10.323 0 0 0 8.225 0l1.42-.617c8.593-3.732 17.313 4.988 13.581 13.58l-.617 1.42a10.323 10.323 0 0 0 0 8.225l.617 1.42c3.732 8.593-4.989 17.313-13.58 13.581l-1.42-.617a10.323 10.323 0 0 0-8.225 0l-1.42.617C5.874 42.845-2.846 34.125.886 25.533l.617-1.42a10.323 10.323 0 0 0 0-8.225l-.617-1.42Z">
+                                    </path>
+                                    <i
+                                        class="fa-solid fa-arrow-right text-2xl absolute top-[0.8rem] right-[0.8rem] text-light-secondary-text dark:text-dark-secondary-text"></i>
+                                </svg>
+                            </div>
                         </div>
                     </div>
                     <p>Windows configuration script generator - a web app that allows you generate a script that
-                            you can use on multiple Windows devices to configure them automatically.</p>
+                        you can use on multiple Windows devices to configure them automatically.</p>
                 </a>
-                <a href="/files/desktop-icon-toggle" class="clean block p-5 rounded-xl shadow-lg hover:shadow-sm cursor-pointer bg-light-100 dark:bg-dark-200 transform hover:translate-y-1">
+                <a href="/files/desktop-icon-toggle"
+                    class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2 border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg">
                     <div class="grid grid-cols-10">
                         <div class="title-3 inline-block my-2 col-span-9">Desktop Icon Toggle</div>
-                        <div class="col-span-1">
-                            <i class="fa-solid fa-arrow-right float-right text-2xl mt-2"></i>
+                        <div class="col-span-1 w-full">
+                            <div class="relative w-12 h-12 float-right">
+                                <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="clover">
+                                    <path
+                                        d="M.887 14.467C-2.845 5.875 5.875-2.845 14.467.887l1.42.617a10.323 10.323 0 0 0 8.225 0l1.42-.617c8.593-3.732 17.313 4.988 13.581 13.58l-.617 1.42a10.323 10.323 0 0 0 0 8.225l.617 1.42c3.732 8.593-4.989 17.313-13.58 13.581l-1.42-.617a10.323 10.323 0 0 0-8.225 0l-1.42.617C5.874 42.845-2.846 34.125.886 25.533l.617-1.42a10.323 10.323 0 0 0 0-8.225l-.617-1.42Z">
+                                    </path>
+                                    <i
+                                        class="fa-solid fa-arrow-right text-2xl absolute top-[0.8rem] right-[0.8rem] text-light-secondary-text dark:text-dark-secondary-text"></i>
+                                </svg>
+                            </div>
                         </div>
                     </div>
-                    <p>A small Windows tool, that allows you to quickly toggle the visibility of desktop icons by double-clicking
-                        the blank space on the desktop.</p>
+                    <p>A small Windows tool, that allows you to quickly toggle the visibility of desktop icons
+                        by double-clicking the blank space on the desktop.</p>
                 </a>
             </div>
+            <div class="grid lg:grid-cols-1 grid-cols-1 gap-5 gap-y-5 mb-5">
+                <a href="/files/hexandcubes-client-tweaks/"
+                    class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2 border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg">
+                    <div class="grid grid-cols-10">
+                        <div class="title-3 inline-block my-2 col-span-9">Hexandcube's Client Tweaks</div>
+                        <div class="col-span-1 w-full">
+                            <div class="relative w-12 h-12 float-right">
+                                <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="clover">
+                                    <path
+                                        d="M.887 14.467C-2.845 5.875 5.875-2.845 14.467.887l1.42.617a10.323 10.323 0 0 0 8.225 0l1.42-.617c8.593-3.732 17.313 4.988 13.581 13.58l-.617 1.42a10.323 10.323 0 0 0 0 8.225l.617 1.42c3.732 8.593-4.989 17.313-13.58 13.581l-1.42-.617a10.323 10.323 0 0 0-8.225 0l-1.42.617C5.874 42.845-2.846 34.125.886 25.533l.617-1.42a10.323 10.323 0 0 0 0-8.225l-.617-1.42Z">
+                                    </path>
+                                    <i
+                                        class="fa-solid fa-arrow-right text-2xl absolute top-[0.8rem] right-[0.8rem] text-light-secondary-text dark:text-dark-secondary-text"></i>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p>A minimalistic Minecraft modpack with client side tweaks (like minimap, light overlay, sound
+                        muffler, inventory sorting, better off-hand torches,
+                        better signs, dynamic lighting, performance improvments, bug fixes, and more) that works on
+                        vanilla multiplayer servers.</p>
+                </a>
+
+            </div>
         </div>
-        <div class="md:grid md:grid-cols-2">
-            <div>
-                <div class="title-2 highlighted mb-3 mt-5">About me</div>
-                <ul class="ml-3">
-                    <li><b>Pronouns:</b> He/Him</li>
-                    <li><b>Languages:</b> Polish, English</li>
-                    <li><b>Location:</b> Poland, Central Europe</li>
-                    <li><b>PGP:</b> <a href="/pgp">5C37 F302 8185 8136</a></li>
-                </ul>
-            </div>
-            <div>
-                <div class="title-2 highlighted mb-3 mt-5">Contact</div>
-                <ul class="ml-3">
-                    <li><b>Telegram:</b> <a href="https://t.me/hexandcube" rel="me">@hexandcube</a></li>
-                    <li><b>Email:</b> <a href="mailto:hexandcube@hexandcube.eu.org">hexandcube@hexandcube.eu.org</a></li>
-                    <li><b>Discord:</b> <a id="discordId" class="cursor-pointer" onClick="copyToClipboard('discordId')">Hexandcube#1296</a></li>
-                    <li><b>Matrix:</b> <a href="https://matrix.to/#/@hexandcube:matrix.org">@hexandcube:matrix.org</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="md:mt-10">
-            <div class="md:grid md:grid-cols-2">
-                <div>
-                    <div class="title-2 highlighted mb-3 mt-5">Contributions</div>
-                    <ul class="ml-5">
-                        <li><a href="https://discord.com">Discord</a> - Translation (2017 - 2018)</li>
-                        <li><a href="https://novalauncher.com">Nova Launcher</a> - Translation (2017 - 2018)</li>
-                        <li><a href="https://lawnchair.app">Lawnchair</a> - Translation (2019 - Present)</li>
-                        <li><a href="https://mozilla.org/firefox">Firefox</a> - Translation, Support (2019 - Present)</li>
-                        <li><a href="https://element.io">Element</a> - Translation (2021 - Present)</li>
-                        <li><a href="https://bitwarden.com">Bitwarden</a> - Translation (2021 - Present)</li>
-                        <li><a href="https://obsproject.com">OBS Studio</a> - Translation (2021 - Present)</li>
-                    </ul>
-                </div>
-                <div class="mb-5">
-                    <div class="title-2 highlighted mb-3 mt-5">Profiles</div>
-                    <ul class="ml-3">
-                        <li><b>Twitter:</b> <a href="https://twitter.com/hexandcube" rel="me">@hexandcube</a></li>
-                        <li><b>Fediverse:</b> <a href="https://mstdn.social/@hexandcube" rel="me">@hexandcube@mstdn.social</a></li>
-                        <li><b>Reddit:</b> <a href="https://www.reddit.com/user/hexandcube" rel="me">u/hexandcube</a></li>
-                        <li><b>GitHub:</b> <a href="https://github.com/hexandcube" rel="me">@hexandcube</a></li>
-                        <li><b>GitLab:</b> <a href="https://gitlab.com/hexandcube" rel="me">@hexandcube</a></li>
-                        <li><b>500px:</b> <a href="https://500px.com/p/hexandcube" rel="me">@hexandcube</a>
-                        <li><b>YouTube:</b> <a href="https://www.youtube.com/hexandcube" rel="me">Hexandcube</a>
-                        <li><b>Unsplash:</b> <a href="https://unsplash.com/@hexandcube" rel="me">@hexandcube</a>
-                        <li><b>Instagram:</b> <a href="https://www.instagram.com/hexandcube/" rel="me">@hexandcube</a>
-                        <li><b>Mozilla AMO:</b> <a href="https://addons.mozilla.org/en-US/firefox/user/14625252/" rel="me">Hexandcube</a>
-                    </ul>
-                    </li>
+        <div class="mb-10">
+            <div class="title-2 accentline mb-5">Latest Post</div>
+            {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
+            {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
+
+            {{ $PageContext := . }}
+            {{ if .IsHome }}
+            {{ $PageContext = .Site }}
+            {{ end }}
+            {{ $paginator := .Paginate (where $PageContext.RegularPages "Type" $contentTypeName) 1 }}
+
+            {{ range $paginator.Pages }}
+            <div class="cursor-pointer p-2 my-5 bg-light-secondary-bg dark:bg-dark-secondary-bg hover:bg-light-selection 
+            dark:hover:bg-dark-selection rounded-5xl md:grid md:grid-cols-2 hover:rounded-2xl post-card"
+                onClick="location.href = '{{ .Permalink }}'">
+                <a href="{{ .RelPermalink }}">
+
+                    <img class="rounded-5xl post-card-image" src="{{ if .Params.Thumbnail }}{{ .Params.Thumbnail }}
+                {{ else }}/img/opengraph.png{{ end }}" alt="{{ .Title }}">
+
+                </a>
+                <div class="mx-1 md:ml-10 mt-3 md:mt-0 my-2 items-center flex">
+                    <a href="{{ .RelPermalink }}">
+                        <h2>{{ .Title }}</h2>
+                        <p>{{ .Description }}</p>
+                        <div class="flex mt-3 md:mt-7">
+                            <div class="items-center flex">
+                                <img class="rounded-full mr-4" src="/img/authors/{{ .Params.Author }}.png"
+                                    alt="{{ .Params.Author }}" width="50px">
+                            </div>
+                            <div class="items-center flex">
+                                <div>
+                                    <b> {{.Params.Author}} </b>
+                                    <div> {{ .PublishDate.Format "January 2, 2006" }} </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
+            {{ end }}
         </div>
     </section>
 </main>
-<script>
-    function copyToClipboard(element) {
-        let el = document.getElementById(element);
-        let orgText = el.innerText;
-        navigator.clipboard.writeText(orgText);
-        el.innerText = "Copied to Clipboard!";
-        setTimeout(function() {
-            el.innerText = orgText;
-        }, 2000);
-    }
-</script>
+
 {{ end }}

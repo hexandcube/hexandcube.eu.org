@@ -45,7 +45,7 @@ div.text-block {
 }
 
 .responsive {
-    @apply 3xl:px-96 2xl:px-72 xl:px-48 lg:px-16 sm:px-4 px-3;
+    @apply 3xl:px-80 2xl:px-60 xl:px-40 lg:px-16 sm:px-4 px-3;
 }
 
 .footnotes {
@@ -57,11 +57,11 @@ section {
 }
 
 code {
-    @apply bg-light-50 dark:bg-dark-200 font-mono px-2 rounded-md;
+    @apply bg-light-secondary-bg dark:bg-dark-secondary-bg font-mono px-2 rounded-md;
 }
 
 pre {
-    @apply bg-light-50 dark:bg-dark-200 font-mono p-3 rounded-lg overflow-x-scroll;
+    @apply bg-light-secondary-bg dark:bg-dark-secondary-bg font-mono p-3 rounded-lg overflow-x-scroll;
 }
 
 pre > code {
@@ -74,37 +74,37 @@ pre > code {
 
 p,
 div {
-    @apply text-light-800 dark:text-gray-300 sm:text-lg text-base leading-tight;
+    @apply text-light-text dark:text-dark-text sm:text-lg text-base leading-tight;
 }
 
 h1,
 .title-1 {
-    @apply xl:text-6xl sm:text-5xl text-5xl font-brand font-bold leading-tight text-black dark:text-white;
+    @apply xl:text-6xl sm:text-5xl text-5xl font-brand font-bold leading-tight text-light-text dark:text-dark-text;
 }
 
 h2,
 .title-2 {
-    @apply xl:text-5xl sm:text-4xl text-3xl font-brand font-bold leading-8 text-black dark:text-white;
+    @apply xl:text-5xl sm:text-4xl text-3xl font-brand font-bold leading-8 text-light-text dark:text-dark-text;
 }
 
 h3,
 .title-3 {
-    @apply xl:text-4xl sm:text-3xl text-2xl font-brand font-bold leading-8 text-black dark:text-white;
+    @apply xl:text-4xl sm:text-3xl text-2xl font-brand font-bold leading-8 text-light-text dark:text-dark-text;
 }
 
 h4,
 .title-4 {
-    @apply xl:text-4xl sm:text-3xl text-2xl -ml-1px font-bold leading-7 text-black dark:text-white;
+    @apply xl:text-4xl sm:text-3xl text-2xl -ml-1px font-bold leading-7 text-light-text dark:text-dark-text;
 }
 
 h5,
 .title-5 {
-    @apply xl:text-3xl sm:text-2xl text-xl -ml-1px font-bold leading-7 text-black dark:text-white;
+    @apply xl:text-3xl sm:text-2xl text-xl -ml-1px font-bold leading-7 text-light-text dark:text-dark-text;
 }
 
 h6,
 .title-6 {
-    @apply xl:text-2xl sm:text-xl text-lg -ml-1px font-bold leading-6 text-black dark:text-white;
+    @apply xl:text-2xl sm:text-xl text-lg -ml-1px font-bold leading-6 text-light-text dark:text-dark-text;
 }
 
 .content {
@@ -117,15 +117,16 @@ h6,
     }
 
     h1 {
-        @apply highlighted;
+        @apply accentline;
     }
 
     a:not(.clean, .btn) {
-        @apply  border-b-2 border-accent-500 hover:text-white dark:hover:text-white hover:bg-accent-500 px-0.5 rounded-sm;
+        @apply text-accent-600 dark:text-accent-500 hover:text-accent-900 dark:hover:text-accent-100 hover:underline hover:underline-offset-4 font-medium;
+        transition: all none;
     }
 
     ul li {
-        list-style-type: disc;
+        @apply list-disc;
     }
 
     ol li {
@@ -146,18 +147,29 @@ h6,
 }
 
 .btn {
-    @apply border-2 border-transparent inline-block px-3 py-1 text-accent-600 dark:text-accent-400 hover:text-white dark:hover:text-white hover:bg-accent-500 cursor-pointer rounded-md mr-1 my-1 font-bold;
+    @apply border-2 border-transparent inline-block px-4 py-2 cursor-pointer rounded-3xl mr-1 my-1 font-bold hover:rounded-xl;
 }
 
 .btn-primary {
-    @apply border-2 border-transparent bg-accent-400-t text-accent-600 dark:text-accent-400 hover:text-white dark:hover:text-white hover:bg-accent-500;
+    @apply border-2 border-transparent bg-light-primary dark:bg-dark-primary hover:bg-light-primary hover:dark:bg-dark-primary shadow-sm shadow-light-primary/30 dark:shadow-dark-primary/30 hover:shadow-accent/30 text-light-primary-text dark:text-dark-primary-text;
 }
 
 .btn-secondary {
-    @apply border-2 dark:border-accent-400 border-accent-600 text-accent-600 dark:text-accent-400 hover:text-white dark:hover:text-white hover:bg-accent-500;
+    @apply border-2 border-light-primary text-light-primary dark:border-dark-primary dark:text-dark-primary hover:text-light-primary-text hover:dark:text-dark-primary-text hover:bg-light-primary hover:dark:bg-dark-primary shadow-sm shadow-accent-500/30;
 }
 
-.highlighted {
+.btn-circle {
+    line-height: 18px !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    @apply rounded-5xl;
+}
+
+.underlined-children {
+    @apply decoration-accent-500 decoration-2 underline underline-offset-2;
+}
+
+.accentline {
     display: inline-block;
     text-decoration: underline solid 6px #f15a25;
 }
@@ -175,4 +187,48 @@ h6,
 
 .utterances {
     max-width: 100%;
+}
+
+.image-card {
+    border-radius: 1.75rem !important;
+}
+
+.image-card:hover {
+    border-radius: 0.75rem !important;
+}
+
+.clover {
+    @apply fill-light-selection dark:fill-dark-selection;
+}
+
+.clover-container:hover .clover {
+    transform: rotate(90deg);
+    @apply fill-light-secondary dark:fill-dark-secondary;
+}
+
+header {
+    transition: border-radius 0s;
+    @apply bg-light-secondary-bg;
+}
+
+.dark header {
+    @apply bg-dark-secondary-bg;
+}
+
+.extended {
+    @apply bg-light-primary-bg;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+.dark .extended {
+    @apply bg-dark-primary-bg;
+}
+
+.image-card-container:hover .image-card-marker {
+    opacity: 1 !important;
+}
+
+.post-card:hover .post-card-image {
+    @apply rounded-2xl;
 }

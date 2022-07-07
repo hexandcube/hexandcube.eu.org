@@ -2,12 +2,12 @@
 title: Hexandcube's Client Tweaks
 description: Improved Vanilla Minecraft Experience
 fileName: Hexandcube_Client_Tweaks_1.17.1-2.2.zip
-fileType: Minecraft Modpack [CurseForge]
+fileType: Minecraft Modpack
 fileExtension: zip
 fileSize: 164KB
 fileVersion: "2.2 [1.17.1]"
 fileDate: 2021-12-20
-image: /img/files/ClientTweaks.png
+icon: fa-solid fa-box
 download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.17.1-2.2.zip
 downloadServer: Hexandcube Files
 servers: 
@@ -50,7 +50,7 @@ This pack works on the client side so should work with Vanilla Multiplayer serve
 
 #### Mod list
 
--  Light Overlay (Rift/Forge/Fabric) (by shedaniel)
+-   Light Overlay (Rift/Forge/Fabric) (by shedaniel)
 -  FancyMenu [Forge] (by Keksuccino)
 -  Architectury API (Forge) (by shedaniel)
 -  AppleSkin (by squeek502)

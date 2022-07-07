@@ -1,0 +1,50 @@
+{
+    "1": {
+        "name": "Discord",
+        "type": "Translation", 
+        "years": "2017 - 2018",
+        "link": "https://discord.com"
+    },
+    "2": {
+        "name": "Element",
+        "type": "Translation",
+        "years": "2019 - 2021",
+        "link": "https://element.io/"
+    },
+    "3": {
+        "name": "Nova Launcher",
+        "type": "Translation",
+        "years": "2017 - 2018",
+        "link": "https://novalauncher.com/"
+    },
+    "4": {
+        "name": "Firefox",
+        "type": "Translation, Support",
+        "years": "2018 - Present",
+        "link": "https://mozilla.org/firefox"
+    },
+    "5": {
+        "name": "Lawnchair",
+        "type": "Translation",
+        "years": "2019 - Present",
+        "link": "https://lawnchair.app/"
+    },
+    "6": {
+        "name": "Mastodon",
+        "type": "Translation",
+        "years": "2020 - Present",
+        "link": "https://joinmastodon.org/"
+    },
+    "7": {
+        "name": "Bitwarden",
+        "type": "Translation",
+        "years": "2021 - Present",
+        "link": "https://bitwarden.com/"
+    },
+    "8": {
+        "name": "OBS Studio",
+        "type": "Translation",
+        "years": "2021 - Present",
+        "link": "https://obsproject.com/"
+    }
+}

@@ -1,6 +1,6 @@
 # Hexandcube.eu.org
 
-Hexandcube's Personal Website - Version 10.0
+Hexandcube's Personal Website - Version 10.2
 
 ## Install Prerequisites
 
