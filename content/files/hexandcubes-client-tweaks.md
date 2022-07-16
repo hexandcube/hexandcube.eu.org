@@ -1,20 +1,23 @@
 ---
 title: Hexandcube's Client Tweaks
 description: Improved Vanilla Minecraft Experience
-fileName: Hexandcube_Client_Tweaks_1.18.2-3.1.zip
+fileName: Hexandcube_Client_Tweaks_1.18.2-3.2.zip
 fileType: Minecraft Modpack
 fileExtension: zip
-fileSize: 602KB
-fileVersion: "3.1 [1.18.2]"
-fileDate: 2022-06-01
+fileSize: 565KB
+fileVersion: "3.2 [1.18.2]"
+fileDate: 2022-07-16
 icon: fa-solid fa-box
-download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.18.2-3.1.zip
+download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.18.2-3.2.zip
 downloadServer: Hexandcube Files
 servers: 
   - name: CurseForge
-    download: https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks/download/3813548
+    download: https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks/download/3878312
 
 versions:
+  - name: "3.1 [1.18.2]"
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.18.2-3.1.zip
+    date: 2022-06-01
   - name: "3.0 [1.18.2]"
     download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.18.2-3.0.zip
     date: 2022-06-01
@@ -91,61 +94,60 @@ versions:
 This pack is designed to work on vanilla multiplayer servers. Make sure the server you're playing on allows the use of
 client-side modifications (like minimaps).
 
-##### Mod list (for version 3.1):
+##### Mod list (for version 3.2):
 
-- Rubidium (by Asek3)
-- Sign Tools (by dmitrylovin)
 - Bookshelf (by DarkhaxDev)
-- Shutup Experimental Settings! (by Corgi_Taco)
-- Client Tweaks (by BlayTheNinth)
-- Inventory Profiles Next (by mirinimi)
-- FerriteCore (Forge) (by malte0811)
-- Not Enough Animations (by tr9zw)
-- Item Borders (by Grend_G)
-- Map Tooltip (by VendoAU)
-- Better Advancements (by way2muchnoise)
-- Jade 🔍 (by Snownee_)
-- Crafting Tweaks (by BlayTheNinth)
-- Magnesium/Rubidium Dynamic Lights (by TeamDeusVult)
-- Extreme sound muffler (Forge) (by LeoBeliik)
-- Equipment Compare (by Grend_G)
-- Advancement Plaques (by Grend_G)
-- Placebo (by Shadows_of_Fire)
-- Iceberg (by Grend_G)
-- Just Enough Resources (JER) (by way2muchnoise)
-- Skin Layers 3D (Fabric/Forge) (by tr9zw)
-- Better Compatibility Checker (by Gaz_)
-- Replanter (by Areuthreateningme)
-- AutoRegLib (by Vazkii)
-- Balm (Forge Edition) (by BlayTheNinth)
-- Boat Item View (Forge) (by 50ap5ud5)
-- Oculus (by Asek3)
-- Architectury API (Fabric/Forge) (by shedaniel)
-- Toast Control (by Shadows_of_Fire)
-- Better Third Person (by Socolio)
-- JourneyMap (by techbrew)
-- Magnesium/Rubidium Extras (by TeamDeusVult)
-- Quark (by Vazkii)
-- Mouse Tweaks (by YaLTeR)
-- Lazy DataFixerUpper(LazyDFU) [FORGE] (by Corgi_Taco)
-- Better Ping Display (by Quintinity)
-- Let Sleeping Dogs Lie (by ohaiiChun)
-- Sound Physics Remastered (by henkelmax)
-- Radium Reforged (by Asek3)
-- Item Stitching Fix (by cy4sh0t)
-- Controlling (by Jaredlll08)
-- Radon (by Asek3)
-- OAuth (by Sintinium)
 - Just Enough Items (JEI) (by mezz)
-- Light Overlay (Rift/Forge/Fabric) (by shedaniel)
-- Konkrete [Forge] (by Keksuccino)
+- Toast Control (by Shadows_of_Fire)
 - Enchantment Descriptions (by DarkhaxDev)
-- Configured (by MrCrayfish)
-- Neat (by Vazkii)
-- Shulker Tooltip (by ZephaniahNoah)
-- Cloth Config API (Fabric/Forge) (by shedaniel)
+- Light Overlay (Rift/Forge/Fabric) (by shedaniel)
+- OAuth (by Sintinium)
+- Kotlin for Forge (by thedarkcolour)
 - AppleSkin (by squeek502)
+- Sign Tools (by dmitrylovin)
+- Architectury API (Fabric/Forge) (by shedaniel)
+- Sound Physics Remastered (by henkelmax)
+- Cloth Config API (Fabric/Forge) (by shedaniel)
+- Konkrete [Forge] (by Keksuccino)
+- Replanter (by Areuthreateningme)
+- Oculus (by Asek3)
+- Jade 🔍 (by Snownee_)
+- Rubidium (by Asek3)
+- Equipment Compare (by Grend_G)
+- Crafting Tweaks (by BlayTheNinth)
+- Advancement Plaques (by Grend_G)
 - FancyMenu [Forge] (by Keksuccino)
+- JourneyMap (by techbrew)
+- Neat (by Vazkii)
+- Better Third Person (by Socolio)
+- FerriteCore (Forge) (by malte0811)
+- Skin Layers 3D (Fabric/Forge) (by tr9zw)
+- Lazy DataFixerUpper(LazyDFU) [FORGE] (by Corgi_Taco)
+- Item Stitching Fix (by cy4sh0t)
+- Iceberg (by Grend_G)
+- Boat Item View (Forge) (by 50ap5ud5)
+- Smooth Boot (Reloaded) (by AbdElAziz333)
+- Quark (by Vazkii)
+- Just Enough Resources (JER) (by way2muchnoise)
+- Effective (Forge) (by BottomTextDanny)
+- Magnesium/Rubidium Extras (by TeamDeusVult)
+- Balm (Forge Edition) (by BlayTheNinth)
+- Item Borders (by Grend_G)
+- Clumps (by Jaredlll08)
+- Extreme sound muffler (Forge) (by LeoBeliik)
+- Radon (by Asek3)
+- Better Advancements (by way2muchnoise)
+- Radium Reforged (by Asek3)
+- Magnesium/Rubidium Dynamic Lights (by TeamDeusVult)
+- AutoRegLib (by Vazkii)
+- JEI Enchantment Info (by Phylogeny)
+- Configured (by MrCrayfish)
+- Not Enough Animations (by tr9zw)
+- Mouse Tweaks (by YaLTeR)
+- Shutup Experimental Settings! (by Corgi_Taco)
+- Controlling (by Jaredlll08)
+- Inventory Profiles Next (by mirinimi)
+- Placebo (by Shadows_of_Fire)
 
 <br>
 
@@ -162,7 +164,7 @@ lighting and zooming.
 
 <br>
 
-<a class="btn btn-primary" href="https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks/download/3813548?client=y" target="_blank"><i class="fas fa-fire"></i> Install on CurseForge</a>
+<a class="btn btn-primary" href="https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks/download/3878312?client=y" target="_blank"><i class="fas fa-fire"></i> Install on CurseForge</a>
 <a class="btn btn-secondary" href="https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Project Page</a>
 
 If you're using the [PolyMC Launcher](https://polymc.org/) it is recommended to use the built-in CurseForge integration,
