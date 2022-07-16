@@ -1,32 +1,15 @@
 ---
 title: Hexandcube's Twitter Policy
-lastmod: 2022-01-13
-description: Hexandcube's Policy for interacting with Twitter users
+lastmod: 2022-07-16
+description: Hexandcube's Policy for blocking Twitter accounts
 --- 
-
-# Tweets
-
-- If I ever say something stupid or incorrect, please politly correct me.
-- You're not allowed to use any of my content for commercial purposes without my permission.
-
-# Direct Messages
-
-If you want to send me a DM on Twitter, please:
-
-- [Don't just say "Hi!" or "Hello!"](https://nohello.net/), let me know what you want to talk about. If you just say "Hello" and nothing else, I will just ignore you.
-- Don't send me unsolicited advertisements or spam
-
-&nbsp;
-
-If your behavior is suspicious, I may want to verify your identity using [cryptographic  proofs](/.well-known/profile.txt), DNS proofs, Web server access proofs, email proofs, etc. to make sure I'm talking
-to the person you're claiming to be.
 
 # Blocking
 
 This list, contains the types of accounts, I will block on Twitter.
 If your account meets any requirements listed here, you will be blocked if you interact with me on Twitter.
 
-If you think I've blocked you by accident, please [let me know](/contact).
+If you think I've blocked you by accident, please [let me know](/about).
 
 **I'm blocking accounts that:**
 
@@ -34,20 +17,16 @@ If you think I've blocked you by accident, please [let me know](/contact).
 - Have a **Disruptive** (50% - 74%) [Bot Sentinel](https://botsentinel.com) rating (**After manual verification**)
 - Violate Twitter's [Rules and Policies](https://help.twitter.com/en/rules-and-policies#twitter-rules) (Will get reported)
 - Have been created within the last 4 weeks, have no profile picture and have the default Twitter username (with numbers)
-- Engage in harmful activites such as spamming, harassment, etc.
+- Engage in harmful activites such as harassment, doxing, etc.
 - Exhibit signs of pedophilia or zoophilia
-- Exhibit signs of racism, homophobia, xenophobia, and other types of discrimination based on nationality, religious beliefs, sex, gender, etc.
-- Spread disinformation- Information confirmed to be not true by scientific consensus
+- Discriminate other users based on nationality, religious beliefs, identity, gender, etc.
+- Spread disinformation - Information confirmed to be not true
 - Spread theories (theses) as facts without providing scientific proofs
 - Are a part of known dangerous organizations and hate groups
+- Support actions of terrorist states (e.g. Russia, North Korea)
 - Promote or endorse, products or services for profit without clearly declaring the advertisement
-- Send unsolicited DM's (Direct Messages)
 - Impersonate another individual or oraganization
 - Post Tweets with hashtags that are not related to the content of the Tweet
-- Have an NFT profile picture or .eth in display name
 - Promote scams
-- **Support Russia's current actions against Ukraine**
 
 &nbsp;
-
-**People who support Russia's actions and/or post Russian propaganda will get reported!**
