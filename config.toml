@@ -1,6 +1,6 @@
 baseURL = "https://hexandcube.eu.org"
 languageCode = "en-us"
-title = "Hexandcube"
+title = "Hexandcube.eu.org"
 enableEmoji = true
 # enableGitInfo = true
 paginate = 18
@@ -21,8 +21,8 @@ paginate = 18
 
 [params]
   version = "10.2"
-  description = "Nice to meet you, I'm hexandcube. I'm a hobby web developer from Poland."
-  keywords = "Hexandcube, Wallpapers, Files, Windows, Desktop, Tools, Software, Webdev, translation"
+  description = "Nice to meet you, I'm Hexandcube. Hobby web developer, computer wizard, and part-time fox on the internet. "
+  keywords = "Hexandcube, Wallpapers, Files, Windows, Desktop, Tools, Software, Web Developer, translation"
   JsonLd = '''
   {
     "@context": "https://schema.org",
@@ -44,7 +44,7 @@ paginate = 18
       "https://www.youtube.com/c/hexandcube",
       "https://www.reddit.com/user/hexandcube",
       "https://unsplash.com/@hexandcube",
-      "hhttps://500px.com/p/hexandcube",
+      "https://500px.com/p/hexandcube",
       "https://addons.mozilla.org/en-US/firefox/user/14625252/"
     ]
   }
