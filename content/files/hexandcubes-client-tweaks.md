@@ -1,20 +1,23 @@
 ---
 title: Hexandcube's Client Tweaks
 description: Improved Vanilla Minecraft Experience
-fileName: Hexandcube_Client_Tweaks_1.18.2-3.2.zip
+fileName: Hexandcube_Client_Tweaks_1.19.2-4.0.zip
 fileType: Minecraft Modpack
 fileExtension: zip
-fileSize: 565KB
-fileVersion: "3.2 [1.18.2]"
-fileDate: 2022-07-16
+fileSize: 52KB
+fileVersion: "4.0 [1.19.2]"
+fileDate: 2022-09-07
 icon: fa-solid fa-box
-download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.18.2-3.2.zip
+download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.0.zip
 downloadServer: Hexandcube Files
 servers: 
   - name: CurseForge
-    download: https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks/download/3878312
+    download: https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks/
 
 versions:
+  - name: "3.2 [1.18.2]"
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.18.2-3.2.zip
+    date: 2022-07-16
   - name: "3.1 [1.18.2]"
     download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.18.2-3.1.zip
     date: 2022-06-01
@@ -51,6 +54,8 @@ versions:
 
 - Shulkerbox Tooltips
 
+- Blocking chat reporting
+
 - Map Tooltips
 
 - Item Stitching fix
@@ -62,8 +67,6 @@ versions:
 - Sound Muffler
 
 - Light Overlay (F7)
-
-- Better Ping display
 
 - Comparing equipment
 
@@ -81,90 +84,96 @@ versions:
 
 - Improved 3rd person camera
 
-- In-game account switcher
-
 - Inventory sorting
-
-- Better off-hand torches
-
-- Greener grass
 
 - and more
 
-This pack is designed to work on vanilla multiplayer servers. Make sure the server you're playing on allows the use of
-client-side modifications (like minimaps).
+Since Version 4.0 this modpack has switched from Forge to Fabric.
 
-##### Mod list (for version 3.2):
+Warning! While this modpack was designed to be used on multiplayer servers, always make sure that the server you're
+playing on, allows mods included in this pack. Playing on servers like Hypixel with this modpack is not recommended and may result
+in a temporary ban. Hexandcube is not responsible for any bans caused by the player's ignorance.
 
+
+##### Mod list (for version 4.0):
+
+- Camera Utils (by henkelmax)
 - Bookshelf (by DarkhaxDev)
 - Just Enough Items (JEI) (by mezz)
-- Toast Control (by Shadows_of_Fire)
+- No Chat Reports (by Aizistral)
 - Enchantment Descriptions (by DarkhaxDev)
+- LazyDFU (by tuxed)
+- Chat Heads (by dzwdz)
 - Light Overlay (Rift/Forge/Fabric) (by shedaniel)
-- OAuth (by Sintinium)
-- Kotlin for Forge (by thedarkcolour)
+- Sodium (by jellysquid3_)
+- Raised (by yurisuika)
+- Better Mount HUD (by Lortseam_)
+- ShulkerBoxTooltip [Fabric/Forge] (by MisterPeModder)
+- Litematica (by masady)
+- FerriteCore (Fabric) (by malte0811)
 - AppleSkin (by squeek502)
+- Sodium Extra (by FlashyReese)
 - Sign Tools (by dmitrylovin)
 - Architectury API (Fabric/Forge) (by shedaniel)
+- Entity Culling Fabric/Forge (by tr9zw)
 - Sound Physics Remastered (by henkelmax)
+- [FABRIC/QUILT] Disable Custom Worlds Advice (by rdvdev2)
 - Cloth Config API (Fabric/Forge) (by shedaniel)
-- Konkrete [Forge] (by Keksuccino)
-- Replanter (by Areuthreateningme)
-- Oculus (by Asek3)
+- Lithium (Fabric) (by jellysquid3_)
+- Xaero's World Map (by xaero96)
+- Iceberg [Fabric] (by Grend_G)
+- Item Borders [Fabric] (by Grend_G)
+- Equipment Compare [Fabric] (by Grend_G)
 - Jade 🔍 (by Snownee_)
-- Rubidium (by Asek3)
-- Equipment Compare (by Grend_G)
-- Crafting Tweaks (by BlayTheNinth)
-- Advancement Plaques (by Grend_G)
-- FancyMenu [Forge] (by Keksuccino)
-- JourneyMap (by techbrew)
-- Neat (by Vazkii)
+- MaLiLib (by masady)
+- Forge Config API Port (by Fuzs_)
+- No Telemetry (by kb1000)
+- Item Model Fix (Fabric) (by Pepper_Bell)
+- Visuality (by PinkGoosik)
+- LambDynamicLights (by LambdAurora)
+- Tool Stats (by DarkhaxDev)
+- Phosphor (Fabric) (by jellysquid3_)
+- Krypton (by tuxed)
+- Neat (Fabric/Quilt) (by williewillus)
+- Illuminations 🔥 (by doctor4t)
+- Iris Shaders (by coderbot)
+- Mod Menu (by ProspectorDev)
+- No Tutorial Toasts (by hydo_s)
 - Better Third Person (by Socolio)
-- FerriteCore (Forge) (by malte0811)
+- Not Enough Crashes (Fabric) (by NatanFudge)
+- Effective 💦 (by doctor4t)
 - Skin Layers 3D (Fabric/Forge) (by tr9zw)
-- Lazy DataFixerUpper(LazyDFU) [FORGE] (by Corgi_Taco)
-- Item Stitching Fix (by cy4sh0t)
-- Iceberg (by Grend_G)
-- Boat Item View (Forge) (by 50ap5ud5)
-- Smooth Boot (Reloaded) (by AbdElAziz333)
-- Quark (by Vazkii)
+- Eating Animation [Fabric] (by theone_ss)
+- Cherished Worlds (Fabric) (by TheIllusiveC4)
+- Axolotl Bucket Fix (by colderlavalamp)
+- Boat Item View (by 50ap5ud5)
+- Fabric Language Kotlin (by modmuss50)
 - Just Enough Resources (JER) (by way2muchnoise)
-- Effective (Forge) (by BottomTextDanny)
-- Magnesium/Rubidium Extras (by TeamDeusVult)
-- Balm (Forge Edition) (by BlayTheNinth)
-- Item Borders (by Grend_G)
+- Just Enough Professions (JEP) (by Mrbysco)
 - Clumps (by Jaredlll08)
-- Extreme sound muffler (Forge) (by LeoBeliik)
-- Radon (by Asek3)
+- Advancement Plaques [Fabric] (by Grend_G)
+- Blur (Fabric) (by Motschen)
 - Better Advancements (by way2muchnoise)
-- Radium Reforged (by Asek3)
-- Magnesium/Rubidium Dynamic Lights (by TeamDeusVult)
-- AutoRegLib (by Vazkii)
-- JEI Enchantment Info (by Phylogeny)
-- Configured (by MrCrayfish)
+- Extreme sound muffler (Fabric) Official (by LeoBeliik)
+- Cloth Config API (UNUSED) (by shedaniel)
+- Status Effect Bars (by Neecko5b84)
+- Borderless Mining (by comp500)
+- Zoomify (by XanderIsDev)
+- Armor Chroma for Fabric (by Neecko5b84)
+- Fabric API (by modmuss50)
+- Reese's Sodium Options (by FlashyReese)
 - Not Enough Animations (by tr9zw)
 - Mouse Tweaks (by YaLTeR)
-- Shutup Experimental Settings! (by Corgi_Taco)
+- Smooth Boot (Fabric) (by UltimateBoomer)
 - Controlling (by Jaredlll08)
 - Inventory Profiles Next (by mirinimi)
-- Placebo (by Shadows_of_Fire)
+- Xaero's Minimap (by xaero96)
+- Dynamic Crosshair (by Crendgrim)
+- BetterF3 (by cominixo)
 
 <br>
 
-Since version 3.0 this modpack is not compatible with Optifine, since it uses Rubidium (forge fork of sodium) which
-includes similar, and often better performance improvements than Optifine. Modpack supports custom shaders, dynamic
-lighting and zooming.
-
-**Caution: Enabling Quark modules other than client, will break modpack's compatibility with vanilla multiplayer server.**
-
-##### Known Issues:
-
-- Items in JEI are not being rendered unless the search bar is populated
-- Some Quark items may be visible in the creative inventory on Multiplayer servers
-
-<br>
-
-<a class="btn btn-primary" href="https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks/download/3878312?client=y" target="_blank"><i class="fas fa-fire"></i> Install on CurseForge</a>
+<!-- <a class="btn btn-primary" href="https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks/download/3878312?client=y" target="_blank"><i class="fas fa-fire"></i> Install on CurseForge</a> -->
 <a class="btn btn-secondary" href="https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Project Page</a>
 
 If you're using the [PolyMC Launcher](https://polymc.org/) it is recommended to use the built-in CurseForge integration,
