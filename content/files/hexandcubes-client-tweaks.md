@@ -1,20 +1,23 @@
 ---
 title: Hexandcube's Client Tweaks
 description: Improved Vanilla Minecraft Experience
-fileName: Hexandcube_Client_Tweaks_1.19.2-4.0.zip
+fileName: Hexandcube_Client_Tweaks_1.19.2-4.1.zip
 fileType: Minecraft Modpack
 fileExtension: zip
-fileSize: 52KB
-fileVersion: "4.0 [1.19.2]"
-fileDate: 2022-09-07
+fileSize: 651KB
+fileVersion: "4.1 [1.19.2]"
+fileDate: 2022-09-19
 icon: fa-solid fa-box
-download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.0.zip
+download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.1.zip
 downloadServer: Hexandcube Files
 servers: 
   - name: CurseForge
-    download: https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks/
+    download: https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks/download/3972715
 
 versions:
+  - name: "4.0 [1.19.2]"
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.0.zip
+    date: 2022-09-07
   - name: "3.2 [1.18.2]"
     download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.18.2-3.2.zip
     date: 2022-07-16
@@ -95,11 +98,13 @@ playing on, allows mods included in this pack. Playing on servers like Hypixel w
 in a temporary ban. Hexandcube is not responsible for any bans caused by the player's ignorance.
 
 
-##### Mod list (for version 4.0):
+##### Mod list (for version 4.1):
 
 - Camera Utils (by henkelmax)
 - Bookshelf (by DarkhaxDev)
 - Just Enough Items (JEI) (by mezz)
+- Wavey Capes (by tr9zw)
+- YetAnotherConfigLib (by XanderIsDev)
 - No Chat Reports (by Aizistral)
 - Enchantment Descriptions (by DarkhaxDev)
 - LazyDFU (by tuxed)
@@ -111,6 +116,8 @@ in a temporary ban. Hexandcube is not responsible for any bans caused by the pla
 - ShulkerBoxTooltip [Fabric/Forge] (by MisterPeModder)
 - Litematica (by masady)
 - FerriteCore (Fabric) (by malte0811)
+- Custom Splash Screen (by Motschen)
+- Crafting Tweaks (Fabric Edition) (by BlayTheNinth)
 - AppleSkin (by squeek502)
 - Sodium Extra (by FlashyReese)
 - Sign Tools (by dmitrylovin)
@@ -124,7 +131,9 @@ in a temporary ban. Hexandcube is not responsible for any bans caused by the pla
 - Iceberg [Fabric] (by Grend_G)
 - Item Borders [Fabric] (by Grend_G)
 - Equipment Compare [Fabric] (by Grend_G)
+- 'Slight' Gui Modifications (by shedaniel)
 - Jade 🔍 (by Snownee_)
+- UI Input Undo (Fabric) (by TheCSDev)
 - MaLiLib (by masady)
 - Forge Config API Port (by Fuzs_)
 - No Telemetry (by kb1000)
@@ -137,6 +146,7 @@ in a temporary ban. Hexandcube is not responsible for any bans caused by the pla
 - Neat (Fabric/Quilt) (by williewillus)
 - Illuminations 🔥 (by doctor4t)
 - Iris Shaders (by coderbot)
+- Tweakeroo (by masady)
 - Mod Menu (by ProspectorDev)
 - No Tutorial Toasts (by hydo_s)
 - Better Third Person (by Socolio)
@@ -144,6 +154,7 @@ in a temporary ban. Hexandcube is not responsible for any bans caused by the pla
 - Effective 💦 (by doctor4t)
 - Skin Layers 3D (Fabric/Forge) (by tr9zw)
 - Eating Animation [Fabric] (by theone_ss)
+- Better Statistics Screen (Fabric) (by TheCSDev)
 - Cherished Worlds (Fabric) (by TheIllusiveC4)
 - Axolotl Bucket Fix (by colderlavalamp)
 - Boat Item View (by 50ap5ud5)
@@ -152,28 +163,33 @@ in a temporary ban. Hexandcube is not responsible for any bans caused by the pla
 - Just Enough Professions (JEP) (by Mrbysco)
 - Clumps (by Jaredlll08)
 - Advancement Plaques [Fabric] (by Grend_G)
+- MiniHUD (by masady)
 - Blur (Fabric) (by Motschen)
 - Better Advancements (by way2muchnoise)
 - Extreme sound muffler (Fabric) Official (by LeoBeliik)
 - Cloth Config API (UNUSED) (by shedaniel)
+- Cloth API (Fabric) (by shedaniel)
 - Status Effect Bars (by Neecko5b84)
 - Borderless Mining (by comp500)
 - Zoomify (by XanderIsDev)
 - Armor Chroma for Fabric (by Neecko5b84)
+- ARRP (by one_point_o)
 - Fabric API (by modmuss50)
 - Reese's Sodium Options (by FlashyReese)
 - Not Enough Animations (by tr9zw)
 - Mouse Tweaks (by YaLTeR)
 - Smooth Boot (Fabric) (by UltimateBoomer)
+- Balm (Fabric Edition) (by BlayTheNinth)
 - Controlling (by Jaredlll08)
 - Inventory Profiles Next (by mirinimi)
 - Xaero's Minimap (by xaero96)
 - Dynamic Crosshair (by Crendgrim)
 - BetterF3 (by cominixo)
 
+
 <br>
 
-<!-- <a class="btn btn-primary" href="https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks/download/3878312?client=y" target="_blank"><i class="fas fa-fire"></i> Install on CurseForge</a> -->
+<a class="btn btn-primary" href="https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks/download/3996942?client=y" target="_blank"><i class="fas fa-fire"></i> Install on CurseForge</a>
 <a class="btn btn-secondary" href="https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Project Page</a>
 
 If you're using the [PolyMC Launcher](https://polymc.org/) it is recommended to use the built-in CurseForge integration,
