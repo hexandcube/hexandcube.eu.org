@@ -11,8 +11,10 @@ icon: fa-solid fa-box
 download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.1.zip
 downloadServer: Hexandcube Files
 servers: 
-  - name: CurseForge
-    download: https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks/download/3972715
+  - name: CurseForge (Curseforge Format)
+    download: https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks
+  - name: Modrinth (Modrith Format)
+    download: https://modrinth.com/modpack/hexandcube-client-tweaks
 
 versions:
   - name: "4.0 [1.19.2]"
@@ -194,3 +196,6 @@ in a temporary ban. Hexandcube is not responsible for any bans caused by the pla
 
 If you're using the [PolyMC Launcher](https://polymc.org/) it is recommended to use the built-in CurseForge integration,
 instead of installing the modpack using the downloaded .zip file.
+
+By downloading this modpack from Hexandcube Files, you're downloading the Curseforge format of the pack.
+If you want to download the Modrinth format of the pack, please visit the [Modrinth page](https://modrinth.com/modpack/hexandcube-client-tweaks).
