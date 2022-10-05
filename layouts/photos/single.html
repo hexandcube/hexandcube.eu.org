@@ -1,0 +1,51 @@
+{{ define "main" }}
+<main>
+    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive pt-8 pb-2 md:py-14 grid md:grid-cols-2">
+        <div>
+            <h1 class="accentline">{{ .Title }}</h1>
+            {{ with .Description}}
+            <p class="mt-5">{{ . }}</p>
+            {{ end }}
+        </div>
+        <div class="leading-default text-light-grey dark:text-dark-grey md:text-right mt-5">
+            <a href="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
+                class="btn btn-primary text-xl"><i class="fa-solid fa-download"></i> Download</a>
+        </div>
+    </section>
+    <section
+        class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-4 grid sticky top-0
+        {{ if .Params.Variant }}md:grid-cols-5{{ else }}md:grid-cols-4{{ end }} gap-y-1">
+        {{ with .Params.resolution }}
+        <div class="leading-default text-light-grey dark:text-dark-grey">
+            Resolution: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text">{{ . }}</b>
+        </div>
+        {{ end }}
+        {{ with .Params.camera }}
+        <div class="leading-default text-light-grey dark:text-dark-grey">
+            Camera: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text capitalize">{{ . }}</b>
+        </div>
+        {{ end }}
+        <div class="leading-default text-light-grey dark:text-dark-grey">
+            License: <br class="hidden md:block">TBD</b></a>
+        </div>
+        <div class="leading-default text-light-grey dark:text-dark-grey">
+            Author: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text">Hexandcube</b>
+        </div>
+        {{ with .Params.Date }}
+        <div class="leading-default text-light-grey dark:text-dark-grey">
+            Published: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text capitalize">{{ .Format "January 2, 2006" }}</b>
+        </div>
+        {{ end }}
+    </section>
+    <section class="responsive content py-8">
+        <itemscope itemtype="https://schema.org/ImageObject">
+
+            <img src="https://files.hexandcube.eu.org/photos/hexandcube-{{ .Params.id }}.jpg"
+                itemprop="contentUrl" alt="{{ .Title }}" class="rounded-xl">
+            </div>
+    </section>
+    <section class="responsive content py-8">
+        {{ .Content }}
+    </section>
+</main>
+{{ end }}
