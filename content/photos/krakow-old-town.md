@@ -1,6 +1,8 @@
 ---
 title: Krakow Old Town
 id: krakow-old-town
+license: CC BY 4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/legalcode
 resolution: 4224x3136
 date: 2019-08-04
 camera: Huawei LDN-L21

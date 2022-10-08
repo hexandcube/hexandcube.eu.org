@@ -1,6 +1,8 @@
 ---
 title: Black Cat Sleeping
 id: black-cat-sleeping
+license: Unsplash License
+licenseUrl: https://unsplash.com/license
 resolution: 3024x4032
 date: 2020-10-19
 camera: Google Pixel 4a

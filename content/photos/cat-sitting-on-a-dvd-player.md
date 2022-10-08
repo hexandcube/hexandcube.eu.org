@@ -1,6 +1,8 @@
 ---
 title: Cat sitting on a DVD player
 id: cat-sitting-on-dvd-player
+license: Unsplash License
+licenseUrl: https://unsplash.com/license
 resolution: 4032x3024
 date: 2020-10-29
 camera: Google Pixel 4a

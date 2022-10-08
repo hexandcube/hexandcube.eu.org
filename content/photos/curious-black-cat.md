@@ -1,6 +1,8 @@
 ---
 title: Curious Black Cat
 id: curious-black-cat
+license: Unsplash License
+licenseUrl: https://unsplash.com/license
 resolution: 4032x3024
 date: 2020-10-19
 camera: Google Pixel 4a

@@ -1,6 +1,8 @@
 ---
 title: Adorable Kitten Laying on the grass
 id: adorable-kitten-laying-on-the-grass
+license: CC BY 4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/legalcode
 resolution: 3264x2448
 date: 2019-08-10
 camera: Huawei LDN-L21

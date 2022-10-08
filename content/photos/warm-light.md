@@ -1,8 +1,10 @@
 ---
 title: Warm Light
 id: warm-light
+license: Unsplash License
+licenseUrl: https://unsplash.com/license
 resolution: 3024x4032
-date: 2022-08-10
+date: 2021-08-10
 camera: Google Pixel 4a
 lens: Pixel 4a back camera
 iso: 50

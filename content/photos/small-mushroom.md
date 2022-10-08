@@ -1,6 +1,8 @@
 ---
 title: Small Mushroom
 id: small-mushroom
+license: Unsplash License
+licenseUrl: https://unsplash.com/license
 resolution: 4032x3024
 date: 2021-09-19
 camera: Google Pixel 4a

@@ -1,6 +1,8 @@
 ---
 title: Bus Stop Covered in Snow
 id: bus-stop-covered-in-snow
+license: Unsplash License
+licenseUrl: https://unsplash.com/license
 resolution: 4032x3024
 date: 2021-01-04
 camera: Google Pixel 4a

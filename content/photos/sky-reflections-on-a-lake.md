@@ -1,6 +1,8 @@
 ---
 title: Sky reflections on a lake
 id: sky-reflections-on-a-lake
+license: Unsplash License
+licenseUrl: https://unsplash.com/license
 resolution: 3687x1765
 date: 2021-05-23
 camera: Google Pixel 4a

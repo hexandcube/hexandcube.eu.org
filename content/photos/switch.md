@@ -1,6 +1,8 @@
 ---
 title: Switch
 id: switch
+license: Unsplash License
+licenseUrl: https://unsplash.com/license
 resolution: 4032x3024
 date: 2021-08-02
 camera: Google Pixel 4a

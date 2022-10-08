@@ -1,6 +1,8 @@
 ---
 title: Fancy Pigeon
 id: fancy-pigeon
+license: Unsplash License
+licenseUrl: https://unsplash.com/license
 resolution: 3265x4898
 date: 2022-08-11
 camera: Canon EOS 550D

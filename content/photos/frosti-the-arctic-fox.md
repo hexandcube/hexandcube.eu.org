@@ -1,6 +1,8 @@
 ---
 title: Frosti the Arctic Fox
 id: frosti-the-arctic-fox
+license: Unsplash License
+licenseUrl: https://unsplash.com/license
 resolution: 3024x4032
 date: 2022-02-25
 camera: Google Pixel 4a

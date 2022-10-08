@@ -1,6 +1,8 @@
 ---
 title: Two Benches in Fog
 id: two-benches-in-fog
+license: CC BY 4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/legalcode
 resolution: 3264x2448
 date: 2019-05-18
 camera: Huawei LDN-L21

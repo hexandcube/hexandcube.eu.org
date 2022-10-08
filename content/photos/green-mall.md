@@ -1,6 +1,8 @@
 ---
 title: Green Mall
 id: green-mall
+license: Unsplash License
+licenseUrl: https://unsplash.com/license
 resolution: 4898x3265
 date: 2022-08-11
 camera: Canon EOS 550D

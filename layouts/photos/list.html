@@ -2,10 +2,10 @@
 <main>
     <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-16">
         <h1 class="accentline">Photos</h1>
-        <p class="mt-5">Here you can find all of the photos I've ever shared online. Some of them are free to use, some are not. Please check the license before using, Thanks!</p>
+        <p class="mt-5">Here you can find all of the photos I've ever shared online. Most of them are free to use. Please check the license before using, Thanks!</p>
     </section>
     <section class="responsive py-8 grid gird-cols-1 sm:grid-cols-2 xl:grid-cols-3">
-        {{ $paginator := .Paginate (sort .Pages "Params.id" "desc" ) }}
+        {{ $paginator := .Paginate (sort .Pages "Params.date" "desc" ) }}
             {{ range $paginator.Pages }}
                 <div class="p-2 cursor-pointer relative">
                     <a href="{{ .RelPermalink }}" class="image-card-container">
@@ -15,16 +15,13 @@
                             <i class="fa-solid fa-fw fa-magnifying-glass text-2xl absolute top-[0.65rem] right-[0.65rem] text-light-secondary-text dark:text-dark-secondary-text"></i>
                         </div>
                     </a>
-                    <div class="grid grid-cols-5">
+                    <div class="grid">
                         <div class="col-span-4 leading-default">
                             <div class="title-5 clear font-brand mt-3">
                                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                             </div>
-                            <small class="inline-block -mt-5 capitalize">{{ .Params.Resolution }} {{ with .Params.camera }} | {{ . }} {{ end }}</small>
-                        </div>
-                        <div class="mt-2 text-right">
-                            <a href="https://files.hexandcube.eu.org/photos/hexandcube-{{ .Params.id }}.jpg"
-                                class="btn btn-primary btn-circle" aria-label="Download"><i class="fas fa-download"></i></a>
+                            <small class="inline-block -mt-5 capitalize">{{ .Params.Date.Format "January 2, 2006" }}
+                                {{ with .Params.camera }} | {{ . }} {{ end }}</small>
                         </div>
                     </div>
                 </div>

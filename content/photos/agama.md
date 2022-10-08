@@ -1,6 +1,8 @@
 ---
 title: Agama
 id: agama
+license: Unsplash License
+licenseUrl: https://unsplash.com/license
 resolution: 4032x3024
 date: 2022-02-25
 camera: Google Pixel 4a
