@@ -79,5 +79,12 @@ paginate = 18
     url = "/wallpapers/"
     weight = -70
     pre="fa-image"
+
+  [[menu.main]]
+    identifier = "photos"
+    name = "Photos"
+    url = "/photos/"
+    weight = -60
+    pre="fa-camera"
     
 
