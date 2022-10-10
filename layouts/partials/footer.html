@@ -43,8 +43,10 @@
             <img class="mx-auto footerlogo-dark mb-2" src="/img/logo.png" alt="Hexandcube" width="275rem">
             <img class="mx-auto footerlogo-light mb-2" src="/img/logo-reversed.png" alt="Hexandcube" width="275rem">
         </div>
-        <div>Copyright &copy; 2017 - 2022 Hexandcube</div>
+        
         <div class="content">
+            <div>Version {{ .Site.Params.Version }} | <a href="{{ .Site.Params.Repository }}"><i class="fa-solid fa-code-branch fa-fw"></i> {{ if .GitInfo }}{{ .GitInfo.AbbreviatedHash }}{{ end }}</a></div>
+            <div>Copyright &copy; 2017 - 2022 Hexandcube</div>
             <a class="block sm:inline" href="/terms">Terms and Conditions</a>
             <span class="hidden sm:inline-block">|</span>
             <a class="block sm:inline" href="/acknowledgements">Acknowledgements</a>
