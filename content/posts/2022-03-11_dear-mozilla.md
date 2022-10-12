@@ -2,7 +2,7 @@
 title: Dear Mozilla...
 author: Hexandcube
 description: Please listen to the community.
-thumbnail: /img/posts/2022/03/dear-mozilla.png
+thumbnail: /img/uploads/dear-mozilla.png
 publishDate: 2022-03-11
 ---
 
