@@ -23,13 +23,10 @@
 
 {{ $styles := resources.Get "scss/main.scss" | toCSS | postCSS }}
 
-{{ if .Site.IsServer }}
-    {{ $styles = $styles | resources.ExecuteAsTemplate (printf "scss/main.dev.%v.css" now.UnixMilli) .}}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
-{{ else }}
+
     {{ $styles := $styles | minify | resources.PostProcess }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" async/>
-{{ end }}
+
 
 <link rel="stylesheet" href="/fonts/font-awesome/css/all.min.css" defer>
 <link rel="stylesheet" href="/fonts/mont/mont.css" async>
@@ -118,3 +115,4 @@
 
     checkTheme();
 </script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

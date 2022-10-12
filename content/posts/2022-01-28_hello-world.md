@@ -2,7 +2,7 @@
 title: Hello World
 author: Hexandcube
 description: The obligatory first post
-thumbnail: /img/posts/2022/01/hello-world.png
+thumbnail: /img/uploads/hello-world.png
 publishDate: 2022-01-28
 ---
 
