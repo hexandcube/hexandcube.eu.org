@@ -76,7 +76,8 @@ collections:
       - {label: "Download Server", name: "downloadServer", widget: "string"}
       - {label: "Servers", name: "servers", widget: "list", fields: [{label: "Name", name: "name"}, {label: "Download", name: "download"}]}
       - {label: "Versions", name: "versions", widget: "list", fields: [{label: "Name", name: "name"}, {label: "Download", name: "download"}, {label: "Date", name: "date", widget: "datetime"}]}
-  
+      - {label: "Body", name: "body", widget: "markdown"}
+      
   - name: "pages"
     label: "Pages"
     folder: "content"
