@@ -2,29 +2,30 @@
 Hash: SHA256
 
 This is a signature profile for Hexandcube <hexandcube@hexandcube.eu.org>
-Signed with a PGP key with fingerprint: 5681 BDD2 B70D 35BE 36AA  2598 5C37 F302 8185 8136
+Signed with a PGP key with fingerprint: 08B0 B863 397E 229A 7195 219B 3D64 AD00 4041 857E
 
 Verify this profile at https://keyoxide.org/sig
 
-proof=dns:hexandcube.eu.org
-proof=dns:hxnc.eu.org
-proof=https://twitter.com/hexandcube/status/1357226006642360322
+proof=dns:hxnc.eu.org?type=TXT
+proof=dns:hexandcube.eu.org?type=TXT
 proof=https://gitlab.com/hexandcube/gitlab_proof
 proof=https://gist.github.com/hexandcube/cb06fdc2df516730e898bff3030d7a4e
 proof=https://mstdn.social/@hexandcube
-proof=https://www.reddit.com/user/hexandcube/comments/kbbx0t/openpgp_proof/
-proof@ariadne.id=matrix:u/@hexandcube:matrix.org?org.keyoxide.r=!dBfQZxCoGVmSTujfiv:matrix.org&org.keyoxide.e=$PKGLVkdkwoRlMuejlZGeHyZ0-Xg1tLOssXNax-eQGV8
+proof=https://t.me/hexandcube?proof=hexandcube_pgp
+proof=https://twitter.com/hexandcube/status/1583556969842909184
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCAAdFiEEVoG90rcNNb42qiWYXDfzAoGFgTYFAmLWaZoACgkQXDfzAoGF
-gTZIrQwAoLgEM+kCb1/z//xRWS5FBGZG/hD8LPULRkvSrBsKiqRX/ZEI2ljAxkul
-yvTLj8K9KbI+R9dvXU2zorDs82XGaVS9C7UfQxRuqdArW9PCheqo0HwPgr0QKHbt
-km8btNtk/I2QAJrX3mm8rZ17EI6TV/WCQauvRoCwf6p/PuJwgz8VgL0wYBCtA+3n
-e4dmEfkd6Hgi6rdZpYtSr32hJXsky8YHudfl0nuU9jSMQL3wVsnk8yDgvWBquZSW
-ZCKDv6mrxhET1C5RcappOroNdgLPiwhFKsciTxs11Fdvc//EmDbjbHEQV9GQiEO9
-zqcrtqFRwabbQUTp+qgSu2017A7ex7rT/JaM8qAoP8YeM9LeXbspKTo3I2EbG0ot
-ykReVBiRtu27u1gTvltFwthCuod2+e4E/SK/oVWChBwlpc7NLgNX7X+aeEFck4Jp
-03fYXohvEAkg7eVIwYpkdfIJwm5FFaJrZTVufnrqWQ+Y5kCbST4gMv4HfF1skt8V
-pbmY4/us
-=AioU
+iQIzBAEBCAAdFiEECLC4Yzl+IppxlSGbPWStAEBBhX4FAmNTCyUACgkQPWStAEBB
+hX7gKBAAiLqHpmGooFnDmlX42fYdh8x1Yw4372RlLRi0kpPzCjC1SjolNDIND2o/
+nskj5BaKTDWZB7s5WJ1FyrRPhKjNk4cKpOMxvBQbIzCRjsNdC0q4Ifge3eJGbjQ3
+uynUZzdZiPYUx60cQNq+95veV+0vdqySfb/JHkNYdW6Cer7j3PWA1fuDPUBGhaHA
+EuTYcdfgLYqvNA+QKPPeMlHJKSvzxB01JG54rmbfR50DlVezv63DgN8vyFFH3mca
+7fG0Q/vnE6gw1oOHBqDwRT1GqMgsfyTjj0OChqtHgkjRzTn15Dw8yO9BQ2LzNGLq
+6be8mtU9r7Bnt/h1DGFP8Z3j5S5KrHCymrDdGZhB4ztgBAACgZSM3QSiq769yyUn
+IM5XZCtCYi3ep/t6mrd3Y8R1NFTHbKRnMUMIC5K2uBlFo9Si1xfMnxqyxU86DXVk
+BjdTqDJRJKmO8lQkujHC92JtMNKbbqlYIhrMD26co777X7Y5eFziGcUINxyQNqOL
+OpJ0lna8pJIEaAEp5WmMV1DtRz7/DzZyUa0gRu5CJgtokdgwtAiG0jn0mNYI7EoN
+VdXJOtlNbThKuspgqRHzwd44CnJAQ71a8Ma3C1VE0maOJ8wM80CMNGioRuO/g/dM
+TA/CaG96KzY/R1bJisaz4ewIwv/jw0+L+pnlLXVWIttA+eaPGe4=
+=mDS2
 -----END PGP SIGNATURE-----
