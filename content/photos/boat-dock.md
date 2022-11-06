@@ -12,4 +12,3 @@ focalLength: 32mm
 shutterSpeed: "10"
 aperture: f/8
 ---
-Boat Dock

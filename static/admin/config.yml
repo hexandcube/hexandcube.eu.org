@@ -35,7 +35,7 @@ collections:
       - {label: "Keywords", name: "keywords", widget: "string"}
       - {label: "Resolution", name: "resolution", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
 
   - name: "photos"
     label: "Photos"
@@ -55,7 +55,7 @@ collections:
       - {label: "Focal Length", name: "focalLength", widget: "string"}
       - {label: "Shutter Speed", name: "shutterSpeed", widget: "string"}
       - {label: "Aperture", name: "aperture", widget: "string", default: "f/"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
 
   - name: "files"
     label: "Files"
@@ -76,7 +76,7 @@ collections:
       - {label: "Download Server", name: "downloadServer", widget: "string"}
       - {label: "Servers", name: "servers", widget: "list", fields: [{label: "Name", name: "name"}, {label: "Download", name: "download"}]}
       - {label: "Versions", name: "versions", widget: "list", fields: [{label: "Name", name: "name"}, {label: "Download", name: "download"}, {label: "Date", name: "date", widget: "datetime"}]}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
       
   - name: "pages"
     label: "Pages"
