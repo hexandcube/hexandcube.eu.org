@@ -30,9 +30,9 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string", default: "Wallpaper"}
       - {label: "ID", name: "id", widget: "number"}
-      - {label: "Variant", name: "variant", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Keywords", name: "keywords", widget: "string"}
+      - {label: "Variant", name: "variant", widget: "string", required: false}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Keywords", name: "keywords", widget: "string", required: false}
       - {label: "Resolution", name: "resolution", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
@@ -64,7 +64,7 @@ collections:
     slug: "{{slug}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string", required: false}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "File Name", name: "fileName", widget: "string"}
       - {label: "File Type", name: "fileType", widget: "string"}
@@ -74,8 +74,8 @@ collections:
       - {label: "Icon", name: "icon", widget: "string", default: "fa-file"}
       - {label: "Download URL", name: "download", widget: "string"}
       - {label: "Download Server", name: "downloadServer", widget: "string"}
-      - {label: "Servers", name: "servers", widget: "list", fields: [{label: "Name", name: "name"}, {label: "Download", name: "download"}]}
-      - {label: "Versions", name: "versions", widget: "list", fields: [{label: "Name", name: "name"}, {label: "Download", name: "download"}, {label: "Date", name: "date", widget: "datetime"}]}
+      - {label: "Servers", name: "servers", widget: "list", fields: [{label: "Name", name: "name"}, {label: "Download", name: "download"}], required: false}
+      - {label: "Versions", name: "versions", widget: "list", fields: [{label: "Name", name: "name"}, {label: "Download", name: "download"}, {label: "Date", name: "date", widget: "datetime"}], required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
       
   - name: "pages"
@@ -86,10 +86,10 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Hide Metabar", name: "hideMetabar", widget: "boolean"}
-      - {label: "Hide Reading Time", name: "hideReadingTime", widget: "boolean"}
+      - {label: "Hide Metabar", name: "hideMetabar", widget: "boolean", required: false}
+      - {label: "Hide Reading Time", name: "hideReadingTime", widget: "boolean", required: false}
       - {label: "Author", name: "author", widget: "string", default: "Hexandcube"}
-      - {label: "Date", name: "publishDate", widget: "datetime"}
-      - {label: "Last Modified", name: "lastmod", widget: "datetime"}
+      - {label: "Date", name: "publishDate", widget: "datetime", required: false}
+      - {label: "Last Modified", name: "lastmod", widget: "datetime", required: false}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
