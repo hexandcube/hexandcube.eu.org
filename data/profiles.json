@@ -20,7 +20,7 @@
         "link": "https://matrix.to/#/@hexandcube:matrix.org"
     },
     "05": {
-        "name": "Fediverse",
+        "name": "Fediverse (ActivityPub)",
         "username": "@hexandcube@mstdn.social",
         "link": "https://mstdn.social/@hexandcube"
     },
