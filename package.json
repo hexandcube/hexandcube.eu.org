@@ -14,7 +14,7 @@
   "homepage": "https://hexandcube.eu.org",
   "dependencies": {
     "netlify-cli": "^12.1.0",
-    "postcss-cli": "^10.0.0",
+    "postcss-cli": "^10.1.0",
     "sass": "^1.55.0"
   },
   "devDependencies": {
