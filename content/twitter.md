@@ -1,8 +1,17 @@
 ---
 title: Hexandcube on Twitter
-lastmod: 2022-11-12
+lastmod: 2022-12-18
 description: Hi! I'm @hexandcube! Here's what you should know before interacting with me on Twitter.
 --- 
+
+<div class="bg-light-secondary-bg dark:bg-dark-secondary-bg text-white rounded-xl p-5">
+    <p class="text-2xl font-bold"><i class="fa-solid fa-triangle-exclamation"></i> Important Information</p>
+    <p>Because of what's currently happening, I'm not very active on Twitter anymore. The contents of this page may be outdated.
+        You should follow me on Fediverse/Mastodon instead.
+        <br><br>
+        <a class="btn btn-primary" href="https://mstdn.social/@hexandcube"><i class="fa-brands fa-mastodon"></i> Visit @hexandcube@mstdn.social</a>
+    </p>
+</div>
 
 # Follow me for
 
@@ -52,10 +61,8 @@ If you think I've blocked you by accident, please [let me know](/about).
 - Impersonate another individual or organization (Parodies are ok)
 - Post Tweets with hashtags that are not related to the content of the Tweet
 - Are operated by cryptobros[^1]
-- Religiously support Elon Musk (You know what I mean)
+- Support Elon Musk
 - Promote scams
-
-Since December 12th (If Twitter survives):
 - Pay for Twitter Blue Verification
 
 # Muting
