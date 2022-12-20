@@ -17,6 +17,9 @@ servers:
   - name: Modrinth (Modrith Format)
     download: https://modrinth.com/modpack/hexandcube-client-tweaks
 versions:
+  - name: 4.3 Beta [1.19.3]
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.3-4.2_Beta.zip
+    date: 2022-12-20
   - name: 4.0 [1.19.2]
     download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.0.zip
     date: 2022-09-07
