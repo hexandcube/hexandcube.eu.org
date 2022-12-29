@@ -1,8 +1,8 @@
 ---
 title: Just don't be toxic
 id: just-dont-be-toxic
-license: Unsplash License
-licenseUrl: https://unsplash.com/license
+license: All rights reserved
+licenseUrl: https://hexandcube.eu.org/terms/#download-and-use-of-content
 resolution: 2849x2849
 date: 2022-12-27T12:28:44.978Z
 camera: Google Pixel 4a
