@@ -2,8 +2,7 @@ baseURL = "https://hexandcube.eu.org"
 languageCode = "en-us"
 title = "Hexandcube.eu.org"
 enableEmoji = true
-# Only set enableGitInfo to true when using a git repo
-enableGitInfo = true
+enableGitInfo = false
 paginate = 18
 
 [markup]

@@ -20,7 +20,7 @@
     "4": {
         "name": "Firefox",
         "type": "Translation, Support",
-        "years": "2018 - Present",
+        "years": "2018 - 2022",
         "link": "https://mozilla.org/firefox"
     },
     "5": {
@@ -32,19 +32,19 @@
     "6": {
         "name": "Mastodon",
         "type": "Translation",
-        "years": "2020 - Present",
+        "years": "2020 - 2022",
         "link": "https://joinmastodon.org/"
     },
     "7": {
         "name": "Bitwarden",
         "type": "Translation",
-        "years": "2021 - Present",
+        "years": "2021 - 2022",
         "link": "https://bitwarden.com/"
     },
     "8": {
         "name": "OBS Studio",
         "type": "Translation",
-        "years": "2021 - Present",
+        "years": "2021 - present",
         "link": "https://obsproject.com/"
     }
 }

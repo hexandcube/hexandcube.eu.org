@@ -2,8 +2,7 @@
 <main>
     <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-16">
         <h1 class="accentline">Wallpapers</h1>
-        <p class="mt-5">Here you can find some wallpapers that I've designed. All of them are available under the
-            <a itemprop="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.</p>
+        <p class="mt-5">Here you can find some wallpapers that I've designed. They're free for personal use only.</p>
     </section>
     <section class="responsive py-8 grid gird-cols-1 sm:grid-cols-2 xl:grid-cols-3">
         {{ $paginator := .Paginate (sort .Pages "Params.id" "desc" ) }}

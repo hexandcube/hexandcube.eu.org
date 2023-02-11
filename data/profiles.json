@@ -20,7 +20,7 @@
         "link": "https://matrix.to/#/@hexandcube:matrix.org"
     },
     "05": {
-        "name": "Fediverse",
+        "name": "Fediverse (ActivityPub)",
         "username": "@hexandcube@mstdn.social",
         "link": "https://mstdn.social/@hexandcube"
     },
@@ -48,5 +48,10 @@
         "name": "Mozilla AMO",
         "username": "Hexandcube",
         "link": "https://addons.mozilla.org/en-US/firefox/user/14625252/"
+    },
+    "11": {
+        "name": "Cohost",
+        "username": "@hexandcube",
+        "link": "https://cohost.org/hexandcube"
     }
 }

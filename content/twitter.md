@@ -1,8 +1,17 @@
 ---
 title: Hexandcube on Twitter
-lastmod: 2022-09-26
+lastmod: 2022-12-18
 description: Hi! I'm @hexandcube! Here's what you should know before interacting with me on Twitter.
 --- 
+
+<div class="bg-light-secondary-bg dark:bg-dark-secondary-bg text-white rounded-xl p-5">
+    <p class="text-2xl font-bold"><i class="fa-solid fa-triangle-exclamation"></i> Important Information</p>
+    <p>Because of what's currently happening, I'm not very active on Twitter anymore. The contents of this page may be outdated.
+        You should follow me on Fediverse/Mastodon instead.
+        <br><br>
+        <a class="btn btn-primary" href="https://mstdn.social/@hexandcube"><i class="fa-brands fa-mastodon"></i> Visit @hexandcube@mstdn.social</a>
+    </p>
+</div>
 
 # Follow me for
 
@@ -10,7 +19,7 @@ description: Hi! I'm @hexandcube! Here's what you should know before interacting
 - Photos of foxes
 - Photos, in general
 - Screenshots of broken software
-- Opinions (how dare you)
+- Opinions
 - Tweets mostly in English, but sometimes in Polish
 - And other random stuff that I find interesting
 
@@ -18,10 +27,24 @@ description: Hi! I'm @hexandcube! Here's what you should know before interacting
 
 If you don't like what I post, you can always unfollow me. You don't have to tell me that you unfollowed me, I don't care.
 
+# Direct Messages
+
+My DMs are open, if you want to talk to me, feel free to send me a message. But please, [don't just say hello](https://nohello.net/).
+Any spam messages will result in an instant block. 
+
+# Followed accounts
+
+Following someone is not an endorsement. Just because I follow you doesn't mean I agree with everything you say.
+Please don't message me asking me to unfollow someone. I know who I follow, and I follow them for a specific reasons.
+
 # Blocking
 
+Due to the nature of Twitter I have to block some accounts, to not go insane.
 This list, contains the types of accounts, I will most likely block.
-If your account meets any requirements listed here, you probably shouldn't interact with me on Twitter.
+If your account meets any criteria listed here, you probably shouldn't interact with me on Twitter.
+
+On very rare occasions I will megablock a Tweet, which will automatically block its author and everyone who liked the
+Tweet. This is a nuclear option which is only used on the worst Tweets on the platform.
 
 If you think I've blocked you by accident, please [let me know](/about).
 
@@ -33,12 +56,19 @@ If you think I've blocked you by accident, please [let me know](/about).
 - Spread misinformation - Information confirmed to be false
 - Spread theories (theses) as facts without providing scientific proofs
 - Are a part of known dangerous organizations and hate groups
-- Support actions of terrorist states (e.g. Russia, North Korea)
+- Support actions of terrorist regimes (e.g. Russia, North Korea)
 - Promote or endorse, products or services for profit without clearly declaring the advertisement
-- Impersonate another individual or organization
+- Impersonate another individual or organization (Parodies are ok)
 - Post Tweets with hashtags that are not related to the content of the Tweet
 - Are operated by cryptobros[^1]
+- Support Elon Musk
 - Promote scams
+- Pay for Twitter Blue Verification
+
+# Muting
+
+If an account doesn't meet my criteria for blocking but is just annoying, it will get muted. 
+This includes everyone who advertises on Twitter. 
 
 &nbsp;
 
