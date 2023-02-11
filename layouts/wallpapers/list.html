@@ -2,14 +2,14 @@
 <main>
     <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-16">
         <h1 class="accentline">Wallpapers</h1>
-        <p class="mt-5">Here you can find some wallpapers that I've designed. They're free for personal use only.</p>
+        <p class="mt-5">Here you can find all the desktop wallpapers that I've designed. Feel free to use them on your own devices.</p>
     </section>
     <section class="responsive py-8 grid gird-cols-1 sm:grid-cols-2 xl:grid-cols-3">
         {{ $paginator := .Paginate (sort .Pages "Params.id" "desc" ) }}
             {{ range $paginator.Pages }}
                 <div class="p-2 cursor-pointer relative">
                     <a href="{{ .RelPermalink }}" class="image-card-container">
-                        <img itemprop="contentUrl" src="https://files.hexandcube.eu.org/wallpapers/thumbnails/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
+                        <img itemprop="contentUrl" src="https://files.hexandcube.eu.org/wallpapers/thumbnails/Wallpaper-{{ .Params.id }}{{ with .Params.variants }}-{{ index . 0 }}{{ end }}.png"
                             class="image-card shadow-xl hover:shadow-none" alt="{{ .Title }}">
                         <div class="absolute top-6 right-6 bg-light-secondary dark:bg-dark-secondary text-light-primary-text dark:text-dark-primary-text w-12 h-12 rounded-xl image-card-marker opacity-0">
                             <i class="fa-solid fa-fw fa-magnifying-glass text-2xl absolute top-[0.65rem] right-[0.65rem] text-light-secondary-text dark:text-dark-secondary-text"></i>
@@ -20,10 +20,10 @@
                             <div class="title-5 clear font-brand mt-3">
                                 <a href="{{ .RelPermalink }}">Wallpaper {{ .Params.Id }}</a>
                             </div>
-                            <small class="inline-block -mt-5 capitalize">{{ .Params.Resolution }} {{ with .Params.Variant }} | {{ . }} {{ end }}</small>
+                            <small class="inline-block -mt-5 capitalize">{{ .Params.PublishDate.Format "January 2, 2006" }} {{ with .Params.Variants }} | {{ len . }} Variants {{ end }}</small>
                         </div>
                         <div class="mt-2 text-right">
-                            <a href="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
+                            <a href="https://files.hexandcube.eu.org/wallpapers/download/Wallpaper-{{ .Params.id }}.zip"
                                 class="btn btn-primary btn-circle" aria-label="Download"><i class="fas fa-download"></i></a>
                         </div>
                     </div>

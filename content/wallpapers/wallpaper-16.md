@@ -1,10 +1,11 @@
 ---
-title: Wallpaper 16 Bordered
+title: Wallpaper 16
 description: Minimalistic test card wallpaper inspired by PM5544 and BBC test card F
 keywords: minimalistic, wallpaper, test, card, testcard, tv, broadcast, philips, bbc, pm5544, test card f, television, 5120x2880, desktop
 id: 16
-variant: bordered
-resolution: 5120x2880
+variants: [bordered, borderless]
+license: CC BY-NC 4.0
+license_url: https://creativecommons.org/licenses/by-nc/4.0/
 date: 2022-01-14
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Wallpaper 5
 id: 5
-resolution: 1920x1080
-date: 2019-11-01
+license: CC BY-NC 4.0
+license_url: https://creativecommons.org/licenses/by-nc/4.0/
+date: 2018-12-06
 ---

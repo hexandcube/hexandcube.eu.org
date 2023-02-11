@@ -1,5 +1,7 @@
 ---
 title: Wallpaper 7
 id: 7
-resolution: 5120x2880
+license: CC BY-NC 4.0
+license_url: https://creativecommons.org/licenses/by-nc/4.0/
+date: 2019-09-28
 ---

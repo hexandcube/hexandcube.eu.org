@@ -1,5 +1,7 @@
 ---
 title: Wallpaper 3
 id: 3
-resolution: 1920x1080
+license: CC BY-NC 4.0
+license_url: https://creativecommons.org/licenses/by-nc/4.0/
+date: 2018-09-01
 ---

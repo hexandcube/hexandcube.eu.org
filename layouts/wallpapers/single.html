@@ -8,7 +8,7 @@
             {{ end }}
         </div>
         <div class="leading-default text-light-grey dark:text-dark-grey md:text-right mt-5">
-            <a href="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
+            <a href="https://files.hexandcube.eu.org/wallpapers/download/Wallpaper-{{ .Params.id }}.zip"
                 class="btn btn-primary text-xl"><i class="fa-solid fa-download"></i> Download</a>
         </div>
     </section>
@@ -20,31 +20,43 @@
             Resolution: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text">{{ . }}</b>
         </div>
         {{ end }}
-        {{ with .Params.Variant }}
+        {{ with .Params.Variants }}
         <div class="leading-default text-light-grey dark:text-dark-grey">
-            Variant: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text capitalize">{{ . }}</b>
+            <i class="fa-solid fa-dice"></i> Variants: <br class="hidden md:block"><b
+                class="text-light-text dark:text-dark-text capitalize">{{ delimit . ", " }}</b>
         </div>
         {{ end }}
         <div class="leading-default text-light-grey dark:text-dark-grey">
-            License: <br class="hidden md:block"><a itemprop="license"
-                href="https://creativecommons.org/licenses/by-sa/4.0/" class="text-light-text dark:text-dark-text"><b>CC BY-SA
-                    4.0</b></a>
+            <i class="fa-solid fa-scale-balanced"></i> License: <br class="hidden md:block"><a itemprop="license"
+                href="{{ .Params.license_url }}" class="text-light-text dark:text-dark-text underline"><b>{{ .Params.License }}</b></a>
         </div>
         <div class="leading-default text-light-grey dark:text-dark-grey">
-            Author: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text">Hexandcube</b>
+            <i class="fa-solid fa-user"></i> Author: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text">Hexandcube</b>
         </div>
         {{ with .Params.Date }}
         <div class="leading-default text-light-grey dark:text-dark-grey">
-            Published: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text capitalize">{{ .Format "January 2, 2006" }}</b>
+            <i class="fa-solid fa-calendar-days"></i> Published: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text capitalize">{{ .Format "January 2, 2006" }}</b>
         </div>
         {{ end }}
     </section>
     <section class="responsive content py-8">
+        {{ $current := . }}
+        {{ if .Params.variants }}
+            {{ range .Params.variants }}
+            <itemscope itemtype="https://schema.org/ImageObject">
+
+                <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ $current.Params.id }}-{{ . }}.png"
+                    itemprop="contentUrl" alt="{{ $current.Title }}" class="rounded-xl mb-5">
+            </itemscope>
+            {{ end }}
+        {{ else }}
         <itemscope itemtype="https://schema.org/ImageObject">
 
-            <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ .Params.id }}{{ with .Params.variant }}-{{ . }}{{ end }}.png"
+            <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ .Params.id }}.png"
                 itemprop="contentUrl" alt="{{ .Title }}" class="rounded-xl">
-            </div>
+            </itemscope>
+        {{ end }}
+        </div>
     </section>
     <section class="responsive content py-8">
         {{ .Content }}
