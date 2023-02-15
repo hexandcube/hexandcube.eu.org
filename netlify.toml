@@ -11,3 +11,8 @@
     to = "/404"
     status = 404
     force = false
+
+[[headers]]
+  for = "/.well-known/webfinger"
+  [headers.values]
+    Content-Type="application/json"

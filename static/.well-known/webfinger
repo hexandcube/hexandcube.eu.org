@@ -1,0 +1,23 @@
+{
+  "subject": "acct:hexandcube@mstdn.social",
+  "aliases": [
+    "https://mstdn.social/@hexandcube",
+    "https://mstdn.social/users/hexandcube"
+  ],
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://mstdn.social/@hexandcube"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://mstdn.social/users/hexandcube"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://mstdn.social/authorize_interaction?uri={uri}"
+    }
+  ]
+}
