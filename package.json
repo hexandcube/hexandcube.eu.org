@@ -13,7 +13,7 @@
   },
   "homepage": "https://hexandcube.eu.org",
   "dependencies": {
-    "netlify-cli": "^12.12.0",
+    "netlify-cli": "^13.0.0",
     "postcss-cli": "^10.1.0",
     "sass": "^1.58.0"
   },
