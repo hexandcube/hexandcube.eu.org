@@ -147,15 +147,15 @@ h6,
 }
 
 .btn {
-    @apply border-2 border-transparent inline-block px-4 py-2 cursor-pointer rounded-3xl mr-1 my-1 font-bold hover:rounded-xl;
+    @apply border-2 border-transparent inline-block px-4 py-2 cursor-pointer rounded-xl mr-1 my-1 hover:rounded-xl;
 }
 
 .btn-primary {
-    @apply border-2 border-transparent bg-light-primary dark:bg-dark-primary hover:bg-light-primary hover:dark:bg-dark-primary shadow-sm shadow-light-primary/30 dark:shadow-dark-primary/30 hover:shadow-accent/30 text-light-primary-text dark:text-dark-primary-text;
+    @apply border-2 border-light-primary-border dark:border-dark-primary-border bg-light-primary dark:bg-dark-primary hover:bg-light-secondary hover:dark:bg-dark-secondary text-light-primary-text dark:text-dark-primary-text;
 }
 
 .btn-secondary {
-    @apply border-2 border-light-primary text-light-primary dark:border-dark-primary dark:text-dark-primary hover:text-light-primary-text hover:dark:text-dark-primary-text hover:bg-light-primary hover:dark:bg-dark-primary shadow-sm shadow-accent-500/30;
+    @apply border-2 border-light-primary text-light-primary dark:border-dark-primary dark:text-dark-primary hover:bg-light-secondary/20 hover:dark:bg-dark-secondary/20;
 }
 
 .btn-circle {
@@ -206,19 +206,8 @@ h6,
     @apply fill-light-secondary dark:fill-dark-secondary;
 }
 
-header {
-    transition: border-radius 0s;
-    @apply bg-light-secondary-bg;
-}
-
-.dark header {
-    @apply bg-dark-secondary-bg;
-}
-
 .extended {
     @apply bg-light-primary-bg;
-    border-bottom-left-radius: 3rem;
-    border-bottom-right-radius: 3rem;
 }
 
 .dark .extended {

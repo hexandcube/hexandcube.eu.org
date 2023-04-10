@@ -1,38 +1,37 @@
 module.exports = {
   content: [
-    'layouts/**/*.html',
-    'content/**/*.html',
-    'content/**/*.md'
+    'layouts/**/*.{html,md}',
+    'content/**/*.{html,md}'
   ],
   darkMode: 'class',
   theme: {
     extend: {
       colors: {
         'light': {
-          DEFAULT:          '#6e3625',
-          'primary':        '#6e3625',
-          'secondary':      '#f3b6a1',
-          'primary-text':   '#fefaec',
-          'secondary-text': '#2a1710',
-          'text':           '#1a1615',
-          'primary-bg':     '#fffbfa',
-          'secondary-bg':   '#f3ebe8',
-          'selection':      '#f8dad0',
-          'border':         '#e6e0e0',
-          'grey':           '#605c5b',
+          'primary':        '#f49217',
+          'secondary':      '#df8516',
+          'primary-border': '#fca336',
+          'primary-text':   '#fefefe',
+          'secondary-text': '#1a1a1a',
+          'text':           '#1a1a1a',
+          'primary-bg':     '#f5f5f4',
+          'secondary-bg':   '#efeeed',
+          'selection':      '#e2e1df',
+          'border':         '#a8a29e',
+          'grey':           '#9f9f9f',
         },
         'dark': {
-          DEFAULT:          '#f3b6a1',
-          'primary':        '#f3b6a1',
-          'secondary':      '#6e3625',
-          'primary-text':   '#6e3527',
+          'primary':        '#f49217',
+          'secondary':      '#df8516',
+          'primary-border': '#fca336',
+          'primary-text':   '#fefefe',
           'secondary-text': '#e5ddda',
           'text':           '#e7e1e1',
-          'primary-bg':     '#1f1919',
-          'secondary-bg':   '#302624',
-          'selection':      '#594039',
-          'border':         '#474141',
-          'grey':           '#bab1b2',
+          'primary-bg':     '#0f121a',
+          'secondary-bg':   '#191c24',
+          'selection':      '#21242d',
+          'border':         '#21242d',
+          'grey':           '#2d313c',
         },
         'accent': {
           DEFAULT:  '#F15A25',
@@ -64,10 +63,14 @@ module.exports = {
       borderRadius: {
         '4xl': '2rem',
         '5xl': '2.5rem'
-      }
+      },
+      borderWidth: {
+        '1': '1px',
+        '3': '3px'
+      },
     },
     fontFamily: {
-      sans: "Open Sans",
+      sans: "Work Sans",
       mono: "Space Mono",
       brand: "Mont",
       logo: "Hexandcube Icon"
