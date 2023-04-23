@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main>
     {{ if not ( .Params.HideTitlebar )}}
-    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-8 md:py-14">
+    <section class="responsive pt-8 pb-0">
         <h1 class="accentline">{{ .Title }}</h1>
         {{ with .Description}}
         <p class="mt-5">{{ . }}</p>
@@ -10,7 +10,7 @@
     </section>
     {{ if not ( .Params.HideMetabar)}}
         {{ if or ( .PublishDate ) ( .Lastmod ) ( .Params.Author ) }}
-        <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-4 grid md:grid-cols-4 xl:grid-cols-5 gap-x-3 gap-y-1">
+        <section class="responsive py-4 grid md:grid-cols-4 xl:grid-cols-5 gap-x-3 gap-y-1">
             {{ with .PublishDate }}
                 <div class="leading-default text-light-grey dark:text-dark-grey">
                     Published: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text">{{ .Format "January 2, 2006" }}</b>

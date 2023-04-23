@@ -2,13 +2,14 @@
 title: About me
 ---
 
-<div class="grid grid-cols-10 rounded-5xl p-5 md:p-10 bg-light-secondary-bg dark:bg-dark-secondary-bg">
+<div
+    class="grid grid-cols-10 rounded-4xl p-5 md:p-10 border-2 bg-light-secondary-bg dark:bg-dark-secondary-bg dark:border-dark-border border-light-border">
     <div class="col-span-10 md:col-span-7 lg:col-span-8">
         <div class="image block md:hidden">
             <img src="/img/authors/Hexandcube.png" alt="Avatar" class="rounded-5xl w-40 mb-4">
         </div>
         <div class="title-2 sm:title-1">Hexandcube</div>
-        <div class="title-6 text-dark-grey mt-2">Hobby web developer, computer wizard, part-time fox</div>
+        <div class="title-6 text-dark-grey mt-2">Web Developer, part-time fox</div>
         <div class="mt-4">
             <div><i class="fa-solid fa-user fa-fw"></i> <b>Pronouns: </b>He/Him</div>
             <div><i class="fa-solid fa-location-dot fa-fw"></i> <b>Location: </b>Poland, Central Europe</div>
@@ -19,7 +20,7 @@ title: About me
             <div><i class="fa-solid fa-clock fa-fw"></i> <b>Local Time: </b><span id="timeContainer"><i class="fa-solid fa-spinner fa-fw fa-spin"></i></span></div>
         </div>
     </div>
-    <div class="image hidden md:block md:col-span-3 lg:col-span-2">
+    <div class="image hidden md:block md:col-span-3 lg:col-span-2 mt-3">
         <img src="/img/authors/Hexandcube.png" alt="Avatar" class="rounded-5xl">
     </div>
 </div>
@@ -39,14 +40,14 @@ title: About me
 <div class="title-4 mb-3 mt-8">Contact Form</div>
 <form method="POST" data-netlify="true" name="Contact Form" data-netlify-recaptcha="true" class="md:mb-32 mb-16">
     <label for="Name">Name</label>
-    <input class="mb-2 px-3 py-2 rounded block dark:bg-dark-secondary-bg bg-light-secondary-bg w-full" type="text"
-        id="Name" name="Name" placeholder="" required>
+    <input class="input" type="text"
+        id="Name" name="Name" placeholder="Name" required>
     <label for="Email">Email</label>
-    <input class="mb-2 px-3 py-2 rounded block dark:bg-dark-secondary-bg bg-light-secondary-bg w-full" type="Email"
-        id="Email" name="Email" placeholder="" required>
+    <input class="input" type="Email"
+        id="Email" name="Email" placeholder="Email" required>
     <label for="Message">Message</label>
-    <textarea class="px-3 py-2 rounded block dark:bg-dark-secondary-bg bg-light-secondary-bg w-full" id="Message"
-        rows="5" name="Message" placeholder="" required></textarea>
+    <textarea class="input" id="Message"
+        rows="8" name="Message" placeholder="Message" required></textarea>
     <br>
     <div data-netlify-recaptcha="true"></div>
     <button type="submit" class="btn btn-primary float-right"><i class="fas fa-paper-plane"></i> Send Message</button>

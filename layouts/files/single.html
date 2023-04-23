@@ -1,13 +1,13 @@
 {{ define "main" }}
 <main>
-    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-8 md:py-14">
+    <section class="responsive py-8 md:py-14">
         <h1 class="accentline">{{ .Title }}</h1>
         {{ with .Description}}
         <p class="mt-5">{{ . }}</p>
         {{ end }}
     </section>
     <section
-        class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-4 md:grid md:grid-cols-5 gap-x-2 gap-y-1">
+        class="responsive py-4 md:grid md:grid-cols-5 gap-x-2 gap-y-1">
         <div class="leading-default">
             File Type: <br class="hidden md:block"><b class="text-black dark:text-white">{{ .Params.FileType }} ({{ .Params.fileExtension }})</b>
         </div>
