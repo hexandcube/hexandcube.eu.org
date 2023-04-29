@@ -20,7 +20,7 @@ paginate = 18
 
 
 [params]
-  version = "10.3-dev"
+  version = "10.3"
   repository = "https://github.com/hexandcube/hexandcube.eu.org"
   description = "Nice to meet you, I'm Hexandcube. Hobby web developer, and part-time fox on the internet. "
   keywords = "Hexandcube, Wallpapers, Files, Windows, Desktop, Tools, Software, Web Developer, translation"
