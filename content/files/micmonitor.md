@@ -14,12 +14,17 @@ download: https://files.hexandcube.eu.org/download/MicMonitor/MicMonitor-1.1.zip
 downloadServer: Hexandcube Files
 servers:
   - name: "GitHub"
-    download: https://github.com/hexandcube/MicMonitor/releases/download/v.1.1.0/MicMonitor-1.1.zip
+    download: https://github.com/hexandcube/MicMonitor/releases/
+  - name: "Chocolatey"
+    download: https://community.chocolatey.org/packages/micmonitor
 versions:
+  - name: "1.1"
+    download: https://files.hexandcube.eu.org/download/MicMonitor/MicMonitor-1.1.zip
+    date: 2022-01-29
+    latest: true
   - name: "1.0"
     download: https://files.hexandcube.eu.org/download/MicMonitor/MicMonitor-1.0.zip
     date: 2022-01-28
-    latest: true
 ---
 
 MicMonitor is a simple program written in Autohotkey that allows you to quickly toggle microphone monitoring in Windows ("Listen to this device" option in Control panel).

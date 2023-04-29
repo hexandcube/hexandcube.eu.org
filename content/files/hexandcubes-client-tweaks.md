@@ -24,10 +24,13 @@ versions:
     download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.3-4.2_Beta.zip
     date: 2022-12-20
     prerelease: true
+  - name: 4.1 [1.19.2]
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.1.zip
+    date: 2022-09-19
+    latest: true
   - name: 4.0 [1.19.2]
     download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.0.zip
     date: 2022-09-07
-    latest: true
   - name: 3.2 [1.18.2]
     download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.18.2-3.2.zip
     date: 2022-07-16

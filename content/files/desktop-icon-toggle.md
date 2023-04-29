@@ -15,12 +15,19 @@ download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIcon
 downloadServer: Hexandcube Files
 servers:
 - name: "GitHub"
-  download: https://github.com/hexandcube/desktop-icon-toggle/releases/download/v.1.3.0/DesktopIconToggle-1.3.0.zip
+  download: https://github.com/hexandcube/desktop-icon-toggle/releases
+- name: "Chocolatey"
+  download: https://community.chocolatey.org/packages/desktopicontoggle
+- name: "SourceForge"
+  download: https://sourceforge.net/projects/desktop-icon-toggle/
 versions:
+  - name: "1.3"
+    download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.3.0.zip
+    date: 2022-01-26
+    latest: true
   - name: "1.2"
     download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.2.0.zip
     date: 2021-08-24
-    latest: true
   - name: "1.1"
     download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.1.0.zip
     date: 2021-06-22
