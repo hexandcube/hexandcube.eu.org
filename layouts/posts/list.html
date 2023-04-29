@@ -7,7 +7,7 @@
         {{ range (.Paginator 10).Pages }}
         <div class="cursor-pointer p-2 my-5 bg-light-secondary-bg dark:bg-dark-secondary-bg hover:bg-light-selection 
         dark:hover:bg-dark-selection border-2 border-light-border dark:border-dark-border rounded-5xl md:grid md:grid-cols-2 hover:rounded-2xl post-card"
-        onClick="location.href = '{{ .Permalink }}'">
+        onClick="location.href = '{{ .RelPermalink }}'">
             <a href="{{ .RelPermalink }}">
                 <img class="rounded-5xl post-card-image" src="{{ if .Params.Thumbnail }}{{ .Params.Thumbnail }}
                 {{ else }}/img/opengraph.png{{ end }}" alt="{{ .Title }}">
