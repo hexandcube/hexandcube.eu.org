@@ -1,6 +1,7 @@
 ---
 title: Smile
 id: smile
+category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license
 resolution: 3024x4032

@@ -1,6 +1,7 @@
 ---
 title: Agama
 id: agama
+category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license
 resolution: 4032x3024

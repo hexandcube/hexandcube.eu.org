@@ -1,6 +1,7 @@
 ---
 title: Boat Dock
 id: boat-dock
+category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license
 resolution: 4834x3223

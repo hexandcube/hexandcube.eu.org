@@ -1,6 +1,7 @@
 ---
 title: My Monochrome Friend
 id: my-monochrome-friend
+category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license
 resolution: 4898x3265

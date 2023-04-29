@@ -1,6 +1,7 @@
 ---
 title: Two Benches in Fog
 id: two-benches-in-fog
+category: photos
 license: CC BY 4.0
 licenseUrl: https://creativecommons.org/licenses/by/4.0/legalcode
 resolution: 3264x2448

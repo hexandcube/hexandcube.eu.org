@@ -1,38 +1,45 @@
 {{ define "main" }}
 <main>
-    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-16">
+    <section class=" responsive">
         <h1 class="accentline">Files</h1>
-        <p class="mt-5">Here you can find all files published by Hexandcube.</p>
+        <p class="mt-5">This is the download section of my website. Here you can find my software, scripts, browser
+            addons, etc.</p>
     </section>
     <section class="responsive py-8 md:mb-5">
-        <div class="title-3 mb-3">All Files</div>
-        {{ range (.Paginator 10).Pages }}
-            <div onClick="location.href = '{{ .RelPermalink }}'" class="grid grid-cols-1 md:grid-cols-3 py-4 rounded-4xl hover:rounded-2xl cursor-pointer border-2 border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg p-5 my-3">
-                <div class="col-span-2">
-                    <b class="text-2xl"> {{ .Params.Title }}</b>
-                    <div class="mt-1">
-                        <div class="inline-block bg-light-secondary dark:bg-dark-secondary rounded-5xl py-1 px-2 m-[0.15rem] text-sm whitespace-nowrap">
-                            <i class="{{ .Params.Icon }} fa-fw"></i> {{ .Params.fileType }}
-                        </div>
-                        <div class="inline-block bg-light-secondary dark:bg-dark-secondary rounded-5xl py-1 px-2 m-[0.15rem] text-sm whitespace-nowrap">
-                            {{ .Params.fileSize }}
-                        </div>
-                        {{ with .Params.fileVersion }}
-                        <div class="inline-block bg-light-secondary dark:bg-dark-secondary rounded-5xl py-1 px-2 m-[0.15rem] text-sm whitespace-nowrap">
-                            v.{{ . }}
-                        </div>
-                        {{ end }}
+        <div class="title-3 mb-3">Featured</div>
+        <div class="columns-1 lg:columns-2 mb-8">
+            {{ range $.Site.Data.featuredfiles }}
+            <div>
+                <a href="/files/{{ .slug }}"
+                    class="mb-4 col-span-1 border-2 bg-light-secondary-bg dark:bg-dark-secondary-bg hover:bg-light-border dark:hover:bg-dark-border hover:rounded-3xl border-light-border dark:border-dark-border rounded-2xl block overflow-clip">
+                    <img src="{{ .thumbnail }}" alt="{{ .name }}" class="w-full">
+                    <div class="p-5">
+                        <b class="text-3xl">{{ .name }}</b>
+                        <p>{{ .description }}</p>
                     </div>
-                </div>
-                <div class="mt-3 md:mt-0">
-                    <a class="btn btn-primary btn-circle float-right mx-2" href="{{ .RelPermalink }}" aria-label="Go to file page"><i class="fas fa-arrow-right"></i></a>
-                    <a class="btn btn-secondary btn-circle float-right mx-2" href="{{ .Params.Download }}" aria-label="Download file"><i class="fas fa-download"></i> <span class="md:hidden">Download</span></a>
-                </div>
+                </a>
             </div>
-        
-        {{ end }}
+            {{ end }}
+        </div>
+        <div class="title-3 mb-3">All Files</div>
+        <div class="columns-1 md:columns-2 lg:columns-3 mb-8">
+            {{ range ((.Paginator 12).Pages.ByParam "fileDate").Reverse }}
+            <div>
+                <a href="{{ .RelPermalink }}" class="break-inside-avoid mb-4 col-span-1 border-2  hover:rounded-3xl border-light-border
+                    dark:border-dark-border rounded-2xl block overflow-clip">
+                    <div class="py-12 bg-light-secondary-bg dark:bg-dark-secondary-bg text-center">
+                        <i class="{{ .Params.Icon }} fa-fw title-1"></i>
+                    </div>
+                    <div class="p-5 hover:bg-light-border dark:hover:bg-dark-border">
+                        <b class="text-2xl">{{ .Params.Title }}</b>
+                        <p>{{ .Params.Description }}</p>
+                    </div>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+
     </section>
     {{ partial "pagination.html" . }}
 </main>
 {{ end }}
-

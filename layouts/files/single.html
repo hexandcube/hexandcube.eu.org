@@ -1,65 +1,82 @@
 {{ define "main" }}
 <main>
-    <section class="responsive py-8 md:py-14">
+    {{ if not ( .Params.HideTitlebar )}}
+    <section class="responsive pt-8 md:pt-12">
         <h1 class="accentline">{{ .Title }}</h1>
+        <div class="mt-5">
+            {{ with .Params.Author }}
+            <span>
+                <img src="/img/authors/{{ . }}.png" alt="{{ . }}"
+                    class="rounded-full w-7 inline border-1 border-light-border dark:border-dark-border">
+                <span>By {{ . }}</span>
+            </span>
+            {{ else }}
+            <span>
+                <img src="/img/authors/Anonymous.png" alt="Anonymous"
+                    class="rounded-full w-7 inline border-1 border-light-border dark:border-dark-border">
+                <span>By Anonymous</span>
+                {{ end }}
+                {{ with .Params.fileType }}
+                <span>
+                    <span>&middot;</span>
+                    <span>{{ . }}</span>
+                </span>
+                {{ end }}
+                {{ with .Params.fileVersion }}
+                <span>
+                    <span>&middot;</span>
+                    <span>Version {{ . }}</span>
+                </span>
+                {{ end }}
+                {{ with .Params.fileDate }}
+                <span>
+                    <span>&middot;</span>
+                    <span>Updated on {{ . }}</span>
+                </span>
+                {{ end }}
+        </div>
         {{ with .Description}}
         <p class="mt-5">{{ . }}</p>
         {{ end }}
     </section>
-    <section
-        class="responsive py-4 md:grid md:grid-cols-5 gap-x-2 gap-y-1">
-        <div class="leading-default">
-            File Type: <br class="hidden md:block"><b class="text-black dark:text-white">{{ .Params.FileType }} ({{ .Params.fileExtension }})</b>
+    {{ end }}
+    <section class="responsive content pb-8">
+        {{ if .Params.Thumbnail }}
+        <div class="mb-8">
+            <img class="rounded-2xl" src="/img/files/{{ .Params.Thumbnail }}" alt="{{ .Title }}">
         </div>
-        <div class="leading-default">
-            File Version: <br class="hidden md:block"><b class="text-black dark:text-white">{{ .Params.FileVersion }}
-                ({{ .Params.FileDate}})</b>
-        </div>
-        <div class="leading-default">
-            File Size: <br class="hidden md:block"><b class="text-black dark:text-white capitalize">{{ .Params.FileSize }}</b>
-        </div>
-        <div class="leading-default md:text-right md:mt-1 col-span-2">
-            <a href="{{ .Params.Download }}"
-                class="btn btn-primary"><i class="fa-solid fa-download"></i> Download from {{ .Params.DownloadServer }}</a>
+        {{ end }}
+        <article class="content {{ if not (.Params.HideBg) }}contentblock{{ end }}">
+            {{ .Content }}
+        </article>
+    </section>
+    {{ if .Params.Versions }}
+    <section class="responsive content pb-10">
+        <div class="title-2 mb-8">All Versions</div>
+        <div class="content gap-2 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4">
+            {{ range sort .Params.Versions "date" "desc"}}
+            <div class="rounded-2xl border-2 border-light-border dark:border-dark-border mb-1 overflow-clip bg-light-secondary-bg dark:bg-dark-secondary-bg {{ if .latest }}bg-blue-500/20 dark:bg-blue-500/10{{ end }}{{ if .prerelease }}bg-yellow-500/20 dark:bg-yellow-500/10{{ end }}">
+                <div class="px-4 py-2">
+                    <p class="text-3 font-bold">
+                        {{ if .latest }}
+                        <i class="fa-solid fa-asterisk fa-fw"></i>
+                        {{ end }}
+                        {{ if .prerelease }}
+                        <i class="fa-solid fa-triangle-exclamation fa-fw"></i>
+                        {{ end }} Version {{ .name }}</p>
+                    {{ with .date }}
+                    <p>Released {{ . }}</p>
+                    {{ end }}
+                </div>
+                <a href="{{ .download }}"
+                    class="bg-light-selection dark:bg-dark-selection hover:bg-light-border dark:hover:bg-dark-border block w-full clean py-3 text-center">
+                    <i class="fa-solid fa-download fa-fw pr-2"></i> Download {{ if .latest }}latest{{ end}}
+                    {{ if .prerelease }}pre-release{{ end }}
+                </a>
+            </div>
+            {{ end }}
         </div>
     </section>
-    <section class="responsive content py-8">
-        <div class="title-3 mb-3">Description</div>
-        {{ .Content }}
-
-        <div class="title-3 mb-3 mt-8">File Metadata</div>
-        <i class="fas fa-font fa-fw"></i> <b>File name: </b>{{ .Params.FileName }}
-        <br>
-        <i class="fas fa-file fa-fw"></i> <b>File type: </b>{{ .Params.FileType }} ({{ .Params.FileExtension }})
-        <br>
-        <i class="fas fa-weight fa-fw"></i> <b>File size: </b>{{ .Params.FileSize }}
-        {{ if .Params.FileVersion }}
-        <br>
-        <i class="fas fa-code-branch fa-fw"></i> <b>File version: </b>{{ .Params.FileVersion }}
-        {{ with .Params.FileDate }}({{ . }}){{ end }}
-        {{ end }}
-        {{ if .Params.versions }}
-            <div class="title-3 mb-3 mt-8">Download the latest version</div>
-        {{ else }}
-            <div class="title-3 mb-3 mt-8">Download</div>
-        {{ end }}
-        <b><a href="{{ .Params.Download }}"><i class="fas fa-download"></i> {{ .Params.DownloadServer }}</a></b>
-        {{ range .Params.Servers }}
-        <br>
-        <a href="{{ .download }}"><i class="fas fa-download"></i> {{ .name }}</a>
-        {{ end }}
-
-        {{ if .Params.Versions }}
-        <div class="title-3 mb-3 mt-8">All Versions</div>
-
-        <b><a href="{{ .Params.Download }}"><i class="fas fa-download"></i> {{ .Params.FileVersion }}
-                (latest{{ with .Params.FileDate }} - {{ . }}{{ end }})</a></b>
-        {{ range .Params.Versions }}
-        <br>
-        <a href="{{ .download }}"><i class="fas fa-download"></i> {{ .name }} {{ with .date }}({{ . }}){{ end }}</a>
-        {{ end }}
-
-        {{ end }}
-    </section>
+    {{ end }}
 </main>
 {{ end }}

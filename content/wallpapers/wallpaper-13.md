@@ -7,4 +7,5 @@ variants: [blue, green, red, yellow, white]
 license: CC BY-NC 4.0
 license_url: https://creativecommons.org/licenses/by-nc/4.0/
 date: 2021-06-19
+category: wallpapers
 ---

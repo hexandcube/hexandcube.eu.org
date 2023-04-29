@@ -1,6 +1,7 @@
 ---
 title: Black Cat Sleeping
 id: black-cat-sleeping
+category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license
 resolution: 3024x4032

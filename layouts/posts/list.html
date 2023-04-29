@@ -1,18 +1,16 @@
 {{ define "main" }}
 <main>
-    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-16">
-        <h1 class="accentline">Posts</h1>
+    <section class="responsive pt-12">
+        <h1>Recent Posts</h1>
     </section>
-    <section class="responsive py-8">
+    <section class="responsive">
         {{ range (.Paginator 10).Pages }}
         <div class="cursor-pointer p-2 my-5 bg-light-secondary-bg dark:bg-dark-secondary-bg hover:bg-light-selection 
-        dark:hover:bg-dark-selection rounded-5xl md:grid md:grid-cols-2 hover:rounded-2xl post-card"
+        dark:hover:bg-dark-selection border-2 border-light-border dark:border-dark-border rounded-5xl md:grid md:grid-cols-2 hover:rounded-2xl post-card"
         onClick="location.href = '{{ .Permalink }}'">
             <a href="{{ .RelPermalink }}">
-
                 <img class="rounded-5xl post-card-image" src="{{ if .Params.Thumbnail }}{{ .Params.Thumbnail }}
                 {{ else }}/img/opengraph.png{{ end }}" alt="{{ .Title }}">
-                
             </a>
             <div class="mx-1 md:ml-10 mt-3 md:mt-0 my-2 items-center flex">
                 <a href="{{ .RelPermalink }}">

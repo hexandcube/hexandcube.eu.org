@@ -3,6 +3,8 @@ title: Open PGP
 description: Details about Hexandcube's Open PGP key
 hideReadingTime: true
 lastmod: 2022-10-21
+ShowLastMod: true
+author: Hexandcube
 ---
 
 ## Key Details
@@ -17,11 +19,11 @@ lastmod: 2022-10-21
 
 **Usage**: Signing, Encryption, Certifying User-IDs, SSH Authentication 
 
-<br>
+<p>
+    <a class="btn" href="openpgp4fpr:08B0B863397E229A7195219B3D64AD004041857E"><i class="fa-solid fa-file-import mr-2"></i> Import the key</a>
+    <abbr title="This button will work with any app that supports openpgp4fpr URIs (e.g. OpenKeychain, Kleopatra)">?</abbr>
+</p>
 
-<a class="btn btn-primary" href="openpgp4fpr:08B0B863397E229A7195219B3D64AD004041857E"><i class="fa-solid fa-file-import mr-2"></i> Import the key</a>
-
-This button will work with any app that supports openpgp4fpr URIs (e.g. OpenKeychain, Kleopatra).
 
 ## Identity verification
 
@@ -40,7 +42,7 @@ This button will work with any app that supports openpgp4fpr URIs (e.g. OpenKeyc
 
 ## Plaintext
 
-```plaintext
+```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGNS+TMBEAD6yBJfP0HRTFQr90ZPZuT3pF4vQWOOPYZQQP3g1h8cdJB+WeHL

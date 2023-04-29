@@ -1,6 +1,7 @@
 ---
 title: Fancy Pigeon
 id: fancy-pigeon
+category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license
 resolution: 3265x4898

@@ -1,6 +1,7 @@
 ---
 title: Burger
 id: burger
+category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license
 resolution: 3024x3024

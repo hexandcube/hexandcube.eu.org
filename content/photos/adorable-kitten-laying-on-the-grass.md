@@ -1,6 +1,7 @@
 ---
 title: Adorable Kitten Laying on the grass
 id: adorable-kitten-laying-on-the-grass
+category: photos
 license: CC BY 4.0
 licenseUrl: https://creativecommons.org/licenses/by/4.0/legalcode
 resolution: 3264x2448

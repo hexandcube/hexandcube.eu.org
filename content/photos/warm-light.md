@@ -1,6 +1,7 @@
 ---
 title: Warm Light
 id: warm-light
+category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license
 resolution: 3024x4032

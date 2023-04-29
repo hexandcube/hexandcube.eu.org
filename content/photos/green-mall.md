@@ -1,6 +1,7 @@
 ---
 title: Green Mall
 id: green-mall
+category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license
 resolution: 4898x3265

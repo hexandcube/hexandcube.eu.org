@@ -1,6 +1,7 @@
 ---
 title: Anemone
 id: anemone
+category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license
 resolution: 4898x3265

@@ -1,55 +1,61 @@
 {{ define "main" }}
 <main>
     {{ if not ( .Params.HideTitlebar )}}
-    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-8 md:py-14">
+    <section class="responsive pt-8 md:pt-12">
         <h1 class="accentline">{{ .Title }}</h1>
+        {{ if not ( .Params.HideMetabar)}}
+        <div class="mt-5">
+            {{ with .Params.Author }}
+            <span>
+                <img src="/img/authors/{{ . }}.png" alt="{{ . }}"
+                    class="rounded-full w-7 inline border-1 border-light-border dark:border-dark-border">
+                <span>By {{ . }}</span>
+            </span>
+            {{ else }}
+            <span>
+                <img src="/img/authors/Anonymous.png" alt="Anonymous"
+                    class="rounded-full w-7 inline border-1 border-light-border dark:border-dark-border">
+                <span>By Anonymous</span>
+            {{ end }}
+            {{ with .PublishDate }}
+            <span>
+                <span>&middot;</span>
+                <span>{{ .Format "January 2, 2006" }}</span>
+            </span>
+            {{ end }}
+            {{ if .Params.ShowLastMod }}
+                {{ with .Params.LastMod }}
+                <span>
+                    <span>&middot;</span>
+                    <span>Updated on {{ .Format "January 2, 2006" }}</span>
+                </span>
+                {{ end }}
+            {{ end }}
+            {{ if not ( .Params.HideReadingTime )}}
+                {{ with .ReadingTime }}
+                <span>
+                    <span>&middot;</span>
+                    <span>{{ . }} min read</span>
+                </span>
+                {{ end }}
+            {{ end }}
+        </div>
+        {{ end}}
         {{ with .Description}}
         <p class="mt-5">{{ . }}</p>
         {{ end }}
-        {{ end }}
     </section>
-    {{ if not ( .Params.HideMetabar)}}
-    {{ if or ( .PublishDate ) ( .Lastmod ) ( .Params.Author ) }}
-    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-4 grid md:grid-cols-4 xl:grid-cols-5 gap-x-3 gap-y-1">
-        {{ with .Params.Author }}
-        <div class="leading-default text-light-grey dark:text-dark-grey">
-            Author: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text">{{ . }}</b>
-        </div>
-        {{ end }}
-        {{ with .PublishDate }}
-        <div class="leading-default text-light-grey dark:text-dark-grey">
-            Published: <br class="hidden md:block"><b
-                class="text-light-text dark:text-dark-text">{{ .Format "January 2, 2006" }}</b>
-        </div>
-        {{ end }}
-        {{ if .Params.RenderLastmod }}
-            {{ with .Lastmod }}
-            <div class="leading-default text-light-grey dark:text-dark-grey">
-                Last Updated: <br class="hidden md:block"><b
-                    class="text-light-text dark:text-dark-text">{{ .Format "January 2, 2006" }}</b>
-            </div>
-            {{ end }}
-        {{ end }} 
-        {{ if ( not .Params.HideReadingTime ) }}
-        {{ with .ReadingTime }}
-        <div class="leading-default text-light-grey dark:text-dark-grey">
-            Reading Time: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text">{{ . }} min</b>
-        </div>
-        {{ end }}
-        {{ end }}
-    </section>
-    {{ end }}
     {{ end }}
 
-    <section class="responsive content py-8">
-    {{ if .Params.Thumbnail }}
-    <div class="mb-8">
-        <img class="rounded-4xl" src="{{ .Params.Thumbnail }}" alt="{{ .Title }}">
-    </div>
-    {{ end }}
-        {{ .Content }}
-        <h2>Comments</h2>
-        {{ partial "comments.html" }}
+    <section class="responsive content pb-10">
+            {{ if .Params.Thumbnail }}
+            <div class="mb-8">
+                <img class="rounded-2xl" src="{{ .Params.Thumbnail }}" alt="{{ .Title }}">
+            </div>
+            {{ end }}
+        <article class="content {{ if not (.Params.HideBg) }}contentblock{{ end }}">
+            {{ .Content }}
+        </article>  
     </section>
 </main>
 {{ end }}

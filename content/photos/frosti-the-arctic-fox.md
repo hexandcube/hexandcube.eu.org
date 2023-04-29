@@ -1,6 +1,7 @@
 ---
 title: Frosti the Arctic Fox
 id: frosti-the-arctic-fox
+category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license
 resolution: 3024x4032

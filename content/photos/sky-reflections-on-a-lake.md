@@ -1,6 +1,7 @@
 ---
 title: Sky reflections on a lake
 id: sky-reflections-on-a-lake
+category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license
 resolution: 3687x1765

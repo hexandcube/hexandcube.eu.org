@@ -1,6 +1,7 @@
 ---
 title: Cat sitting on a DVD player
 id: cat-sitting-on-dvd-player
+category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license
 resolution: 4032x3024

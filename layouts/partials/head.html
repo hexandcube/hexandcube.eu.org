@@ -13,6 +13,10 @@
 <meta property="twitter:creator" content="@hexandcube" />
 <meta property="twitter:site" content="@hexandcube" />
 <meta property="twitter:image" content="https://hexandcube.eu.org{{ with .Page.Params.Thumbnail}}{{ . }}{{ else }}/img/opengraph.png{{ end }}" />
+{{ if .Params.NoIndex }}
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+{{ end }}
 {{ with .Site.Params.JsonLd }}
 <script type="application/ld+json" >
 {{ . | safeJS }}

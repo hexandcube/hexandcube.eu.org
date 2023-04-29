@@ -1,0 +1,4 @@
+---
+title: Photos
+category: photos
+---

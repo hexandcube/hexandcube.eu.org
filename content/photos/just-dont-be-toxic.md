@@ -1,6 +1,7 @@
 ---
 title: Just don't be toxic
 id: just-dont-be-toxic
+category: photos
 license: All rights reserved
 licenseUrl: https://hexandcube.eu.org/terms/#download-and-use-of-content
 resolution: 2849x2849

@@ -1,20 +1,19 @@
 <div class="sticky top-0 bg-light-primary-bg/40 dark:bg-dark-primary-bg/60 backdrop-blur-lg z-10">
     <header id="header" class="responsive py-4 px-2 ">
-        <a href="/" class="font-logo align-middle text-4xl hover:bg-light-secondary
-            dark:hover:bg-dark-secondary text-light-secondary-text dark:text-dark-text md:rounded-xl rounded-full px-2 -ml-2
-            md:py-2 py-1">hexandcube</a>
-        <a href="/" class="font-brand font-bold align-middle text-2xl hover:bg-light-secondary
-            dark:hover:bg-dark-secondary text-light-secondary-text dark:text-dark-text md:rounded-xl rounded-full px-2
-            md:py-2 py-1">hexandcube</a>
+        <a href="/"
+            class="hover:bg-light-selection dark:hover:bg-dark-selection inline-block md:py-2 py-1 px-2 pl-4 -mr-5 rounded-full">
+            <span class="font-logo align-middle text-4xl text-light-secondary-text dark:text-dark-text px-1 -ml-2">hexandcube</span>
+            <span class="font-brand font-bold align-middle text-2xl text-light-secondary-text dark:text-dark-text px-2">hexandcube</span>
+        </a>
         <div class="inline-block float-right">
             <div
-                class="px-2 -ml-2 py-1 md:mt-1 font-bold align-middle inline-block rounded-full hover:bg-light-secondary dark:hover:bg-dark-secondary text-light-secondary-text dark:text-dark-secondary-text">
+                class="px-2 -ml-2 py-1 md:mt-1 font-bold align-middle inline-block rounded-full hover:bg-light-selection dark:hover:bg-dark-selection text-light-secondary-text dark:text-dark-secondary-text">
                 <label for="theme-toggle" id="theme-toggle-label" class="text-xl" onclick="toggleTheme()">
                     <i class="fa-solid fa-circle-notch animate-spin"></i>
                     <input type="checkbox" class="hidden" id="theme-toggle" />
                 </label>
             </div>
-            <div class="px-2 py-1 font-bold align-middle text-xl rounded-full hover:bg-light-secondary dark:hover:bg-dark-secondary text-light-secondary-text dark:text-dark-secondary-text md:hidden inline-block"
+            <div class="px-2 py-1 font-bold align-middle text-xl rounded-full hover:bg-light-selection dark:hover:bg-dark-selection text-light-secondary-text dark:text-dark-secondary-text md:hidden inline-block"
                 onclick="toggleNavbar()">
                 <i class="fa-solid fa-bars fa-fw"></i>
             </div>
@@ -24,7 +23,7 @@
             {{ $current := . }}
             {{ range .Site.Menus.main }}
             {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-            {{ $active = or $active (eq .Name $current.Title) }}
+            {{ $active = or $active (eq .Identifier $current.Params.Category) }}
             <a href="{{ .URL }}"
                 class="md:inline-block block px-4 py-2 -ml-3 md:ml-0 mt-1 md:mt-0 align-middle rounded-full
                 {{ if $active }}border-2 border-light-border dark:border-dark-border text-light-secondary-text dark:text-dark-secondary-text hover:bg-light-selection dark:hover:bg-dark-selection font-bold
