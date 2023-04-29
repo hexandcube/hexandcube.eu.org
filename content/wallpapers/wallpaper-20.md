@@ -1,5 +1,6 @@
 ---
 title: Wallpaper 20
+author: Hexandcube
 id: 20
 variants: [day, night]
 description: Christmas 2022 Wallpaper

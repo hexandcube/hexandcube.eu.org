@@ -1,60 +1,64 @@
 {{ define "main" }}
 <main>
-    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive pt-8 pb-2 md:py-14 grid md:grid-cols-2">
-        <div>
-            <h1 class="accentline">{{ .Title }}</h1>
-            {{ with .Description}}
-            <p class="mt-5">{{ . }}</p>
+    <section class="responsive pt-8 md:pt-12">
+        <h1 class="accentline">{{ .Title }}</h1>
+        <div class="mt-5">
+            {{ with .Params.Author }}
+            <span>
+                <img src="/img/authors/{{ . }}.png" alt="{{ . }}"
+                    class="rounded-full w-7 inline border-1 border-light-border dark:border-dark-border">
+                <span>By {{ . }}</span>
+            </span>
+            {{ else }}
+                <img src="/img/authors/Anonymous.png" alt="Anonymous"
+                    class="rounded-full w-7 inline border-1 border-light-border dark:border-dark-border">
+                <span>By Anonymous</span>
+            {{ end }}
+            {{ with .Params.license }}
+            <span>
+                <span>&middot;</span>
+                <span>Licensed under {{ . }}</span>
+            </span>
+            {{ end }}
+            {{ with .Params.date }}
+            <span>
+                <span>&middot;</span>
+                <span>{{ .Format "January 2, 2006" }}</span>
+            </span>
+            {{ end }}
+            {{ with .Params.variants }}
+            <span>
+                <span>&middot;</span>
+                <span class="capitalize">Variants: {{ delimit . ", " }}</span>
+            </span>
             {{ end }}
         </div>
-        <div class="leading-default text-light-grey dark:text-dark-grey md:text-right mt-5">
+        {{ with .Description}}
+        <p class="mt-5">{{ . }}</p>
+        {{ end }}
+        <div class="mt-4">
             <a href="https://files.hexandcube.eu.org/wallpapers/download/Wallpaper-{{ .Params.id }}.zip"
-                class="btn btn-primary text-xl"><i class="fa-solid fa-download"></i> Download</a>
+                class="btn btn-inverted">
+                <i class="fa-solid fa-download fa-fw"></i>
+                <span>Download from Hexandcube Files</span>
+            </a>
         </div>
-    </section>
-    <section
-        class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-4 grid sticky top-0
-        {{ if .Params.Variant }}md:grid-cols-5{{ else }}md:grid-cols-4{{ end }} gap-y-1">
-        {{ with .Params.resolution }}
-        <div class="leading-default text-light-grey dark:text-dark-grey">
-            Resolution: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text">{{ . }}</b>
-        </div>
-        {{ end }}
-        {{ with .Params.Variants }}
-        <div class="leading-default text-light-grey dark:text-dark-grey">
-            <i class="fa-solid fa-dice"></i> Variants: <br class="hidden md:block"><b
-                class="text-light-text dark:text-dark-text capitalize">{{ delimit . ", " }}</b>
-        </div>
-        {{ end }}
-        <div class="leading-default text-light-grey dark:text-dark-grey">
-            <i class="fa-solid fa-scale-balanced"></i> License: <br class="hidden md:block"><a itemprop="license"
-                href="{{ .Params.license_url }}" class="text-light-text dark:text-dark-text underline"><b>{{ .Params.License }}</b></a>
-        </div>
-        <div class="leading-default text-light-grey dark:text-dark-grey">
-            <i class="fa-solid fa-user"></i> Author: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text">Hexandcube</b>
-        </div>
-        {{ with .Params.Date }}
-        <div class="leading-default text-light-grey dark:text-dark-grey">
-            <i class="fa-solid fa-calendar-days"></i> Published: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text capitalize">{{ .Format "January 2, 2006" }}</b>
-        </div>
-        {{ end }}
     </section>
     <section class="responsive content py-8">
         {{ $current := . }}
         {{ if .Params.variants }}
-            {{ range .Params.variants }}
-            <itemscope itemtype="https://schema.org/ImageObject">
-
-                <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ $current.Params.id }}-{{ . }}.png"
-                    itemprop="contentUrl" alt="{{ $current.Title }}" class="rounded-xl mb-5">
-            </itemscope>
-            {{ end }}
+        {{ range .Params.variants }}
+        <div class="title-4 capitalize mb-2">{{ . }} Variant</div>
+        <itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ $current.Params.id }}-{{ . }}.png"
+                itemprop="contentUrl" alt="{{ $current.Title }}" class="rounded-xl mb-5">
+        </itemscope>
+        {{ end }}
         {{ else }}
         <itemscope itemtype="https://schema.org/ImageObject">
-
-            <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ .Params.id }}.png"
-                itemprop="contentUrl" alt="{{ .Title }}" class="rounded-xl">
-            </itemscope>
+            <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ .Params.id }}.png" itemprop="contentUrl"
+                alt="{{ .Title }}" class="rounded-xl">
+        </itemscope>
         {{ end }}
         </div>
     </section>

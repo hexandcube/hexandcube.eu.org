@@ -1,5 +1,6 @@
 ---
 title: Wallpaper 22
+author: Hexandcube
 id: 22
 keywords: minimalist, minimalistic, wallpaper, background, modern, shapes
 license: CC BY-NC 4.0

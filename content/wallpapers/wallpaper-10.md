@@ -1,5 +1,6 @@
 ---
 title: Wallpaper 10
+author: Hexandcube
 description: Minimalistic waves
 keyword: desktop, wallpaper, minimalistic, waves, colorful
 id: 10

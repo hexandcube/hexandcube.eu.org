@@ -1,6 +1,7 @@
 ---
 title: Wallpaper 17
-keywords: minimalistic, wallpaper, red, orange, purple,
+author: Hexandcube
+keywords: minimalistic, wallpaper, red, orange, purple
 description: Minimalistic wallpaper with warm colors
 id: 17
 license: CC BY-NC 4.0

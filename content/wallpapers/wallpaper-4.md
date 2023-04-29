@@ -1,5 +1,6 @@
 ---
 title: Wallpaper 4
+author: Hexandcube
 id: 4
 license: CC BY-NC 4.0
 license_url: https://creativecommons.org/licenses/by-nc/4.0/

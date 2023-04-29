@@ -1,5 +1,6 @@
 ---
 title: Wallpaper 21
+author: Hexandcube
 id: 21
 description: Inspired by the covers of empty VHS tapes
 keywords: retro, vhs, tape, cover, colors, rainbow, retro colors, retro color pallete

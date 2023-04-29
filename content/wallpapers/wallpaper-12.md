@@ -1,5 +1,6 @@
 ---
 title: Wallpaper 12
+author: Hexandcube
 description: Minimalistic mountains wallpaper
 keyword: mountains, landscape, desktop, wallpaper, minimalistic, mountain
 id: 12

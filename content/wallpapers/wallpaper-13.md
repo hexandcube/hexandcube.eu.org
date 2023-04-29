@@ -1,5 +1,6 @@
 ---
 title: Wallpaper 13
+author: Hexandcube
 description: Minimalistic pineapple pattern
 keyword: pineapple, minimalistic, pattern, desktop, wallpaper
 id: 13

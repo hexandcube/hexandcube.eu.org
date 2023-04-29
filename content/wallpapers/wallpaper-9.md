@@ -1,5 +1,6 @@
 ---
 title: Wallpaper 9
+author: Hexandcube
 description: Minimalistic blobs
 keyword: blobs, minimalistic, desktop, wallpaper, colorful
 id: 9
