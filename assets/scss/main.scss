@@ -3,42 +3,6 @@
 @tailwind utilities;
 @import 'syntax.scss';
 
-:root {
-    --empty: ;
-}
-*,
-:after,
-:before {
-    --tw-pan-x: var(--empty, /*!*/ /*!*/);
-    --tw-pan-y: var(--empty, /*!*/ /*!*/);
-    --tw-pinch-zoom: var(--empty, /*!*/ /*!*/);
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: var(--empty, /*!*/ /*!*/);
-    --tw-slashed-zero: var(--empty, /*!*/ /*!*/);
-    --tw-numeric-figure: var(--empty, /*!*/ /*!*/);
-    --tw-numeric-spacing: var(--empty, /*!*/ /*!*/);
-    --tw-numeric-fraction: var(--empty, /*!*/ /*!*/);
-    --tw-ring-inset: var(--empty, /*!*/ /*!*/);
-    --tw-blur: var(--empty, /*!*/ /*!*/);
-    --tw-brightness: var(--empty, /*!*/ /*!*/);
-    --tw-contrast: var(--empty, /*!*/ /*!*/);
-    --tw-grayscale: var(--empty, /*!*/ /*!*/);
-    --tw-hue-rotate: var(--empty, /*!*/ /*!*/);
-    --tw-invert: var(--empty, /*!*/ /*!*/);
-    --tw-saturate: var(--empty, /*!*/ /*!*/);
-    --tw-sepia: var(--empty, /*!*/ /*!*/);
-    --tw-drop-shadow: var(--empty, /*!*/ /*!*/);
-    --tw-backdrop-blur: var(--empty, /*!*/ /*!*/);
-    --tw-backdrop-brightness: var(--empty, /*!*/ /*!*/);
-    --tw-backdrop-contrast: var(--empty, /*!*/ /*!*/);
-    --tw-backdrop-grayscale: var(--empty, /*!*/ /*!*/);
-    --tw-backdrop-hue-rotate: var(--empty, /*!*/ /*!*/);
-    --tw-backdrop-invert: var(--empty, /*!*/ /*!*/);
-    --tw-backdrop-opacity: var(--empty, /*!*/ /*!*/);
-    --tw-backdrop-saturate: var(--empty, /*!*/ /*!*/);
-    --tw-backdrop-sepia: var(--empty, /*!*/ /*!*/);
-}
-
 .dark .footerlogo-dark {
     display: none;
 }
