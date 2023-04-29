@@ -55,7 +55,8 @@
         <div class="title-2 mb-8">All Versions</div>
         <div class="content gap-2 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4">
             {{ range sort .Params.Versions "date" "desc"}}
-            <div class="rounded-2xl border-2 border-light-border dark:border-dark-border mb-1 overflow-clip bg-light-secondary-bg dark:bg-dark-secondary-bg {{ if .latest }}bg-blue-500/20 dark:bg-blue-500/10{{ end }}{{ if .prerelease }}bg-yellow-500/20 dark:bg-yellow-500/10{{ end }}">
+            <div
+                class="rounded-2xl border-2 border-light-border dark:border-dark-border mb-1 overflow-clip {{ if .latest }}bg-blue-500/20 dark:bg-blue-500/10{{ else if .prerelease }}bg-yellow-500/20 dark:bg-yellow-500/10{{ else }}bg-light-secondary-bg dark:bg-dark-secondary-bg{{ end }}">
                 <div class="px-4 py-2">
                     <p class="text-3 font-bold">
                         {{ if .latest }}
