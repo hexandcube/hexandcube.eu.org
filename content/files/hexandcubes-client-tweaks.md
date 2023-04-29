@@ -14,6 +14,11 @@ icon: fa-solid fa-box
 thumbnail: ClientTweaks.png
 download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.1.zip
 downloadServer: Hexandcube Files
+servers:
+- name: CurseForge (Curseforge Format)
+  download: https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks
+- name: Modrinth (Modrith Format)
+  download: https://modrinth.com/modpack/hexandcube-client-tweaks
 versions:
   - name: 4.3 Beta [1.19.3]
     download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.3-4.2_Beta.zip

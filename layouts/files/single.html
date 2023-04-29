@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $currentPage := . }}
 <main>
     {{ if not ( .Params.HideTitlebar )}}
     <section class="responsive pt-8 md:pt-12">
@@ -38,6 +39,21 @@
         {{ with .Description}}
         <p class="mt-5">{{ . }}</p>
         {{ end }}
+        <div class="mt-4">            
+            <a href="{{ .Params.download }}" class="btn btn-inverted">
+                <i class="fa-solid fa-download fa-fw"></i>
+                <span>Download from {{ .Params.downloadServer }}</span>
+            </a>
+            {{ if .Params.Versions }}
+            <a href="#all-versions" class="btn">
+                <i class="fa-solid fa-caret-down fa-fw"></i>
+            </a>
+            {{ else if .Params.Servers}}
+            <a href="#download-servers" class="btn">
+                <i class="fa-solid fa-caret-down fa-fw"></i>
+            </a>
+            {{ end }}
+        </div>
     </section>
     {{ end }}
     <section class="responsive content pb-8">
@@ -52,7 +68,8 @@
     </section>
     {{ if .Params.Versions }}
     <section class="responsive content pb-10">
-        <div class="title-2 mb-8">All Versions</div>
+        <div class="title-2 mb-1" id="all-versions">All Versions</div>
+        <p class="mb-8">Download different versions of this file from {{ $currentPage.Params.downloadServer }}</p>
         <div class="content gap-2 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4">
             {{ range sort .Params.Versions "date" "desc"}}
             <div
@@ -75,6 +92,20 @@
                     {{ if .prerelease }}pre-release{{ end }}
                 </a>
             </div>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+    {{ if .Params.Servers }}
+    <section class="responsive content pb-10">
+        <div class="title-2 mb-1" id="download-servers">Download Servers</div>
+        <p class="mb-8">You can download this file from these servers</p>
+        <div class="content gap-2 grid grid-cols-1 lg:grid-cols-2">
+            {{ if $currentPage.Params.Versions }}
+            <a href="#all-versions" class="btn btn-inverted w-full"><i class="fa-solid fa-circle-up"></i> Download from {{ $currentPage.Params.DownloadServer }}</a>
+            {{ end }}
+            {{ range sort .Params.Servers }}
+            <a href="{{ .download }}" target="_blank" class="btn w-full"><i class="fa-solid fa-up-right-from-square"></i> Download from {{ .name }}</a>
             {{ end }}
         </div>
     </section>

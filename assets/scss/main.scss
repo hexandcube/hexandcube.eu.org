@@ -3,6 +3,13 @@
 @tailwind utilities;
 @import 'syntax.scss';
 
+:target::before {
+    content: '';
+    display: block;
+    height: 110px;
+    margin-top: -110px;
+}
+
 .dark .footerlogo-dark {
     display: none;
 }

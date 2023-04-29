@@ -13,6 +13,9 @@ icon: fa-solid fa-file-zipper
 thumbnail: desktopicontoggle-cover.png
 download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.3.0.zip
 downloadServer: Hexandcube Files
+servers:
+- name: "GitHub"
+  download: https://github.com/hexandcube/desktop-icon-toggle/releases/download/v.1.3.0/DesktopIconToggle-1.3.0.zip
 versions:
   - name: "1.2"
     download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.2.0.zip
