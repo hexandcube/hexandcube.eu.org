@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $currentPage := . }}
 <main>
     <section class="responsive pt-8 md:pt-12">
         <h1 class="accentline">{{ .Title }}</h1>
@@ -17,7 +18,7 @@
             {{ with .Params.license }}
             <span>
                 <span>&middot;</span>
-                <span>Licensed under {{ . }}</span>
+                <span><a class="decoration-dotted underline" target="_blank" href="{{ $currentPage.Params.LicenseUrl }}">{{ . }}</a></span>
             </span>
             {{ end }}
             {{ with .Params.date }}
@@ -45,18 +46,17 @@
         </div>
     </section>
     <section class="responsive content py-8">
-        {{ $current := . }}
         {{ if .Params.variants }}
         {{ range .Params.variants }}
         <div class="title-4 capitalize mb-2">{{ . }} Variant</div>
         <itemscope itemtype="https://schema.org/ImageObject">
-            <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ $current.Params.id }}-{{ . }}.png"
-                itemprop="contentUrl" alt="{{ $current.Title }}" class="rounded-xl mb-5">
+            <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ $currentPage.Params.id }}-{{ . }}.png"
+                itemprop="contentUrl" alt="{{ $currentPage.Title }}" class="rounded-xl mb-5">
         </itemscope>
         {{ end }}
         {{ else }}
         <itemscope itemtype="https://schema.org/ImageObject">
-            <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ $current.Params.id }}.png" itemprop="contentUrl"
+            <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ $currentPage.Params.id }}.png" itemprop="contentUrl"
                 alt="{{ .Title }}" class="rounded-xl">
         </itemscope>
         {{ end }}
