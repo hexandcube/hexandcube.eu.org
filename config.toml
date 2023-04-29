@@ -20,9 +20,9 @@ paginate = 18
 
 
 [params]
-  version = "10.2"
+  version = "10.3"
   repository = "https://github.com/hexandcube/hexandcube.eu.org"
-  description = "Nice to meet you, I'm Hexandcube. Hobby web developer, computer wizard, and part-time fox on the internet. "
+  description = "Nice to meet you, I'm Hexandcube. Hobby web developer, and part-time fox on the internet. "
   keywords = "Hexandcube, Wallpapers, Files, Windows, Desktop, Tools, Software, Web Developer, translation"
   JsonLd = '''
   {
@@ -59,34 +59,29 @@ paginate = 18
     name = "About"
     url = "/about/"
     weight = -100
-    pre="fa-user"
 
   [[menu.main]]
     identifier = "posts"
     name = "Posts"
     url = "/posts/"
     weight = -90
-    pre="fa-newspaper"
 
   [[menu.main]]
     identifier = "files"
     name = "Files"
     url = "/files/"
     weight = -80
-    pre="fa-cloud-arrow-down"
     
   [[menu.main]]
     identifier = "wallpapers"
     name = "Wallpapers"
     url = "/wallpapers/"
     weight = -70
-    pre="fa-image"
 
   [[menu.main]]
     identifier = "photos"
     name = "Photos"
     url = "/photos/"
     weight = -60
-    pre="fa-camera"
     
 

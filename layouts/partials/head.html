@@ -13,6 +13,10 @@
 <meta property="twitter:creator" content="@hexandcube" />
 <meta property="twitter:site" content="@hexandcube" />
 <meta property="twitter:image" content="https://hexandcube.eu.org{{ with .Page.Params.Thumbnail}}{{ . }}{{ else }}/img/opengraph.png{{ end }}" />
+{{ if .Params.NoIndex }}
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+{{ end }}
 {{ with .Site.Params.JsonLd }}
 <script type="application/ld+json" >
 {{ . | safeJS }}
@@ -21,19 +25,22 @@
 
 <title>{{ with .Page.Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
 
-{{ $styles := resources.Get "scss/main.scss" | toCSS | postCSS }}
-
-
-    {{ $styles := $styles | minify | resources.PostProcess }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" async/>
-
+{{ $seed := "3057234985271398467293562983" }}
+{{ $random := delimit (shuffle (split (md5 $seed) "" )) "" }}
+{{
+    $style := resources.Get "/scss/main.scss"
+    | resources.ToCSS
+    | resources.PostCSS
+    | resources.ExecuteAsTemplate (printf "main.dev.%s.css" $random) $random
+    }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
 <link rel="stylesheet" href="/fonts/font-awesome/css/all.min.css" defer>
 <link rel="stylesheet" href="/fonts/mont/mont.css" async>
 <link rel="stylesheet" href="/fonts/hexandcube-icon/hexandcube-icon.css" defer>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Space+Mono&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&family=Space+Mono&display=swap"
     rel="stylesheet" async>
 <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-touch-icon-60x60.png">

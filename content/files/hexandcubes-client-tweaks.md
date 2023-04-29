@@ -2,24 +2,32 @@
 fileExtension: zip
 title: Hexandcube's Client Tweaks
 slug: hexandcubes-client-tweaks
-description: Improved Vanilla Minecraft Experience
+description: Vanilla Minecraft with quality of life improvements that work on multiplayer servers.
+author: Hexandcube
+category: files
 fileName: Hexandcube_Client_Tweaks_1.19.2-4.1.zip
 fileType: Minecraft Modpack
 fileSize: 651KB
 fileVersion: 4.1 [1.19.2]
 fileDate: 2022-09-19
 icon: fa-solid fa-box
+thumbnail: ClientTweaks.png
 download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.1.zip
 downloadServer: Hexandcube Files
 servers:
-  - name: CurseForge (Curseforge Format)
-    download: https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks
-  - name: Modrinth (Modrith Format)
-    download: https://modrinth.com/modpack/hexandcube-client-tweaks
+- name: CurseForge (Curseforge Format)
+  download: https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks
+- name: Modrinth (Modrith Format)
+  download: https://modrinth.com/modpack/hexandcube-client-tweaks
 versions:
   - name: 4.3 Beta [1.19.3]
     download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.3-4.2_Beta.zip
     date: 2022-12-20
+    prerelease: true
+  - name: 4.1 [1.19.2]
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.1.zip
+    date: 2022-09-19
+    latest: true
   - name: 4.0 [1.19.2]
     download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.0.zip
     date: 2022-09-07
@@ -44,6 +52,7 @@ versions:
   - name: 2.0 Beta [1.17.1]
     download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.17.1-2.0_Beta.zip
     date: 2021-08-17
+    prerelease: true
   - name: 1.1 [1.16.5]
     download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.16.5-1.1.zip
     date: 2021-12-13
@@ -51,9 +60,9 @@ versions:
     download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.16.5-1.0.zip
     date: 2021-05-06
 ---
-![Screenshot](/img/files/ClientTweaks-scr.png)
 
-### Vanilla Minecraft with quality of life improvements that work on multiplayer servers.
+## Hexandcube's Client Tweaks
+#### Vanilla Minecraft with quality of life improvements that work on multiplayer servers.
 
 ##### Improvements include:
 
@@ -171,10 +180,12 @@ in a temporary ban. Hexandcube is not responsible for any bans caused by the pla
 * Dynamic Crosshair (by Crendgrim)
 * BetterF3 (by cominixo)
 
-<br>
+##### Install modpack
 
-<a class="btn btn-primary" href="https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks/download/3996942?client=y" target="_blank"><i class="fas fa-fire"></i> Install on CurseForge</a>
-<a class="btn btn-secondary" href="https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Project Page</a>
+<a class="btn btn-inverted" href="https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks/download/3996942?client=y" target="_blank"><i class="fas fa-fire"></i> Install on CurseForge</a>
+<a class="btn" href="https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Project Page</a>
+
+You can use this modpack in launchers that support Curseforge modpacks, such as MultiMC, Prism Launcher, AT Launcher etc.
 
 By downloading this modpack from Hexandcube Files, you're downloading the Curseforge format of the pack.
 If you want to download the Modrinth format of the pack, please visit the [Modrinth page](https://modrinth.com/modpack/hexandcube-client-tweaks).

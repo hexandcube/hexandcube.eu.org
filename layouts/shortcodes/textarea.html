@@ -1,0 +1,1 @@
+<textarea class="input {{ with .Get "class"}}{{ . }}{{ end }}" placeholder="{{ .Inner }}" {{ with .Get "id" }}name="{{ . }}" id="{{ . }}"{{ end }} {{ with .Get "maxlength"}}maxlength="{{ . }}"{{ end }} {{ with .Get "pattern" }}pattern="{{ . }}"{{ end }} {{ with .Get "disabled" }}disabled="{{ . }}"{{ end }}></textarea>

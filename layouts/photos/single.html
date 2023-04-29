@@ -1,93 +1,73 @@
 {{ define "main" }}
+{{ $currentPage := . }}
 <main>
-    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive pt-8 pb-2 md:py-14 grid md:grid-cols-4">
-        <div class="col-span-3">
-            <h1 class="accentline">{{ .Title }}</h1>
-            {{ with .Description}}
-            <p class="mt-5">{{ . }}</p>
+    <section class="responsive pt-8 md:pt-12">
+        <h1 class="accentline">{{ .Title }}</h1>
+        <div class="mt-5">
+            {{ with .Params.Author }}
+            <span>
+                <img src="/img/authors/{{ . }}.png" alt="{{ . }}"
+                    class="rounded-full w-7 inline border-1 border-light-border dark:border-dark-border">
+                <span>By {{ . }}</span>
+            </span>
+            {{ else }}
+            <img src="/img/authors/Anonymous.png" alt="Anonymous"
+                class="rounded-full w-7 inline border-1 border-light-border dark:border-dark-border">
+            <span>By Anonymous</span>
+            {{ end }}
+            {{ with .Params.license }}
+            <span>
+                <span>&middot;</span>
+                <span><a class="decoration-dotted underline" target="_blank" href="{{ $currentPage.Params.LicenseUrl }}">{{ . }}</a></span>
+            </span>
+            {{ end }}
+            {{ with .Params.date }}
+            <span>
+                <span>&middot;</span>
+                <span>{{ .Format "January 2, 2006" }}</span>
+            </span>
             {{ end }}
         </div>
-        {{ if .Params.disableDownloads}}
-        {{ else }}
-            <div class="leading-default text-light-grey dark:text-dark-grey md:text-right mt-5">
-                <a href="https://files.hexandcube.eu.org/photos/hexandcube-{{ .Params.id }}.jpg"
-                    class="btn btn-primary text-xl"><i class="fa-solid fa-download"></i> Download</a>
-            </div>
+        {{ with .Description}}
+        <p class="mt-5">{{ . }}</p>
         {{ end }}
+        <div class="mt-4">
+            {{ with .Params.camera }}
+            <abbr title="Camera" class="chip cursor-help my-1 no-underline"><i class="fa-solid fa-camera"></i> {{ . }}</abbr>
+            {{ end }}
+            {{ with .Params.lens }}
+            <abbr title="Lens" class="chip cursor-help my-1 no-underline"><i class="fa-solid fa-eye"></i> {{ . }}</abbr>
+            {{ end }}
+            {{ with .Params.resolution }}
+            <abbr title="Resolution" class="chip cursor-help my-1 no-underline"><i class="fa-solid fa-maximize"></i> {{ . }}px</abbr>
+            {{ end }}
+            {{ with .Params.iso }}
+            <abbr title="ISO" class="chip cursor-help my-1 no-underline"><i class="fa-solid fa-lightbulb"></i> ISO {{ . }}</abbr>
+            {{ end }}
+            {{ with .Params.focalLength }}
+            <abbr title="Focal Length" class="chip cursor-help my-1 no-underline"><i class="fa-solid fa-arrows-to-eye"></i> {{ . }}</abbr>
+            {{ end }}
+            {{ with .Params.shutterSpeed }}
+            <abbr title="Shutter Speed" class="chip cursor-help my-1 no-underline"><i class="fa-solid fa-stopwatch"></i> {{ . }}</abbr>
+            {{ end }}
+            {{ with .Params.aperture }}
+            <abbr title="Aperture" class="chip cursor-help my-1 no-underline"><i class="fa-regular fa-circle-dot"></i> {{ . }}</abbr>
+            {{ end }}
+        </div>
+        <div class="mt-4">
+            <a href="https://files.hexandcube.eu.org/photos/hexandcube-{{ .Params.id }}.jpg" download="hexandcube-{{ .Params.id }}.jpg"
+                class="btn btn-inverted">
+                <i class="fa-solid fa-download fa-fw"></i>
+                <span>Download from Hexandcube Files</span>
+            </a>
+        </div>
     </section>
-    <section
-        class="bg-light-secondary-bg dark:bg-dark-secondary-bg responsive py-4 grid top-0
-        md:grid-cols-5 gap-y-1">
-        <div class="leading-default text-light-grey dark:text-dark-grey mb-2">
-            <i class="fa-solid fa-user fa-fw"></i> Author: <br class="hidden md:block"><b class="text-light-text dark:text-dark-text">Hexandcube</b>
-        </div>
-
-        <div class="leading-default text-light-grey dark:text-dark-grey mb-2">
-            <i class="fa-solid fa-section fa-fw"></i> License: <br class="hidden md:block"><a href="{{ .Params.licenseUrl }}"><b class="text-light-text dark:text-dark-text underline">{{ .Params.license }}</b></a>
-        </div>
-
-        {{ with .Params.Date }}
-            <div class="leading-default text-light-grey dark:text-dark-grey mb-2">
-                <i class="fa-solid fa-calendar fa-fw"></i> Date Taken: <br class="hidden md:block"><b
-                    class="text-light-text dark:text-dark-text capitalize">{{ .Format "January 2, 2006" }}</b>
-            </div>
-        {{ end }}
-
-        {{ with .Params.resolution }}
-        <div class="leading-default text-light-grey dark:text-dark-grey mb-2">
-            <i class="fa-solid fa-maximize fa-fw"></i> Resolution: <br class="hidden md:block"><b
-                class="text-light-text dark:text-dark-text">{{ . }}</b>
-        </div>
-        {{ end }}
-        
-        {{ with .Params.camera }}
-        <div class="leading-default text-light-grey dark:text-dark-grey mb-2">
-            <i class="fa-solid fa-camera fa-fw"></i> Camera: <br class="hidden md:block"><b
-                class="text-light-text dark:text-dark-text capitalize">{{ . }}</b>
-        </div>
-        {{ end }}
-
-        {{ with .Params.lens }}
-        <div class="leading-default text-light-grey dark:text-dark-grey mb-2">
-            <i class="fa-solid fa-eye fa-fw"></i> Lens: <br class="hidden md:block"><b
-                class="text-light-text dark:text-dark-text capitalize">{{ . }}</b>
-        </div>
-        {{ end }}
-
-        {{ with .Params.iso }}
-        <div class="leading-default text-light-grey dark:text-dark-grey mb-2">
-            <i class="fa-solid fa-lightbulb fa-fw"></i> ISO: <br class="hidden md:block"><b
-                class="text-light-text dark:text-dark-text capitalize">ISO{{ . }}</b>
-        </div>
-        {{ end }}
-        
-        {{ with .Params.focalLength }}
-        <div class="leading-default text-light-grey dark:text-dark-grey mb-2">
-            <i class="fa-solid fa-ruler-combined fa-fw"></i> Focal Length: <br class="hidden md:block"><b
-                class="text-light-text dark:text-dark-text capitalize">{{ . }}</b>
-        </div>
-        {{ end }}
-
-        {{ with .Params.shutterSpeed }}
-        <div class="leading-default text-light-grey dark:text-dark-grey mb-2">
-            <i class="fa-solid fa-stopwatch fa-fw"></i> Shutter Speed: <br class="hidden md:block"><b
-                class="text-light-text dark:text-dark-text capitalize">{{ . }}</b>
-        </div>
-        {{ end }}
-
-        {{ with .Params.aperture }}
-        <div class="leading-default text-light-grey dark:text-dark-grey mb-2">
-            <i class="fa-solid fa-circle-dot fa-fw"></i> Aperture: <br class="hidden md:block"><b
-                class="text-light-text dark:text-dark-text capitalize">{{ . }}</b>
-        </div>
-        {{ end }}
-    </section>
-    <section class="responsive content py-8">
+    <section class="responsive content py-4">
         <itemscope itemtype="https://schema.org/ImageObject">
-
-            <img src="https://files.hexandcube.eu.org/photos/hexandcube-{{ .Params.id }}.jpg"
-                itemprop="contentUrl" alt="{{ .Title }}" class="rounded-xl">
-            </div>
+            <img src="https://files.hexandcube.eu.org/photos/hexandcube-{{ .Params.id }}.jpg" itemprop="contentUrl"
+                alt="{{ .Title }}" class="rounded-xl">
+        </itemscope>
+        </div>
     </section>
     <section class="responsive content py-8">
         {{ .Content }}

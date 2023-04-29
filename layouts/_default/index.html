@@ -1,8 +1,8 @@
 {{ define "main" }}
 <main>
-    <section class="bg-light-secondary-bg dark:bg-dark-secondary-bg lg:pt-16 md:py-4 py-12 md:pb-0">
-        <div class="md:grid md:grid-cols-2 dark:text-white">
-            <div class="text-left md:pt-16">
+    <section class="lg:pt-8 py-2 md:pb-0">
+        <div class="bg-light-secondary-bg dark:bg-dark-secondary-bg rounded-4xl px-8 pt-10 dark:border-dark-border border-light-border border-2 md:grid md:grid-cols-2 dark:text-white">
+            <div class="text-center md:text-left md:pt-16 md:pl-8 mb-8 md:mb-0">
                 <h1 class="title-2 font-brand leading-10">
                     Nice to meet you,<br class="mb-1">
                     I'm <span class="inline-block p-1 bg-accent-500 text-white rounded-xl">hexandcube</span>.
@@ -11,7 +11,7 @@
             </div>
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 349.36 416.2"
-                    class="lg:w-64 w-52 h-auto mr-32 float-right hidden md:block">
+                    class="lg:w-64 w-52 h-auto mr-16 lg:mr-28 float-right hidden md:block">
                     <defs>
                         <style>
                             .svg-fox-path {
@@ -63,11 +63,11 @@
     </section>
     <section class="content">
         {{ .Content }}
-        <div class="mb-10">
+        <div class="mb-10 mt-8">
             <div class="title-2 accentline mb-5">Projects</div>
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 gap-y-5 mb-5">
                 <a href="https://inkonfig.hexandcube.eu.org"
-                    class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2 border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg">
+                    class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2 bg-light-secondary-bg dark:bg-dark-secondary-bg border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg">
                     <div class="grid grid-cols-10">
                         <div class="title-3 inline-block my-2 col-span-9">Inkonfig</div>
                         <div class="col-span-1 w-full">
@@ -87,7 +87,7 @@
                         you can use on multiple Windows devices to configure them automatically.</p>
                 </a>
                 <a href="/files/desktop-icon-toggle"
-                    class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2 border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg">
+                    class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2 bg-light-secondary-bg dark:bg-dark-secondary-bg border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg">
                     <div class="grid grid-cols-10">
                         <div class="title-3 inline-block my-2 col-span-9">Desktop Icon Toggle</div>
                         <div class="col-span-1 w-full">
@@ -109,7 +109,7 @@
             </div>
             <div class="grid lg:grid-cols-1 grid-cols-1 gap-5 gap-y-5 mb-5">
                 <a href="/files/hexandcubes-client-tweaks/"
-                    class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2 border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg">
+                    class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2 bg-light-secondary-bg dark:bg-dark-secondary-bg border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg">
                     <div class="grid grid-cols-10">
                         <div class="title-3 inline-block my-2 col-span-9">Hexandcube's Client Tweaks</div>
                         <div class="col-span-1 w-full">
@@ -132,48 +132,6 @@
                 </a>
 
             </div>
-        </div>
-        <div class="mb-10">
-            <div class="title-2 accentline mb-5">Latest Post</div>
-            {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
-            {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
-
-            {{ $PageContext := . }}
-            {{ if .IsHome }}
-            {{ $PageContext = .Site }}
-            {{ end }}
-            {{ $paginator := .Paginate (where $PageContext.RegularPages "Type" $contentTypeName) 1 }}
-
-            {{ range $paginator.Pages }}
-            <div class="cursor-pointer p-2 my-5 bg-light-secondary-bg dark:bg-dark-secondary-bg hover:bg-light-selection 
-            dark:hover:bg-dark-selection rounded-5xl md:grid md:grid-cols-2 hover:rounded-2xl post-card"
-                onClick="location.href = '{{ .Permalink }}'">
-                <a href="{{ .RelPermalink }}">
-
-                    <img class="rounded-5xl post-card-image" src="{{ if .Params.Thumbnail }}{{ .Params.Thumbnail }}
-                {{ else }}/img/opengraph.png{{ end }}" alt="{{ .Title }}">
-
-                </a>
-                <div class="mx-1 md:ml-10 mt-3 md:mt-0 my-2 items-center flex">
-                    <a href="{{ .RelPermalink }}">
-                        <h2>{{ .Title }}</h2>
-                        <p>{{ .Description }}</p>
-                        <div class="flex mt-3 md:mt-7">
-                            <div class="items-center flex">
-                                <img class="rounded-full mr-4" src="/img/authors/{{ .Params.Author }}.png"
-                                    alt="{{ .Params.Author }}" width="50px">
-                            </div>
-                            <div class="items-center flex">
-                                <div>
-                                    <b> {{.Params.Author}} </b>
-                                    <div> {{ .PublishDate.Format "January 2, 2006" }} </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            {{ end }}
         </div>
     </section>
 </main>

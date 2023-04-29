@@ -1,6 +1,8 @@
 ---
 title: Desktop Icon Toggle for Windows
 description: Quickly toggle the visibility of desktop icons by double-clicking the blank space on the desktop.
+author: Hexandcube
+category: files
 fileName: DesktopIconToggle-1.3.0.zip
 fileType: ZIP File Archive
 fileExtension: .zip
@@ -8,12 +10,21 @@ fileSize: 2.25MB
 fileVersion: "1.3"
 fileDate: 2022-01-26
 icon: fa-solid fa-file-zipper
+thumbnail: desktopicontoggle-cover.png
 download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.3.0.zip
 downloadServer: Hexandcube Files
 servers:
-  - name: "GitHub"
-    download: https://github.com/hexandcube/desktop-icon-toggle/releases/download/v.1.3.0/DesktopIconToggle-1.3.0.zip
+- name: "GitHub"
+  download: https://github.com/hexandcube/desktop-icon-toggle/releases
+- name: "Chocolatey"
+  download: https://community.chocolatey.org/packages/desktopicontoggle
+- name: "SourceForge"
+  download: https://sourceforge.net/projects/desktop-icon-toggle/
 versions:
+  - name: "1.3"
+    download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.3.0.zip
+    date: 2022-01-26
+    latest: true
   - name: "1.2"
     download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.2.0.zip
     date: 2021-08-24
@@ -38,6 +49,8 @@ automatically add the app to startup, and a standalone
 binary of the app.
 
 Desktop icon by Icons8
+
+<a class="btn btn-inverted" href="https://github.com/hexandcube/desktop-icon-toggle/" target="_blank"><i class="fa-brands fa-github"></i> View Project on GitHub</a>
 
 ### Install using Chocolatey
 

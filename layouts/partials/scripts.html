@@ -9,23 +9,27 @@
             switch (data.status.indicator) {
                 case 'none':
                     statusCircle.classList.add('bg-green-500');
+                    statusCircle.classList.remove('bg-light-grey');
                     statusText.innerText = 'All systems operational';
                     break;
                 case 'minor':
                     statusCircle.classList.add('bg-yellow-500');
+                    statusCircle.classList.remove('bg-light-grey');
                     statusText.innerText = 'Experiencing issues';
                     break;
                 case 'major':
                     statusCircle.classList.add('bg-red-500');
+                    statusCircle.classList.remove('bg-light-grey');
                     statusText.innerText = 'Service Outage';
                     break;
                 case 'maintenance':
                     statusCircle.classList.add('bg-blue-500');
+                    statusCircle.classList.remove('bg-light-grey');
                     statusText.innerText = 'Under Maintenance';
                     break;
                 default:
                     statusCircle.classList.add('bg-gray-500');
-    
+                    statusCircle.classList.remove('bg-light-grey');
                     statusCircle.classList.remove('animate-pulse');
                     statusText.innerText = 'Status check failed';
                     console.error('Status Widget: Status check failed!');
@@ -46,7 +50,7 @@
 <script>
     window.onload = function() {
         // Check the theme again after the page is loaded, to make sure that the 
-        // theme switcher icon is correctly set.
+        // theme switcher icon is correctly set. The theme checking script is located in the head partial.
         checkTheme();
     }
 </script>
@@ -61,15 +65,4 @@
     gtag('js', new Date());
 
     gtag('config', 'G-72YJ9XPJKQ');
-</script>
-
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3245439,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>

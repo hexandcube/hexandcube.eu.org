@@ -1,6 +1,8 @@
 ---
 title: MicMonitor
 description: Simple Autohotkey program that allows you to quickly toggle Microphone from the taskbar
+author: Hexandcube
+category: files
 fileName: MicMonitor-1.1.zip
 fileType: ZIP File Archive
 fileExtension: .zip
@@ -12,8 +14,14 @@ download: https://files.hexandcube.eu.org/download/MicMonitor/MicMonitor-1.1.zip
 downloadServer: Hexandcube Files
 servers:
   - name: "GitHub"
-    download: https://github.com/hexandcube/MicMonitor/releases/download/v.1.1.0/MicMonitor-1.1.zip
+    download: https://github.com/hexandcube/MicMonitor/releases/
+  - name: "Chocolatey"
+    download: https://community.chocolatey.org/packages/micmonitor
 versions:
+  - name: "1.1"
+    download: https://files.hexandcube.eu.org/download/MicMonitor/MicMonitor-1.1.zip
+    date: 2022-01-29
+    latest: true
   - name: "1.0"
     download: https://files.hexandcube.eu.org/download/MicMonitor/MicMonitor-1.0.zip
     date: 2022-01-28
@@ -58,6 +66,6 @@ Microphone icon by [Icons8](https://icons8.com/).
 choco install micmonitor
 ```
 
-<a class="btn btn-primary" href="https://chocolatey.org/install" target="_blank"><i class="fas fa-download"></i> Install Chocolatey</a>
-<a class="btn btn-secondary" href="https://community.chocolatey.org/packages/micmonitor" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Package Page</a>
+<a class="btn btn-inverted" href="https://community.chocolatey.org/packages/micmonitor" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Package Page</a>
+<a class="btn" href="https://chocolatey.org/install" target="_blank"><i class="fas fa-download"></i> Install Chocolatey</a>
 

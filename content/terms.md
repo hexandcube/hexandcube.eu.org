@@ -1,6 +1,8 @@
 ---
 title: Terms and Conditions
 lastmod: 2021-11-10
+showLastmod: true
+author: Hexandcube
 ---
 
 Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the https://hexandcube.eu.org website ("Website", "Service") or other websites and services ("Websites", "Services") operated by Hexandcube ("us", "we", or "our").

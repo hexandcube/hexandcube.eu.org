@@ -1,7 +1,39 @@
-<footer class="xl:pt-20">
+<footer>
+    <div class="responsive py-10 text-center -mt-1px bg-light-secondary-bg dark:bg-dark-secondary-bg border-t-1 border-light-border dark:border-dark-border">
+        <div>
+            <img class="mx-auto footerlogo-dark mb-2" src="/img/logo.png" alt="Hexandcube" width="275rem">
+            <img class="mx-auto footerlogo-light mb-2" src="/img/logo-reversed.png" alt="Hexandcube" width="275rem">
+        </div>
+
+        <div class="content">
+            <div>Hexandcube.eu.org v.{{ .Site.Params.Version }}</div>
+            <div>Copyright &copy; 2017 - 2023 Hexandcube</div>
+            <a class="block sm:inline" href="/terms">Terms and Conditions</a>
+            <span class="hidden sm:inline-block">|</span>
+            <a class="block sm:inline" href="/credits">Credits</a>
+        </div>
+        <div class="mt-4">
+            <a href="https://status.hexandcube.eu.org" target="_blank" id="status-widget"
+                class="bg-light-selection dark:bg-dark-selection px-4 py-2 mt-4 rounded-xl hover:bg-light-border
+                hover:dark:bg-dark-border text-light-secondary-text dark:text-dark-secondary-text">
+                <div id="status-widget-circle"
+                    class="animate-pulse inline-block rounded-full w-3 h-3 align-middle bg-light-grey -mt-1 mr-1"></div>
+                <span id="status-widget-text" class="mt-1px">Checking status</span>
+            </a>
+        </div>
+        <div class="text-center mt-4">
+            <a href="https://www.netlify.com?ref=hexandcube.eu.org" class="text-center dark:hidden">
+                <img src="https://www.netlify.com/v3/img/components/netlify-light.svg" class="m-auto" alt="Deploys by Netlify" />
+            </a>
+            <a href="https://www.netlify.com?ref=hexandcube.eu.org" class="text-center hidden dark:block">
+                <img src="https://www.netlify.com/v3/img/components/netlify-dark.svg" class="m-auto"
+                    alt="Deploys by Netlify" />
+            </a>
+        </div>
+    </div>
     <div class="float-right">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 777.77 435.77"
-            class="lg:w-64 w-52 h-auto mr-20 hidden xl:block -mt-36">
+            class="lg:w-64 w-52 h-auto mr-20 hidden xl:block -mt-36 pt-1px">
             <defs>
                 <style>
                     .svg-fox-lying-path {
@@ -37,25 +69,5 @@
                 d="M1046.35,717.57s52,61.5,12.56,62.21c-13.41,1.72,26.59,26.72,16.94,41.74-5.35,7-.35,28,6.8,45"
                 transform="translate(-357.62 -433.67)" />
         </svg>
-    </div>
-    <div class="responsive py-10 bg-light-secondary-bg dark:bg-dark-secondary-bg text-center -mt-1px">
-        <div>
-            <img class="mx-auto footerlogo-dark mb-2" src="/img/logo.png" alt="Hexandcube" width="275rem">
-            <img class="mx-auto footerlogo-light mb-2" src="/img/logo-reversed.png" alt="Hexandcube" width="275rem">
-        </div>
-        
-        <div class="content">
-            <div>Hexandcube.eu.org version {{ .Site.Params.Version }}</div>
-            <div>Copyright &copy; 2017 - 2023 Hexandcube</div>
-            <a class="block sm:inline" href="/terms">Terms and Conditions</a>
-            <span class="hidden sm:inline-block">|</span>
-            <a class="block sm:inline" href="/acknowledgements">Acknowledgements</a>
-        </div>
-        <div class="mt-2">
-            <a href="https://status.hexandcube.eu.org" id="status-widget" class="btn btn-secondary text-light-secondary-text dark:text-dark-secondary-text">
-                <div id="status-widget-circle" class="animate-pulse inline-block rounded-full w-3 h-3 align-middle bg-light-grey -mt-1 mr-1"></div>
-                <span id="status-widget-text" class="mt-1px">Fetching status</span>
-            </a>
-        </div>
     </div>
 </footer>

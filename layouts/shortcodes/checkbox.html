@@ -1,0 +1,6 @@
+<div>
+    <input {{ with .Get "id"}}id="{{ . }}" name="{{ . }}"{{ end }} class="{{ with .Get "class" }}{{ . }}{{ end }}" {{ with .Get "checked" }}checked="{{ . }}"{{ end }} {{ with .Get "disabled" }}disabled="{{ . }}"{{ end }} type="checkbox">
+    <label {{ with .Get "id"}}for="{{ . }}"{{ end }}>
+        {{ .Inner }}
+    </label>
+</div>

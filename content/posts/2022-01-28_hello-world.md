@@ -4,6 +4,7 @@ author: Hexandcube
 description: The obligatory first post
 thumbnail: /img/uploads/hello-world.png
 publishDate: 2022-01-28
+category: posts
 ---
 
 Hello! I'm Hexandcube, and this is my obligatory Hello World post.

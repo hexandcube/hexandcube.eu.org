@@ -1,0 +1,6 @@
+<div>
+    <input {{ with .Get "id"}}id="{{ . }}"{{ end }} {{ with .Get "name"}}name="{{ . }}"{{ end }} type="radio" {{ with .Get "checked" }}checked="{{ . }}"{{ end }} {{ with .Get "disabled" }}disabled="{{ . }}"{{ end }}>
+    <label {{ with .Get "id"}}for="{{ . }}"{{ end }}>
+        {{ .Inner }}
+    </label>
+</div>

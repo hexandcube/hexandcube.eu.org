@@ -2,7 +2,7 @@
 
 {{ if gt $paginator.TotalPages 1 }}
 
-<div role="navigation" class="text-center mt-12">
+<div role="navigation" class="text-center mt-6 mb-12">
     <div>
         <div
             class="px-3 py-1 leading-default rounded-5xl m-1 text-light-grey dark:text-dark-grey hover:text-light-text dark:hover:text-dark-text
@@ -18,7 +18,7 @@
             class="inline-block border-2 border-light-border dark:border-dark-border px-3 py-1 leading-default rounded-5xl m-1 font-mono
             hover:bg-light-border dark:hover:bg-dark-border cursor-pointer hover:rounded text-light-grey
             dark:text-dark-grey hover:text-light-text dark:hover:text-dark-text {{ if eq . $paginator }}font-brand font-bold 
-            bg-light-secondary dark:bg-dark-secondary text-light-secondary-text dark:text-dark-secondary-text{{ end }}">
+            bg-light-secondary-bg dark:bg-dark-secondary-bg text-light-secondary-text dark:text-dark-secondary-text{{ end }}">
             <a href="{{ .URL }}">
                 {{ .PageNumber }}
             </a>
