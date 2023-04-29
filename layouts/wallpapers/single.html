@@ -56,7 +56,7 @@
         {{ end }}
         {{ else }}
         <itemscope itemtype="https://schema.org/ImageObject">
-            <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ .Params.id }}.png" itemprop="contentUrl"
+            <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ $current.Params.id }}.png" itemprop="contentUrl"
                 alt="{{ .Title }}" class="rounded-xl">
         </itemscope>
         {{ end }}

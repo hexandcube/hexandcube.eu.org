@@ -1,6 +1,7 @@
 ---
 title: My Monochrome Friend
 id: my-monochrome-friend
+author: Hexandcube
 category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license

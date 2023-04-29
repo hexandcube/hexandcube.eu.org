@@ -1,6 +1,7 @@
 ---
 title: Boat Dock
 id: boat-dock
+author: Hexandcube
 category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license

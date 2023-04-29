@@ -324,14 +324,6 @@ select {
     max-width: 100%;
 }
 
-.image-card {
-    border-radius: 1.75rem !important;
-}
-
-.image-card:hover {
-    border-radius: 0.75rem !important;
-}
-
 .clover {
     @apply fill-light-selection dark:fill-dark-selection;
 }
@@ -347,10 +339,6 @@ select {
 
 .dark .extended {
     @apply bg-dark-primary-bg;
-}
-
-.image-card-container:hover .image-card-marker {
-    opacity: 1 !important;
 }
 
 .post-card:hover .post-card-image {

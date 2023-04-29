@@ -1,6 +1,7 @@
 ---
 title: Anemone
 id: anemone
+author: Hexandcube
 category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license

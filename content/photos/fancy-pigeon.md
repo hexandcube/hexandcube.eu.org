@@ -1,6 +1,7 @@
 ---
 title: Fancy Pigeon
 id: fancy-pigeon
+author: Hexandcube
 category: photos
 license: Unsplash License
 licenseUrl: https://unsplash.com/license
