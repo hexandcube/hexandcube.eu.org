@@ -2,4 +2,8 @@ User-agent: *
 Allow: /
 Disallow: /404
 Disallow: /offline.html
+Disallow: /offline
+Disallow: /terms
+Disallow: /credits
+Disallow: /markdown
 Sitemap: https://hexandcube.eu.org/sitemap.xml
