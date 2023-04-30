@@ -95,29 +95,6 @@
         } else {
             setTheme('light');
         }
-        changeGiscusTheme();
-    }
-
-    function changeGiscusTheme() {
-        if (localStorage.getItem('theme') === 'dark') {
-            theme = "dark_dimmed";
-        } else {
-            theme = "light";
-        }
-
-        function sendMessage(message) {
-            const iframe = document.querySelector('iframe.giscus-frame');
-            if (!iframe) return;
-            iframe.contentWindow.postMessage({
-                giscus: message
-            }, 'https://giscus.app');
-        }
-
-        sendMessage({
-            setConfig: {
-                theme: theme
-            }
-        });
     }
 
     checkTheme();
