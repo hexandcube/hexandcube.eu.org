@@ -1,6 +1,7 @@
 baseURL = "https://hexandcube.eu.org"
 languageCode = "en-us"
 title = "Hexandcube.eu.org"
+buildFuture = true
 enableEmoji = true
 enableGitInfo = false
 paginate = 18
