@@ -9,6 +9,7 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:description" content="{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Title }} on Hexandcube.eu.org{{ end }}" />
 <meta property="og:image" content="https://hexandcube.eu.org{{ with .Page.Params.Thumbnail}}{{ . }}{{ else }}/img/opengraph.png{{ end }}" />
+<meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:title" content="{{ with .Page.Title }}{{ . }} | {{ end }}{{ .Site.Title }}" />
 <meta property="twitter:creator" content="@hexandcube" />
 <meta property="twitter:site" content="@hexandcube" />
