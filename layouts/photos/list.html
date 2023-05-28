@@ -3,6 +3,8 @@
     <section class="responsive">
         <h1 class="accentline">Photos</h1>
         <p class="mt-5">Here you can find all of the photos I've ever shared online. Most of them are free to use. Please check the license before using, Thanks!</p>
+        <br>
+        {{ partial "support.html" . }}
     </section>
     <section class="responsive py-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
         {{ $paginator := .Paginate (sort .Pages "Params.date" "desc" ) }}

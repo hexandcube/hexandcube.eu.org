@@ -2,14 +2,11 @@
 <main>
     <section class="responsive">
         <h1 class="accentline">Wallpapers</h1>
-        <p class="mt-5">Sometimes I design desktop wallpapers for fun. Feel free to use them on your own devices.</p>
-        {{ with .Content }}
-        <div class="content">
-            {{ . }}
-        </div>
-        {{ end }}
+        <p class="mt-5">Here you can find some desktop wallpapers I've designed. All of these are free for personal use (CC BY-NC 4.0).</p>
+        <br>
+        {{ partial "support.html" . }}
     </section>
-    <section class="responsive py-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+    <section class="responsive py-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
         {{ $paginator := .Paginate (sort .Pages "Params.id" "desc" ) }}
             {{ range $paginator.Pages }}
                 <a href="{{ .RelPermalink }}" class="col-span-1 border-2 block border-light-border dark:border-dark-border rounded-2xl bg-light-secondary-bg dark:bg-dark-secondary-bg hover:bg-light-border dark:hover:bg-dark-border hover:rounded-3xl overflow-clip">
