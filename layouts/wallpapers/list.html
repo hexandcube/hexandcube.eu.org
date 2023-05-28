@@ -10,8 +10,7 @@
         {{ $paginator := .Paginate (sort .Pages "Params.id" "desc" ) }}
             {{ range $paginator.Pages }}
                 <a href="{{ .RelPermalink }}" class="col-span-1 border-2 block border-light-border dark:border-dark-border rounded-2xl bg-light-secondary-bg dark:bg-dark-secondary-bg hover:bg-light-border dark:hover:bg-dark-border hover:rounded-3xl overflow-clip">
-                    <!-- TODO: Add deafult thumbnails for wallpapers with multiple variants (Open graph images for these wallpapers will be broken until this is done) -->
-                    <img src="https://files.hexandcube.eu.org/wallpapers/thumbnails/Wallpaper-{{ .Params.id }}{{ with .Params.variants }}-{{ index . 0 }}{{ end }}.png"
+                    <img src="https://files.hexandcube.eu.org/wallpapers/thumbnails/Wallpaper-{{ .Params.id }}.png"
                         alt="{{ .Params.title }}" class="w-full">
                     <div class="p-5">
                         <b class="text-3xl">{{ .Params.title }}</b>
