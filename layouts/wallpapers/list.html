@@ -3,11 +3,17 @@
     <section class="responsive">
         <h1 class="accentline">Wallpapers</h1>
         <p class="mt-5">Sometimes I design desktop wallpapers for fun. Feel free to use them on your own devices.</p>
+        {{ with .Content }}
+        <div class="content">
+            {{ . }}
+        </div>
+        {{ end }}
     </section>
     <section class="responsive py-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
         {{ $paginator := .Paginate (sort .Pages "Params.id" "desc" ) }}
             {{ range $paginator.Pages }}
                 <a href="{{ .RelPermalink }}" class="col-span-1 border-2 block border-light-border dark:border-dark-border rounded-2xl bg-light-secondary-bg dark:bg-dark-secondary-bg hover:bg-light-border dark:hover:bg-dark-border hover:rounded-3xl overflow-clip">
+                    <!-- TODO: Add deafult thumbnails for wallpapers with multiple variants (Open graph images for these wallpapers will be broken until this is done) -->
                     <img src="https://files.hexandcube.eu.org/wallpapers/thumbnails/Wallpaper-{{ .Params.id }}{{ with .Params.variants }}-{{ index . 0 }}{{ end }}.png"
                         alt="{{ .Params.title }}" class="w-full">
                     <div class="p-5">
@@ -20,5 +26,3 @@
     {{ partial "pagination.html" . }}
 </main>
 {{ end }}
-
-<!-- TODO: Add deafult thumbnails for wallpapers with multiple variants (Open graph images for these wallpapers will be broken until this is done) -->
