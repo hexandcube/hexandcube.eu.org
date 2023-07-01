@@ -15,7 +15,7 @@
   "dependencies": {
     "netlify-cli": "^12.14.0",
     "postcss-cli": "^10.1.0",
-    "sass": "^1.58.0"
+    "sass": "^1.63.6"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
