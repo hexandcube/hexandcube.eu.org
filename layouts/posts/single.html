@@ -55,7 +55,18 @@
             {{ end }}
         <article class="content {{ if not (.Params.HideBg) }}contentblock{{ end }}">
             {{ .Content }}
+            {{ if not ( .Params.HideComments )}}
+            <br><br>
+            {{ end }}
         </article>  
+
+        {{ if not ( .Params.HideComments )}}
+        <section class="pt-10 content {{ if not (.Params.HideBg) }}contentblock{{ end }} dark:bg-light-secondary-bg dark:border-light-border">
+            {{ partial "comments.html" . }}
+        </section>
+        {{ end }}
+
     </section>
+    
 </main>
 {{ end }}

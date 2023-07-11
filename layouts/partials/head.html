@@ -84,12 +84,16 @@
 <!-- Theme switcher -->
 <script>
     function setTheme(themeName) {
+        const event = new Event('themeChanged');
+        document.dispatchEvent(event);
+        
         localStorage.setItem('theme', themeName);
         document.documentElement.className = themeName;
         var themeToggle = document.getElementById("theme-toggle-label");
         if (themeName === 'dark') {
             themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>'
         } else themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>'
+        
     }
 
     function toggleTheme() {

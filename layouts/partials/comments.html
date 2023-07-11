@@ -1,0 +1,32 @@
+<div id="disqus_thread">
+    <p class="bg-light-primary-text dark:bg-dark-primary-text"></p>
+</div>
+<script>
+    var disqus_config = function () {
+        this.page.title = {{ .Title }};
+        this.page.url = {{ .Permalink }};
+        this.page.identifier = {{ .Permalink }};
+    };
+
+    (function () { 
+        // if (window.location.hostname == "localhost") {
+        //     document.write("Disqus comments disabled on localhost");
+        //     return;
+        // };
+
+        var d = document,
+            s = d.createElement('script');
+        s.src = 'https://hexandcube.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+
+    // Disqus theme switching (currently not working)
+    // document.addEventListener('themeChanged', function (e) {
+    //     if (document.readyState == 'complete') {
+    //     DISQUS.reset({ reload: true, config: disqus_config });
+    //     }
+    // });
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
