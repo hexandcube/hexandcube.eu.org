@@ -86,11 +86,10 @@
     function setTheme(themeName) {
         localStorage.setItem('theme', themeName);
         document.documentElement.className = themeName;
-        themeToggle = document.getElementById("theme-toggle-label");
+        var themeToggle = document.getElementById("theme-toggle-label");
         if (themeName === 'dark') {
             themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>'
         } else themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>'
-        changeGiscusTheme();
     }
 
     function toggleTheme() {
@@ -113,6 +112,4 @@
             setTheme('light');
         }
     }
-
-    checkTheme();
 </script>
