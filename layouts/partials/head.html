@@ -36,11 +36,7 @@
 {{ end }}
 {{ with .Site.Params.JsonLd }}
 <script type="application/ld+json">
-    {
-        {
-            . | safeJS
-        }
-    }
+    {{ . | safeJS }}
 </script>
 {{ end }}
 
