@@ -1,73 +1,87 @@
 ---
-fileExtension: zip
+fileExtension: mrpack
 title: Hexandcube's Client Tweaks
 slug: hexandcubes-client-tweaks
 description: Vanilla Minecraft with quality of life improvements that work on multiplayer servers.
 author: Hexandcube
 category: files
-fileName: Hexandcube_Client_Tweaks_1.19.2-4.1.zip
-fileType: Minecraft Modpack
-fileSize: 651KB
-fileVersion: 4.1 [1.19.2]
-fileDate: 2022-09-19
+fileName: Hexandcube_Client_Tweaks_1.20.1-5.1.mrpack
+fileType: Modrinth Minecraft Modpack 
+fileSize: 1.93MB
+fileVersion: 5.1 [1.20.1]
+fileDate: 2023-10-08
 icon: fa-solid fa-box
 thumbnail: ClientTweaks.png
-download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.1.zip
+download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.20.1-5.1.mrpack
 downloadServer: Hexandcube Files
 servers:
-- name: CurseForge (Curseforge Format)
-  download: https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks
-- name: Modrinth (Modrith Format)
+- name: Modrinth
   download: https://modrinth.com/modpack/hexandcube-client-tweaks
+- name: CurseForge (Legacy versions only)
+  download: https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks
 versions:
-  - name: 4.2 [1.19.3]
-    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.3-4.2.zip
-    date: 2023-03-12
+  - name: 5.1 [1.20.1]
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.20.1-5.1.mrpack
+    date: 2023-10-08
     latest: true
+  - name: 5.0 [1.20.1]
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.20.1-5.0.mrpack
+    date: 2023-09-24
+    broken: true
+    issue_url: https://github.com/hexandcube/hexandcube-client-tweaks/issues/2
+  - name: 4.3 [1.19.4]
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.4-4.3.mrpack
+    date: 2023-09-17
+  - name: 4.2 [1.19.3]
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.3-4.2.mrpack
+    date: 2023-03-12
   - name: 4.2 Beta [1.19.3]
-    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.3-4.2_Beta.zip
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.3-4.2_Beta.mrpack
     date: 2022-12-20
     prerelease: true
   - name: 4.1 [1.19.2]
-    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.1.zip
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.1.mrpack
     date: 2022-09-19
   - name: 4.0 [1.19.2]
-    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.0.zip
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.19.2-4.0.mrpack
     date: 2022-09-07
   - name: 3.2 [1.18.2]
-    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.18.2-3.2.zip
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.18.2-3.2.mrpack
     date: 2022-07-16
   - name: 3.1 [1.18.2]
-    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.18.2-3.1.zip
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.18.2-3.1.mrpack
     date: 2022-06-01
   - name: 3.0 [1.18.2]
-    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.18.2-3.0.zip
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.18.2-3.0.mrpack
     date: 2022-06-01
   - name: 2.2 [1.17.1]
-    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.17.1-2.2.zip
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.17.1-2.2.mrpack
     date: 2021-12-20
   - name: 2.1 [1.17.1]
-    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.17.1-2.1.zip
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.17.1-2.1.mrpack
     date: 2021-12-13
   - name: 2.0 [1.17.1]
-    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.17.1-2.0.zip
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.17.1-2.0.mrpack
     date: 2021-12-11
   - name: 2.0 Beta [1.17.1]
-    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.17.1-2.0_Beta.zip
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.17.1-2.0_Beta.mrpack
     date: 2021-08-17
     prerelease: true
   - name: 1.1 [1.16.5]
-    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.16.5-1.1.zip
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.16.5-1.1.mrpack
     date: 2021-12-13
   - name: 1.0 [1.16.5]
-    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.16.5-1.0.zip
+    download: https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks_1.16.5-1.0.mrpack
     date: 2021-05-06
 ---
 
 ## Hexandcube's Client Tweaks
 #### Vanilla Minecraft with quality of life improvements that work on multiplayer servers.
 
-##### Improvements include:
+Report issues and suggestions here:
+[https://github.com/hexandcube/hexandcube-client-tweaks/issues](https://github.com/hexandcube/hexandcube-client-tweaks/issues)
+
+##### Improvements:
 
 * Saturation and hunger HUD
 * Shulkerbox Tooltips
@@ -89,106 +103,52 @@ versions:
 * Inventory sorting
 * and more
 
-Since Version 4.0 this modpack has switched from Forge to Fabric.
+#### Hotkeys
 
-Warning! While this modpack was designed to be used on multiplayer servers, always make sure that the server you're
-playing on, allows mods included in this pack. Playing on servers like Hypixel with this modpack is not recommended and may result
-in a temporary ban. Hexandcube is not responsible for any bans caused by the player's ignorance.
+- `R+C` - Configure Inventory Profiles Next
+- `H+C` - Configure MiniHUD
+- `X+C` -Configure Tweakeroo
+- `M+C` - Configure Litematica
+- `M` - Open Litematica Menu
+- `H` - Toggle MiniHUD
+- `O` - Change Shader Pack Menu
+- `R` - Reload Shaders
+- `U` - Manage Waypoints
+- `B` - New Waypoint
+- `Y` - Minimap Settings
+- `J` - Toggle Minimap
+- `Z`- Enlarge Minimap
+- `N` - Open World Map
+- `]` - World Map Settings
+- `C` - Zoom
+- `F6` - Cinematic Zoom
+- `F7` - 3rd person camera preset
+- `Right ALT + F7` - Edit 3rd person camera preset
+- `F8` - Detach Camera
+- `CTRL+O` on inventory screen - Toggle REI
+- `R` on item hover - Show recipe
+- `u` on item hover - Show uses
 
-##### Mod list (for version 4.1):
-
-* Camera Utils (by henkelmax)
-* Bookshelf (by DarkhaxDev)
-* Just Enough Items (JEI) (by mezz)
-* Wavey Capes (by tr9zw)
-* YetAnotherConfigLib (by XanderIsDev)
-* No Chat Reports (by Aizistral)
-* Enchantment Descriptions (by DarkhaxDev)
-* LazyDFU (by tuxed)
-* Chat Heads (by dzwdz)
-* Light Overlay (Rift/Forge/Fabric) (by shedaniel)
-* Sodium (by jellysquid3_)
-* Raised (by yurisuika)
-* Better Mount HUD (by Lortseam_)
-* ShulkerBoxTooltip \[Fabric/Forge] (by MisterPeModder)
-* Litematica (by masady)
-* FerriteCore (Fabric) (by malte0811)
-* Custom Splash Screen (by Motschen)
-* Crafting Tweaks (Fabric Edition) (by BlayTheNinth)
-* AppleSkin (by squeek502)
-* Sodium Extra (by FlashyReese)
-* Sign Tools (by dmitrylovin)
-* Architectury API (Fabric/Forge) (by shedaniel)
-* Entity Culling Fabric/Forge (by tr9zw)
-* Sound Physics Remastered (by henkelmax)
-* \[FABRIC/QUILT] Disable Custom Worlds Advice (by rdvdev2)
-* Cloth Config API (Fabric/Forge) (by shedaniel)
-* Lithium (Fabric) (by jellysquid3_)
-* Xaero's World Map (by xaero96)
-* Iceberg \[Fabric] (by Grend_G)
-* Item Borders \[Fabric] (by Grend_G)
-* Equipment Compare \[Fabric] (by Grend_G)
-* 'Slight' Gui Modifications (by shedaniel)
-* Jade 🔍 (by Snownee_)
-* UI Input Undo (Fabric) (by TheCSDev)
-* MaLiLib (by masady)
-* Forge Config API Port (by Fuzs_)
-* No Telemetry (by kb1000)
-* Item Model Fix (Fabric) (by Pepper_Bell)
-* Visuality (by PinkGoosik)
-* LambDynamicLights (by LambdAurora)
-* Tool Stats (by DarkhaxDev)
-* Phosphor (Fabric) (by jellysquid3_)
-* Krypton (by tuxed)
-* Neat (Fabric/Quilt) (by williewillus)
-* Illuminations 🔥 (by doctor4t)
-* Iris Shaders (by coderbot)
-* Tweakeroo (by masady)
-* Mod Menu (by ProspectorDev)
-* No Tutorial Toasts (by hydo_s)
-* Better Third Person (by Socolio)
-* Not Enough Crashes (Fabric) (by NatanFudge)
-* Effective 💦 (by doctor4t)
-* Skin Layers 3D (Fabric/Forge) (by tr9zw)
-* Eating Animation \[Fabric] (by theone_ss)
-* Better Statistics Screen (Fabric) (by TheCSDev)
-* Cherished Worlds (Fabric) (by TheIllusiveC4)
-* Axolotl Bucket Fix (by colderlavalamp)
-* Boat Item View (by 50ap5ud5)
-* Fabric Language Kotlin (by modmuss50)
-* Just Enough Resources (JER) (by way2muchnoise)
-* Just Enough Professions (JEP) (by Mrbysco)
-* Clumps (by Jaredlll08)
-* Advancement Plaques \[Fabric] (by Grend_G)
-* MiniHUD (by masady)
-* Blur (Fabric) (by Motschen)
-* Better Advancements (by way2muchnoise)
-* Extreme sound muffler (Fabric) Official (by LeoBeliik)
-* Cloth Config API (UNUSED) (by shedaniel)
-* Cloth API (Fabric) (by shedaniel)
-* Status Effect Bars (by Neecko5b84)
-* Borderless Mining (by comp500)
-* Zoomify (by XanderIsDev)
-* Armor Chroma for Fabric (by Neecko5b84)
-* ARRP (by one_point_o)
-* Fabric API (by modmuss50)
-* Reese's Sodium Options (by FlashyReese)
-* Not Enough Animations (by tr9zw)
-* Mouse Tweaks (by YaLTeR)
-* Smooth Boot (Fabric) (by UltimateBoomer)
-* Balm (Fabric Edition) (by BlayTheNinth)
-* Controlling (by Jaredlll08)
-* Inventory Profiles Next (by mirinimi)
-* Xaero's Minimap (by xaero96)
-* Dynamic Crosshair (by Crendgrim)
-* BetterF3 (by cominixo)
+#### Capes
+By default this modpack will prioritise official Minecraft capes. If you want to use free MinecraftCapes.net capes, open the Mods menu, search for 'Capes', click the options icon, and change Cape Type to Minecraft Capes. 
 
 ##### Install modpack
 
-<a class="btn btn-inverted" href="https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks/download/3996942?client=y" target="_blank"><i class="fas fa-fire"></i> Install on CurseForge</a>
-<a class="btn" href="https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Project Page</a>
+<a class="btn btn-inverted" href="https://modrinth.com/modpack/hexandcube-client-tweaks" target="_blank"><i class="fas fa-wrench"></i> Download from Modrinth</a>
+<a class="btn" href="https://modrinth.com/app" target="_blank"><i class="fas fa-download"></i> Download Modrinth App</a>
 
-You can use this modpack in launchers that support Curseforge modpacks, such as MultiMC, Prism Launcher, AT Launcher etc.
+You can use this modpack in launchers that support the Modrinth modpack format (.mrpack), such as the Modrinth App, Prism Launcher, MultiMC, ATLauncher, etc. 
+Just search for `Hexandcube's Client Tweaks` in the launcher's modpack search or import the .mrpack file.
 
-By downloading this modpack from Hexandcube Files, you're downloading the Curseforge format of the pack.
-If you want to download the Modrinth format of the pack, please visit the [Modrinth page](https://modrinth.com/modpack/hexandcube-client-tweaks).
+##### Legacy Curseforge versions
+
+Since version 4.2 the modpack is no longer available in the Cursefoge modpack format. You can download legacy versions from CurseForge, and Hexandcube Files.
+
+<a class="btn btn-inverted" href="https://files.hexandcube.eu.org/download/HexandcubesClientTweaks/Hexandcube_Client_Tweaks-Curseforge_Legacy.zip" target="_blank"><i class="fas fa-download"></i> Download legacy versions (.zip)</a>
+<a class="btn" href="https://www.curseforge.com/minecraft/modpacks/hexandcubes-client-tweaks" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Curseforge page</a>
+
+---
+
+Disclaimer: While this modpack was designed to be used on vanilla multiplayer servers, always make sure that the server you're
+playing on, allows mods included in this pack. Playing on servers like Hypixel with this modpack is not recommended and
+may result in a ban. Hexandcube is not responsible for any bans caused by the player's ignorance.

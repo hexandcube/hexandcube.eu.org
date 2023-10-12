@@ -73,7 +73,7 @@
         <div class="content gap-2 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4">
             {{ range sort .Params.Versions "date" "desc"}}
             <div
-                class="rounded-2xl border-2 border-light-border dark:border-dark-border mb-1 overflow-clip {{ if .latest }}bg-blue-500/20 dark:bg-blue-500/10{{ else if .prerelease }}bg-yellow-500/20 dark:bg-yellow-500/10{{ else }}bg-light-secondary-bg dark:bg-dark-secondary-bg{{ end }}">
+                class="rounded-2xl border-2 border-light-border dark:border-dark-border mb-1 overflow-clip {{ if .latest }}bg-blue-500/20 dark:bg-blue-500/10{{ else if .prerelease }}bg-yellow-500/20 dark:bg-yellow-500/10{{ else if .broken }}bg-red-500/20 dark:bg-red-500/10{{ else }}bg-light-secondary-bg dark:bg-dark-secondary-bg{{ end }}">
                 <div class="px-4 py-2">
                     <p class="text-3 font-bold">
                         {{ if .latest }}
@@ -81,6 +81,9 @@
                         {{ end }}
                         {{ if .prerelease }}
                         <i class="fa-solid fa-flask fa-fw"></i>
+                        {{ end }}
+                        {{ if .broken }}
+                        <a href="{{ .issue_url }}" class="rounded-sm"><i class="fa-solid fa-triangle-exclamation fa-fw"></i></a>
                         {{ end }} Version {{ .name }}</p>
                     {{ with .date }}
                     <p>Released {{ . }}</p>
@@ -88,7 +91,7 @@
                 </div>
                 <a href="{{ .download }}"
                     class="bg-light-selection dark:bg-dark-selection hover:bg-light-border dark:hover:bg-dark-border block w-full clean py-3 text-center">
-                    <i class="fa-solid fa-download fa-fw pr-2"></i> Download {{ if .latest }}latest{{ end}}
+                    <i class="fa-solid fa-download fa-fw pr-2"></i> Download {{ if .latest }}latest{{ end }}
                     {{ if .prerelease }}pre-release{{ end }}
                 </a>
             </div>
