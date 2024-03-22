@@ -1,6 +1,6 @@
 {
   "name": "hexandcube.eu.org",
-  "version": "10.3.0",
+  "version": "10.4.0",
   "description": "Hexandcube's personal website",
   "repository": {
     "type": "git",
@@ -13,7 +13,6 @@
   },
   "homepage": "https://hexandcube.eu.org",
   "dependencies": {
-    "netlify-cli": "^12.14.0",
     "postcss-cli": "^10.1.0",
     "sass": "^1.58.0"
   },
@@ -21,10 +20,9 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21",
-    "tailwind": "^4.0.0",
-    "tailwindcss": "^3.2.4",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.1",
     "tailwindcss-debug-screens": "^2.1.0"
   }
 }
