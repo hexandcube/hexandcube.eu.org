@@ -5,9 +5,9 @@
 <div role="navigation" class="text-center mt-6 mb-12">
     <div>
         <div
-            class="px-3 py-1 leading-default rounded-5xl m-1 text-light-grey dark:text-dark-grey hover:text-light-text dark:hover:text-dark-text
-            {{ if $paginator.HasPrev }}inline-block border-2 border-light-border dark:border-dark-border hover:rounded hover:bg-light-border
-            dark:hover:bg-dark-border cursor-pointer{{ else }}hidden{{ end }}">
+            class="px-3 py-1 leading-default rounded-2xl hover:rounded-xl m-1 text-light-text-secondary dark:text-dark-text-secondary
+            {{ if $paginator.HasPrev }}inline-block border-2 border-light-border-primary dark:border-dark-border-primary hover:bg-light-cta-hover
+            dark:hover:bg-dark-cta-hover cursor-pointer{{ else }}hidden{{ end }}">
             <a href="{{ if $paginator.HasPrev }}{{ $paginator.Prev.URL }}{{ end }}">
                 Previous
             </a>
@@ -15,10 +15,10 @@
 
         {{ range $paginator.Pagers }}
         <div
-            class="inline-block border-2 border-light-border dark:border-dark-border px-3 py-1 leading-default rounded-5xl m-1 font-mono
-            hover:bg-light-border dark:hover:bg-dark-border cursor-pointer hover:rounded text-light-grey
-            dark:text-dark-grey hover:text-light-text dark:hover:text-dark-text {{ if eq . $paginator }}font-brand font-bold 
-            bg-light-secondary-bg dark:bg-dark-secondary-bg text-light-secondary-text dark:text-dark-secondary-text{{ end }}">
+            class="inline-block border-2 border-light-border-primary dark:border-dark-border-primary px-3 py-1 leading-default rounded-2xl m-1 font-mono
+            hover:bg-light-cta-hover dark:hover:bg-dark-cta-hover cursor-pointer hover:rounded-xl text-light-text-secondary
+            dark:text-dark-text-secondary {{ if eq . $paginator }}font-bold 
+            bg-light-border-primary dark:bg-dark-border-primary text-light-text-primary dark:text-dark-text-primaryxt{{ end }}">
             <a href="{{ .URL }}">
                 {{ .PageNumber }}
             </a>
@@ -27,9 +27,9 @@
 
 
         <div
-            class="px-3 py-1 leading-default rounded-5xl m-1 text-light-grey dark:text-dark-grey hover:text-light-text dark:hover:text-dark-text
-            {{ if $paginator.HasNext }}inline-block border-2 border-light-border dark:border-dark-border hover:rounded hover:bg-light-border
-            dark:hover:bg-dark-border cursor-pointer{{ else }}hidden{{ end }}">
+            class="px-3 py-1 leading-default rounded-2xl hover:rounded-xl m-1 text-light-text-secondary dark:text-dark-text-secondary
+            {{ if $paginator.HasNext }}inline-block border-2 border-light-border-primary dark:border-dark-border-primary hover:bg-light-cta-hover
+            dark:hover:bg-dark-cta-hover cursor-pointer{{ else }}hidden{{ end }}">
             <a href="{{ if $paginator.HasNext }}{{ $paginator.Next.URL }}{{ end }}">
                 Next
             </a>

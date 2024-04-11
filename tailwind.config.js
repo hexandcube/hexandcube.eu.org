@@ -1,5 +1,9 @@
 module.exports = {
-  content: ["layouts/**/*.{html,md}", "content/**/*.{html,md}"],
+  content: [
+    "layouts/**/*.{html,md}",
+    "content/**/*.{html,md}",
+    "assets/**/*.scss",
+  ],
   darkMode: "class",
   theme: {
     extend: {
@@ -44,7 +48,6 @@ module.exports = {
           800: "rgb(48, 48, 48)",
         },
         orange: {
-          DEFAULT: "rgb(255, 0, 0)",
           100: "rgb(255, 235, 231)",
           200: "rgba(248, 177, 152, 1)",
           300: "rgb(255, 195, 183)",
@@ -55,7 +58,6 @@ module.exports = {
           800: "rgb(96, 16, 0)",
         },
         green: {
-          DEFAULT: "rgb(255, 0, 0)",
           100: "rgb(191, 255, 229)",
           200: "rgb(124, 247, 196)",
           300: "rgb(72, 231, 165)",
@@ -66,7 +68,6 @@ module.exports = {
           800: "rgb(0, 56, 33)",
         },
         pink: {
-          DEFAULT: "rgb(255, 0, 0)",
           100: "rgb(255, 239, 247)",
           200: "rgb(255, 215, 235)",
           300: "rgb(255, 191, 223)",
@@ -77,7 +78,6 @@ module.exports = {
           800: "rgb(81, 31, 56)",
         },
         yellow: {
-          DEFAULT: "rgb(255, 0, 0)",
           100: "rgb(255, 237, 184)",
           200: "rgb(255, 223, 128)",
           300: "rgb(255, 203, 46)",
@@ -88,7 +88,6 @@ module.exports = {
           800: "rgb(64, 48, 0)",
         },
         blue: {
-          DEFAULT: "rgb(255, 0, 0)",
           100: "rgb(223, 244, 255)",
           200: "rgb(183, 231, 255)",
           300: "rgb(143, 218, 255)",
@@ -99,7 +98,6 @@ module.exports = {
           800: "rgb(0, 53, 80)",
         },
         red: {
-          DEFAULT: "rgb(255, 0, 0)",
           100: "rgb(255, 231, 231)",
           200: "rgb(255, 215, 215)",
           300: "rgb(255, 191, 191)",
@@ -110,7 +108,6 @@ module.exports = {
           800: "rgb(96, 0, 0)",
         },
         deepblue: {
-          DEFAULT: "rgb(255, 0, 0)",
           100: "rgb(231, 239, 255)",
           200: "rgb(207, 223, 255)",
           300: "rgb(183, 207, 255)",
@@ -119,20 +116,6 @@ module.exports = {
           600: "rgb(43, 106, 231)",
           700: "rgb(13, 72, 191)",
           800: "rgb(0, 40, 120)",
-        },
-        // LEGACY PLACEHOLDER COLORS - TODO: REMOVE AFTER MIGRATION
-        accent: {
-          DEFAULT: "rgb(255, 0, 0)",
-          50: "rgb(255, 0, 0)",
-          100: "rgb(255, 0, 0)",
-          200: "rgb(255, 0, 0)",
-          300: "rgb(255, 0, 0)",
-          400: "rgb(255, 0, 0)",
-          500: "rgb(255, 0, 0)",
-          600: "rgb(255, 0, 0)",
-          700: "rgb(255, 0, 0)",
-          800: "rgb(255, 0, 0)",
-          900: "rgb(255, 0, 0)",
         },
 
         // UI Tokens
@@ -146,21 +129,17 @@ module.exports = {
             muted: "rgb(255, 195, 183)",
           },
           text: {
-            primary: "rgb(0, 0, 0)", // black
-            secondary: "rgb(110, 110, 110)", // black 0.57 on l2 bg
-            disabled: "rgb(168, 168, 168)", // black 0.34 on l2 bg
+            primary: "rgb(24, 24, 27)",
+            secondary: "rgb(63, 63, 70)",
+            muted: "rgb(168, 168, 168)", // black 0.34 on l2 bg
             inverse: "rgb(255, 255, 255)", // white
             link: "rgb(239, 90, 60)", // accent-orange-primary
           },
           cta: {
-            primary: {
-              DEFAULT: "rgb(0, 0, 0)", // black
-              hover: "rgb(41, 41, 41)",
-            },
-            secondary: {
-              DEFAULT: "rgb(255, 255, 255)", // white
-              hover: "rgb(245, 245, 245)",
-            },
+            DEFAULT: "rgb(255, 255, 255)", // white
+            hover: "rgb(235, 235, 235)",
+            border: "rgb(217, 217, 217)",
+
             disabled: "rgb(224, 224, 224)", // black 0.12 on l2 bg
             chip: {
               hover: "rgb(240, 240, 240)", // black 0.06 on l2 bg
@@ -207,15 +186,6 @@ module.exports = {
               secondary: "rgb(212, 226, 255)", // deepblue-400 0.36 on l2 bg
             },
           },
-          // LEGACY PLACEHOLDER COLORS - TODO: REMOVE AFTER MIGRATION
-          "primary-text": "#ff0000",
-          "secondary-text": "#ff0000",
-          text: "#ff0000",
-          "primary-bg": "#ff0000",
-          "secondary-bg": "#ff0000",
-          selection: "#ff0000",
-          border: "#ff0000",
-          grey: "#ff0000",
         },
         dark: {
           brand: {
@@ -226,21 +196,16 @@ module.exports = {
           },
           text: {
             primary: "rgb(255, 255, 255)", // white
-            secondary: "rgb(165, 165, 165)", // white 0.60 on l2 bg
-            disabled: "rgb(91, 91, 91)", // white 0.27 on l2 bg
+            secondary: "rgb(217, 217, 217)",
+            muted: "rgb(91, 91, 91)", // white 0.27 on l2 bg
             inverse: "rgb(0, 0, 0)", // black
             link: "rgb(226, 128, 108)", // accent-orange-primary
           },
           cta: {
-            primary: {
-              DEFAULT: "rgb(255, 255, 255)", // white
-              hover: "rgb(235, 235, 235)",
-            },
-            secondary: {
-              DEFAULT: "rgb(255, 255, 255)", // white
-              hover: "rgb(245, 245, 245)",
-            },
-            disabled: "rgb(58, 58, 58)", // white 0.12 on l2 bg
+            DEFAULT: "rgb(40, 40, 40)",
+            hover: "rgb(49, 49, 49)",
+            border: "rgb(52, 52, 52)",
+            disabled: "rgb(58, 58, 58)",
             chip: {
               hover: "rgb(49, 49, 49)", // white 0.08 on l2 bg
             },
@@ -286,15 +251,6 @@ module.exports = {
               secondary: "rgb(68, 83, 112)", // deepblue-400 0.36 on l2 bg
             },
           },
-          // LEGACY PLACEHOLDER COLORS - TODO: REMOVE AFTER MIGRATION
-          "primary-text": "#ff0000",
-          "secondary-text": "#ff0000",
-          text: "#ff0000",
-          "primary-bg": "#ff0000",
-          "secondary-bg": "#ff0000",
-          selection: "#ff0000",
-          border: "#ff0000",
-          grey: "#ff0000",
         },
       },
       screens: {
@@ -316,10 +272,16 @@ module.exports = {
       borderWidth: {
         1: "1px",
         3: "3px",
+        5: "5px",
+        6: "6px",
+      },
+      textDecorationThickness: {
+        5: "5px",
+        6: "6px",
       },
     },
     fontFamily: {
-      sans: "Work Sans",
+      sans: "Inter",
       mono: "Space Mono",
       brand: "Mont",
       logo: "Hexandcube Icon",

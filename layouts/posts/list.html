@@ -5,11 +5,11 @@
     </section>
     <section class="responsive">
         {{ range (.Paginator 10).Pages }}
-        <div class="cursor-pointer p-2 my-5 bg-light-secondary-bg dark:bg-dark-secondary-bg hover:bg-light-selection 
-        dark:hover:bg-dark-selection border-2 border-light-border dark:border-dark-border rounded-5xl md:grid md:grid-cols-2 hover:rounded-2xl post-card"
+        <div class="cursor-pointer p-2 my-5 bg-light-bg-l1 dark:bg-dark-bg-l1 hover:bg-light-cta-hover
+        dark:hover:bg-dark-cta-hover border-2 border-light-border-primary dark:border-dark-border-primary rounded-5xl md:grid md:grid-cols-2 hover:rounded-2xl post-card"
         onClick="location.href = '{{ .RelPermalink }}'">
             <a href="{{ .RelPermalink }}">
-                <img class="rounded-5xl post-card-image" src="{{ if .Params.Thumbnail }}{{ .Params.Thumbnail }}
+                <img class="rounded-4xl post-card-image" src="{{ if .Params.Thumbnail }}{{ .Params.Thumbnail }}
                 {{ else }}/img/opengraph.png{{ end }}" alt="{{ .Title }}">
             </a>
             <div class="mx-1 md:ml-10 mt-3 md:mt-0 my-2 items-center flex">

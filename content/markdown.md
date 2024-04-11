@@ -27,7 +27,7 @@ ultrices, nunc nisl ultricies nunc, eget ultricies nisl nisl eget nunc.
 
 ### Links
 
-This is a [link](https://hexandcube.eu.org) to my website.
+This is a [link to my website](https://hexandcube.eu.org).
 
 ### Images
 
@@ -41,11 +41,11 @@ This is a [link](https://hexandcube.eu.org) to my website.
 
 ### Strikethrough
 
-I ~~like~~ love foxes.
+~~Hexandcube is a cat~~ Hexandcube is a fox
 
 ### Emojis
 
-:fox: :cat: :smile: :laughing: :blush: :smiley: :relaxed: :smirk: :heart_eyes: :kissing_heart: :kissing_closed_eyes:
+:fox_face: :cat: :smile: :laughing: :blush: :smiley: :relaxed: :smirk: :heart_eyes: :kissing_heart: :kissing_closed_eyes:
 :flushed:
 
 ### Ordered Lists
@@ -136,41 +136,141 @@ with lazy continuation.
 Term 2 with *inline markup*
 
 : Definition 2
+`{ some code, part of Definition 2 }`
 
-{ some code, part of Definition 2 }
-
-Third paragraph of definition 2.
-
+: Definition 3
+Part of Term 2
 
 ### Buttons
 
-**Standard buttons**
+##### Standard buttons
 
-{{< button >}}Standard button{{</ button >}}
+{{< button >}}Default button{{</ button >}}
+{{< button shadow="true">}}Shadow button{{</ button >}}
+
+{{< button small="true">}}Small button{{</ button >}}
+{{< button small="true" shadow="true">}}Small shadow button{{</ button >}}
+
 {{< button square="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button square="true" shadow="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
 
-{{< button variant="inverted">}}Inverted button{{</ button >}}
-{{< button variant="inverted" square="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button square="true" small="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button square="true" small="true" shadow="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
 
-{{< button variant="disabled">}}Disabled button{{</ button >}}
-{{< button variant="disabled" square="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
 
-**Accented buttons**
+##### Disabled buttons
 
-{{< button variant="orange">}}Orange button{{</ button >}}
+{{< button disabled="true">}}Default button{{</ button >}}
+{{< button disabled="true" shadow="true">}}Shadow button{{</ button >}}
+
+{{< button small="true" disabled="true">}}Small button{{</ button >}}
+{{< button small="true" disabled="true" shadow="true">}}Shadow button{{</ button >}}
+
+{{< button square="true" disabled="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button square="true" shadow="true" disabled="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+
+{{< button square="true" small="true" disabled="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button square="true" small="true" shadow="true" disabled="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+
+##### Accented buttons
+
+**Orange Buttons**
+
+{{< button variant="orange" >}}Default button{{</ button >}}
+{{< button variant="orange" shadow="true">}}Shadow button{{</ button >}}
+
+{{< button variant="orange" small="true">}}Small button{{</ button >}}
+{{< button variant="orange" small="true" shadow="true">}}Small shadow button{{</ button >}}
+
 {{< button variant="orange" square="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button variant="orange" square="true" shadow="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
 
-{{< button variant="yellow">}}Yellow button{{</ button >}}
-{{< button variant="yellow" square="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button variant="orange" square="true" small="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button variant="orange" square="true" small="true" shadow="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
 
-{{< button variant="blue">}}Blue button{{</ button >}}
-{{< button variant="blue" square="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+**Green Buttons**
 
-{{< button variant="green">}}Green button{{</ button >}}
+{{< button variant="green" >}}Default button{{</ button >}}
+{{< button variant="green" shadow="true">}}Shadow button{{</ button >}}
+
+{{< button variant="green" small="true">}}Small button{{</ button >}}
+{{< button variant="green" small="true" shadow="true">}}Small shadow button{{</ button >}}
+
 {{< button variant="green" square="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button variant="green" square="true" shadow="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
 
-{{< button variant="red">}}Red button{{</ button >}}
+{{< button variant="green" square="true" small="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button variant="green" square="true" small="true" shadow="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+
+**Pink Buttons**
+
+{{< button variant="pink" >}}Default button{{</ button >}}
+{{< button variant="pink" shadow="true">}}Shadow button{{</ button >}}
+
+{{< button variant="pink" small="true">}}Small button{{</ button >}}
+{{< button variant="pink" small="true" shadow="true">}}Small shadow button{{</ button >}}
+
+{{< button variant="pink" square="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button variant="pink" square="true" shadow="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+
+{{< button variant="pink" square="true" small="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button variant="pink" square="true" small="true" shadow="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+
+**Yellow Buttons**
+
+{{< button variant="yellow" >}}Default button{{</ button >}}
+{{< button variant="yellow" shadow="true">}}Shadow button{{</ button >}}
+
+{{< button variant="yellow" small="true">}}Small button{{</ button >}}
+{{< button variant="yellow" small="true" shadow="true">}}Small shadow button{{</ button >}}
+
+{{< button variant="yellow" square="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button variant="yellow" square="true" shadow="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+
+{{< button variant="yellow" square="true" small="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button variant="yellow" square="true" small="true" shadow="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+
+**Blue Buttons**
+
+{{< button variant="blue" >}}Default button{{</ button >}}
+{{< button variant="blue" shadow="true">}}Shadow button{{</ button >}}
+
+{{< button variant="blue" small="true">}}Small button{{</ button >}}
+{{< button variant="blue" small="true" shadow="true">}}Small shadow button{{</ button >}}
+
+{{< button variant="blue" square="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button variant="blue" square="true" shadow="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+
+{{< button variant="blue" square="true" small="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button variant="blue" square="true" small="true" shadow="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+
+**Red Buttons**
+
+{{< button variant="red" >}}Default button{{</ button >}}
+{{< button variant="red" shadow="true">}}Shadow button{{</ button >}}
+
+{{< button variant="red" small="true">}}Small button{{</ button >}}
+{{< button variant="red" small="true" shadow="true">}}Small shadow button{{</ button >}}
+
 {{< button variant="red" square="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button variant="red" square="true" shadow="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+
+{{< button variant="red" square="true" small="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button variant="red" square="true" small="true" shadow="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+
+**Deep Blue Buttons**
+
+{{< button variant="deepblue" >}}Default button{{</ button >}}
+{{< button variant="deepblue" shadow="true">}}Shadow button{{</ button >}}
+
+{{< button variant="deepblue" small="true">}}Small button{{</ button >}}
+{{< button variant="deepblue" small="true" shadow="true">}}Small shadow button{{</ button >}}
+
+{{< button variant="deepblue" square="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button variant="deepblue" square="true" shadow="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+
+{{< button variant="deepblue" square="true" small="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
+{{< button variant="deepblue" square="true" small="true" shadow="true">}}<i class="fa-solid fa-check-to-slot"></i>{{</ button >}}
 
 ### Form elements
 
@@ -214,14 +314,19 @@ Third paragraph of definition 2.
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam quam voluptatibus? Odio corporis, atque accusantium voluptate, natus aliquid animi vitae laborum, consectetur ipsum dicta quia tenetur quis nam possimus!
 {{</ alert >}}
 
-{{< alert title="Inverted Alert" variant="inverted" icon="fa-solid fa-bell">}}
+**Accented alerts**
+
+{{< alert title="Orange Alert" variant="orange" icon="fa-solid fa-circle-question">}}
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam quam voluptatibus? Odio corporis, atque accusantium
 voluptate, natus aliquid animi vitae laborum, consectetur ipsum dicta quia tenetur quis nam possimus!
 {{</ alert >}}
 
-**Accented alerts**
+{{< alert title="Green Alert" variant="green" icon="fa-solid fa-circle-check">}}
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam quam voluptatibus? Odio corporis, atque accusantium
+voluptate, natus aliquid animi vitae laborum, consectetur ipsum dicta quia tenetur quis nam possimus!
+{{</ alert >}}
 
-{{< alert title="Orange Alert" variant="orange" icon="fa-solid fa-circle-question">}}
+{{< alert title="Pink Alert" variant="pink" icon="fa-solid fa-circle-check">}}
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam quam voluptatibus? Odio corporis, atque accusantium
 voluptate, natus aliquid animi vitae laborum, consectetur ipsum dicta quia tenetur quis nam possimus!
 {{</ alert >}}
@@ -236,12 +341,12 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam quam volupt
 voluptate, natus aliquid animi vitae laborum, consectetur ipsum dicta quia tenetur quis nam possimus!
 {{</ alert >}}
 
-{{< alert title="Green Alert" variant="green" icon="fa-solid fa-circle-check">}}
+{{< alert title="Red Alert" variant="red" icon="fa-solid fa-circle-xmark">}}
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam quam voluptatibus? Odio corporis, atque accusantium
 voluptate, natus aliquid animi vitae laborum, consectetur ipsum dicta quia tenetur quis nam possimus!
 {{</ alert >}}
 
-{{< alert title="Red Alert" variant="red" icon="fa-solid fa-circle-xmark">}}
+{{< alert title="Deep Blue Alert" variant="deepblue" icon="fa-solid fa-circle-check">}}
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam quam voluptatibus? Odio corporis, atque accusantium
 voluptate, natus aliquid animi vitae laborum, consectetur ipsum dicta quia tenetur quis nam possimus!
 {{</ alert >}}

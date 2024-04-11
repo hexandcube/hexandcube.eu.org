@@ -1,3 +1,5 @@
-<a class="btn {{ if .Get "square" }}btn-square{{ end }} {{ with .Get "variant" }}btn-{{ . }}{{ end }} {{ with .Get "class" }}{{ . }}{{ end }} {{ if .Get "disabled" }}btn-disabled{{ end }}" href="{{ with .Get "href" }}{{ . }}{{ else }}#{{ end }}" {{ with .Get "onclick" }}onclick="{{ . }}"{{ end }} {{ with .Get "id" }}id="{{ . }}"{{ end }}>
+<a class="btn {{ if .Get "square" }}btn-square{{ end }} {{ if .Get "shadow" }}btn-shadow{{ end }} {{ if .Get "small" }}btn-small{{ end }} {{ with .Get "variant" }}btn-{{ . }}{{ end }} {{ with .Get "class" }}{{ . }}{{ end }} {{ if .Get "disabled" }}btn-disabled{{ end }}"
+    href="{{ with .Get "href" }}{{ . }}{{ else }}#{{ end }}" {{ with .Get "onclick" }}onclick="{{ . }}" {{ end }}
+    {{ with .Get "id" }}id="{{ . }}" {{ end }}>
     {{ .Inner }}
 </a>

@@ -8,13 +8,13 @@
             {{ with .Params.Author }}
             <span>
                 <img src="/img/authors/{{ . }}.png" alt="{{ . }}"
-                    class="rounded-full w-7 inline border-1 border-light-border dark:border-dark-border">
+                    class="rounded-full w-7 inline border-1 border-light-border-primary dark:border-dark-border-primary">
                 <span>By {{ . }}</span>
             </span>
             {{ else }}
             <span>
                 <img src="/img/authors/Anonymous.png" alt="Anonymous"
-                    class="rounded-full w-7 inline border-1 border-light-border dark:border-dark-border">
+                    class="rounded-full w-7 inline border-1 border-light-border-primary dark:border-dark-border-primary">
                 <span>By Anonymous</span>
                 {{ end }}
                 {{ with .Params.fileType }}
@@ -73,7 +73,7 @@
         <div class="content gap-2 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4">
             {{ range sort .Params.Versions "date" "desc"}}
             <div
-                class="rounded-2xl border-2 border-light-border dark:border-dark-border mb-1 overflow-clip {{ if .latest }}bg-blue-500/20 dark:bg-blue-500/10{{ else if .prerelease }}bg-yellow-500/20 dark:bg-yellow-500/10{{ else if .broken }}bg-red-500/20 dark:bg-red-500/10{{ else }}bg-light-secondary-bg dark:bg-dark-secondary-bg{{ end }}">
+                class="rounded-2xl border-2 border-light-border-primary dark:border-dark-border-primary mb-1 overflow-clip {{ if .latest }}bg-light-accent-green-secondary dark:bg-dark-accent-green-secondary{{ else if .prerelease }}bg-light-accent-yellow-secondary dark:bg-dark-accent-yellow-secondary{{ else if .broken }}bg-light-accent-red-secondary dark:bg-dark-accent-red-secondary{{ else }}bg-light-bg-l1 dark:bg-dark-bg-l1{{ end }}">
                 <div class="px-4 py-2">
                     <p class="text-3 font-bold">
                         {{ if .latest }}
@@ -90,7 +90,7 @@
                     {{ end }}
                 </div>
                 <a href="{{ .download }}"
-                    class="bg-light-selection dark:bg-dark-selection hover:bg-light-border dark:hover:bg-dark-border block w-full clean py-3 text-center">
+                    class="bg-light-cta dark:bg-dark-cta hover:bg-light-cta-hover dark:hover:bg-dark-cta-hover block w-full clean py-3 text-center">
                     <i class="fa-solid fa-download fa-fw pr-2"></i> Download {{ if .latest }}latest{{ end }}
                     {{ if .prerelease }}pre-release{{ end }}
                 </a>
@@ -105,7 +105,7 @@
         <p class="mb-8">You can download this file from these servers</p>
         <div class="content gap-2 grid grid-cols-1 lg:grid-cols-2">
             {{ if $currentPage.Params.Versions }}
-            <a href="#all-versions" class="btn btn-inverted w-full"><i class="fa-solid fa-circle-up"></i> Download from {{ $currentPage.Params.DownloadServer }}</a>
+            <a href="#all-versions" class="btn btn-orange w-full inline-block"><i class="fa-solid fa-circle-down"></i> Download from {{ $currentPage.Params.DownloadServer }}</a>
             {{ end }}
             {{ range sort .Params.Servers }}
             <a href="{{ .download }}" target="_blank" class="btn w-full"><i class="fa-solid fa-up-right-from-square"></i> Download from {{ .name }}</a>

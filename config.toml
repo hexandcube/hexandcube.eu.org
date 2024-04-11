@@ -11,7 +11,7 @@ paginate = 18
     [markup.goldmark.renderer]
       unsafe = true
 
-  [markup.hightempcolor]
+  [markup.highlight]
     codeFences = true
     lineNoStart = 1
     lineNos = true
