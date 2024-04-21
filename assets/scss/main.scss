@@ -64,58 +64,69 @@ section {
 }
 
 code {
-    @apply bg-light-selection dark:bg-dark-selection font-mono px-1 rounded-md;
+    @apply bg-light-border-secondary dark:bg-dark-border-secondary border-2 border-light-border-primary dark:border-dark-border-primary font-mono px-1 rounded-md;
 }
 
 pre {
-    @apply bg-light-selection dark:bg-dark-selection font-mono p-3 my-3 rounded-lg overflow-x-scroll;
+    @apply bg-light-border-secondary dark:bg-dark-border-secondary border-2 border-light-border-primary dark:border-dark-border-primary font-mono p-3 my-3 rounded-lg overflow-x-scroll;
 }
 
 pre > code {
     @apply p-0;
+    border: none;
 }
 
 .chroma .ln {
-    @apply mr-2;
+    @apply mr-2 ;
 }
 
 p,
 div {
-    @apply text-light-text dark:text-dark-text sm:text-lg text-base leading-tight;
+    @apply text-light-text-secondary dark:text-dark-text-secondary sm:text-lg text-base leading-tight;
 }
 
 h1,
 .title-1 {
-    @apply xl:text-6xl sm:text-5xl text-5xl font-brand font-bold leading-tight text-light-text dark:text-dark-text;
+    @apply xl:text-6xl sm:text-5xl text-5xl font-brand font-bold leading-tight;
 }
 
 h2,
 .title-2 {
-    @apply xl:text-5xl sm:text-4xl text-3xl font-brand font-bold leading-8 text-light-text dark:text-dark-text;
+    @apply xl:text-5xl sm:text-4xl text-3xl font-brand font-bold leading-8;
 }
 
 h3,
 .title-3 {
-    @apply xl:text-4xl sm:text-3xl text-2xl font-brand font-bold leading-8 text-light-text dark:text-dark-text;
+    @apply xl:text-4xl sm:text-3xl text-2xl font-brand font-bold leading-8;
+}
+
+h1:not(.clean), h2:not(.clean), h3:not(.clean),
+.title-1:not(.clean), .title-2:not(.clean), .title-3:not(.clean){
+    @apply text-light-text-primary dark:text-dark-text-primary;
 }
 
 h4,
 .title-4 {
-    @apply xl:text-4xl sm:text-3xl text-2xl -ml-1px font-bold leading-7 text-light-text dark:text-dark-text;
+    @apply xl:text-4xl sm:text-3xl text-2xl -ml-1px font-bold leading-7;
 }
 
 h5,
 .title-5 {
-    @apply xl:text-3xl sm:text-2xl text-xl -ml-1px font-bold leading-7 text-light-text dark:text-dark-text;
+    @apply xl:text-3xl sm:text-2xl text-xl -ml-1px font-bold leading-7;
 }
 
 h6,
 .title-6 {
-    @apply xl:text-2xl sm:text-xl text-lg -ml-1px font-bold leading-6 text-light-text dark:text-dark-text;
+    @apply xl:text-2xl sm:text-xl text-lg -ml-1px font-bold leading-6;
+}
+
+h4:not(.clean), h5:not(.clean), h6:not(.clean),
+.title-4:not(.clean), .title-5:not(.clean), .title-6:not(.clean){
+    @apply text-light-text-secondary dark:text-dark-text-secondary;
 }
 
 .contentblock {
-    @apply p-5 -mt-5 bg-light-secondary-bg dark:bg-dark-secondary-bg rounded-xl border-2 border-light-border dark:border-dark-border;
+    @apply p-5 -mt-5 bg-light-bg-l1 dark:bg-dark-bg-l1 rounded-xl border-2 border-light-border-primary dark:border-dark-border-primary;
 }
 
 .content {
@@ -127,8 +138,12 @@ h6,
         @apply my-2;
     }
 
+    del {
+        @apply line-through decoration-2 decoration-red-500 dark:decoration-red-500;
+    }
+
     a:not(.clean, .btn) {
-        @apply text-accent-600 dark:text-accent-500 px-1px hover:bg-accent-600 hover:text-white dark:hover:text-white underline underline-offset-4 ;
+        @apply text-light-accent-orange-primary dark:text-dark-accent-orange-primary px-1px hover:bg-light-accent-orange-secondary dark:hover:bg-dark-accent-orange-secondary rounded;
         transition: all none;
     }
 
@@ -161,7 +176,7 @@ h6,
     }
 
     hr {
-        @apply my-5 border-light-border dark:border-dark-border;
+        @apply my-5 border-light-text-muted dark:border-dark-text-muted;
     }
 
     dt {
@@ -173,15 +188,25 @@ h6,
     }
 
     img {
-        @apply rounded-xl;
+        @apply rounded-lg;
     }
 
-    table, th, td {
-        @apply border-2 border-light-grey dark:border-dark-grey py-1 px-3;
+    table {
+        @apply border-2 border-light-text-muted dark:border-dark-text-muted rounded-xl border-separate;
     }
 
+    th, td {
+        @apply border-l-2 border-t-2 border-light-text-muted dark:border-dark-text-muted py-1 px-3;
+    }
+    
     th {
-        @apply font-bold bg-light-selection dark:bg-dark-selection;
+        @apply font-bold bg-light-bg-l3 dark:bg-dark-bg-l3;
+        border-top: none;
+    }
+
+    td:first-child,
+    th:first-child {
+        border-left: none;
     }
 
     .footnote-ref, .footnote-backref {
@@ -196,117 +221,137 @@ h6,
         content: ']';
     }
 
+    abbr {
+        @apply cursor-help;
+    }
+
     blockquote {
-        @apply border-l-4 border-light-selection dark:border-dark-selection pl-3 my-3;
+        @apply border-l-5 border-light-accent-orange-primary dark:border-dark-accent-orange-primary bg-light-border-secondary dark:bg-dark-border-secondary pl-3 py-2 my-2 rounded;
     }
 }
 
 .input {
-    @apply mb-1 px-4 py-3 rounded-xl bg-light-selection dark:bg-dark-selection border-1 border-light-border dark:border-dark-border disabled:cursor-not-allowed disabled:bg-light-border dark:disabled:bg-dark-border;
+    @apply mb-1 px-3 py-1.5 rounded-xl bg-light-cta dark:bg-dark-cta border-1 border-light-cta-border dark:border-dark-cta-border disabled:cursor-not-allowed disabled:bg-light-cta-disabled dark:disabled:bg-dark-cta-disabled ;
 }
 
-input[type=checkbox] {
-    @apply cursor-pointer mb-1 bg-light-selection dark:bg-dark-selection border-light-border dark:border-dark-border rounded focus:ring-0 focus:checked:bg-orange checked:bg-orange hover:checked:bg-orange dark:checked:bg-orange focus:dark:bg-orange disabled:cursor-not-allowed disabled:bg-light-border dark:disabled:bg-dark-border disabled:hover:bg-light-border dark:disabled:hover:bg-dark-border;
+input[type=checkbox],
+input[type=radio] {
+    @apply cursor-pointer mb-1 bg-light-cta dark:bg-dark-cta border-light-cta-border dark:border-dark-cta-border rounded focus:ring-0 focus:checked:bg-light-accent-orange-primary dark:focus:checked:bg-dark-accent-orange-primary checked:bg-light-accent-orange-primary dark:checked:bg-dark-accent-orange-primary hover:bg-light-accent-orange-secondary dark:hover:bg-dark-accent-orange-secondary checked:hover:bg-light-accent-orange-primary dark:checked:hover:bg-dark-accent-orange-primary disabled:cursor-not-allowed disabled:bg-light-cta-disabled dark:disabled:bg-dark-cta-disabled disabled:hover:bg-light-cta-disabled dark:disabled:hover:bg-dark-cta-disabled;
 }
 
 input[type=radio] {
-    @apply cursor-pointer mb-1 bg-light-selection dark:bg-dark-selection border-light-border dark:border-dark-border rounded-full focus:ring-0 focus:checked:bg-orange checked:bg-orange hover:checked:bg-orange dark:checked:bg-orange focus:dark:bg-orange disabled:cursor-not-allowed disabled:bg-light-border dark:disabled:bg-dark-border disabled:hover:bg-light-border dark:disabled:hover:bg-dark-border;
+    @apply rounded-full;
 }
 
 select {
     padding-right: 40px !important;
+    @apply cursor-pointer;
 }
 
 .btn {
-    @apply border-2 border-light-border dark:border-dark-border inline-block px-4 py-2 cursor-pointer rounded-xl mr-1 my-1 hover:rounded-2xl bg-light-selection dark:bg-dark-selection hover:bg-light-border dark:hover:bg-dark-border hover:border-transparent dark:hover:border-transparent text-center;
+    @apply border-2 box-border border-light-cta-border dark:border-dark-cta-border bg-light-cta dark:bg-dark-cta hover:bg-light-cta-hover dark:hover:bg-dark-cta-hover inline-block px-4 py-2 cursor-pointer rounded-xl mr-1 my-1 text-center outline-none font-bold;
 }
 
-.btn-inverted {
-    @apply border-2 border-dark-border dark:border-dark-border inline-block px-4 py-2 cursor-pointer rounded-xl mr-1 my-1 hover:rounded-2xl bg-dark-selection dark:bg-light-selection hover:bg-dark-border dark:hover:bg-light-border text-dark-secondary-text dark:text-light-secondary-text hover:border-transparent dark:hover:border-transparent;
+.btn-shadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
+}
+
+.btn-small {
+    @apply px-3 py-1 rounded-md;
 }
 
 .btn-orange {
-    @apply border-2 border-orange-300 dark:border-orange-300 bg-orange dark:bg-orange hover:bg-orange-600 hover:dark:bg-orange-600 text-light-primary-text dark:text-dark-primary-text;
-}
-
-.btn-yellow {
-    @apply border-2 border-yellow-300 dark:border-yellow-300 bg-yellow dark:bg-yellow hover:bg-yellow-600 hover:dark:bg-yellow-600 text-light-primary-text dark:text-dark-primary-text;
-}
-
-.btn-blue {
-    @apply border-2 border-blue-300 dark:border-blue-300 bg-blue dark:bg-blue hover:bg-blue-600 hover:dark:bg-blue-600 text-light-primary-text dark:text-dark-primary-text;
+    @apply border-light-accent-orange-primary/25 dark:border-dark-accent-orange-primary/25 bg-light-accent-orange-secondary/25 dark:bg-dark-accent-orange-secondary/25 text-light-accent-orange-primary dark:text-dark-accent-orange-primary hover:bg-light-accent-orange-secondary/75 dark:hover:bg-dark-accent-orange-secondary/75;
 }
 
 .btn-green {
-    @apply border-2 border-green-300 dark:border-green-300 bg-green dark:bg-green hover:bg-green-600 hover:dark:bg-green-600 text-light-primary-text dark:text-dark-primary-text;
+    @apply border-light-accent-green-primary/25 dark:border-dark-accent-green-primary/25 bg-light-accent-green-secondary/25 dark:bg-dark-accent-green-secondary/25 text-light-accent-green-primary dark:text-dark-accent-green-primary hover:bg-light-accent-green-secondary/75 dark:hover:bg-dark-accent-green-secondary/75;
+}
+
+.btn-pink {
+    @apply border-light-accent-pink-primary/25 dark:border-dark-accent-pink-primary/25 bg-light-accent-pink-secondary/25 dark:bg-dark-accent-pink-secondary/25 text-light-accent-pink-primary dark:text-dark-accent-pink-primary hover:bg-light-accent-pink-secondary/75 dark:hover:bg-dark-accent-pink-secondary/75;
+}
+
+.btn-yellow {
+    @apply border-light-accent-yellow-primary/25 dark:border-dark-accent-yellow-primary/25 bg-light-accent-yellow-secondary/25 dark:bg-dark-accent-yellow-secondary/25 text-light-accent-yellow-primary dark:text-dark-accent-yellow-primary hover:bg-light-accent-yellow-secondary/75 dark:hover:bg-dark-accent-yellow-secondary/75;
+}
+
+.btn-blue {
+    @apply border-light-accent-blue-primary/25 dark:border-dark-accent-blue-primary/25 bg-light-accent-blue-secondary/25 dark:bg-dark-accent-blue-secondary/25 text-light-accent-blue-primary dark:text-dark-accent-blue-primary hover:bg-light-accent-blue-secondary/75 dark:hover:bg-dark-accent-blue-secondary/75;
 }
 
 .btn-red {
-    @apply border-2 border-red-300 dark:border-red-300 bg-red-500 dark:bg-red-500 hover:bg-red-600 hover:dark:bg-red-600 text-light-primary-text dark:text-dark-primary-text;
+    @apply border-light-accent-red-primary/25 dark:border-dark-accent-red-primary/25 bg-light-accent-red-secondary/25 dark:bg-dark-accent-red-secondary/25 text-light-accent-red-primary dark:text-dark-accent-red-primary hover:bg-light-accent-red-secondary/75 dark:hover:bg-dark-accent-red-secondary/75;
+}
+
+.btn-deepblue {
+    @apply border-light-accent-deepblue-primary/25 dark:border-dark-accent-deepblue-primary/25 bg-light-accent-deepblue-secondary/25 dark:bg-dark-accent-deepblue-secondary/25 text-light-accent-deepblue-primary dark:text-dark-accent-deepblue-primary hover:bg-light-accent-deepblue-secondary/75 dark:hover:bg-dark-accent-deepblue-secondary/75;
 }
 
 .btn-disabled {
-    @apply cursor-not-allowed bg-light-border dark:bg-dark-border text-light-grey dark:text-dark-grey hover:rounded-xl;
+    @apply cursor-not-allowed bg-light-cta-disabled dark:bg-dark-cta-disabled border-light-cta-border dark:border-dark-cta-border text-light-text-muted dark:text-dark-text-muted hover:bg-light-cta-disabled dark:hover:bg-dark-cta-disabled;
 }
 
-.btn-square {
+.btn-square:not(.btn-small) {
     line-height: 18px !important;
     padding-top: 16px !important;
     padding-bottom: 16px !important;
-    @apply rounded-xl;
+}
+
+.btn-small .btn-square {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
 }
 
 .alert {
-    @apply w-full border-2 border-light-border dark:border-dark-border inline-block p-4 rounded-xl mr-1 my-1 bg-light-selection dark:bg-dark-selection;
+    @apply w-full border-2 border-light-cta-border dark:border-dark-cta-border inline-block p-4 rounded-xl mr-1 my-1 bg-light-bg-l1 dark:bg-dark-bg-l1;
 }
 
-.alert .title-6, .alert p {
-    @apply dark:text-dark-secondary-text text-light-secondary-text;
-}
-
-.alert-inverted .title-6, .alert-inverted p {
-    @apply text-dark-secondary-text dark:text-light-secondary-text;
-}
-
-.alert-inverted {
-    @apply w-full border-2 border-dark-border dark:border-dark-border inline-block p-4 rounded-xl mr-1 my-1 bg-dark-selection dark:bg-light-selection text-dark-secondary-text dark:text-light-secondary-text;
+.alert p {
+    @apply text-light-text-secondary dark:text-dark-text-secondary;
 }
 
 .alert-orange {
-    @apply w-full border-2 border-orange-300 dark:border-orange-300 bg-orange dark:bg-orange text-light-primary-text dark:text-dark-primary-text;
-}
-
-.alert-yellow {
-    @apply w-full border-2 border-yellow-300 dark:border-yellow-300 bg-yellow dark:bg-yellow text-light-primary-text dark:text-dark-primary-text;
-}
-
-.alert-blue {
-    @apply w-full border-2 border-blue-300 dark:border-blue-300 bg-blue dark:bg-blue text-light-primary-text dark:text-dark-primary-text;
+    @apply w-full border-2 border-light-accent-orange-primary/25 dark:border-dark-accent-orange-primary/25 bg-light-accent-orange-secondary/25 dark:bg-dark-accent-orange-secondary/25 text-light-accent-orange-primary dark:text-dark-accent-orange-primary;
 }
 
 .alert-green {
-    @apply w-full border-2 border-green-300 dark:border-green-300 bg-green dark:bg-green text-light-primary-text dark:text-dark-primary-text;
+    @apply w-full border-2 border-light-accent-green-primary/25 dark:border-dark-accent-green-primary/25 bg-light-accent-green-secondary/25 dark:bg-dark-accent-green-secondary/25 text-light-accent-green-primary dark:text-dark-accent-green-primary;
+}
+
+.alert-pink {
+    @apply w-full border-2 border-light-accent-pink-primary/25 dark:border-dark-accent-pink-primary/25 bg-light-accent-pink-secondary/25 dark:bg-dark-accent-pink-secondary/25 text-light-accent-pink-primary dark:text-dark-accent-pink-primary;
+}
+
+.alert-yellow {
+    @apply w-full border-2 border-light-accent-yellow-primary/25 dark:border-dark-accent-yellow-primary/25 bg-light-accent-yellow-secondary/25 dark:bg-dark-accent-yellow-secondary/25 text-light-accent-yellow-primary dark:text-dark-accent-yellow-primary;
+}
+
+.alert-blue {
+        @apply w-full border-2 border-light-accent-blue-primary/25 dark:border-dark-accent-blue-primary/25 bg-light-accent-blue-secondary/25 dark:bg-dark-accent-blue-secondary/25 text-light-accent-blue-primary dark:text-dark-accent-blue-primary;
 }
 
 .alert-red {
-    @apply w-full border-2 border-red-300 dark:border-red-300 bg-red-500 dark:bg-red-500 text-light-primary-text dark:text-dark-primary-text;
+    @apply w-full border-2 border-light-accent-red-primary/25 dark:border-dark-accent-red-primary/25 bg-light-accent-red-secondary/25 dark:bg-dark-accent-red-secondary/25 text-light-accent-red-primary dark:text-dark-accent-red-primary;
 }
 
-.alert-orange i, .alert-yellow i, .alert-blue i, .alert-green i, .alert-red i {
-    @apply text-light-secondary-text dark:text-dark-secondary-text;
+.alert-deepblue {
+    @apply w-full border-2 border-light-accent-deepblue-primary/25 dark:border-dark-accent-deepblue-primary/25 bg-light-accent-deepblue-secondary/25 dark:bg-dark-accent-deepblue-secondary/25 text-light-accent-deepblue-primary dark:text-dark-accent-deepblue-primary;
 }
 
 .chip {
-    @apply inline-block px-3 py-1 rounded-full bg-light-border dark:bg-dark-border;
+    @apply inline-block px-3 py-1 rounded-full border-2 border-light-border-primary dark:border-dark-border-primary;
 }
 
 .underlined-children {
-    @apply decoration-accent-500 decoration-2 underline underline-offset-2;
+    @apply decoration-light-brand-primary dark:decoration-dark-brand-primary decoration-2 underline underline-offset-2;
 }
 
 .accentline {
     display: inline-block;
-    text-decoration: underline solid 6px #f15a25;
+    @apply decoration-light-brand-primary dark:decoration-dark-brand-primary decoration-6 underline underline-offset-2;
 }
 
 .page-item::before {
@@ -324,21 +369,12 @@ select {
     max-width: 100%;
 }
 
-.clover {
-    @apply fill-light-selection dark:fill-dark-selection;
-}
-
 .clover-container:hover .clover {
     transform: rotate(90deg);
-    @apply fill-accent dark:fill-accent;
 }
 
 .extended {
-    @apply bg-light-primary-bg;
-}
-
-.dark .extended {
-    @apply bg-dark-primary-bg;
+    @apply bg-light-bg-l3 dark:bg-dark-bg-l3 rounded-b-3xl pb-0 mb-5 border-2 border-t-0 border-light-border-primary dark:border-dark-border-primary;
 }
 
 .post-card:hover .post-card-image {

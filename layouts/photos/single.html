@@ -7,13 +7,13 @@
             {{ with .Params.Author }}
             <span>
                 <img src="/img/authors/{{ . }}.png" alt="{{ . }}"
-                    class="rounded-full w-7 inline border-1 border-light-border dark:border-dark-border">
-                <span>By {{ . }}</span>
+                    class="rounded-full w-7 inline border-1 border-light-border-primary dark:border-dark-border-primary">
+                <span>{{ . }}</span>
             </span>
             {{ else }}
             <img src="/img/authors/Anonymous.png" alt="Anonymous"
-                class="rounded-full w-7 inline border-1 border-light-border dark:border-dark-border">
-            <span>By Anonymous</span>
+                class="rounded-full w-7 inline border-1 border-light-border-primary dark:border-dark-border-primary">
+            <span>Anonymous</span>
             {{ end }}
             {{ with .Params.license }}
             <span>
@@ -60,6 +60,13 @@
                 <i class="fa-solid fa-download fa-fw"></i>
                 <span>Download from Hexandcube Files</span>
             </a>
+        </div>
+        <div class="alert mt-4">
+            <i class="fa-solid fa-gavel fa-fw"></i>
+            <span class="title-6 clean">Work licensed under {{ .Params.License }}</span>
+            <p class="pb-2">This work by Hexandcube is licensed under {{ .Params.License }}. Please read the license before use.</p>
+            <a href="{{ .Params.LicenseURL }}" class="btn" target="_blank"
+                rel="noopener noreferrer"><i class="fa-solid fa-file-contract fa-fw"></i> View license</a>
         </div>
     </section>
     <section class="responsive content py-4">

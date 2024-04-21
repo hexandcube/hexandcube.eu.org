@@ -2,8 +2,7 @@
 <main>
     <section class="responsive">
         <h1 class="accentline">Files</h1>
-        <p class="mt-5">This is the download section of my website. Here you can find my software, scripts, browser
-            addons, etc.</p>
+        <p class="mt-5">Here you can find all the files I've published on my website. Addons, software, scripts, etc.</p>
     </section>
     <section class="responsive py-8 md:mb-5">
         <div class="title-3 mb-3">Featured</div>
@@ -11,7 +10,7 @@
             {{ range $.Site.Data.featuredfiles }}
             <div>
                 <a href="/files/{{ .slug }}"
-                    class="mb-4 col-span-1 border-2 bg-light-secondary-bg dark:bg-dark-secondary-bg hover:bg-light-border dark:hover:bg-dark-border hover:rounded-3xl border-light-border dark:border-dark-border rounded-2xl block overflow-clip">
+                    class="mb-4 col-span-1 border-2 bg-light-bg-l1 dark:bg-dark-bg-l1 hover:bg-light-cta-hover dark:hover:bg-dark-cta-hover hover:rounded-3xl border-light-border-primary dark:border-dark-border-primary rounded-2xl block overflow-clip">
                     <img src="{{ .thumbnail }}" alt="{{ .name }}" class="w-full">
                     <div class="p-5">
                         <b class="text-3xl">{{ .name }}</b>
@@ -25,12 +24,12 @@
         <div class="columns-1 md:columns-2 lg:columns-3 mb-8">
             {{ range ((.Paginator 12).Pages.ByParam "fileDate").Reverse }}
             <div>
-                <a href="{{ .RelPermalink }}" class="break-inside-avoid mb-4 col-span-1 border-2  hover:rounded-3xl border-light-border
-                    dark:border-dark-border rounded-2xl block overflow-clip">
-                    <div class="py-12 bg-light-secondary-bg dark:bg-dark-secondary-bg text-center">
+                <a href="{{ .RelPermalink }}" class="break-inside-avoid mb-4 col-span-1 border-2  hover:rounded-3xl border-light-border-primary
+                    dark:border-dark-border-primary rounded-2xl block overflow-clip">
+                    <div class="py-12 bg-light-bg-l1 dark:bg-dark-bg-l1 text-center">
                         <i class="{{ .Params.Icon }} fa-fw title-1"></i>
                     </div>
-                    <div class="p-5 hover:bg-light-border dark:hover:bg-dark-border">
+                    <div class="p-5 hover:bg-light-cta-hover dark:hover:bg-dark-cta-hover">
                         <b class="text-2xl">{{ .Params.Title }}</b>
                         <p>{{ .Params.Description }}</p>
                     </div>

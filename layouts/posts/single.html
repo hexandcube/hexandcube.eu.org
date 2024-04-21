@@ -8,14 +8,14 @@
             {{ with .Params.Author }}
             <span>
                 <img src="/img/authors/{{ . }}.png" alt="{{ . }}"
-                    class="rounded-full w-7 inline border-1 border-light-border dark:border-dark-border">
-                <span>By {{ . }}</span>
+                    class="rounded-full w-7 inline border-1 border-light-border-primary dark:border-primary-dark-border">
+                <span>{{ . }}</span>
             </span>
             {{ else }}
             <span>
                 <img src="/img/authors/Anonymous.png" alt="Anonymous"
-                    class="rounded-full w-7 inline border-1 border-light-border dark:border-dark-border">
-                <span>By Anonymous</span>
+                    class="rounded-full w-7 inline border-1 border-light-border-primary dark:border-primary-dark-border">
+                <span>Anonymous</span>
             {{ end }}
             {{ with .PublishDate }}
             <span>
@@ -61,7 +61,7 @@
         </article>  
 
         {{ if not ( .Params.HideComments )}}
-        <section class="pt-10 content {{ if not (.Params.HideBg) }}contentblock{{ end }} dark:bg-light-secondary-bg dark:border-light-border">
+        <section class="pt-10 content {{ if not (.Params.HideBg) }}contentblock{{ end }} dark:bg-light-bg-l1 dark:border-dark-light-primary">
             {{ partial "comments.html" . }}
         </section>
         {{ end }}

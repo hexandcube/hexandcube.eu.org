@@ -1,11 +1,11 @@
 {{ define "main" }}
 <main>
     <section class="lg:pt-8 py-2 md:pb-0">
-        <div class="bg-light-secondary-bg dark:bg-dark-secondary-bg rounded-4xl px-8 pt-10 dark:border-dark-border border-light-border border-2 md:grid md:grid-cols-2 dark:text-white">
+        <div class="bg-light-bg-l1 dark:bg-dark-bg-l1 rounded-4xl px-8 pt-10 dark:border-dark-border-primary border-light-border-primary border-2 md:grid md:grid-cols-2 dark:text-white">
             <div class="text-center md:text-left md:pt-16 md:pl-8 mb-8 md:mb-0">
                 <h1 class="title-2 font-brand leading-10">
                     Nice to meet you,<br class="mb-1">
-                    I'm <span class="inline-block p-1 bg-accent-500 text-white rounded-xl">hexandcube</span>.
+                    I'm <span class="inline-block py-1 px-2 bg-light-brand-primary text-white rounded-xl">hexandcube</span>.
                 </h1>
                 <div class="title-6">I'm a hobby web developer from Poland.</div>
             </div>
@@ -16,7 +16,7 @@
                         <style>
                             .svg-fox-path {
                                 fill: none;
-                                stroke: #F15A25;
+                                stroke: #fc6344;
                                 stroke-width: 5px;
                             }
                         </style>
@@ -67,18 +67,21 @@
             <div class="title-2 accentline mb-5">Projects</div>
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 gap-y-5 mb-5">
                 <a href="https://inkonfig.hexandcube.eu.org"
-                    class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2 bg-light-secondary-bg dark:bg-dark-secondary-bg border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg">
+                    class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2
+                    bg-light-accent-deepblue-secondary dark:bg-dark-accent-deepblue-secondary hover:bg-light-accent-deepblue-primary/25
+                    dark:hover:border-dark-accent-deepblue-primary/25
+                    border-light-accent-deepblue-primary/25 dark:border-dark-accent-deepblue-primary/25">
                     <div class="grid grid-cols-10">
                         <div class="title-3 inline-block my-2 col-span-9">Inkonfig</div>
                         <div class="col-span-1 w-full">
                             <div class="relative w-12 h-12 float-right">
                                 <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" class="clover">
+                                    xmlns="http://www.w3.org/2000/svg" class="clover fill-light-accent-deepblue-primary/25">
                                     <path
                                         d="M.887 14.467C-2.845 5.875 5.875-2.845 14.467.887l1.42.617a10.323 10.323 0 0 0 8.225 0l1.42-.617c8.593-3.732 17.313 4.988 13.581 13.58l-.617 1.42a10.323 10.323 0 0 0 0 8.225l.617 1.42c3.732 8.593-4.989 17.313-13.58 13.581l-1.42-.617a10.323 10.323 0 0 0-8.225 0l-1.42.617C5.874 42.845-2.846 34.125.886 25.533l.617-1.42a10.323 10.323 0 0 0 0-8.225l-.617-1.42Z">
                                     </path>
-                                    <i
-                                        class="fa-solid fa-arrow-right text-2xl absolute top-[0.8rem] right-[0.8rem] text-light-secondary-text dark:text-dark-secondary-text"></i>
+                                    <i class="fa-solid fa-arrow-right text-2xl absolute top-[0.8rem] right-[0.8rem]
+                                        text-light-accent-deepblue-primary dark:text-dark-accent-deepblue-primary"></i>
                                 </svg>
                             </div>
                         </div>
@@ -87,18 +90,20 @@
                         you can use on multiple Windows devices to configure them automatically.</p>
                 </a>
                 <a href="/files/desktop-icon-toggle"
-                    class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2 bg-light-secondary-bg dark:bg-dark-secondary-bg border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg">
+                    class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2
+                    bg-light-accent-green-secondary dark:bg-dark-accent-green-secondary hover:bg-light-accent-green-primary/25
+                    dark:hover:border-dark-accent-green-primary/25
+                    border-light-accent-green-primary/25 dark:border-dark-accent-green-primary/25">
                     <div class="grid grid-cols-10">
                         <div class="title-3 inline-block my-2 col-span-9">Desktop Icon Toggle</div>
                         <div class="col-span-1 w-full">
                             <div class="relative w-12 h-12 float-right">
                                 <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" class="clover">
+                                    xmlns="http://www.w3.org/2000/svg" class="clover fill-light-accent-green-primary/25">
                                     <path
                                         d="M.887 14.467C-2.845 5.875 5.875-2.845 14.467.887l1.42.617a10.323 10.323 0 0 0 8.225 0l1.42-.617c8.593-3.732 17.313 4.988 13.581 13.58l-.617 1.42a10.323 10.323 0 0 0 0 8.225l.617 1.42c3.732 8.593-4.989 17.313-13.58 13.581l-1.42-.617a10.323 10.323 0 0 0-8.225 0l-1.42.617C5.874 42.845-2.846 34.125.886 25.533l.617-1.42a10.323 10.323 0 0 0 0-8.225l-.617-1.42Z">
                                     </path>
-                                    <i
-                                        class="fa-solid fa-arrow-right text-2xl absolute top-[0.8rem] right-[0.8rem] text-light-secondary-text dark:text-dark-secondary-text"></i>
+                                    <i class="fa-solid fa-arrow-right text-2xl absolute top-[0.8rem] right-[0.8rem] text-light-accent-green-primary dark:text-dark-accent-green-primary"></i>
                                 </svg>
                             </div>
                         </div>
@@ -109,18 +114,20 @@
             </div>
             <div class="grid lg:grid-cols-1 grid-cols-1 gap-5 gap-y-5 mb-5">
                 <a href="/files/hexandcubes-client-tweaks/"
-                    class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2 bg-light-secondary-bg dark:bg-dark-secondary-bg border-light-border dark:border-dark-border hover:bg-light-secondary-bg dark:hover:bg-dark-secondary-bg">
+                    class="clover-container clean block p-5 rounded-4xl hover:rounded-2xl cursor-pointer border-2
+                    bg-light-accent-orange-secondary dark:bg-dark-accent-orange-secondary hover:bg-light-accent-orange-primary/25
+                    dark:hover:border-dark-accent-orange-primary/25
+                    border-light-accent-orange-primary/25 dark:border-dark-accent-orange-primary/25">
                     <div class="grid grid-cols-10">
                         <div class="title-3 inline-block my-2 col-span-9">Hexandcube's Client Tweaks</div>
                         <div class="col-span-1 w-full">
                             <div class="relative w-12 h-12 float-right">
                                 <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" class="clover">
+                                    xmlns="http://www.w3.org/2000/svg" class="clover fill-light-accent-orange-primary/25">
                                     <path
                                         d="M.887 14.467C-2.845 5.875 5.875-2.845 14.467.887l1.42.617a10.323 10.323 0 0 0 8.225 0l1.42-.617c8.593-3.732 17.313 4.988 13.581 13.58l-.617 1.42a10.323 10.323 0 0 0 0 8.225l.617 1.42c3.732 8.593-4.989 17.313-13.58 13.581l-1.42-.617a10.323 10.323 0 0 0-8.225 0l-1.42.617C5.874 42.845-2.846 34.125.886 25.533l.617-1.42a10.323 10.323 0 0 0 0-8.225l-.617-1.42Z">
                                     </path>
-                                    <i
-                                        class="fa-solid fa-arrow-right text-2xl absolute top-[0.8rem] right-[0.8rem] text-light-secondary-text dark:text-dark-secondary-text"></i>
+                                    <i class="fa-solid fa-arrow-right text-2xl absolute top-[0.8rem] right-[0.8rem] text-light-accent-orange-primary dark:text-dark-accent-orange-primary"></i>
                                 </svg>
                             </div>
                         </div>

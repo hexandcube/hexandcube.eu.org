@@ -1,24 +1,25 @@
-<div class="sticky top-0 bg-light-primary-bg/40 dark:bg-dark-primary-bg/60 backdrop-blur-lg z-10">
-    <header id="header" class="responsive py-4 px-2 ">
+<div class="sticky top-0 z-10">
+    <header id="header"
+        class="responsive py-4 px-2 border-2 border-t-0 border-transparent bg-light-bg-l0/40 dark:bg-dark-bg-l0/60 backdrop-blur-lg">
         <a href="/"
-            class="hover:bg-light-selection dark:hover:bg-dark-selection inline-block md:py-2 py-1 px-2 pl-4 -mr-5 rounded-full">
-            <span class="font-logo align-middle text-4xl text-light-secondary-text dark:text-dark-text px-1 -ml-2">hexandcube</span>
-            <span class="font-brand font-bold align-middle text-2xl text-light-secondary-text dark:text-dark-text px-2">hexandcube</span>
+            class="hover:bg-light-accent-orange-secondary dark:hover:bg-dark-accent-orange-secondary inline-block md:py-2 py-1 px-2 pl-4 -mr-5 rounded-full">
+            <span class="font-logo align-middle text-4xl text-light-text-primary dark:text-dark-text-primary px-1 -ml-2">hexandcube</span>
+            <span class="font-brand font-bold align-middle text-2xl text-light-text-primary dark:text-dark-text-primary px-2">hexandcube</span>
         </a>
         <div class="inline-block float-right">
             <div
-                class="px-2 -ml-2 py-1 md:mt-1 font-bold align-middle inline-block rounded-full hover:bg-light-selection dark:hover:bg-dark-selection text-light-secondary-text dark:text-dark-secondary-text">
+                class="px-2 -ml-2 py-1 md:mt-1 font-extrabold align-middle inline-block rounded-full hover:bg-light-accent-orange-secondary dark:hover:bg-dark-accent-orange-secondary text-light-text-primary dark:text-dark-text-primary">
                 <label for="theme-toggle" id="theme-toggle-label" class="text-xl" onclick="toggleTheme()">
                     <i class="fa-solid fa-circle-notch animate-spin"></i>
                     <input type="checkbox" class="hidden" id="theme-toggle" />
                 </label>
             </div>
-            <div class="px-2 py-1 font-bold align-middle text-xl rounded-full hover:bg-light-selection dark:hover:bg-dark-selection text-light-secondary-text dark:text-dark-secondary-text md:hidden inline-block"
+            <div class="px-2 py-1 font-bold align-middle text-xl rounded-full hover:bg-light-accent-orange-secondary dark:hover:bg-dark-accent-orange-secondary text-light-text-primary dark:text-dark-text-primary md:hidden inline-block"
                 onclick="toggleNavbar()">
                 <i class="fa-solid fa-bars fa-fw"></i>
             </div>
         </div>
-        <nav class="md:inline-block hidden mt-4 md:mt-0 pb-5 md:pb-0 pl-3 mx-1 md:md-0 border-light-border dark:border-dark-border"
+        <nav class="md:inline-block hidden mt-4 md:mt-0 pb-5 md:pb-0 pl-3 mx-1 md:md-0 border-light-border-primary dark:border-dark-border-primary"
             id="navbar">
             {{ $current := . }}
             {{ range .Site.Menus.main }}
@@ -26,8 +27,8 @@
             {{ $active = or $active (eq .Identifier $current.Params.Category) }}
             <a href="{{ .URL }}"
                 class="md:inline-block block px-4 py-2 -ml-3 md:ml-0 mt-1 md:mt-0 align-middle rounded-full
-                {{ if $active }}border-2 border-light-border dark:border-dark-border text-light-secondary-text dark:text-dark-secondary-text hover:bg-light-selection dark:hover:bg-dark-selection font-bold
-                {{ else }}hover:bg-light-selection dark:hover:bg-dark-selection text-light-secondary-text dark:text-dark-secondary-text{{end}}">
+                {{ if $active }}border-2 border-light-border-primary dark:border-dark-border-primary text-light-text-primary dark:text-dark-text-primary hover:bg-light-accent-orange-secondary dark:hover:bg-dark-accent-orange-secondary font-extrabold
+                {{ else }}hover:bg-light-accent-orange-secondary dark:hover:bg-dark-accent-orange-secondary text-light-text-primary dark:text-dark-text-primary{{end}}">
                 {{ .Name }}</a>
             {{ end }}
         </nav>

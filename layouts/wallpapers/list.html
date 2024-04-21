@@ -2,14 +2,24 @@
 <main>
     <section class="responsive">
         <h1 class="accentline">Wallpapers</h1>
-        <p class="mt-5">Here you can find some desktop wallpapers I've designed. All of these are free for personal use (CC BY-NC 4.0).</p>
+        <p class="mt-5">Here you can find some desktop wallpapers I've designed. All of these are free for personal use.</p>
         <br>
-        {{ partial "support.html" . }}
+        <div class="alert mt-4">
+            <i class="fa-brands fa-creative-commons fa-fw"></i>
+            <span class="title-6 clean">Work licensed under CC-BY-NC 4.0</span>
+            <p class="pb-2">This work by <b>Hexandcube</b> is licensed under <b>CC BY-NC 4.0</b>. This license requires that reusers
+                give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material
+                in any medium or format, for noncommercial purposes only.</p>
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" class="btn" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-solid fa-file-contract fa-fw"></i> View license</a>
+            <a href="/about" class="btn" target="_blank"
+                rel="noopener noreferrer"><i class="fa-solid fa-envelope fa-fw"></i> Obtain commercial license</a>
+        </div>
     </section>
     <section class="responsive py-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
         {{ $paginator := .Paginate (sort .Pages "Params.id" "desc" ) }}
             {{ range $paginator.Pages }}
-                <a href="{{ .RelPermalink }}" class="col-span-1 border-2 block border-light-border dark:border-dark-border rounded-2xl bg-light-secondary-bg dark:bg-dark-secondary-bg hover:bg-light-border dark:hover:bg-dark-border hover:rounded-3xl overflow-clip">
+                <a href="{{ .RelPermalink }}" class="col-span-1 border-2 block border-light-border-primary dark:border-dark-border-primary rounded-2xl bg-light-bg-l1 dark:bg-dark-bg-l1 hover:bg-light-cta-hover dark:hover:bg-dark-cta-hover hover:rounded-3xl overflow-clip">
                     <img src="https://files.hexandcube.eu.org/wallpapers/thumbnails/Wallpaper-{{ .Params.id }}.png"
                         alt="{{ .Params.title }}" class="w-full">
                     <div class="p-5">
@@ -19,6 +29,11 @@
                 </a>
             {{ end }}
     </section>
+    
+    <section class="responsive content">
+        {{ partial "support.html" . }}
+    </section>
+
     {{ partial "pagination.html" . }}
 </main>
 {{ end }}
