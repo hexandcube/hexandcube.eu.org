@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "org.eu.hexandcube.pwa",
+        "sha256_cert_fingerprints": ["84:25:48:83:33:14:B9:55:BD:D3:F7:D4:48:CA:60:D4:BA:97:CD:18:0A:71:71:C0:A6:B4:45:DB:FD:56:E9:06"]
+      }
+    }]
