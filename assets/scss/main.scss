@@ -365,8 +365,34 @@ select {
     margin-top: 1rem;
 }
 
-.utterances {
-    max-width: 100%;
+.boopable {
+    @apply cursor-pointer fill-transparent;
+}
+
+.boop-heart {
+    @apply z-50 text-red-600 text-2xl;
+    animation: boop 0.5s ease-in-out forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes boop {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
 }
 
 .clover-container:hover .clover {

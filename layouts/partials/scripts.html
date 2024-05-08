@@ -50,6 +50,30 @@
         // Check the theme again after the page is loaded, to make sure that the 
         // theme switcher icon is correctly set. The theme checking script is located in the head partial.
         checkTheme();
+
+        // Make snoots boopable :3
+
+        document.querySelectorAll('.boopable').forEach(snoot => {
+            document.addEventListener('click', function(e) {
+                snoot.classList.add('boop');
+                if (e.target === snoot) {
+                    const boopHeart = document.createElement('i');
+                    boopHeart.classList.add('boop-heart', 'fa-solid', 'fa-heart');
+                    document.querySelector('body').appendChild(boopHeart);
+
+                    var posX = e.clientX;
+                    var posY = e.clientY;
+
+                    boopHeart.style.position = 'fixed';
+                    boopHeart.style.left = posX - 7 + 'px';
+                    boopHeart.style.top = posY - 10 + 'px';
+
+                    setTimeout(() => {
+                        boopHeart.remove();
+                    }, 600);
+                }
+            });
+        });;
     }
 </script>
 
