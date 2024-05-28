@@ -4,8 +4,22 @@ author: Hexandcube
 description: Setting up ShareX to upload screenshots to an S3 bucket
 thumbnail: /img/uploads/2023/05/12/screenshot-sharing-with-sharex/thumbnail.png
 publishDate: 2023-05-12
+lastmod: 2024-05-28
+showLastmod: true
 category: posts
 ---
+
+###### May 2024 Update
+
+Since December 2023 Scaleway no longer offers free 75GB of object storage.
+In May 2024 I have migrated my file hosting back to [Backblaze B2](https://backblaze.com/b2/), which at this point is more affordable than Scaleway Object Storage.
+Currently Backblaze doesn't allow for use of a custom domain for B2 buckets (at least for regular, non-business customers), so I'm using a hack
+by redirecting all traffic from my domain to the B2 bucket URL using Netlify Redirects. This can also be achieved using Cloudflare Workers.
+
+You can read the original post below. The mention of Scaleway's free 75GB has been redacted to avoid confusion. 
+
+---
+***Original post from May 12, 2023***
 
 ShareX is a free and open source screenshot and file sharing tool. Ever since I've discovered it back in 2019, I've been
 using it daily as my favorite tool to capture screenshots, short videos, gifs, create short links, pick
@@ -34,8 +48,8 @@ Next we need to choose a region, I recommend selecting the one closest to you. A
 are located in Europe. I live in Poland, so I'll select Warsaw. In the next step, **make sure you set your bucket to
 Private**. Otherwise everyone will be able to see the list of all the files in the bucket. 
 
-At the end we'll see a cost calculator. **The first 75GB on Scaleway object storage are free**, 
-so if you don't exceed this limit, you don't have to worry about it.
+At the end we'll see a cost calculator. ~~The first 75GB on Scaleway object storage are free, 
+so if you don't exceed this limit, you don't have to worry about it.~~ [[May 2024 Update]](#may-2024-update)
 
 Now that our bucket is ready, we can go back to ShareX. Go to the **Destinations** menu, and select **Destination settings**.
 From the list of File uploaders, select **Amazon S3**. We're going to start with our credentials. Go to
