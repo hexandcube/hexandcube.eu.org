@@ -3,6 +3,7 @@ title: Twitter account migration notice
 description: Information about Hexandcube's Twitter account migration
 hideReadingTime: true
 publishDate: 2024-05-31
+lastmod: 2024-06-11
 author: Hexandcube
 ---
 
@@ -24,5 +25,8 @@ purposes.
 
 I will update this notice with any further information as needed.
 
+**Update 2024-06-11:**
+The legacy account will be locked down on July 31, 2024 CEST. As stated before, everyone who, as of May 31, 2024 CEST follows the old account, will
+retain access to it for the foreseeable future for archival purposes.
 
 
