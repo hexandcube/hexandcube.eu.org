@@ -3,14 +3,14 @@
         "name": "Hexandcube's Client Tweaks",
         "slug": "hexandcubes-client-tweaks",
         "description": "Vanilla Minecraft with quality of life improvements that work on multiplayer servers.",
-        "thumbnail": "/img/files/ClientTweaks.png",
+        "thumbnail": "/img/projects/ClientTweaks.png",
         "color": "orange"
     },
     "2": {
         "name": "Desktop Icon Toggle",
         "slug": "desktop-icon-toggle",
         "description": "Quickly toggle the visibility of desktop icons by double-clicking the blank space on the desktop.",
-        "thumbnail": "/img/files/desktopicontoggle-cover.png",
+        "thumbnail": "/img/projects/desktopicontoggle-cover.png",
         "color": "blue"
     }
 }

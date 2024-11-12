@@ -69,9 +69,9 @@ paginate = 18
     weight = -90
 
   [[menu.main]]
-    identifier = "files"
-    name = "Files"
-    url = "/files/"
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
     weight = -80
     
   [[menu.main]]

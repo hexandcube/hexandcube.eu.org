@@ -1,15 +1,15 @@
 {{ define "main" }}
 <main>
     <section class="responsive">
-        <h1 class="accentline">Files</h1>
-        <p class="mt-5">Here you can find all the files I've published on my website. Addons, software, scripts, etc.</p>
+        <h1 class="accentline">Projects</h1>
+        <p class="mt-5">Here you can find all my projects, including the archived ones.</p>
     </section>
     <section class="responsive py-8 md:mb-5">
         <div class="title-3 mb-3">Featured</div>
         <div class="columns-1 lg:columns-2 mb-8">
-            {{ range $.Site.Data.featuredfiles }}
+            {{ range $.Site.Data.featuredprojects }}
             <div>
-                <a href="/files/{{ .slug }}"
+                <a href="/projects/{{ .slug }}"
                     class="mb-4 col-span-1 border-2 bg-light-bg-l1 dark:bg-dark-bg-l1 hover:bg-light-cta-hover dark:hover:bg-dark-cta-hover hover:rounded-3xl border-light-border-primary dark:border-dark-border-primary rounded-2xl block overflow-clip">
                     <img src="{{ .thumbnail }}" alt="{{ .name }}" class="w-full">
                     <div class="p-5">
@@ -20,7 +20,7 @@
             </div>
             {{ end }}
         </div>
-        <div class="title-3 mb-3">All Files</div>
+        <div class="title-3 mb-3">All Projects</div>
         <div class="columns-1 md:columns-2 lg:columns-3 mb-8">
             {{ range ((.Paginator 12).Pages.ByParam "fileDate").Reverse }}
             <div>
