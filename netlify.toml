@@ -4,6 +4,7 @@
 
 [build.environment]
     HUGO_VERSION = "0.139.2"
+    TZ = "UTC"
 
 [dev]
     framework = "hugo"
