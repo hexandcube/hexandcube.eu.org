@@ -4,7 +4,7 @@ author: Hexandcube
 description: Setting up ShareX to upload screenshots to an S3 bucket
 thumbnail: /img/uploads/2023/05/12/screenshot-sharing-with-sharex/thumbnail.png
 publishDate: 2023-05-12
-lastmod: 2024-05-28
+lastMod: 2024-05-28
 showLastmod: true
 category: posts
 ---

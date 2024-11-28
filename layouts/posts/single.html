@@ -27,7 +27,7 @@
                 {{ with .Params.LastMod }}
                 <span>
                     <span>&middot;</span>
-                    <span>Updated on {{ .Format "January 2, 2006" }}</span>
+                    <span>Updated on {{ (. | time).Format "January 2, 2006" }}</span>
                 </span>
                 {{ end }}
             {{ end }}
