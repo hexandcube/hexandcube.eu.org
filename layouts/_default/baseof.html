@@ -4,7 +4,7 @@
     {{ partial "head.html" . }}
 </head>
     
-<body class="bg-light-bg-l0 dark:bg-dark-bg-l0 {{ if .Site.IsServer }}debug-screens{{ end }}">
+<body class="bg-light-bg-l0 dark:bg-dark-bg-l0 {{ if hugo.IsServer }}debug-screens{{ end }}">
     <noscript class="p-10 bg-red-500 text-white dark:text-white">
         <i class="fas fa-exclamation-circle"></i>
         <b>Your browser doesn't support JavaScript or scripts are being blocked</b><br>

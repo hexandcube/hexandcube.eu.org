@@ -42,15 +42,19 @@
 
 <title>{{ with .Page.Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
 
-{{ $seed := "3057234985271398467293562983" }}
-{{ $random := delimit (shuffle (split (md5 $seed) "" )) "" }}
-{{
-    $style := resources.Get "/scss/main.scss"
-    | resources.ToCSS
-    | resources.PostCSS
-    | resources.ExecuteAsTemplate (printf "main.dev.%s.css" $random) $random
-    }}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ $time := now.Format "20060102-150405" }}
+{{ $styles := resources.Get "scss/main.scss"
+    | toCSS
+    | postCSS (dict "config" "./postcss.config.js")
+    | resources.ExecuteAsTemplate (printf "styles.%s.css" $time) $time
+}}
+
+{{ if hugo.IsServer }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+{{ else }}
+    {{ $styles = $styles | minify | fingerprint | css.PostCSS }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+{{ end }}
 
 <link rel="stylesheet" href="/fonts/font-awesome/css/all.min.css" defer>
 <link rel="stylesheet" href="/fonts/mont/mont.css" async>

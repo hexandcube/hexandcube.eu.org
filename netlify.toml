@@ -2,6 +2,9 @@
     command = "hugo"
     publish = "public"
 
+[build.environment]
+    HUGO_VERSION = "0.139.2"
+
 [dev]
     framework = "hugo"
     command = "hugo server"

@@ -4,7 +4,9 @@ title = "Hexandcube.eu.org"
 buildFuture = true
 enableEmoji = true
 enableGitInfo = false
-paginate = 18
+
+[pagination]
+  pagerSize = 18
 
 [markup]
   [markup.goldmark]
