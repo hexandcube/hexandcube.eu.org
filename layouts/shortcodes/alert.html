@@ -1,5 +1,5 @@
 <div class="alert {{ with .Get "variant" }}alert-{{ . }}{{ end }}">
-    {{ with .Get "icon" }}<i class="{{ . }} fa-fw"></i>{{ end }}
+    {{ with .Get "icon" }}<i class="text-2xl {{ . }} fa-fw"></i>{{ end }}
     {{ with .Get "title" }}<span class="title-6">{{ . }}</span>{{ end }}
     <p>{{ .Inner }}</p>
 </div>
