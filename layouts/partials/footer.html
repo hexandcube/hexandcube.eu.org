@@ -7,7 +7,7 @@
         <div class="content">
             {{ $buildNumber := now.Format "20060102.1504" }}
             {{ $buildDate  := now.Format "January 2, 2006 at 15:04" }}
-            <div>Copyright &copy; 2017 - 2024 Hexandcube</div>
+            <div>Copyright &copy; 2017 - 2025 Hexandcube</div>
             <a href="/#"
                 onclick="alert('Hexandcube.eu.org v.{{ .Site.Params.Version }} build {{ $buildNumber }}, built and deployed on {{ $buildDate }} {{ if hugo.IsServer }}(Local time){{ else }}(UTC){{ end }}')">Hexandcube.eu.org
                 v.{{ .Site.Params.Version }}-{{ $buildNumber }}{{ if hugo.IsServer }}-dev{{ end }}</a>
