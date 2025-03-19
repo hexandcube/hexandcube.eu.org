@@ -18,20 +18,12 @@
     display: none;
 }
 
-* {
-    transition: 0.3s;
-    scroll-behavior: smooth;
-    text-rendering: geometricPrecision;
-}
-
-html,
-body {
-    height: 100%;
-}
-
 body {
     display: flex;
     flex-direction: column;
+    transition: 0.2s;
+    scroll-behavior: smooth;
+    text-rendering: geometricPrecision;
 }
 
 .wrapper {
