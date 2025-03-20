@@ -11,7 +11,7 @@ fileVersion: "1.4"
 fileDate: 2022-09-30
 icon: fa-solid fa-file-zipper
 thumbnail: desktopicontoggle-cover.png
-download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.4.0.zip
+download: https://files.hexandcube.com/download/DesktopIconToggle/DesktopIconToggle-1.4.0.zip
 downloadServer: Hexandcube Files
 servers:
 - name: "GitHub"
@@ -20,20 +20,20 @@ servers:
   download: https://community.chocolatey.org/packages/desktopicontoggle
 versions:
   - name: "1.4"
-    download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.4.0.zip
+    download: https://files.hexandcube.com/download/DesktopIconToggle/DesktopIconToggle-1.4.0.zip
     date: 2022-09-30
     latest: true
   - name: "1.3"
-    download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.3.0.zip
+    download: https://files.hexandcube.com/download/DesktopIconToggle/DesktopIconToggle-1.3.0.zip
     date: 2022-01-26
   - name: "1.2"
-    download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.2.0.zip
+    download: https://files.hexandcube.com/download/DesktopIconToggle/DesktopIconToggle-1.2.0.zip
     date: 2021-08-24
   - name: "1.1"
-    download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.1.0.zip
+    download: https://files.hexandcube.com/download/DesktopIconToggle/DesktopIconToggle-1.1.0.zip
     date: 2021-06-22
   - name: "1.0"
-    download: https://files.hexandcube.eu.org/download/DesktopIconToggle/DesktopIconToggle-1.0.0.zip
+    download: https://files.hexandcube.com/download/DesktopIconToggle/DesktopIconToggle-1.0.0.zip
     date: 2021-06-19
 ---
 

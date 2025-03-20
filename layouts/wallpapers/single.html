@@ -38,7 +38,7 @@
         <p class="mt-5">{{ . }}</p>
         {{ end }}
         <div class="mt-4">
-            <a href="https://files.hexandcube.eu.org/wallpapers/download/Wallpaper-{{ .Params.id }}.zip"
+            <a href="https://files.hexandcube.com/wallpapers/download/Wallpaper-{{ .Params.id }}.zip"
                 class="btn btn-inverted">
                 <i class="fa-solid fa-download fa-fw"></i>
                 <span>Download from Hexandcube Files</span>
@@ -62,13 +62,13 @@
         <br>
         <div class="title-4 capitalize mb-2">{{ . }} Variant</div>
         <itemscope itemtype="https://schema.org/ImageObject">
-            <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ $currentPage.Params.id }}-{{ . }}.png"
+            <img src="https://files.hexandcube.com/wallpapers/Wallpaper-{{ $currentPage.Params.id }}-{{ . }}.png"
                 itemprop="contentUrl" alt="{{ $currentPage.Title }}" class="rounded-xl mb-5">
         </itemscope>
         {{ end }}
         {{ else }}
         <itemscope itemtype="https://schema.org/ImageObject">
-            <img src="https://files.hexandcube.eu.org/wallpapers/Wallpaper-{{ $currentPage.Params.id }}.png" itemprop="contentUrl"
+            <img src="https://files.hexandcube.com/wallpapers/Wallpaper-{{ $currentPage.Params.id }}.png" itemprop="contentUrl"
                 alt="{{ .Title }}" class="rounded-xl">
         </itemscope>
         {{ end }}

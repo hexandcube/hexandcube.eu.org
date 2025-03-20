@@ -20,16 +20,16 @@ foreseeable future, and will eventually redirect to the new domain.
 - [x] **[March 20, 2025 19:46 UTC]** DNS propagation verified
 - [x] **[March 20, 2025 20:02 UTC]** Website content updated to use the new domain
 - [x] **[March 20, 2025 20:02 UTC]** External link update started
-- [x] **[March 21, 2025 20:34 UTC]** Domain redirection active
-- [ ] **[March 21, 2025]** New domain submitted to search engines for indexing
-- [ ] **[March 21, 2025]** Email services migrated to the new domain
-- [ ] **[March 21, 2025]** Hexandcube Files migrated to the new domain
-- [ ] **[TBA]** New PGP keys issued for the new domain
-- [ ] **[TBA]** Other releated services migrated to the new domain
-- [ ] **[TBA]** Internal and external links updated
-- [ ] **[TBA]** Broken links verified
-- [ ] **[TBA]** Search engine optimization verified
-- [ ] **[TBA]** Migration complete
+- [x] **[March 20, 2025 20:34 UTC]** Domain redirection active
+- [x] **[March 20, 2025 21:27 UTC]** Email services migrated to the new domain
+- [ ] **[March 20, 2025 21:48 UTC]** New domain submitted to search engines for indexing
+- [x] **[March 20, 2025 22:13 UTC]** Hexandcube Files migrated to the new domain
+- [ ] **[Pending]** PGP Keys updated with the new email address
+- [ ] **[Pending]** Other releated services migrated to the new domain
+- [ ] **[Pending]** Internal and external links updated
+- [ ] **[Pending]** Broken links verified
+- [ ] **[Pending]** Search engine optimization verified
+- [ ] **[Pending]** Migration complete
 
 ## Signed Message
 

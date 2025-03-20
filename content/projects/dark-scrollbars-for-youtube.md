@@ -10,18 +10,18 @@ fileSize: 12KB
 fileVersion: "1.1"
 fileDate: 2020-07-16
 icon: fa-brands fa-firefox
-download: https://files.hexandcube.eu.org/download/dark_scrollbar_for_youtube.xpi
+download: https://files.hexandcube.com/download/dark_scrollbar_for_youtube.xpi
 downloadServer: Hexandcube Files
 servers:
 - name: Mozilla Addons (AMO)
   download: https://addons.mozilla.org/en-GB/firefox/addon/dark-scrollbar-for-youtube/
 versions:
   - name: "1.1"
-    download: https://files.hexandcube.eu.org/download/dark_scrollbar_for_youtube-1.1.xpi
+    download: https://files.hexandcube.com/download/dark_scrollbar_for_youtube-1.1.xpi
     date: 2020-07-16
     latest: true
   - name: "1.0"
-    download: https://files.hexandcube.eu.org/download/dark_scrollbar_for_youtube-1.0.xpi
+    download: https://files.hexandcube.com/download/dark_scrollbar_for_youtube-1.0.xpi
     date: 2020-06-20
 ---
 

@@ -12,23 +12,23 @@ fileVersion: 2.1 (1.20.1)
 fileDate: 2023-10-08
 icon: fa-solid fa-box
 thumbnail: PerformanceCraft.png
-download: https://files.hexandcube.eu.org/download/PerformanceCraft/PerformanceCraft_2.1-1.20.1.mrpack
+download: https://files.hexandcube.com/download/PerformanceCraft/PerformanceCraft_2.1-1.20.1.mrpack
 downloadServer: Hexandcube Files
 servers:
 - name: Modrinth
   download: https://modrinth.com/modpack/performancecraft
 versions:
   - name: 2.1 [1.20.1]
-    download: https://files.hexandcube.eu.org/download/PerformanceCraft/PerformanceCraft_2.1-1.20.1.mrpack
+    download: https://files.hexandcube.com/download/PerformanceCraft/PerformanceCraft_2.1-1.20.1.mrpack
     date: 2023-10-08
     latest: true
   - name: 2.0 [1.20.1]
-    download: https://files.hexandcube.eu.org/download/PerformanceCraft/PerformanceCraft_2.0-1.20.1.mrpack
+    download: https://files.hexandcube.com/download/PerformanceCraft/PerformanceCraft_2.0-1.20.1.mrpack
     date: 2023-09-24
     broken: true
     issue_url: https://github.com/hexandcube/performancecraft/issues/1
   - name: 1.0 [1.19.3]
-    download: https://files.hexandcube.eu.org/download/PerformanceCraft/PerformanceCraft_1.0-1.19.3.mrpack
+    download: https://files.hexandcube.com/download/PerformanceCraft/PerformanceCraft_1.0-1.19.3.mrpack
     date: 2023-03-13
 ---
 

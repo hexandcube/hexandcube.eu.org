@@ -10,11 +10,11 @@ fileSize: 1.48KB
 fileVersion: "1.0"
 fileDate: 2018-11-16
 icon: fa-solid fa-file-code
-download: https://files.hexandcube.eu.org/download/gpedit-installer.bat
+download: https://files.hexandcube.com/download/gpedit-installer.bat
 downloadServer: Hexandcube Files
 versions:
 - name: "1.0"
-  download: https://files.hexandcube.eu.org/download/gpedit-installer.bat
+  download: https://files.hexandcube.com/download/gpedit-installer.bat
   date: 2018-11-16
   latest: true
 ---

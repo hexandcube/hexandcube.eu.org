@@ -10,7 +10,7 @@ fileSize: 2.24MB
 fileVersion: "1.1"
 fileDate: 2022-01-29
 icon: fa-solid fa-file-zipper
-download: https://files.hexandcube.eu.org/download/MicMonitor/MicMonitor-1.1.zip
+download: https://files.hexandcube.com/download/MicMonitor/MicMonitor-1.1.zip
 downloadServer: Hexandcube Files
 servers:
   - name: "GitHub"
@@ -19,7 +19,7 @@ servers:
     download: https://community.chocolatey.org/packages/micmonitor
 versions:
   - name: "1.1"
-    download: https://files.hexandcube.eu.org/download/MicMonitor/MicMonitor-1.1.zip
+    download: https://files.hexandcube.com/download/MicMonitor/MicMonitor-1.1.zip
     date: 2022-01-29
     latest: true
   - name: "1.0"
