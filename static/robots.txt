@@ -7,7 +7,4 @@ Disallow: /terms
 Disallow: /credits
 Disallow: /markdown
 
-User-agent: GPTBot
-Disallow: /
-
-Sitemap: https://hexandcube.eu.org/sitemap.xml
+Sitemap: https://hexandcube.com/sitemap.xml

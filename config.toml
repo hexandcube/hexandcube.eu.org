@@ -1,6 +1,6 @@
-baseURL = "https://hexandcube.eu.org"
+baseURL = "https://hexandcube.com"
 languageCode = "en-us"
-title = "Hexandcube.eu.org"
+title = "Hexandcube.com"
 buildFuture = true
 enableEmoji = true
 enableGitInfo = false
@@ -24,7 +24,7 @@ enableGitInfo = false
 
 [params]
   version = "10.4"
-  repository = "https://github.com/hexandcube/hexandcube.eu.org"
+  repository = "https://github.com/hexandcube/hexandcube.com"
   description = "Nice to meet you, I'm Hexandcube. Hobby web developer, and part-time fox on the internet. "
   keywords = "Hexandcube, Wallpapers, Files, Windows, Desktop, Tools, Software, Web Developer, translation"
   JsonLd = '''
@@ -32,11 +32,11 @@ enableGitInfo = false
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Hexandcube",
-    "email": "hexandcube@hexandcube.eu.org",
+    "email": "hexandcube@hexandcube.com",
     "gender": "Male",
     "nationality": "Polish",
     "knowsLanguage": "Polish, English",
-    "url": "https://hexandcube.eu.org",
+    "url": "https://hexandcube.com",
     "image": "https://files.hexandcube.eu.org/images/avatar.png",
     "sameAs": [
       "https://github.com/hexandcube",

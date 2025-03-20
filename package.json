@@ -1,17 +1,17 @@
 {
-  "name": "hexandcube.eu.org",
+  "name": "hexandcube.com",
   "version": "10.4.0",
   "description": "Hexandcube's personal website",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hexandcube/hexandcube.eu.org.git"
+    "url": "git+https://github.com/hexandcube/hexandcube.com.git"
   },
   "author": "Hexandcube",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hexandcube/hexandcube.eu.org/issues"
+    "url": "https://github.com/hexandcube/hexandcube.com/issues"
   },
-  "homepage": "https://hexandcube.eu.org",
+  "homepage": "https://hexandcube.com",
   "dependencies": {},
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",

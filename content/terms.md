@@ -1,11 +1,11 @@
 ---
 title: Terms and Conditions
-lastmod: 2021-11-10
+lastmod: 2025-03-20
 showLastmod: true
 author: Hexandcube
 ---
 
-Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the https://hexandcube.eu.org website ("Website", "Service") or other websites and services ("Websites", "Services") operated by Hexandcube ("us", "we", or "our").
+Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the https://hexandcube.com website ("Website", "Service") or other websites and services ("Websites", "Services") operated by Hexandcube ("us", "we", or "our").
 
 
 Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
@@ -49,4 +49,4 @@ By continuing to access or use our Service after those revisions become effectiv
 
 ### Contact Us
 
-If you have any questions about these Terms, please contact us via e-mail at [hexandcube@hexandcube.eu.org](mailto:hexandcube@hexandcube.eu.org), or using the contact form available on our Website.
+If you have any questions about these Terms, please contact us via e-mail at [hexandcube@hexandcube.com](mailto:hexandcube@hexandcube.com), or using the contact form available on our Website.

@@ -1,8 +1,8 @@
 ---
 title: Markdown Test
-date: 2023-04-26
+lastmod: 2025-03-20
 author: Hexandcube
-description: This page is used for testing design elements for hexandcube.eu.org. Also this is a description of a page.
+description: This page is used for testing design elements for hexandcube.com. Also this is a description of a page.
 noindex: true
 ---
 

@@ -16,8 +16,9 @@ foreseeable future, and will eventually redirect to the new domain.
 
 - [x] **[March 20, 2025 18:39 UTC]** Domain registration confirmed
 - [x] **[March 20, 2025 19:05 UTC]** DNS records setup for the new domain
-- [ ] **[March 20, 2025]** DNS propagation verified
-- [ ] **[March 21, 2025]** Website content updated to use the new domain
+- [x] **[March 20, 2025 19:46 UTC]** DNS propagation verified
+- [x] **[March 20, 2025 21:02 UTC]** Website content updated to use the new domain
+- [x] **[March 20, 2025 21:02 UTC]** External link update started
 - [ ] **[March 21, 2025]** Domain redirection active
 - [ ] **[March 21, 2025]** New domain submitted to search engines for indexing
 - [ ] **[March 21, 2025]** Email services migrated to the new domain

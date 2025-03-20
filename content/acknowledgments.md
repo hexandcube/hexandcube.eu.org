@@ -1,11 +1,11 @@
 ---
 title: Acknowledgments
 author: Hexandcube
-lastmod: 2024-04-11
+lastmod: 2025-03-20
 ---
 
-## Hexandcube.eu.org Website
-Designed and developed by [Hexandcube](https://hexandcube.eu.org) with the help of the following projects:
+## Hexandcube.com Website
+Designed and developed by [Hexandcube](https://hexandcube.com) with the help of the following projects:
 
 ### Hugo
 - Author: [Hugo contributions](https://github.com/gohugoio/hugo/graphs/contributors)

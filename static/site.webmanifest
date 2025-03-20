@@ -1,6 +1,6 @@
 {
     "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-    "name": "Hexandcube.eu.org",
+    "name": "Hexandcube.com",
     "short_name": "Hexandcube",
     "start_url": ".",
     "description": "Hexandcube's Website",
