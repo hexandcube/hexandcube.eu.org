@@ -15,8 +15,8 @@ foreseeable future, and will eventually redirect to the new domain.
 ## Migration Timeline
 
 - [x] **[March 20, 2025]** Domain registration confirmed
-- [ ] **[March 21, 2025]** DNS records setup for the new domain
-- [ ] **[March 21, 2025]** DNS propagation verified
+- [ ] **[March 20, 2025]** DNS records setup for the new domain
+- [ ] **[March 20, 2025]** DNS propagation verified
 - [ ] **[March 21, 2025]** Website content updated to use the new domain
 - [ ] **[March 21, 2025]** Domain redirection active
 - [ ] **[March 21, 2025]** New domain submitted to search engines for indexing
