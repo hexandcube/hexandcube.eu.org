@@ -2,7 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description"
-    content="{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Title }} on Hexandcube.eu.org{{ end }}">
+    content="{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Title }} on Hexandcube.com{{ end }}">
 <meta name="keywords"
     content="{{ if .Params.Keywords }}{{ delimit .Keywords " " }}{{ else }}{{ .Site.Params.Keywords }}{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
@@ -10,25 +10,25 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:description"
-    content="{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Title }} on Hexandcube.eu.org{{ end }}" />
+    content="{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Title }} on Hexandcube.com{{ end }}" />
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:title" content="{{ with .Page.Title }}{{ . }} | {{ end }}{{ .Site.Title }}" />
 <meta property="twitter:creator" content="@hexandcube" />
 <meta property="twitter:site" content="@hexandcube" />
 {{ if eq .Type "wallpapers" }}
-<meta property="og:image" content="{{ with .Page.Params.id}}https://files.hexandcube.eu.org/wallpapers/thumbnails/Wallpaper-{{ . }}.png{{ else }}https://hexandcube.eu.org/img/opengraph.png{{ end }}"/>
-<meta property="twitter:image" content="{{ with .Page.Params.id}}https://files.hexandcube.eu.org/wallpapers/thumbnails/Wallpaper-{{ . }}.png{{ else }}https://hexandcube.eu.org/img/opengraph.png{{ end }}"/>
+<meta property="og:image" content="{{ with .Page.Params.id}}https://files.hexandcube.com/wallpapers/thumbnails/Wallpaper-{{ . }}.png{{ else }}https://hexandcube.com/img/opengraph.png{{ end }}"/>
+<meta property="twitter:image" content="{{ with .Page.Params.id}}https://files.hexandcube.com/wallpapers/thumbnails/Wallpaper-{{ . }}.png{{ else }}https://hexandcube.com/img/opengraph.png{{ end }}"/>
 {{ else if eq .Type "photos" }}
-<meta property="og:image" content="{{ with .Page.Params.id}}https://files.hexandcube.eu.org/photos/thumbnails/hexandcube-{{ . }}.jpg{{ else }}https://hexandcube.eu.org/img/opengraph.png{{ end }}"/>
-<meta property="twitter:image" content="{{ with .Page.Params.id}}https://files.hexandcube.eu.org/photos/thumbnails/hexandcube-{{ . }}.jpg{{ else }}https://hexandcube.eu.org/img/opengraph.png{{ end }}"/>
+<meta property="og:image" content="{{ with .Page.Params.id}}https://files.hexandcube.com/photos/thumbnails/hexandcube-{{ . }}.jpg{{ else }}https://hexandcube.com/img/opengraph.png{{ end }}"/>
+<meta property="twitter:image" content="{{ with .Page.Params.id}}https://files.hexandcube.com/photos/thumbnails/hexandcube-{{ . }}.jpg{{ else }}https://hexandcube.com/img/opengraph.png{{ end }}"/>
 {{ else if eq .Type "files" }}
-<meta property="og:image" content="{{ with .Page.Params.Thumbnail}}https://hexandcube.eu.org/img/files/{{ . }}{{ else }}https://hexandcube.eu.org/img/opengraph.png{{ end }}"/>
-<meta property="twitter:image" content="{{ with .Page.Params.Thumbnail}}https://hexandcube.eu.org/img/files/{{ . }}{{ else }}https://hexandcube.eu.org/img/opengraph.png{{ end }}"/>
+<meta property="og:image" content="{{ with .Page.Params.Thumbnail}}https://hexandcube.com/img/files/{{ . }}{{ else }}https://hexandcube.com/img/opengraph.png{{ end }}"/>
+<meta property="twitter:image" content="{{ with .Page.Params.Thumbnail}}https://hexandcube.com/img/files/{{ . }}{{ else }}https://hexandcube.com/img/opengraph.png{{ end }}"/>
 {{ else }}
 <meta property="og:image"
-    content="https://hexandcube.eu.org{{ with .Page.Params.Thumbnail}}{{ . }}{{ else }}/img/opengraph.png{{ end }}" />
+    content="https://hexandcube.com{{ with .Page.Params.Thumbnail}}{{ . }}{{ else }}/img/opengraph.png{{ end }}" />
 <meta property="twitter:image"
-    content="https://hexandcube.eu.org{{ with .Page.Params.Thumbnail}}{{ . }}{{ else }}/img/opengraph.png{{ end }}" />
+    content="https://hexandcube.com{{ with .Page.Params.Thumbnail}}{{ . }}{{ else }}/img/opengraph.png{{ end }}" />
 {{ end }}
 {{ if .Params.NoIndex }}
 <meta name="robots" content="noindex, nofollow">
@@ -83,7 +83,7 @@
 <meta name="msapplication-TileImage" content="/icons/mstile-144x144.png">
 <meta name="msapplication-config" content="/icons/browserconfig.xml">
 <meta name="theme-color" content="#fd6444">
-<link href="https://hexandcube.eu.org/.well-known/hexandcube_pub.asc" rel="pgpkey authn">
+<link href="https://hexandcube.com/.well-known/hexandcube_pub.asc" rel="pgpkey authn">
 
 <!-- Theme switcher -->
 <script>

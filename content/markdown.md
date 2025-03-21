@@ -1,6 +1,6 @@
 ---
 title: Markdown Test
-lastmod: 2025-03-20
+lastmod: 2025-03-21
 author: Hexandcube
 description: This page is used for testing design elements for hexandcube.com. Also this is a description of a page.
 noindex: true
@@ -27,7 +27,7 @@ ultrices, nunc nisl ultricies nunc, eget ultricies nisl nisl eget nunc.
 
 ### Links
 
-This is a [link to my website](https://hexandcube.eu.org).
+This is a [link to my website](https://hexandcube.com).
 
 ### Images
 

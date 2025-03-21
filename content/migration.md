@@ -22,7 +22,7 @@ foreseeable future, and will eventually redirect to the new domain.
 - [x] **[March 20, 2025 20:02 UTC]** External link update started
 - [x] **[March 20, 2025 20:34 UTC]** Domain redirection active
 - [x] **[March 20, 2025 21:27 UTC]** Email services migrated to the new domain
-- [ ] **[March 20, 2025 21:48 UTC]** New domain submitted to search engines for indexing
+- [x] **[March 20, 2025 21:48 UTC]** New domain submitted to search engines for indexing
 - [x] **[March 20, 2025 22:13 UTC]** Hexandcube Files migrated to the new domain
 - [ ] **[Pending]** PGP Keys updated with the new email address
 - [ ] **[Pending]** Other releated services migrated to the new domain

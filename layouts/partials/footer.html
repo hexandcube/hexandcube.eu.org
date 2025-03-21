@@ -9,7 +9,7 @@
             {{ $buildDate  := now.Format "January 2, 2006 at 15:04" }}
             <div>Copyright &copy; 2017 - 2025 Hexandcube</div>
             <a href="/#"
-                onclick="alert('Hexandcube.eu.org v.{{ .Site.Params.Version }} build {{ $buildNumber }}, built and deployed on {{ $buildDate }} {{ if hugo.IsServer }}(Local time){{ else }}(UTC){{ end }}')">Hexandcube.eu.org
+                onclick="alert('Hexandcube.com v.{{ .Site.Params.Version }} build {{ $buildNumber }}, built and deployed on {{ $buildDate }} {{ if hugo.IsServer }}(Local time){{ else }}(UTC){{ end }}')">Hexandcube.com
                 v.{{ .Site.Params.Version }}-{{ $buildNumber }}{{ if hugo.IsServer }}-dev{{ end }}</a>
             <br>
             <a class="block sm:inline" href="/terms">Terms and Conditions</a>
@@ -17,7 +17,7 @@
             <a class="block sm:inline" href="/acknowledgments ">Acknowledgments</a>
         </div>
         <div class="mt-4">
-            <a href="https://status.hexandcube.eu.org" target="_blank" id="status-widget"
+            <a href="https://status.hexandcube.com" target="_blank" id="status-widget"
                 class="bg-light-cta dark:bg-dark-cta px-4 py-2 mt-4 rounded-xl hover:bg-light-cta-hover
                 hover:dark:bg-dark-cta-hover text-light-text-primary dark:text-dark-text-primary border-2 border-light-border-primary dark:border-dark-border-primary">
                 <div id="status-widget-circle"
@@ -29,10 +29,10 @@
             <a href="https://ko-fi.com/hexandcube" class="btn btn-inverted" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-heart fa-fw"></i> Support Me on Ko-fi</a>   
         </div>
         <div class="text-center mt-4">
-            <a href="https://www.netlify.com?ref=hexandcube.eu.org" class="text-center dark:hidden">
+            <a href="https://www.netlify.com?ref=hexandcube.com" class="text-center dark:hidden">
                 <img src="https://www.netlify.com/v3/img/components/netlify-light.svg" class="m-auto" alt="Deploys by Netlify" />
             </a>
-            <a href="https://www.netlify.com?ref=hexandcube.eu.org" class="text-center hidden dark:block">
+            <a href="https://www.netlify.com?ref=hexandcube.com" class="text-center hidden dark:block">
                 <img src="https://www.netlify.com/v3/img/components/netlify-dark.svg" class="m-auto"
                     alt="Deploys by Netlify" />
             </a>

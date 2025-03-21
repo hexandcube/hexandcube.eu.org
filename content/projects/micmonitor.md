@@ -23,7 +23,7 @@ versions:
     date: 2022-01-29
     latest: true
   - name: "1.0"
-    download: https://files.hexandcube.eu.org/download/MicMonitor/MicMonitor-1.0.zip
+    download: https://files.hexandcube.com/download/MicMonitor/MicMonitor-1.0.zip
     date: 2022-01-28
 ---
 
